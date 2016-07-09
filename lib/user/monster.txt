@@ -2411,6 +2411,78 @@ spells:ARROW_1
 desc:An arrogant elf with an air of disdain. He appears to be looking
 desc: for somewhere a little more sophisticated.
 
+name:163:Blue icky thing
+base:icky thing
+color:b
+info:110:18:14:14:20
+power:5:1:0:0:6
+blow:TOUCH:COLD:2d3
+flags:RAND_50 |
+flags:EMPTY_MIND |
+desc:It is a smallish, slimy, icky, pestilent creature.
+
+name:164:Boiling ooze
+base:jelly
+color:r
+info:110:12:8:16:80
+power:5:1:0:0:5
+blow:CRAWL:FIRE:2d4
+flags:RAND_25 | RAND_50 | ATTR_FLICKER
+flags:STUPID | EMPTY_MIND | DROP_40
+flags:IM_FIRE | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
+#flags:OOZE | 
+desc:It's red and it's oozing.
+
+name:165:Green snake
+base:snake
+color:G
+info:100:3:5:39:60
+power:5:1:0:0:2
+blow:BITE:POISON:1d5
+blow:SPIT:POISON:1d5
+flags:RAND_25 |
+flags:ANIMAL | IM_POIS |
+#flags:EAT_BODY |
+desc:It is about two feet long.
+
+name:166:Forest goblin
+base:goblin
+color:G
+info:110:34:20:32:30
+power:5:3:0:0:6
+blow:HIT:HURT:1d5
+#blow:SHOT:HURT:1d5
+flags:MALE | DROP_60 |
+flags:OPEN_DOOR | BASH_DOOR | TAKE_ITEM |
+flags:ORC | EVIL | IM_POIS |
+spell-freq:4
+spells:ARROW_1
+desc:He is an ugly, green skinned primative looking humanoid.
+
+name:167:White mold
+base:mold
+color:w
+info:110:66:2:12:99
+power:5:1:0:0:6
+blow:TOUCH:POISON:2d6
+flags:NEVER_MOVE |
+flags:STUPID | EMPTY_MIND |
+flags:IM_POIS | NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
+desc:A strange white growth on the dungeon floor.
+
+name:168:Giant pack rat
+base:rodent
+color:I
+info:110:5:8:12:20
+power:5:1:0:0:1
+blow:BITE:POISON:1d4
+flags:RAND_25 |
+flags:SMART | 
+flags:ANIMAL |
+#flags:EAT_BODY |
+friends:100:2d5:same
+desc:It is a rodent of unusual size.
+
 ### Dungeon level 6 ###
 
 #name:77:Wizard's apprentice
@@ -3399,7 +3471,7 @@ flags:EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is an animated human skeleton.
 
-name:165:Zombified human
+name:2165:Zombified human
 base:zombie
 color:s
 info:110:54:20:36:100
