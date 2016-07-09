@@ -1058,6 +1058,7 @@ static struct
 } monster_group[] = {
 	{ (const wchar_t *)-1,   "Uniques" },
 	{ L"A",        "Ainur" },
+        { L"F",        "Amphibians" },
 	{ L"a",        "Ants" },
 	{ L"b",        "Bats" },
 	{ L"B",        "Birds" },
@@ -1068,6 +1069,7 @@ static struct
 	{ L"vE",       "Elementals/Vortices" },
 	{ L"e",        "Eyes/Beholders" },
 	{ L"f",        "Felines" },
+        { L"l",        "Fish" },
 	{ L"G",        "Ghosts" },
 	{ L"OP",       "Giants/Ogres" },
 	{ L"g",        "Golems" },
@@ -1075,16 +1077,17 @@ static struct
 	{ L"h",        "Hominids (Elves, Dwarves)" },
 	{ L"M",        "Hydras" },
 	{ L"i",        "Icky Things" },
-	{ L"lFI",      "Insects" },
+	{ L"I",        "Insects" },
 	{ L"j",        "Jellies" },
 	{ L"K",        "Killer Beetles" },
-	{ L"k",        "Kobolds" },
+	{ L"k",        "Goblins" },
 	{ L"L",        "Lichs" },
 	{ L"tp",       "Men" },
 	{ L".$!?=~_",  "Mimics" },
 	{ L"m",        "Molds" },
 	{ L",",        "Mushroom Patches" },
-	{ L"n",        "Nagas" },
+	{ L"n",        "Nagas" }, 
+        { L";:",       "Plants/Trees" },
 	{ L"o",        "Orcs" },
 	{ L"q",        "Quadrupeds" },
 	{ L"Q",        "Quylthulgs" },
@@ -1099,7 +1102,7 @@ static struct
 	{ L"w",        "Worms/Worm Masses" },
 	{ L"X",        "Xorns/Xarens" },
 	{ L"y",        "Yeeks" },
-	{ L"Y",        "Yeti" },
+	{ L"Y",        "Yeti/Monkeys" },
 	{ L"Z",        "Zephyr Hounds" },
 	{ L"z",        "Zombies" },
 	{ NULL,       NULL }
@@ -1345,6 +1348,8 @@ static const grouper object_text_order[] =
  	{TV_MUSHROOM,		"Mushroom"		},
 	{TV_PRAYER_BOOK,	"Priest Book"	},
 	{TV_MAGIC_BOOK,		"Magic Book"	},
+        {TV_NATURE_BOOK,        "Nature Book"   },
+        {TV_NECROMANCY_BOOK,    "Necromancy Book" },
 	{TV_LIGHT,			"Light"			},
 	{TV_FLASK,			"Flask"			},
 	{TV_SWORD,			"Sword"			},
@@ -3140,7 +3145,8 @@ void do_cmd_query_symbol(void)
 		tb = textblock_new();
 		lore_title(tb, race);
 
-		textblock_append(tb, " [(r)ecall, ESC]");
+		/* Line break is needed for proper display */
+		textblock_append(tb, " [(r)ecall, ESC]\n");
 		textui_textblock_place(tb, SCREEN_REGION, NULL);
 		textblock_free(tb);
 
