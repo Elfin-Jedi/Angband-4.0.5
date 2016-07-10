@@ -369,11 +369,14 @@ void get_attack_colors(int melee_colors[RBE_MAX], int spell_colors[RSF_MAX])
 	/* Ranged attacks can't be resisted (only mitigated by accuracy)
 	 * They are colored yellow to indicate the damage is a hard value
 	 */
+	spell_colors[RSF_SPIKE] = COLOUR_YELLOW;
+	spell_colors[RSF_SHOT_1] = COLOUR_YELLOW;
 	spell_colors[RSF_ARROW_1] = COLOUR_YELLOW;
 	spell_colors[RSF_ARROW_2] = COLOUR_YELLOW;
 	spell_colors[RSF_ARROW_3] = COLOUR_YELLOW;
 	spell_colors[RSF_ARROW_4] = COLOUR_YELLOW;
-	spell_colors[RSF_BOULDER] = COLOUR_YELLOW;
+	spell_colors[RSF_BOULDER_1] = COLOUR_YELLOW;
+	spell_colors[RSF_BOULDER_2] = COLOUR_YELLOW;
 }
 
 /**
@@ -1614,11 +1617,14 @@ void lore_append_spells(textblock *tb, const struct monster_race *race,
 	/* Collect innate attacks */
 	LORE_RESET_LISTS();
 	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_SHRIEK);
+	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_SPIKE);
+	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_SHOT_1);
 	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_ARROW_1);
 	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_ARROW_2);
 	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_ARROW_3);
 	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_ARROW_4);
-	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_BOULDER);
+	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_BOULDER_1);
+	list_index = LORE_INSERT_SPELL_DESCRIPTION(RSF_BOULDER_2);
 
 	if (list_index > 0) {
 		textblock_append(tb, "%s may ", initial_pronoun);
