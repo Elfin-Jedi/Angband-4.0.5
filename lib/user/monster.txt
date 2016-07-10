@@ -1259,7 +1259,7 @@ info:130:20:2:30:0
 power:3:1:0:0:3
 blow:HIT:HURT:1d3
 spell-freq:5
-spells:ARROW_1
+spells:SPIKE
 flags:NEVER_MOVE | STUPID | EMPTY_MIND |
 flags:IM_POIS | NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
 desc:Hmmm... it looks quite painful to eat.
@@ -1814,7 +1814,7 @@ blow:HIT:HURT:1d6
 flags:MALE |
 flags:SMART | OPEN_DOOR | TAKE_ITEM |
 spell-freq:3
-spells:ARROW_1
+spells:SHOT_1
 desc:A squat, ugly humanoid covered with grime. He looks a bit like a
 desc: stunted chimpanzee.
 
@@ -2225,14 +2225,13 @@ info:110:116:20:40:50
 power:5:6:0:0:100
 blow:HIT:HURT:3d7
 blow:HIT:HURT:1d10
-#blow:BOULDER:HURT:2d10
 flags:UNIQUE | MALE | REGENERATE
 flags:DROP_1 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:HURT_ROCK | HURT_LIGHT | IM_COLD
 #flags:EAT_BODY |
 spell-freq:7
-spells:ARROW_1
+spells:BOULDER_1
 friends:100:1d1:Tom the Stone Troll
 friends:100:1d1:Bill the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called
@@ -2245,14 +2244,13 @@ info:110:116:20:40:50
 power:5:6:0:0:100
 blow:HIT:HURT:3d7
 blow:HIT:HURT:1d10
-#blow:BOULDER:HURT:2d10
 flags:UNIQUE | MALE | REGENERATE
 flags:DROP_1 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:HURT_ROCK | HURT_LIGHT | IM_COLD
 #flags:EAT_BODY |
 spell-freq:7
-spells:ARROW_1
+spells:BOULDER_1
 friends:100:1d1:Bert the Stone Troll
 friends:100:1d1:Tom the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
@@ -2265,14 +2263,13 @@ info:110:116:20:40:50
 power:5:6:0:0:100
 blow:HIT:HURT:3d7
 blow:HIT:HURT:1d10
-#blow:BOULDER:HURT:2d10
 flags:UNIQUE | MALE | REGENERATE
 flags:DROP_1 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:HURT_ROCK | HURT_LIGHT | IM_COLD
 #flags:EAT_BODY |
 spell-freq:7
-spells:ARROW_1
+spells:BOULDER_1
 friends:100:1d1:Bert the Stone Troll
 friends:100:1d1:Bill the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
@@ -2284,12 +2281,11 @@ color:W
 info:120:48:2:1:99
 power:5:1:0:0:6
 blow:CRUSH:HURT:1d5
-#blow:SHOT:HURT:1d5
 flags:NEVER_MOVE |
 flags:STUPID | EMPTY_MIND |
 flags:HURT_LIGHT | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
 spell-freq:5
-spells:ARROW_1
+spells:SHOT_1
 desc:Its a large pile of stone-coloured flesh.
 
 name:153:Scarecrow
@@ -8319,7 +8315,7 @@ flags:DROP_3 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:IM_COLD
 spell-freq:7
-spells:BOULDER
+spells:BOULDER_2
 friends:60:2d3:Half-troll
 friends:60:2d3:Cave troll
 friends:40:2d3:Olog
