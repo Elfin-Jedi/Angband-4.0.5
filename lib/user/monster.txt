@@ -3508,7 +3508,7 @@ spell-freq:15
 spells:SCARE | TPORT
 desc:A ghostly apparition that shrieks horribly.
 
-name:168:Easterling warrior
+name:2168:Easterling warrior
 base:person
 color:u
 info:110:54:20:51:70
