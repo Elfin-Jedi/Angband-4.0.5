@@ -179,7 +179,7 @@ obj-rarity:5
 mon-base:ant
 flags-ban:KILL_BODY
 
-name:15:Goblins
+name:15:Goblins/Kobolds
 room:1
 alloc:1:15
 obj-rarity:0

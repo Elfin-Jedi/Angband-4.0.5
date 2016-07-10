@@ -147,7 +147,7 @@ glyph:P
 pain:1
 flags:GIANT | EVIL
 flags:BASH_DOOR
-spells:BOULDER
+spells:BOULDER_2
 desc:Giant Humanoid
 
 name:golem
