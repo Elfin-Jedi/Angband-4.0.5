@@ -167,13 +167,13 @@ static const char *obj_desc_get_basename(const struct object *obj, bool aware,
 			if (terse)
 				return "& Book~ #";
 			else
-				return "& Stone of Nature Lore #";
+				return "& Book~ of Nature Lore #";
                         
                 case TV_NECROMANCY_BOOK:
 			if (terse)
 				return "& Book~ #";
 			else
-				return "& Tome of Necromancy #";
+				return "& Book~ of Necromancy #";
         
 		case TV_MUSHROOM:
 			return (show_flavor ? "& # Mushroom~" : "& Mushroom~");
