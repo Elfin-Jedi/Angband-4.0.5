@@ -2324,7 +2324,7 @@ equip:nature book:[Call of the Wild]:1:1
 equip:potion:Neutralize Poison:1:1
 equip:potion:Cure Serious Wounds:1:1
 equip:scroll:Word of Recall:1:1
-flags:CHOOSE_SPELLS | PSEUDO_ID_IMPROV
+flags:CHOOSE_SPELLS | ZERO_FAIL | PSEUDO_ID_IMPROV |
 title:Wanderer
 title:Tamer
 title:Nurturer
