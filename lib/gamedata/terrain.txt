@@ -169,14 +169,21 @@ info:8:0
 desc:Your safe piece of Middle Earth, and the only place you can store goods 
 desc:apart from on your person.
 
-name:15:secret door
+name:15:Bookstore
+graphics:9:o
+priority:20
+flags:SHOP | PROJECT | PASSABLE | PERMANENT | INTERESTING | EASY
+info:6:0
+desc:A shop lined with shelves of mystical tomes.
+
+name:16:secret door
 graphics:#:w
 priority:10
 mimic:21
 flags:WALL | ROCK | DOOR_ANY | GRANITE
 desc:A door that appears like a granite wall to untrained eyes.
 
-name:16:pile of rubble
+name:17:pile of rubble
 graphics:::w
 priority:13
 flags:ROCK | NO_SCENT | NO_FLOW | INTERESTING
@@ -184,7 +191,7 @@ info:0:1
 desc:Ends LOS, stops missiles, bolts, and beams.  May dissolve or be tunnelled 
 desc:to normal floor.
 
-name:17:magma vein
+name:18:magma vein
 graphics:%:s
 priority:12
 flags:WALL | ROCK | NO_SCENT | NO_FLOW | MAGMA
@@ -193,7 +200,7 @@ desc:A seam of soft rock.  It can be removed by digging or magic, and passed
 desc:through by immaterial monsters.  It stops any spells, missiles or line of 
 desc:sight.
 
-name:18:quartz vein
+name:19:quartz vein
 graphics:%:W
 priority:11
 flags:WALL | ROCK | NO_SCENT | NO_FLOW | QUARTZ
@@ -202,7 +209,7 @@ desc:A seam of hardish rock.  It can be removed by digging or magic, and passed
 desc:through by immaterial monsters.  It stops any spells, missiles or line of 
 desc:sight.
 
-name:19:magma vein with treasure
+name:20:magma vein with treasure
 graphics:*:o
 priority:19
 flags:WALL | ROCK | INTERESTING | NO_SCENT | NO_FLOW | GOLD | MAGMA
@@ -211,7 +218,7 @@ desc:A seam of soft rock.  It can be removed by digging or magic, and passed
 desc:through by immaterial monsters.  It stops any spells, missiles or line of 
 desc:sight.  It contains visible treasure.
 
-name:20:quartz vein with treasure
+name:21:quartz vein with treasure
 graphics:*:o
 priority:19
 flags:WALL | ROCK | INTERESTING | NO_SCENT | NO_FLOW | GOLD | QUARTZ
@@ -220,7 +227,7 @@ desc:A seam of hardish rock.  It can be removed by digging or magic, and passed
 desc:through by immaterial monsters.  It stops any spells, missiles or line of 
 desc:sight.  It contains visible treasure.
 
-name:21:granite wall
+name:22:granite wall
 graphics:#:w
 priority:10
 flags:WALL | ROCK | GRANITE | NO_SCENT | NO_FLOW
@@ -229,7 +236,7 @@ desc:A seam of hard rock.  It can be removed by digging or magic, and passed
 desc:through by immaterial monsters.  It stops any spells, missiles or line of 
 desc:sight. 
 
-name:22:permanent wall
+name:23:permanent wall
 graphics:#:z
 priority:10
 flags:WALL | ROCK | PERMANENT | NO_SCENT | NO_FLOW
@@ -238,7 +245,7 @@ desc:surrounded by these kinds of walls and some special rooms are made of them.
 
 ## holder for trap detected border floor tile
 
-name:23:dtrap edge - floor
+name:24:dtrap edge - floor
 graphics:.:G
 priority:5
 flags:LOS | PROJECT | PASSABLE | FLOOR | OBJECT | EASY | TRAP | RUNE | TORCH
@@ -248,7 +255,7 @@ desc:of trap detection.
 
 ## holder for trap detected border overlay tile
 
-name:24:dtrap edge - wall
+name:25:dtrap edge - wall
 graphics:#:G
 priority:10
 flags:WALL | ROCK | GRANITE | NO_SCENT | NO_FLOW
@@ -259,13 +266,13 @@ desc:sight.  It indicates the edge of trap detection.
 
 ## New terrain
 
-name:25:lava flow
+name:26:lava flow
 graphics:#:r
 priority:10
 flags:PROJECT | WALL | ROCK | PERMANENT | NO_SCENT | NO_FLOW | BRIGHT
 desc:An impassable pool of glowing lava.
 
-name:26:pile of passable rubble
+name:27:pile of passable rubble
 graphics:::u
 priority:13
 flags:ROCK | PASSABLE | NO_SCENT | NO_FLOW
@@ -273,4 +280,3 @@ info:0:1
 desc:Ends LOS, stops missiles, bolts, and beams, and reduces the radius of ball 
 desc:spells.  May dissolve or be tunnelled to normal floor, and can be walked 
 desc:through by the player and monsters.
-

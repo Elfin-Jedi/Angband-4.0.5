@@ -36,6 +36,24 @@ lore:shriek for help
 message-vis:{name} makes a high-pitched shriek.
 message-invis:Something makes a high-pitched shriek.
 
+name:SPIKE
+hit:40
+effect:BOLT:ARROW
+dice:1d6
+lore:shoot a spike
+message-vis: {name} shoots a spike
+message-invis:You hear something.
+message-miss:{name} shoots a spike, but misses.
+
+name:SHOT_1
+hit:40
+effect:BOLT:ARROW
+dice:1d5
+lore:fling a pebble
+message-vis: {name} flings a pebble
+message-invis:You hear something.
+message-miss: {name} flings a pebble, but misses.
+
 name:ARROW_1
 hit:40
 effect:BOLT:ARROW
@@ -68,7 +86,7 @@ hit:50
 effect:BOLT:ARROW
 dice:7d6
 lore:fires missiles
-message-vis:{name} fires a seeker arrow, but misses.
+message-vis:{name} fires a seeker arrow.
 message-invis:You hear a loud thwang.
 message-miss:{name} fires a seeker arrow, but misses.
 
@@ -242,7 +260,16 @@ lore:mana
 message-vis:{name} breathes raw magic.
 message-invis:You hear a scintillating roar.
 
-name:BOULDER
+name:BOULDER_1
+hit:60
+effect:BOLT:ARROW
+dice:2d10
+lore:throw boulders
+message-vis:{name} hurls a boulder.
+message-invis:You hear a grunt of exertion.
+message-miss: {name} hurls a boulder, but misses.
+
+name:BOULDER_2
 hit:60
 effect:BOLT:ARROW
 dice:$Dd12

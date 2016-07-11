@@ -32,6 +32,12 @@
 
 ##### Normal monster templates #####
 
+name:amphibian
+glyph:F
+pain:5
+flags:ANIMAL | HURT_COLD
+desc:Amphibian
+
 name:ancient dragon
 glyph:D
 pain:1
@@ -57,6 +63,7 @@ glyph:a
 pain:7
 flags:ANIMAL | WEIRD_MIND
 flags:BASH_DOOR
+#flags:INSECT
 desc:Ant
 
 name:bat
@@ -81,6 +88,7 @@ name:centipede
 glyph:c
 pain:5
 flags:ANIMAL | WEIRD_MIND
+#flags:INSECT
 desc:Centipede
 
 name:creeping coins
@@ -99,14 +107,6 @@ pain:1
 flags:DRAGON | EVIL
 flags:FORCE_SLEEP
 desc:Dragon
-
-name:dragon fly
-glyph:F
-pain:7
-flags:ANIMAL | WEIRD_MIND
-flags:RAND_50 | BASH_DOOR
-flags:FORCE_SLEEP
-desc:Dragon Fly
 
 name:eye
 glyph:e
@@ -127,6 +127,13 @@ pain:6
 flags:ANIMAL
 desc:Feline (Cat)
 
+name:fish
+glyph:l
+pain:2
+flags:ANIMAL | 
+flags:RAND_50
+desc:Fish
+
 name:ghost
 glyph:G
 pain:1
@@ -140,7 +147,7 @@ glyph:P
 pain:1
 flags:GIANT | EVIL
 flags:BASH_DOOR
-spells:BOULDER
+spells:BOULDER_2
 desc:Giant Humanoid
 
 name:golem
@@ -180,8 +187,9 @@ desc:Icky Thing
 name:insect
 glyph:I
 pain:7
-flags:ANIMAL | WEIRD_MIND | MULTIPLY
+flags:ANIMAL | WEIRD_MIND 
 flags:RAND_25 | RAND_50
+#flags:INSECT
 desc:Insect
 
 name:jelly
@@ -196,15 +204,16 @@ glyph:K
 pain:7
 flags:ANIMAL | WEIRD_MIND
 flags:BASH_DOOR
+#flags:INSECT
 desc:Killer Beetle
 
-name:kobold
+name:goblin
 glyph:k
 pain:1
 flags:EVIL
 flags:OPEN_DOOR | BASH_DOOR
 flags:IM_POIS
-desc:Kobold
+desc:Goblin/Kobold
 
 name:lich
 glyph:L
@@ -215,13 +224,6 @@ flags:IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
 flags:FORCE_SLEEP
 spells:BRAIN_SMASH
 desc:Lich
-
-name:louse
-glyph:l
-pain:7
-flags:ANIMAL | WEIRD_MIND | MULTIPLY
-flags:RAND_50
-desc:Louse
 
 name:lurker
 glyph:.
@@ -259,11 +261,21 @@ flags:DEMON | EVIL
 flags:IM_FIRE
 desc:Minor Demon
 
+name:misc
+glyph:~
+pain:2
+flags:COLD_BLOOD | EMPTY_MIND | UNAWARE
+flags:NEVER_MOVE
+flags:NO_FEAR | NO_CONF | NO_SLEEP
+flags:FORCE_SLEEP |
+desc:Misc
+
 name:mold
 glyph:m
 pain:2
 flags:NEVER_MOVE
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
+#flags:PLANT
 desc:Mold
 
 name:mushroom
@@ -271,6 +283,7 @@ glyph:,
 pain:2
 flags:EMPTY_MIND | STUPID
 flags:HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
+#flags:PLANT
 desc:Mushroom
 
 name:naga
@@ -279,6 +292,13 @@ pain:1
 flags:FEMALE | EVIL | HURT_COLD
 flags:BASH_DOOR
 desc:Naga
+
+name:nest
+glyph:<
+pain:2
+flags:EMPTY_MIND | STUPID
+flags:NEVER_MOVE
+desc:Nest
 
 name:ogre
 glyph:O
@@ -300,6 +320,14 @@ pain:1
 flags:BASH_DOOR
 desc:Person/Human
 
+name:plant
+glyph:;
+pain:2
+flags:NEVER_MOVE | EMPTY_MIND | IM_POIS |
+flags:NO_FEAR | NO_CONF | NO_SLEEP
+#flags:PLANT
+desc:Plant
+
 name:quadruped
 glyph:q
 pain:4
@@ -319,7 +347,7 @@ name:reptile
 glyph:R
 pain:5
 flags:ANIMAL | HURT_COLD
-desc:Reptile/Amphibian
+desc:Reptile
 
 name:rodent
 glyph:r
@@ -345,12 +373,21 @@ name:spider
 glyph:S
 pain:7
 flags:BASH_DOOR
+#flags:INSECT
 desc:Spider/Scorpion/Tick
 
 name:townsfolk
 glyph:t
 pain:4
 desc:Townsfolk
+
+name:tree
+glyph::
+pain:2
+flags:NEVER_MOVE | EMPTY_MIND | IM_POIS |
+flags:NO_FEAR | NO_CONF | NO_SLEEP
+#flags:PLANT 
+desc:Tree
 
 name:troll
 glyph:T
@@ -383,6 +420,7 @@ name:worm
 glyph:w
 pain:1
 flags:ANIMAL
+#flags:INSECT
 desc:Worm/Worm Mass
 
 name:wraith
@@ -413,7 +451,7 @@ pain:1
 flags:ANIMAL
 flags:OPEN_DOOR | BASH_DOOR
 flags:IM_COLD
-desc:Yeti
+desc:Yeti/Monkey
 
 name:zephyr hound
 glyph:Z
