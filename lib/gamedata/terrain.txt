@@ -173,7 +173,7 @@ name:15:Bookstore
 graphics:9:o
 priority:20
 flags:SHOP | PROJECT | PASSABLE | PERMANENT | INTERESTING | EASY
-info:6:0
+info:9:0
 desc:A shop lined with shelves of mystical tomes.
 
 name:16:secret door
