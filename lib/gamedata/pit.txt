@@ -179,11 +179,11 @@ obj-rarity:5
 mon-base:ant
 flags-ban:KILL_BODY
 
-name:15:Kobolds
+name:15:Goblins/Kobolds
 room:1
 alloc:1:15
 obj-rarity:0
-mon-base:kobold
+mon-base:goblin
 
 name:16:Creepy crawlies
 room:2
@@ -192,6 +192,7 @@ obj-rarity:5
 mon-base:centipede
 mon-base:killer beetle
 mon-base:spider
+mon-base:insect
 spell-ban:BLINK
 spell-ban:CONF
 spell-ban:SLOW
@@ -207,7 +208,7 @@ name:18:Spellcasters
 room:1
 alloc:1:20
 obj-rarity:0
-mon-base:kobold
+mon-base:goblin
 mon-base:humanoid
 mon-base:orc
 mon-base:person
@@ -219,7 +220,7 @@ name:19:Archers
 room:1
 alloc:1:25
 obj-rarity:0
-mon-base:kobold
+mon-base:goblin
 mon-base:orc
 mon-base:person
 color:W
@@ -350,8 +351,6 @@ room:3
 alloc:2:15
 mon-base:ant
 mon-base:centipede
-mon-base:louse
-mon-base:dragon fly
 mon-base:insect
 mon-base:killer beetle
 
@@ -366,7 +365,7 @@ name:37:Cave dwellers
 room:3
 alloc:1:25
 mon-base:yeek
-mon-base:kobold
+mon-base:goblin
 mon-base:orc
 mon-base:troll
 mon-base:ogre
@@ -389,3 +388,19 @@ room:3
 alloc:1:40
 mon-base:elemental
 mon-base:vortex
+
+name:41:Fish/Amphibians
+room:2
+alloc:1:50
+obj-rarity:10
+mon-base:fish
+mon-base:amphibian
+
+name:42:Plants/Trees
+room:2
+alloc:1:50
+obj-rarity:10
+mon-base:plant
+mon-base:tree
+mon-base:mold
+mon-base:mushroom
