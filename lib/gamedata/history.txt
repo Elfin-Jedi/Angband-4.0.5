@@ -194,6 +194,8 @@ chart:20:2:20
 phrase:and it is acknowledged. You are the adopted child 
 chart:20:2:100
 phrase:but it is unacknowledged. You are the adopted child 
+chart:20:40:100
+phrase:breed with Mannish blood by Saruman.  
 
 chart:21:22:30
 phrase:Your mother was a Stone-Troll 
@@ -254,6 +256,240 @@ chart:26:67:95
 phrase:and your mother was a cook. 
 chart:26:67:100
 phrase:and your mother was one of the Chief's harem. 
+
+chart:27:28:10:20
+phrase:You are a unnoticed minion of 
+chart:27:28:25:30
+phrase:You are a minor servant of 
+chart:27:28:45:40
+phrase:You are a subject of 
+chart:27:28:65:50
+phrase:You have attached yourself to 
+chart:27:28:85:65
+phrase:You are associated with 
+chart:27:28:95:80
+phrase:You are a notable follower of 
+chart:27:28:100:100
+phrase:You are a celebrated assistant to 
+
+chart:28:70:20:55
+phrase:Nessa.  
+chart:28:70:40:60
+phrase:Vana.  
+chart:28:70:50:65
+phrase:Tulkas.  
+chart:28:70:80:75
+phrase:Mandos.  
+chart:28:70:90:80
+phrase:Nienna.  
+chart:28:70:90:80
+phrase:Ulmo.  
+chart:28:70:95:90
+phrase:Varda.  
+chart:28:70:100:95
+phrase:Manwe.  
+
+chart:29:30:10:35
+phrase:You are the bastard child of a Shadow-Fairy 
+chart:29:30:30:45
+phrase:You are one of several children of a Shadow-Fairy 
+chart:29:30:55:50
+phrase:You are the second child of a Shadow-Fairy 
+chart:29:30:80:55
+phrase:You are the first child of a Shadow-Fairy 
+chart:29:30:100:60
+phrase:You are the only child of a Shadow-Fairy 
+
+chart:30:72:5:25
+phrase:whose identity you are uncertain of.  
+chart:30:72:20:35
+phrase:Captive.  
+chart:30:72:40:45
+phrase:Fighter.  
+chart:30:72:50:50
+phrase:Ranger.  
+chart:30:72:70:65
+phrase:Scribe.  
+chart:30:72:83:75
+phrase:Witch.  
+chart:30:72:93:90
+phrase:Alchemist.  
+chart:30:72:98:110
+phrase:Lady.  
+chart:30:72:100:140
+phrase:Queen.  
+
+chart:31:32:25:40
+phrase:You are the lost offspring of 
+chart:31:32:50:50
+phrase:You are the wandering offspring of 
+chart:31:32:75:60
+phrase:You are the only offspring of 
+chart:31:32:100:70
+phrase:You are the beloved offspring of 
+
+chart:32:76:10:35
+phrase:an Ent whose name you have no recollection of.  
+chart:32:76:35:50
+phrase:a solitary Ent.  
+chart:32:76:55:60
+phrase:a member of a farflung Entish band.  
+chart:32:76:70:70
+phrase:a leader of a prosperous community of Ents.  
+chart:32:76:81:80
+phrase:an Entish Forestwarden.  
+chart:32:76:91:90
+phrase:a respected Entish sage.  
+chart:32:76:96:100
+phrase:an Entwife whose memory men cherish.  
+chart:32:76:100:110
+phrase:Fangorn himself.  
+
+chart:33:34:10:25
+phrase:You are the illegitimate and unacknowledged child 
+chart:33:34:20:35
+phrase:You are the illegitimate but acknowledged child 
+chart:33:34:95:45
+phrase:You are one of several children 
+chart:33:34:100:50
+phrase:You are the first child 
+
+chart:34:3:40:65
+phrase:of a Villager.  
+chart:34:3:65:80
+phrase:of a solitary Trapper.  
+chart:34:3:80:90
+phrase:of a respected Hunter.  
+chart:34:3:90:105
+phrase:of prosperous Woodfolk.  
+chart:34:3:96:120
+phrase:of a Ranger.  
+chart:34:3:99:130
+phrase:of a Druid.  
+chart:34:3:100:140
+phrase:of Beorn himself.  
+
+chart:35:36:85:45
+phrase:You are one of several children of a Druadan 
+chart:35:36:100:55
+phrase:You are the only child of a Druadan 
+
+chart:36:79:5:60
+phrase:Cook.  
+chart:36:79:45:60
+phrase:Farmer.  
+chart:36:79:95:55
+phrase:Warrior.  
+chart:36:79:99:65
+phrase:Shaman.  
+chart:36:79:100:80
+phrase:Clan Chief.  
+
+chart:37:38:10:50
+phrase:Your father was an Orc 
+chart:37:38:20:50
+phrase:Your mother was an Orc 
+chart:37:39:100:50
+phrase:You never knew your parents, and have survived only through Orcish cunning 
+
+chart:38:39:10:60
+phrase:Slave 
+chart:38:39:25:75
+phrase:Prison Guard 
+chart:38:39:75:90
+phrase:Miner 
+chart:38:39:90:110
+phrase:Warrior 
+chart:38:39:99:130
+phrase:Priest 
+chart:38:39:100:150
+phrase:General 
+
+chart:39:40:25:50
+phrase:in a mercenary army.  
+chart:39:40:50:150
+phrase:in Saruman's armies.  
+chart:39:40:100:150
+phrase:in Sauron's army.  
+
+chart:40:62:25:50
+phrase:You were mistreated and escaped.  
+chart:40:62:50:50
+phrase:You were left behind in battle.  
+chart:40:62:75:50
+phrase:You were found unfit for duties and fled.  
+chart:40:62:99:50
+phrase:You were captured by the Wood-Elves but released.  
+chart:40:62:100:50
+phrase:You have been sent as a spy to these lands.  
+
+chart:41:20:25:25
+phrase:Your mother was an Goblin, 
+chart:41:20:100:25
+phrase:Your father was an Goblin, 
+
+chart:42:43:10:25
+phrase:You are the illegitimate and unacknowledged child of a Giant 
+chart:42:43:20:35
+phrase:You are the illegitimate but acknowledged child of a Giant 
+chart:42:43:95:45
+phrase:You are one of several children of a Giant 
+chart:42:43:100:50
+phrase:You are the first child of a Giant 
+
+chart:43:50:5:60
+phrase:Cook.  
+chart:43:50:95:55
+phrase:Warrior.  
+chart:43:50:99:65
+phrase:Shaman.  
+chart:43:50:100:80
+phrase:Clan Chief.  
+
+chart:44:62:10:25
+phrase:You are formed from Pebbles.  
+chart:44:62:20:45
+phrase:You are formed from Rubble.  
+chart:44:62:95:65
+phrase:You are formed from Boulders.  
+chart:44:62:100:85
+phrase:You are formed from Bedrock.  
+chart:44:62:100:105
+phrase:You are formed from the Heart of the Mountain.  
+
+chart:45:46:10:60
+phrase:You were a Serf
+chart:45:46:25:75
+phrase:You were a Porter 
+chart:45:46:75:90
+phrase:You were a Guard 
+chart:45:46:90:110
+phrase:You were a Soldier 
+chart:45:46:99:130
+phrase:You were a Captain 
+chart:45:46:100:150
+phrase:You were a General 
+
+chart:46:47:100:50
+phrase:when your King broke his oath with Isildur.  Since then you have wandered the earth 
+
+chart:47:50:25:50
+phrase:helplessly.  
+chart:47:50:50:50
+phrase:restlessly. 
+chart:47:50:75:50
+phrase:tirelessly.  
+chart:47:50:100:50
+phrase:ceaslessly.  
+
+chart:48:1:25:50
+phrase:You awake with no memories, covered in blood.  
+chart:48:1:50:50
+phrase:Your last memory is of glowing red eyes... 
+chart:48:1:75:50
+phrase:You were terribly injured, but your wounds have somehow healed.  
+chart:48:1:100:50
+phrase:After a night of debaunchery, you feel strangely refreshed.  
 
 chart:50:51:20
 phrase:You have dark brown eyes, 
@@ -410,4 +646,465 @@ chart:69:0:90
 phrase:and small, sharp teeth.
 chart:69:0:100
 phrase:and large, sharp teeth.
+
+chart:70:71:100:50
+phrase:In the past, you dwelt on earth in the form of 
+
+chart:71:0:25:50
+phrase:various animals.
+chart:71:0:55:55
+phrase:a spirit of forest and river.
+chart:71:0:70:60
+phrase:a beneficent but unseen force.
+chart:71:0:96:70
+phrase:a wise and ancient counselor.
+chart:71:0:100:80
+phrase:a Wizard of legend.
+
+chart:72:73:10:50
+phrase:You have black eyes, straight 
+chart:72:73:25:50
+phrase:You have dark brown eyes, straight 
+chart:72:73:60:50
+phrase:You have brown eyes, straight 
+chart:72:73:70:50
+phrase:You have hazel eyes, straight 
+chart:72:73:80:50
+phrase:You have green eyes, straight 
+chart:72:73:90:50
+phrase:You have blue eyes, straight 
+chart:72:73:100:50
+phrase:You have blue-gray eyes, straight 
+
+chart:73:74:30:50
+phrase:grey hair 
+chart:73:74:70:50
+phrase:pure white hair 
+chart:73:74:80:50
+phrase:pale yellow hair 
+chart:73:74:90:50
+phrase:grey-white hair
+chart:73:74:100:50
+phrase:pale brown hair 
+
+chart:74:75:30:50
+phrase:that barely covers your shoulders, 
+chart:74:75:60:55
+phrase:that reaches to your arms, 
+chart:74:75:90:60
+phrase:that flows down to your waist, 
+chart:74:75:100:75
+phrase:that forms a shining waterfall from head to foot, 
+
+chart:75:0:20:50
+phrase:and an extremely fair complexion.
+chart:75:0:35:50
+phrase:and a milky complexion.
+chart:75:0:50:50
+phrase:and a pearly complexion.
+chart:75:0:85:50
+phrase:and a pale complexion.
+chart:75:0:100:50
+phrase:and an utterly white complexion.
+
+chart:76:77:100:50
+phrase:You have  
+
+chart:77:78:5:50
+phrase:three branches and roots, and are covered in 
+chart:77:78:20:50
+phrase:four branches and roots, and are covered in 
+chart:77:78:40:50
+phrase:five branches and roots, and are covered in 
+chart:77:78:60:50
+phrase:six branches and roots, and are covered in 
+chart:77:78:80:50
+phrase:seven branches and roots, and are covered in 
+chart:77:78:95:50
+phrase:eight branches and roots, and are covered in 
+chart:77:78:100:50
+phrase:nine branches and roots, and are covered in 
+
+chart:78:0:10:50
+phrase:scaly brown bark.
+chart:78:0:20:50
+phrase:rough brown bark.
+chart:78:0:30:50
+phrase:smooth grey bark.
+chart:78:0:40:50
+phrase:pale green lichen.
+chart:78:0:50:50
+phrase:moss.
+chart:78:0:60:50
+phrase:deep brown bark.
+chart:78:0:70:50
+phrase:pale brown, flaky bark.
+chart:78:0:80:50
+phrase:rich chocolate-colored bark.
+chart:78:0:90:50
+phrase:ridged black bark.
+chart:78:0:100:50
+phrase:thick, almost corky bark.
+
+chart:79:80:80:50
+phrase:You have black eyes, 
+chart:79:80:100:55
+phrase:You have glowing red eyes, 
+
+chart:80:81:33:50
+phrase:unkempt 
+chart:80:81:66:50
+phrase:tied back 
+chart:80:81:100:50
+phrase:plaited 
+
+chart:81:82:20:50
+phrase:dark-brown hair, 
+chart:81:82:40:50
+phrase:steel-grey hair, 
+chart:81:82:100:50
+phrase:black hair, 
+
+chart:82:0:33:50
+phrase:and bronzed skin.
+chart:82:0:66:50
+phrase:and darkly-tanned skin.
+chart:82:0:100:50
+phrase:and weather-beaten skin, with a small beard.
+
+chart:83:84:100:50
+phrase:You are one of a spawning of dozens. Your parents were 
+
+chart:84:85:40:40
+phrase:Fishers. 
+chart:84:85:70:50
+phrase:Hunters. 
+chart:84:85:90:60
+phrase:Warriors. 
+chart:84:85:100:70
+phrase:Nobles. 
+
+chart:85:86:50:40
+phrase:Your skin is warty and 
+chart:85:86:70:50
+phrase:Your skin is smooth, slimey, and 
+chart:85:86:90:55
+phrase:Your skin is smooth and 
+chart:85:86:100:60
+phrase:Your skin is smooth, and coloured red and 
+
+chart:86:87:70:50
+phrase:brown, 
+chart:86:87:80:55
+phrase:light green, 
+chart:86:87:90:60
+phrase:dark green, 
+chart:86:87:100:65
+phrase:black, 
+
+chart:87:0:50:50
+phrase:and your eyes are yellow.
+chart:87:0:100:50
+phrase:and your eyes are red.
+
+chart:88:89:50:50
+phrase:You are one of a brood of ten. 
+chart:88:89:75:50
+phrase:You are one of a brood of nine. 
+chart:88:89:100:50
+phrase:You are one of a brood of eight. 
+
+chart:89:90:50:50
+phrase:Your father was a fisher, 
+chart:89:90:70:50
+phrase:Your father was a tribal guard, 
+chart:89:90:85:60
+phrase:Your father was the tribe priest, 
+chart:89:90:100:75
+phrase:Your father was the chief, 
+
+chart:90:91:50:50
+phrase:and your mother was a hunter. 
+chart:90:91:80:55
+phrase:and your mother was a warrior. 
+chart:90:91:100:60
+phrase:and your mother was a witch. 
+
+chart:91:86:100:50
+phrase:Your scales are 
+
+chart:92:93:20:40
+phrase:You are the runt of 
+chart:92:93:80:50
+phrase:You come from 
+chart:92:93:100:55
+phrase:You are the largest of 
+
+chart:93:94:15:45
+phrase:a litter numbering a dozen, 
+chart:93:94:40:45
+phrase:a litter of ten, 
+chart:93:94:70:50
+phrase:a litter of seven, 
+chart:93:94:85:50
+phrase:a litter of six, 
+chart:93:94:95:55
+phrase:a litter of five, 
+chart:93:94:100:55
+phrase:a litter of four, 
+
+chart:94:95:15:45
+phrase:all of which survived. 
+chart:94:95:85:50
+phrase:most of which survived. 
+chart:94:95:100:55
+phrase:of which all but you had died. 
+
+chart:95:96:35:40
+phrase:Your father was a thief, 
+chart:95:96:70:45
+phrase:Your father was a merchant, 
+chart:95:96:95:50
+phrase:Your father was a warrior, 
+chart:95:96:100:60
+phrase:Your father was the tribal chief, 
+
+chart:96:97:50:45
+phrase:and your mother was a thief. 
+chart:96:97:95:50
+phrase:and your mother was a mage. 
+chart:96:97:100:55
+phrase:and your mother was a huntress. 
+
+chart:97:98:10:50
+phrase:You have black eyes, 
+chart:97:98:40:50
+phrase:You have dark brown eyes, 
+chart:97:98:80:50
+phrase:You have brown eyes, 
+chart:97:98:99:50
+phrase:You have light brown eyes, 
+chart:97:98:100:50
+phrase:You have glowing red eyes, 
+
+chart:98:99:40:45
+phrase:pale white fur, 
+chart:98:99:60:50
+phrase:pale brown fur, 
+chart:98:99:95:50
+phrase:olive green fur, 
+chart:98:99:100:60
+phrase:glistering silver fur, 
+
+chart:99:0:10:50
+phrase:and large, flat teeth.
+chart:99:0:90:50
+phrase:and small, sharp teeth.
+chart:99:0:100:50
+phrase:and large, sharp teeth.
+
+chart:100:101:20:45
+phrase:You are the smallest of 
+chart:100:101:80:50
+phrase:You come from 
+chart:100:101:100:55
+phrase:You are the largest of 
+
+chart:101:102:20:45
+phrase:a litter of six. 
+chart:101:102:50:50
+phrase:a litter of five. 
+chart:101:102:80:55
+phrase:a litter of four. 
+chart:101:102:100:60
+phrase:a litter of three. 
+
+chart:102:103:10:40
+phrase:Your mother was a servant, 
+chart:102:103:30:50
+phrase:Your mother was a warrior, 
+chart:102:103:50:60
+phrase:Your mother was an artist, 
+chart:102:103:70:75
+phrase:Your mother was a warrior-mage, 
+chart:102:103:85:90
+phrase:Your mother was a noble huntress, 
+chart:102:103:100:100
+phrase:Your mother was a princess, 
+
+chart:103:104:100:50
+phrase:and you never knew your father. 
+
+chart:104:105:10:50
+phrase:You have black eyes 
+chart:104:105:40:50
+phrase:You have yellow eyes 
+chart:104:105:80:50
+phrase:You have green eyes 
+chart:104:105:100:50
+phrase:You have orange eyes, 
+
+chart:105:0:20:40
+phrase:and grey fur.
+chart:105:0:50:50
+phrase:and smooth grey fur.
+chart:105:0:70:50
+phrase:and calico fur.
+chart:105:0:90:55
+phrase:and orange fur.
+chart:105:0:100:60
+phrase:and golden fur.
+
+chart:106:107:65:50
+phrase:You are the only cub 
+chart:106:107:100:55
+phrase:You are one of several cubs 
+
+chart:107:108:40:45
+phrase:of an Ursa Woodcutter and 
+chart:107:108:70:50
+phrase:of an Ursa Mercenary and 
+chart:107:108:90:55
+phrase:of an Ursa Hunter and 
+chart:107:108:100:65
+phrase:of an Ursa Chief and 
+
+chart:108:109:50:50
+phrase:his 
+chart:108:109:100:50
+phrase:her 
+
+chart:109:110:50:50
+phrase:mate, a Warrior. 
+chart:109:110:75:50
+phrase:mate, a Paladin. 
+chart:109:110:100:55
+phrase:mate, a Priest. 
+
+chart:110:111:60:50
+phrase:Your fur is smooth 
+chart:110:111:100:50
+phrase:Your fur is rough 
+
+chart:111:0:60:50
+phrase:and coloured light brown.
+chart:111:0:80:50
+phrase:and coloured dark brown.
+chart:111:0:95:60
+phrase:and coloured black.
+chart:111:0:100:75
+phrase:and coloured pure white.
+
+chart:112:113:15:40
+phrase:You are the runt of 
+chart:112:113:85:50
+phrase:You come from 
+chart:112:113:100:55
+phrase:You are the largest of 
+
+chart:113:114:20:45
+phrase:a litter of six. 
+chart:113:114:50:50
+phrase:a litter of five. 
+chart:113:114:80:55
+phrase:a litter of four. 
+chart:113:114:100:60
+phrase:a litter of three. 
+
+chart:114:115:50:50
+phrase:Your parents were both hunters. 
+chart:114:115:80:50
+phrase:Your parents were both warriors. 
+chart:114:115:90:55
+phrase:Your parents were both warrior-mages. 
+chart:114:115:100:55
+phrase:Your parents were both paladins. 
+
+chart:115:116:30:40
+phrase:Your eyes are yellow, 
+chart:115:116:60:50
+phrase:Your eyes are deep red, 
+chart:115:116:90:50
+phrase:Your eyes are midnight black, 
+chart:115:116:100:60
+phrase:Your eyes glow moonlight-blue, 
+
+chart:116:0:20:40
+phrase:and your fur is brown.
+chart:116:0:50:50
+phrase:and your fur is brownish-grey.
+chart:116:0:70:50
+phrase:and your fur is grey.
+chart:116:0:90:55
+phrase:and your fur is silvery-grey.
+chart:116:0:95:60
+phrase:and your fur is silver hued.
+chart:116:0:100:70
+phrase:and your fur is black.
+
+chart:117:118:60:40
+phrase:You have been raised by your parents, who were 
+chart:117:119:90:75
+phrase:You have been raised at a monastery from a young age. 
+chart:117:119:100:100
+phrase:You have been raised at a secret mystical conclave from a young age. 
+
+chart:118:119:20:30
+phrase:servants in a monastery. 
+chart:118:119:45:60
+phrase:members of the lower arcane orders. 
+chart:118:119:70:65
+phrase:members of the lower holy orders. 
+chart:118:119:85:80
+phrase:members of the higher arcane orders. 
+chart:118:119:100:90
+phrase:members of the higher holy orders. 
+
+chart:119:120:40:40
+phrase:Your fur is mottled grey, and 
+chart:119:120:65:50
+phrase:Your fur is white with brown sploches, and 
+chart:119:120:80:55
+phrase:Your fur is white with black sploches, and 
+chart:119:120:95:75
+phrase:Your fur is pure white, and 
+chart:119:120:100:80
+phrase:Your fur is pure black, and 
+
+chart:120:0:50:40
+phrase:your horns are short and pointy.
+chart:120:0:70:55
+phrase:your horns are medium-lengthed and slightly curved.
+chart:120:0:100:75
+phrase:your horns are long and curved.
+
+chart:121:122:100:80
+phrase:You are of the blessed host of heaven. 
+
+chart:122:123:50:80
+phrase:You have been sent to earth to eradicate the wicked, 
+chart:122:123:100:80
+phrase:You have been sent to earth to bring forth justice, 
+
+chart:123:0:100:80
+phrase:and shall not rest until you have succeeded.
+
+chart:124:125:100:50
+phrase:You are of the accursed spawn of hell. 
+
+chart:125:126:20:40
+phrase:You were the servant of a great demon lord, 
+# Note that the next line skips a stage
+chart:125:127:80:50
+phrase:You have been cast out by the whim of the greater demons, 
+chart:125:126:100:60
+phrase:You have allied yourself with a demon lord, 
+
+chart:126:127:80:50
+phrase:upon whose defeat in war you've been banished from your home, 
+chart:126:127:100:50
+phrase:who arranged for your banishment due to some percieved trechery, 
+
+chart:127:0:100:50
+phrase:and now you seek revenge.
 
