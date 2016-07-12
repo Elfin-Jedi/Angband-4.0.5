@@ -165,7 +165,7 @@ title:Arch-Mage
 
 magic:1:300:1:9
 
-book:magic book:[Magic for Beginners]:8:1
+book:magic book:[Magic for Beginners]:6:1
 
 spell:Magic Missile:1:1:22:4
 effect:BOLT_OR_BEAM:MISSILE:-10
@@ -197,21 +197,7 @@ desc:Lights up all squares in a level-dependant area, and hurts
 desc: all light-sensitive monsters in the area of effect.
 desc:  If you are in a room, the entire room will be lit up as well.
 
-spell:Combat Poison:3:1:25:2
-effect:TIMED_DEC:POISONED:2
-desc:Halves the remaining duration of any current poisoning.
-
-spell:Cure Light Wounds:4:2:25:3
-effect:HEAL_HP
-dice:15+m15
-effect:CURE:BLIND
-effect:TIMED_DEC:CUT
-dice:20
-effect:TIMED_DEC:CONFUSED
-dice:20
-desc:Cures 1
-
-spell:Find Traps, Doors & Stairs:5:3:25:3
+spell:Find Traps, Doors & Stairs:3:3:25:2
 effect:DETECT_TRAPS
 dice:22d40
 effect:DETECT_DOORS
@@ -220,7 +206,7 @@ effect:DETECT_STAIRS
 dice:22d40
 desc:Detects all traps, doors, and stairs in the immediate area.
 
-spell:Stinking Cloud:6:3:27:4
+spell:Stinking Cloud:3:2:27:3
 effect:BALL:POIS:2
 dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
@@ -228,56 +214,47 @@ desc:Shoots a radius-2 poison ball.
 
 book:magic book:[Conjurings and Tricks]:9:1
 
-spell:Confuse Monster:7:3:30:5
+spell:Confuse Monster:5:4:30:4
 effect:BOLT_AWARE:OLD_CONF
 dice:$B
 expr:B:PLAYER_LEVEL:+ 0
 desc:Attempts to confuse a single monster for a level-dependant duration.
 desc:  Uniques and monsters that resist confusion are not affected.
 
-spell:Lightning Bolt:7:3:30:6
+spell:Lightning Bolt:5:4:30:4
 effect:BEAM:ELEC
 dice:$Dd6
 expr:D:PLAYER_LEVEL:- 5 / 6 + 3
 desc:Fires a lightning beam that hurts each monster in its path.
 
-spell:Trap/Door Destruction:9:3:30:6
+spell:Trap/Door Destruction:5:5:30:6
 effect:TOUCH:KILL_DOOR
 desc:Destroys all traps and doors within a 1-square radius of you.
 
-spell:Sleep Monster:9:4:30:6
+spell:Cure Poison:5:5:35:4
+effect:CURE:POISONED
+desc:Neutralizes poison.
+
+spell:Sleep Monster:7:5:30:4
 effect:BOLT_AWARE:OLD_SLEEP
 dice:$B
 expr:B:PLAYER_LEVEL:+ 0
 desc:Attempts to put to sleep a single monster.
 desc:  Uniques and monsters that resist confusion are not affected.
 
-spell:Cure Poison:11:5:35:6
-effect:CURE:POISONED
-desc:Neutralizes poison.
-
-spell:Teleport Self:11:5:35:6
+spell:Teleport Self:7:6:35:5
 effect:TELEPORT
 dice:$B
 expr:B:PLAYER_LEVEL:* 5
 desc:Teleports you randomly within the current level.
 
-spell:Spear of Light:12:5:30:7
+spell:Spear of Light:7:6:30:5
 effect:LINE:LIGHT_WEAK
 dice:6d8
 desc:Fires a beam that lights up each square and hurts each
 desc: light-sensitive monster in its path.
 
-spell:Recharge Item I:13:5:40:9
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Cone of Cold (Frost Bolt):13:5:44:7
+spell:Frost Bolt:7:3:40:6
 effect:BOLT_OR_BEAM:COLD:-10
 dice:$Dd8
 expr:D:PLAYER_LEVEL:- 5 / 4 + 5
@@ -286,33 +263,37 @@ desc:  Sometimes a beam is fired instead that hurts each monster
 desc: in its path.
 desc:  The chance to get a beam goes up with your character level.
 
+spell:Wonder:7:10:50:5
+effect:WONDER
+dice:$B+1d100
+expr:B:PLAYER_LEVEL:/ 5
+desc:Invokes a random spell effect.
+
 book:magic book:[Incantations and Illusions]:9:1
 
-spell:Satisfy Hunger:14:8:45:7
+spell:Satisfy Hunger:9:7:45:8
 effect:SET_NOURISH
 dice:16999
 desc:Magically renders you well-fed (but not satiated).
 desc:  This will also cure a bloated stomach.
 
-spell:Polymorph Other:15:7:45:7
-effect:BOLT_STATUS:OLD_POLY
+spell:Lesser Recharging:9:7:75:10
+effect:RECHARGE
 dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to polymorph a single monster.
-desc:  Uniques are not affected.
+expr:B:PLAYER_LEVEL:/ 5 + 2
+desc:Adds charges to a stack of wands or staves.
+desc:  Chance of success and number of charges gained increase with your
+desc: level and decrease with level of wand or staff and number of charges.
+desc:  A failed attempt to recharge destroys one wand or staff from the stack.
 
-spell:Identify:17:12:75:8
-effect:IDENTIFY
-desc:Reveals the powers of an object.
+spell:Turn Stone to Mud:9:7:44:8
+effect:LINE:KILL_WALL
+dice:20+1d30
+desc:Produces a beam that destroys the first section of wall it hits,
+desc: unless it is a permanent wall.  Each monster caught in the beam that
+desc: is susceptible to rock remover takes 20+1d30 points of damage.
 
-spell:Sleep Monsters:17:7:50:8
-effect:PROJECT_LOS:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep each monster within line of sight.
-desc:  Uniques and monsters that resist confusion are not affected.effect:WONDER
-
-spell:Fire Bolt:19:7:50:8
+spell:Fire Bolt:10:3:50:7
 effect:BOLT_OR_BEAM:FIRE
 dice:$Dd8
 expr:D:PLAYER_LEVEL:- 5 / 4 + 6
@@ -321,95 +302,98 @@ desc:  Sometimes a beam is fired instead that hurts each monster
 desc: in its path.
 desc:  The chance to get a beam goes up with your character level.
 
-spell:Slow Monster:19:7:50:8
-effect:BOLT_STATUS:OLD_SLOW
-dice:20
-desc:Attempts to slow a single monster.
+spell:Polymorph Other:11:7:45:9
+effect:BOLT_STATUS:OLD_POLY
+dice:$B
+expr:B:PLAYER_LEVEL:+ 0
+desc:Attempts to polymorph a single monster.
 desc:  Uniques are not affected.
 
-spell:Tap Magical Energy (Reveal Monsters):20:2:50:8
+spell:Identify:11:7:25:6
+effect:IDENTIFY
+desc:Reveals the powers of an object.
+
+spell:Reveal Monsters:15:6:40:6
 effect:DETECT_INVISIBLE_MONSTERS
 dice:22d40
 effect:DETECT_VISIBLE_MONSTERS
 dice:22d40
 desc:Detects all monsters in the immediate area, for one turn only.
 
-book:magic book:[Sorcery and Evocations]:7:1
+spell:Acid Bolt:15:4:50:8
+effect:BOLT_OR_BEAM:ACID
+dice:$Dd8
+expr:D:PLAYER_LEVEL:- 5 / 4 + 8
+desc:Fires an acid bolt that always hits its target.
+desc:  Sometimes a beam is fired instead that hurts each monster
+desc: in its path.
+desc:  The chance to get a beam goes up with your character level.
 
-spell:Frost Ball:22:12:75:9
+spell:Slow Monster:17:9:50:7
+effect:BOLT_STATUS:OLD_SLOW
+dice:20
+desc:Attempts to slow a single monster.
+desc:  Uniques are not affected.
+
+book:magic book:[Sorcery and Evocations]:6:1
+
+spell:Frost Ball:19:6:55:8
 effect:BALL:COLD:2
 dice:$B
 expr:B:PLAYER_LEVEL:+ 30
 desc:Shoots a radius-2 frost ball.
 
-spell:Recharge Item II:23:10:75:11
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:+ 10
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Teleport Other:25:12:60:11
+spell:Teleport Other:23:12:60:8
 effect:BOLT_STATUS:AWAY_ALL
 dice:$B
 expr:B:MAX_SIGHT:* 5
 desc:Produces a bolt that teleports the first monster in its path
 desc: up to 100 squares away.
 
-spell:Haste Self:25:12:65:11
+spell:Haste Self:25:12:65:10
 effect:TIMED_INC:FAST:5
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
 desc:Hastes you (+10 to speed) for a level-dependant duration.
 
-spell:Fire Ball:29:16:65:12
+spell:Mass Sleep:25:7:50:6
+effect:PROJECT_LOS:OLD_SLEEP
+dice:$B
+expr:B:PLAYER_LEVEL:+ 0
+desc:Attempts to put to sleep each monster within line of sight.
+desc:  Uniques and monsters that resist confusion are not affected.
+
+spell:Fire Ball:26:9:65:12
 effect:BALL:FIRE:2
 dice:$B
 expr:B:PLAYER_LEVEL:+ 55
 desc:Shoots a radius-2 fire ball.
 
-spell:Hold Monsters (Treasure Detection):35:30:80:15
+spell:Treasure Detection:30:10:70:10
 effect:DETECT_GOLD
 dice:22d40
 effect:SENSE_OBJECTS
 dice:22d40
 desc:Detects all treasure in the immediate area.
 
-spell:Word of Destruction:37:30:80:15
-effect:DESTRUCTION
-param:15
-desc:Destroys everything in a 15-square radius circle around you.
-desc:  All monsters, objects, and terrain features in the area of
-desc: effect are destroyed, except stairs and permanent walls.
-desc:  You will also be blinded for 10+1d10 turns, unless you
-desc: have resistance to blindness or light.
-desc:  This spell has no effect when used in the town.
-
 book:magic book:[Resistances of Scarabtarices]:5:1
 
-spell:Resist Fire:21:5:50:20
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-desc:Grants you resistance to fire for 20+1d20 turns.
-
-spell:Resist Cold:21:5:50:20
+spell:Resist Cold:10:5:50:10
 effect:TIMED_INC:OPP_COLD
 dice:20+d20
 desc:Grants you resistance to cold for 20+1d20 turns.
 
-spell:Resist Acid:21:5:50:20
-effect:TIMED_INC:OPP_ACID
+spell:Resist Fire:10:5:50:10
+effect:TIMED_INC:OPP_FIRE
 dice:20+d20
-desc:Grants you resistance to acid for 20+1d20 turns.
+desc:Grants you resistance to fire for 20+1d20 turns.
 
-spell:Resist Poison:27:11:75:30
+spell:Resist Poison:25:10:45:20
 effect:TIMED_INC:OPP_POIS
 dice:20+d20
 desc:Grants you resistance to poison for 20+1d20 turns.
 
-spell:Resistance:35:22:85:50
+spell:Resistance:28:20:65:30
 effect:TIMED_INC:OPP_ACID
 dice:20+d20
 effect:TIMED_INC:OPP_ELEC
@@ -423,16 +407,12 @@ dice:20+d20
 desc:Grants you resistance to acid, cold, fire, lightning, and poison for
 desc: 20+1d20 turns.
 
-book:magic book:[Raal's Tome of Destruction]:9:1
+spell:Shield:32:24:75:30
+effect:TIMED_INC:SHIELD
+dice:30+d20
+desc:Grants you +50 to AC for 30+1d20 turns.
 
-spell:Acid Bolt:16:6:55:20
-effect:BOLT_OR_BEAM:ACID
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 10
-desc:Fires an acid bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
+book:magic book:[Raal's Tome of Destruction]:7:1
 
 spell:Shock Wave:16:5:40:6
 effect:BALL:SOUND:2
@@ -448,25 +428,25 @@ dice:$B
 expr:B:PLAYER_LEVEL:* 2 + 20
 desc:Shoots a radius-2 shards ball.
 
-spell:Cloud Kill:21:10:65:17
+spell:Cloud Kill:20:5:50:8
 effect:BALL:POIS:3
 dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 40
 desc:Shoots a radius-3 poison ball.
 
-spell:Acid Ball:27:15:70:22
+spell:Acid Ball:20:7:70:20
 effect:BALL:ACID:2
 dice:$B
 expr:B:PLAYER_LEVEL:+ 40
 desc:Shoots a radius-2 acid ball.
 
-spell:Ice Storm:33:23:70:35
+spell:Ice Storm:27:11:75:24
 effect:BALL:ICE:3
 dice:$B
 expr:B:PLAYER_LEVEL:* 2 + 50
 desc:Shoots a radius-3 cold ball.
 
-spell:Meteor Swarm:35:20:60:25
+spell:Meteor Swarm:30:14:85:34
 effect:SWARM:METEOR:1
 dice:$B+m$M
 expr:B:PLAYER_LEVEL:/ 2 + 30
@@ -479,41 +459,34 @@ desc: damage to each monster in its area of effect.
 desc:  If this kills the monster that blocked the path to the target
 desc: location, the next meteor may continue to find another target.
 
-spell:Rift:39:33:70:60
+spell:Rift:35:20:60:25
 effect:BEAM:GRAVITY
 dice:40+$Dd7
 expr:D:PLAYER_LEVEL:+ 0
 desc:Fires a gravity beam that hurts each monster in its path
 desc: and has a chance of teleporting it away.
 
-spell:Mana Storm:46:42:60:120
-effect:BALL:MANA:3
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 300
-desc:Shoots a radius-3 mana ball that does unresistable
-desc: damage to each monster in its area of effect.
+book:magic book:[Mordenkainen's Escapes]:5:1
 
-book:magic book:[Mordenkainen's Escapes]:6:1
-
-spell:Door Creation:12:4:20:16
+spell:Door Creation:13:9:40:12
 effect:TOUCH:MAKE_DOOR
 desc:A door is created on each empty floor space that is directly
 desc: adjacent to you.  These doors are closed, but not locked.
 
-spell:Stair Creation:16:8:40:20
+spell:Stair Creation:24:20:50:20
 effect:CREATE_STAIRS
 desc:A stair (going up or down, chosen at random) is created on the space
 desc: where you are standing.  This will destroy any terrain feature that
 desc: was there before.  It will also destroy all items currently on the
 desc: floor where the spell is cast.
 
-spell:Teleport Level:20:11:60:20
+spell:Teleport Level:28:17:65:20
 effect:TELEPORT_LEVEL
 desc:Teleports you 1 level up or 1 level down (chosen at random).
 desc:  This spell has no effect when the option to restrict the use of
 desc: stairs and recall is set.
 
-spell:Word of Recall:25:15:60:25
+spell:Word of Recall:30:25:75:15
 effect:RECALL
 desc:Teleports you from the dungeon to the town or from the town to the
 desc: deepest level you have visited in the dungeon.
@@ -533,34 +506,9 @@ desc:  Higher level monsters are more likely to break the glyph.
 desc:  The glyph will remain where it is, until a monster succeeds in
 desc: breaking it, or until you leave the level.
 
-spell:Dimension Door (Wonder):43:20:65:75
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
+book:magic book:[Tenser's Transformations]:2:1
 
-book:magic book:[Tenser's Transformations]:6:1
-
-spell:Clear Mind  (Turn Stone to Mud):18:0:50:22
-effect:LINE:KILL_WALL
-dice:20+1d30
-desc:Produces a beam that destroys the first section of wall it hits,
-desc: unless it is a permanent wall.  Each monster caught in the beam that
-desc: is susceptible to rock remover takes 20+1d30 points of damage.
-
-spell:Shield:30:8:75:30
-effect:TIMED_INC:SHIELD
-dice:30+d20
-desc:Grants you +50 to AC for 30+1d20 turns.
-
-spell:Elemental Brand:32:60:95:120
-effect:BRAND_AMMO
-desc:Brands one stack of ammunition with fire, cold, or poison
-desc: (selected at random) and at the same time attempts to improve
-desc: the to-hit bonus and the to-dam bonus of the same ammunition.
-desc:  The spell has no effect if the ammunition is already branded, has a
-desc: slay, is broken, or is cursed.
-
-spell:Recharge Item III:38:15:85:50
+spell:Greater Recharging:30:30:95:100
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:+ 50
@@ -570,30 +518,17 @@ desc: level and decrease with level of wand or staff and number of charges,
 desc: but are overall much better than for the spell Lesser Recharging.
 desc:  A failed attempt to recharge destroys one wand or staff from the stack.
 
-spell:Essence of Speed (Wonder):40:18:50:55
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
+spell:Elemental Brand:32:60:95:120
+effect:BRAND_AMMO
+desc:Brands one stack of ammunition with fire, cold, or poison
+desc: (selected at random) and at the same time attempts to improve
+desc: the to-hit bonus and the to-dam bonus of the same ammunition.
+desc:  The spell has no effect if the ammunition is already branded, has a
+desc: slay, is broken, or is cursed.
 
-spell:Strengthen Defenses (Wonder):44:24:75:90
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
+book:magic book:[Kelek's Grimoire of Power]:8:1
 
-book:magic book:[Kelek's Grimoire of Power]:10:1
-
-spell:Detect Evil:5:2:50:10
-effect:DETECT_EVIL
-dice:22d40
-desc:Detects all evil monsters in the immediate area,
-desc: for one turn only.
-
-spell:Detect Enchantment (Wonder):15:6:70:12
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
-
-spell:Earthquake:25:10:85:20
+spell:Earthquake:20:18:60:20
 effect:EARTHQUAKE
 param:10
 desc:Causes a 10-square radius earthquake around you.
@@ -627,21 +562,21 @@ desc:Removes all monsters represented by a chosen symbol from the level.
 desc:  Uniques are not affected.
 desc:  You take 1d4 points of damage for every monster removed.
 
-spell:Beguiling (Wonder):35:25:65:50
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
+spell:Word of Destruction:33:21:80:35
+effect:DESTRUCTION
+param:15
+desc:Destroys everything in a 15-square radius circle around you.
+desc:  All monsters, objects, and terrain features in the area of
+desc: effect are destroyed, except stairs and permanent walls.
+desc:  You will also be blinded for 10+1d10 turns, unless you
+desc: have resistance to blindness or light.
+desc:  This spell has no effect when used in the town.
 
 spell:Mass Banishment:35:75:90:100
 effect:MASS_BANISH
 desc:Removes all monsters within 20 squares of you.
 desc:  Uniques are not affected.
 desc:  You take 1d3 points of damage for every monster removed.
-
-spell:Starburst (Wonder):37:21:70:55
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
 
 spell:Chaos Strike:38:15:90:40
 effect:BOLT_OR_BEAM:CHAOS
@@ -651,6 +586,13 @@ desc:Fires a chaos bolt that always hits its target.
 desc:  Sometimes a beam is fired instead that hurts each monster
 desc: in its path.
 desc:  The chance to get a beam goes up with your character level.
+
+spell:Mana Storm:42:16:95:200
+effect:BALL:MANA:3
+dice:$B
+expr:B:PLAYER_LEVEL:* 2 + 300
+desc:Shoots a radius-3 mana ball that does unresistable
+desc: damage to each monster in its area of effect.
 
 
 ############### PRIEST ###############
@@ -1467,12 +1409,12 @@ info:4:30:20000:40
 attack:5:35:4
 equip:food:Ration of Food:1:3
 equip:light:Wooden Torch:1:3
-equip:nature book:[Call of the Wild]:1:1
+equip:magic book:[Magic for Beginners]:1:1
 equip:sword:Dagger:1:1
 equip:bow:Short Bow:1:1
 equip:arrow:Arrow:15:20
 equip:scroll:Word of Recall:1:1
-flags:EXTRA_SHOT | CHOOSE_SPELLS | PSEUDO_ID_IMPROV
+flags:CUMBER_GLOVE | EXTRA_SHOT | CHOOSE_SPELLS | PSEUDO_ID_IMPROV
 title:Runner
 title:Strider
 title:Scout
@@ -1484,9 +1426,9 @@ title:Pathfinder
 title:Ranger
 title:Ranger Lord
 
-magic:3:400:3:9
+magic:3:400:1:9
 
-book:nature book:[Call of the Wild]:7:3
+book:magic book:[Magic for Beginners]:7:1
 
 spell:Magic Missile:3:1:30:1
 effect:BOLT_OR_BEAM:MISSILE:-10
@@ -1543,7 +1485,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
 desc:Shoots a radius-2 poison ball.
 
-book:nature book:[Communion with Nature]:9:1
+book:magic book:[Conjurings and Tricks]:9:1
 
 spell:Confuse Monster:7:6:40:2
 effect:BOLT_AWARE:OLD_CONF
@@ -1600,7 +1542,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:nature book:[Gifts of Nature]:9:1
+book:magic book:[Incantations and Illusions]:9:1
 
 spell:Satisfy Hunger:17:17:55:3
 effect:SET_NOURISH
@@ -1666,7 +1608,7 @@ dice:20
 desc:Attempts to slow a single monster.
 desc:  Uniques are not affected.
 
-book:nature book:[Book of Combat]:6:1
+book:magic book:[Sorcery and Evocations]:6:1
 
 spell:Frost Ball:27:21:65:6
 effect:BALL:COLD:2
@@ -1707,7 +1649,7 @@ effect:SENSE_OBJECTS
 dice:22d40
 desc:Detects all treasure in the immediate area.
 
-book:nature book:[Radagast's Shapeshifts]:5:1
+book:magic book:[Resistances of Scarabtarices]:5:1
 
 spell:Resist Cold:8:15:50:30
 effect:TIMED_INC:OPP_COLD
@@ -1743,7 +1685,7 @@ effect:TIMED_INC:SHIELD
 dice:30+d20
 desc:Grants you +50 to AC for 30+1d20 turns.
 
-book:nature book:[Melian's Lore]:4:1
+book:magic book:[Raal's Tome of Destruction]:4:1
 
 spell:Cloud Kill:22:19:60:6
 effect:BALL:POIS:3
@@ -1776,7 +1718,7 @@ desc: damage to each monster in its area of effect.
 desc:  If this kills the monster that blocked the path to the target
 desc: location, the next meteor may continue to find another target.
 
-book:nature book:[Primal Forces]:5:1
+book:magic book:[Mordenkainen's Escapes]:5:1
 
 spell:Door Creation:20:17:20:25
 effect:TOUCH:MAKE_DOOR
@@ -1816,7 +1758,7 @@ desc:  Higher level monsters are more likely to break the glyph.
 desc:  The glyph will remain where it is, until a monster succeeds in
 desc: breaking it, or until you leave the level.
 
-book:nature book:[Bombadil's Songs]:6:1
+book:magic book:[Tenser's Transformations]:6:1
 
 spell:Heroism:18:15:30:40
 effect:HEAL_HP
@@ -1867,7 +1809,7 @@ desc: the to-hit bonus and the to-dam bonus of the same ammunition.
 desc:  The spell has no effect if the ammunition is already branded, has a
 desc: slay, is broken, or is cursed.
 
-book:nature book:[Spirit of Yavanna]:3:1
+book:magic book:[Kelek's Grimoire of Power]:3:1
 
 spell:Earthquake:30:28:60:16
 effect:EARTHQUAKE
@@ -2302,1260 +2244,3 @@ desc: effect are destroyed, except stairs and permanent walls.
 desc:  You will also be blinded for 10+1d10 turns, unless you
 desc: have resistance to blindness or light.
 desc:  This prayer has no effect when used in the town.
-
-############### DRUID ###############
-name:6:Druid
-stats:-2:-2:3:1:0
-skill-disarm:22:40
-skill-device:26:45
-skill-save:30:60
-skill-stealth:4:0
-skill-search:24:0
-skill-search-freq:16:0
-skill-melee:12:30
-skill-shoot:21:40
-skill-throw:20:15
-skill-dig:0:0
-info:0:30:360000:40
-attack:4:40:2
-equip:food:Ration of Food:1:3
-equip:light:Wooden Torch:1:3
-equip:nature book:[Call of the Wild]:1:1
-equip:potion:Neutralize Poison:1:1
-equip:potion:Cure Serious Wounds:1:1
-equip:scroll:Word of Recall:1:1
-flags:CHOOSE_SPELLS | ZERO_FAIL | PSEUDO_ID_IMPROV |
-title:Wanderer
-title:Tamer
-title:Nurturer
-title:Gardener
-title:Creator
-title:Earth Warder
-title:Windrider
-title:Stormwielder
-title:High Mystic
-title:Mystic Lord
-
-magic:1:300:3:9
-
-book:nature book:[Call of the Wild]:6:1
-
-spell:Magic Missile:1:1:22:4
-effect:BOLT_OR_BEAM:MISSILE:-10
-dice:$Dd4
-expr:D:PLAYER_LEVEL:- 1 / 5 + 3
-desc:Fires a magic missile that always hits its target and does
-desc: unresistable damage.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Detect Monsters:1:1:23:4
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all non-invisible monsters in the immediate area,
-desc: for one turn only.
-
-spell:Phase Door:1:2:24:4
-effect:TELEPORT
-dice:10
-desc:Teleports you randomly up to 10 squares away.
-
-spell:Light Area:1:2:26:4
-effect:LIGHT_AREA
-param:1:10
-dice:2d$S
-expr:S:PLAYER_LEVEL:/ 2
-desc:Lights up all squares in a level-dependant area, and hurts
-desc: all light-sensitive monsters in the area of effect.
-desc:  If you are in a room, the entire room will be lit up as well.
-
-spell:Find Traps, Doors & Stairs:3:3:25:2
-effect:DETECT_TRAPS
-dice:22d40
-effect:DETECT_DOORS
-dice:22d40
-effect:DETECT_STAIRS
-dice:22d40
-desc:Detects all traps, doors, and stairs in the immediate area.
-
-spell:Stinking Cloud:3:2:27:3
-effect:BALL:POIS:2
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 10
-desc:Shoots a radius-2 poison ball.
-
-book:nature book:[Communion with Nature]:9:1
-
-spell:Confuse Monster:5:4:30:4
-effect:BOLT_AWARE:OLD_CONF
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to confuse a single monster for a level-dependant duration.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Lightning Bolt:5:4:30:4
-effect:BEAM:ELEC
-dice:$Dd6
-expr:D:PLAYER_LEVEL:- 5 / 6 + 3
-desc:Fires a lightning beam that hurts each monster in its path.
-
-spell:Trap/Door Destruction:5:5:30:6
-effect:TOUCH:KILL_DOOR
-desc:Destroys all traps and doors within a 1-square radius of you.
-
-spell:Cure Poison:5:5:35:4
-effect:CURE:POISONED
-desc:Neutralizes poison.
-
-spell:Sleep Monster:7:5:30:4
-effect:BOLT_AWARE:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep a single monster.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Teleport Self:7:6:35:5
-effect:TELEPORT
-dice:$B
-expr:B:PLAYER_LEVEL:* 5
-desc:Teleports you randomly within the current level.
-
-spell:Spear of Light:7:6:30:5
-effect:LINE:LIGHT_WEAK
-dice:6d8
-desc:Fires a beam that lights up each square and hurts each
-desc: light-sensitive monster in its path.
-
-spell:Frost Bolt:7:3:40:6
-effect:BOLT_OR_BEAM:COLD:-10
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 5
-desc:Fires a frost bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Wonder:7:10:50:5
-effect:WONDER
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
-
-book:nature book:[Gifts of Nature]:9:1
-
-spell:Satisfy Hunger:9:7:45:8
-effect:SET_NOURISH
-dice:16999
-desc:Magically renders you well-fed (but not satiated).
-desc:  This will also cure a bloated stomach.
-
-spell:Lesser Recharging:9:7:75:10
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Turn Stone to Mud:9:7:44:8
-effect:LINE:KILL_WALL
-dice:20+1d30
-desc:Produces a beam that destroys the first section of wall it hits,
-desc: unless it is a permanent wall.  Each monster caught in the beam that
-desc: is susceptible to rock remover takes 20+1d30 points of damage.
-
-spell:Fire Bolt:10:3:50:7
-effect:BOLT_OR_BEAM:FIRE
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 6
-desc:Fires a fire bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Polymorph Other:11:7:45:9
-effect:BOLT_STATUS:OLD_POLY
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to polymorph a single monster.
-desc:  Uniques are not affected.
-
-spell:Identify:11:7:25:6
-effect:IDENTIFY
-desc:Reveals the powers of an object.
-
-spell:Reveal Monsters:15:6:40:6
-effect:DETECT_INVISIBLE_MONSTERS
-dice:22d40
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all monsters in the immediate area, for one turn only.
-
-spell:Acid Bolt:15:4:50:8
-effect:BOLT_OR_BEAM:ACID
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 8
-desc:Fires an acid bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Slow Monster:17:9:50:7
-effect:BOLT_STATUS:OLD_SLOW
-dice:20
-desc:Attempts to slow a single monster.
-desc:  Uniques are not affected.
-
-book:nature book:[Book of Combat]:6:1
-
-spell:Frost Ball:19:6:55:8
-effect:BALL:COLD:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 30
-desc:Shoots a radius-2 frost ball.
-
-spell:Teleport Other:23:12:60:8
-effect:BOLT_STATUS:AWAY_ALL
-dice:$B
-expr:B:MAX_SIGHT:* 5
-desc:Produces a bolt that teleports the first monster in its path
-desc: up to 100 squares away.
-
-spell:Haste Self:25:12:65:10
-effect:TIMED_INC:FAST:5
-dice:$B+d20
-expr:B:PLAYER_LEVEL:+ 0
-desc:Hastes you (+10 to speed) for a level-dependant duration.
-
-spell:Mass Sleep:25:7:50:6
-effect:PROJECT_LOS:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep each monster within line of sight.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Fire Ball:26:9:65:12
-effect:BALL:FIRE:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 55
-desc:Shoots a radius-2 fire ball.
-
-spell:Treasure Detection:30:10:70:10
-effect:DETECT_GOLD
-dice:22d40
-effect:SENSE_OBJECTS
-dice:22d40
-desc:Detects all treasure in the immediate area.
-
-book:nature book:[Radagast's Shapeshifts]:5:1
-
-spell:Resist Cold:10:5:50:10
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-desc:Grants you resistance to cold for 20+1d20 turns.
-
-spell:Resist Fire:10:5:50:10
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-desc:Grants you resistance to fire for 20+1d20 turns.
-
-spell:Resist Poison:25:10:45:20
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to poison for 20+1d20 turns.
-
-spell:Resistance:28:20:65:30
-effect:TIMED_INC:OPP_ACID
-dice:20+d20
-effect:TIMED_INC:OPP_ELEC
-dice:20+d20
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to acid, cold, fire, lightning, and poison for
-desc: 20+1d20 turns.
-
-spell:Shield:32:24:75:30
-effect:TIMED_INC:SHIELD
-dice:30+d20
-desc:Grants you +50 to AC for 30+1d20 turns.
-
-book:nature book:[Melian's Lore]:7:1
-
-spell:Shock Wave:16:5:40:6
-effect:BALL:SOUND:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 10
-desc:Shoots a radius-2 sound ball.
-desc:  Apart from doing sound damage, this also has a chance to stun
-desc: each monster in the area of effect.
-
-spell:Explosion:20:10:50:10
-effect:BALL:SHARD:2
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 20
-desc:Shoots a radius-2 shards ball.
-
-spell:Cloud Kill:20:5:50:8
-effect:BALL:POIS:3
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 40
-desc:Shoots a radius-3 poison ball.
-
-spell:Acid Ball:20:7:70:20
-effect:BALL:ACID:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 40
-desc:Shoots a radius-2 acid ball.
-
-spell:Ice Storm:27:11:75:24
-effect:BALL:ICE:3
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 50
-desc:Shoots a radius-3 cold ball.
-
-spell:Meteor Swarm:30:14:85:34
-effect:SWARM:METEOR:1
-dice:$B+m$M
-expr:B:PLAYER_LEVEL:/ 2 + 30
-expr:M:PLAYER_LEVEL:/ 20 + 2
-desc:Shoots a swarm of 3 or 4 meteors.
-desc:  Meteors will travel until hitting a wall, a monster,
-desc: or reaching the target location.
-desc:  Meteors will explode as a radius-1 ball that does unresistable
-desc: damage to each monster in its area of effect.
-desc:  If this kills the monster that blocked the path to the target
-desc: location, the next meteor may continue to find another target.
-
-spell:Rift:35:20:60:25
-effect:BEAM:GRAVITY
-dice:40+$Dd7
-expr:D:PLAYER_LEVEL:+ 0
-desc:Fires a gravity beam that hurts each monster in its path
-desc: and has a chance of teleporting it away.
-
-book:nature book:[Primal Forces]:5:1
-
-spell:Door Creation:13:9:40:12
-effect:TOUCH:MAKE_DOOR
-desc:A door is created on each empty floor space that is directly
-desc: adjacent to you.  These doors are closed, but not locked.
-
-spell:Stair Creation:24:20:50:20
-effect:CREATE_STAIRS
-desc:A stair (going up or down, chosen at random) is created on the space
-desc: where you are standing.  This will destroy any terrain feature that
-desc: was there before.  It will also destroy all items currently on the
-desc: floor where the spell is cast.
-
-spell:Teleport Level:28:17:65:20
-effect:TELEPORT_LEVEL
-desc:Teleports you 1 level up or 1 level down (chosen at random).
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set.
-
-spell:Word of Recall:30:25:75:15
-effect:RECALL
-desc:Teleports you from the dungeon to the town or from the town to the
-desc: deepest level you have visited in the dungeon.
-desc:  The recall effect is not immediate; it is delayed by 14+1d20 turns.
-desc:  During that delay, the spell can be canceled by invoking the spell
-desc: of recall again.
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set, unless Morgoth is dead.
-
-spell:Rune of Protection:36:60:70:40
-effect:RUNE
-desc:Inscribes a glyph of warding beneath you.
-desc:  Summoned monsters can't appear on the glyph.
-desc:  If a monster attempts to move onto the glyph or melee you while you
-desc: are standing on the glyph, it must first succeed in breaking the glyph.
-desc:  Higher level monsters are more likely to break the glyph.
-desc:  The glyph will remain where it is, until a monster succeeds in
-desc: breaking it, or until you leave the level.
-
-book:nature book:[Bombadil's Songs]:2:1
-
-spell:Greater Recharging:30:30:95:100
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:+ 50
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges,
-desc: but are overall much better than for the spell Lesser Recharging.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Elemental Brand:32:60:95:120
-effect:BRAND_AMMO
-desc:Brands one stack of ammunition with fire, cold, or poison
-desc: (selected at random) and at the same time attempts to improve
-desc: the to-hit bonus and the to-dam bonus of the same ammunition.
-desc:  The spell has no effect if the ammunition is already branded, has a
-desc: slay, is broken, or is cursed.
-
-book:nature book:[Spirit of Yavanna]:8:1
-
-spell:Earthquake:20:18:60:20
-effect:EARTHQUAKE
-param:10
-desc:Causes a 10-square radius earthquake around you.
-desc:  Earthquakes may damage monsters and destroy items in some
-desc: squares in the area of effect.
-desc:  Artifacts will not be destroyed by this spell.
-desc:  This spell has no effect when used in the town.
-
-spell:Bedlam:25:15:60:24
-effect:BALL:OLD_CONF:4
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Shoots a radius-4 confusion ball that doesn't cause physical
-desc: damage but has a chance to confuse each monster in the area of effect.
-desc:  Uniques or monsters that resist confusion are not affected.
-
-spell:Rend Soul:25:15:80:30
-effect:BOLT_OR_BEAM:NETHER
-param:4:1
-dice:11d$S
-expr:S:PLAYER_LEVEL:+ 0
-desc:Fires a nether bolt that always hits its target. Does
-desc: not affect undead.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Banishment:30:45:95:25
-effect:BANISH
-desc:Removes all monsters represented by a chosen symbol from the level.
-desc:  Uniques are not affected.
-desc:  You take 1d4 points of damage for every monster removed.
-
-spell:Word of Destruction:33:21:80:35
-effect:DESTRUCTION
-param:15
-desc:Destroys everything in a 15-square radius circle around you.
-desc:  All monsters, objects, and terrain features in the area of
-desc: effect are destroyed, except stairs and permanent walls.
-desc:  You will also be blinded for 10+1d10 turns, unless you
-desc: have resistance to blindness or light.
-desc:  This spell has no effect when used in the town.
-
-spell:Mass Banishment:35:75:90:100
-effect:MASS_BANISH
-desc:Removes all monsters within 20 squares of you.
-desc:  Uniques are not affected.
-desc:  You take 1d3 points of damage for every monster removed.
-
-spell:Chaos Strike:38:15:90:40
-effect:BOLT_OR_BEAM:CHAOS
-dice:13d$S
-expr:S:PLAYER_LEVEL:+ 0
-desc:Fires a chaos bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Mana Storm:42:16:95:200
-effect:BALL:MANA:3
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 300
-desc:Shoots a radius-3 mana ball that does unresistable
-desc: damage to each monster in its area of effect.
-
-############### NECROMANCER ###############
-name:7:Necromancer
-stats:-2:3:-2:1:0
-skill-disarm:14:30
-skill-device:32:50
-skill-save:25:40
-skill-stealth:2:0
-skill-search:14:0
-skill-search-freq:6:0
-skill-melee:10:30
-skill-shoot:15:30
-skill-throw:20:15
-skill-dig:0:0
-info:0:30:180000:5
-attack:4:40:2
-equip:food:Ration of Food:1:3
-equip:light:Wooden Torch:1:3
-equip:necromancy book:[Beginner's Curses]:1:1
-equip:cloak:Cloak:1:1
-equip:hafted:Whip:1:1
-equip:scroll:Word of Recall:1:1
-flags:CUMBER_GLOVE | ZERO_FAIL | BEAM | CHOOSE_SPELLS
-title:Acolyte
-title:Curser
-title:Dark Student
-title:Initiate
-title:Slavemaster
-title:Summoner
-title:Controller
-title:Commander
-title:Dark Master
-title:Night Lord
-
-magic:1:300:4:9
-
-book:necromancy book:[Beginner's Curses]:6:1
-
-spell:Magic Missile:1:1:22:4
-effect:BOLT_OR_BEAM:MISSILE:-10
-dice:$Dd4
-expr:D:PLAYER_LEVEL:- 1 / 5 + 3
-desc:Fires a magic missile that always hits its target and does
-desc: unresistable damage.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Detect Monsters:1:1:23:4
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all non-invisible monsters in the immediate area,
-desc: for one turn only.
-
-spell:Phase Door:1:2:24:4
-effect:TELEPORT
-dice:10
-desc:Teleports you randomly up to 10 squares away.
-
-spell:Light Area:1:2:26:4
-effect:LIGHT_AREA
-param:1:10
-dice:2d$S
-expr:S:PLAYER_LEVEL:/ 2
-desc:Lights up all squares in a level-dependant area, and hurts
-desc: all light-sensitive monsters in the area of effect.
-desc:  If you are in a room, the entire room will be lit up as well.
-
-spell:Find Traps, Doors & Stairs:3:3:25:2
-effect:DETECT_TRAPS
-dice:22d40
-effect:DETECT_DOORS
-dice:22d40
-effect:DETECT_STAIRS
-dice:22d40
-desc:Detects all traps, doors, and stairs in the immediate area.
-
-spell:Stinking Cloud:3:2:27:3
-effect:BALL:POIS:2
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 10
-desc:Shoots a radius-2 poison ball.
-
-book:necromancy book:[Dark Initiation]:9:1
-
-spell:Confuse Monster:5:4:30:4
-effect:BOLT_AWARE:OLD_CONF
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to confuse a single monster for a level-dependant duration.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Lightning Bolt:5:4:30:4
-effect:BEAM:ELEC
-dice:$Dd6
-expr:D:PLAYER_LEVEL:- 5 / 6 + 3
-desc:Fires a lightning beam that hurts each monster in its path.
-
-spell:Trap/Door Destruction:5:5:30:6
-effect:TOUCH:KILL_DOOR
-desc:Destroys all traps and doors within a 1-square radius of you.
-
-spell:Cure Poison:5:5:35:4
-effect:CURE:POISONED
-desc:Neutralizes poison.
-
-spell:Sleep Monster:7:5:30:4
-effect:BOLT_AWARE:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep a single monster.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Teleport Self:7:6:35:5
-effect:TELEPORT
-dice:$B
-expr:B:PLAYER_LEVEL:* 5
-desc:Teleports you randomly within the current level.
-
-spell:Spear of Light:7:6:30:5
-effect:LINE:LIGHT_WEAK
-dice:6d8
-desc:Fires a beam that lights up each square and hurts each
-desc: light-sensitive monster in its path.
-
-spell:Frost Bolt:7:3:40:6
-effect:BOLT_OR_BEAM:COLD:-10
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 5
-desc:Fires a frost bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Wonder:7:10:50:5
-effect:WONDER
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
-
-book:necromancy book:[Blood Novitiate]:9:1
-
-spell:Satisfy Hunger:9:7:45:8
-effect:SET_NOURISH
-dice:16999
-desc:Magically renders you well-fed (but not satiated).
-desc:  This will also cure a bloated stomach.
-
-spell:Lesser Recharging:9:7:75:10
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Turn Stone to Mud:9:7:44:8
-effect:LINE:KILL_WALL
-dice:20+1d30
-desc:Produces a beam that destroys the first section of wall it hits,
-desc: unless it is a permanent wall.  Each monster caught in the beam that
-desc: is susceptible to rock remover takes 20+1d30 points of damage.
-
-spell:Fire Bolt:10:3:50:7
-effect:BOLT_OR_BEAM:FIRE
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 6
-desc:Fires a fire bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Polymorph Other:11:7:45:9
-effect:BOLT_STATUS:OLD_POLY
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to polymorph a single monster.
-desc:  Uniques are not affected.
-
-spell:Identify:11:7:25:6
-effect:IDENTIFY
-desc:Reveals the powers of an object.
-
-spell:Reveal Monsters:15:6:40:6
-effect:DETECT_INVISIBLE_MONSTERS
-dice:22d40
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all monsters in the immediate area, for one turn only.
-
-spell:Acid Bolt:15:4:50:8
-effect:BOLT_OR_BEAM:ACID
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 8
-desc:Fires an acid bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Slow Monster:17:9:50:7
-effect:BOLT_STATUS:OLD_SLOW
-dice:20
-desc:Attempts to slow a single monster.
-desc:  Uniques are not affected.
-
-book:necromancy book:[Frightful Realms]:6:1
-
-spell:Frost Ball:19:6:55:8
-effect:BALL:COLD:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 30
-desc:Shoots a radius-2 frost ball.
-
-spell:Teleport Other:23:12:60:8
-effect:BOLT_STATUS:AWAY_ALL
-dice:$B
-expr:B:MAX_SIGHT:* 5
-desc:Produces a bolt that teleports the first monster in its path
-desc: up to 100 squares away.
-
-spell:Haste Self:25:12:65:10
-effect:TIMED_INC:FAST:5
-dice:$B+d20
-expr:B:PLAYER_LEVEL:+ 0
-desc:Hastes you (+10 to speed) for a level-dependant duration.
-
-spell:Mass Sleep:25:7:50:6
-effect:PROJECT_LOS:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep each monster within line of sight.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Fire Ball:26:9:65:12
-effect:BALL:FIRE:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 55
-desc:Shoots a radius-2 fire ball.
-
-spell:Treasure Detection:30:10:70:10
-effect:DETECT_GOLD
-dice:22d40
-effect:SENSE_OBJECTS
-dice:22d40
-desc:Detects all treasure in the immediate area.
-
-book:necromancy book:[Mysteries of Angmar]:5:1
-
-spell:Resist Cold:10:5:50:10
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-desc:Grants you resistance to cold for 20+1d20 turns.
-
-spell:Resist Fire:10:5:50:10
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-desc:Grants you resistance to fire for 20+1d20 turns.
-
-spell:Resist Poison:25:10:45:20
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to poison for 20+1d20 turns.
-
-spell:Resistance:28:20:65:30
-effect:TIMED_INC:OPP_ACID
-dice:20+d20
-effect:TIMED_INC:OPP_ELEC
-dice:20+d20
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to acid, cold, fire, lightning, and poison for
-desc: 20+1d20 turns.
-
-spell:Shield:32:24:75:30
-effect:TIMED_INC:SHIELD
-dice:30+d20
-desc:Grants you +50 to AC for 30+1d20 turns.
-
-book:necromancy book:[Unholy Protection]:7:1
-
-spell:Shock Wave:16:5:40:6
-effect:BALL:SOUND:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 10
-desc:Shoots a radius-2 sound ball.
-desc:  Apart from doing sound damage, this also has a chance to stun
-desc: each monster in the area of effect.
-
-spell:Explosion:20:10:50:10
-effect:BALL:SHARD:2
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 20
-desc:Shoots a radius-2 shards ball.
-
-spell:Cloud Kill:20:5:50:8
-effect:BALL:POIS:3
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 40
-desc:Shoots a radius-3 poison ball.
-
-spell:Acid Ball:20:7:70:20
-effect:BALL:ACID:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 40
-desc:Shoots a radius-2 acid ball.
-
-spell:Ice Storm:27:11:75:24
-effect:BALL:ICE:3
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 50
-desc:Shoots a radius-3 cold ball.
-
-spell:Meteor Swarm:30:14:85:34
-effect:SWARM:METEOR:1
-dice:$B+m$M
-expr:B:PLAYER_LEVEL:/ 2 + 30
-expr:M:PLAYER_LEVEL:/ 20 + 2
-desc:Shoots a swarm of 3 or 4 meteors.
-desc:  Meteors will travel until hitting a wall, a monster,
-desc: or reaching the target location.
-desc:  Meteors will explode as a radius-1 ball that does unresistable
-desc: damage to each monster in its area of effect.
-desc:  If this kills the monster that blocked the path to the target
-desc: location, the next meteor may continue to find another target.
-
-spell:Rift:35:20:60:25
-effect:BEAM:GRAVITY
-dice:40+$Dd7
-expr:D:PLAYER_LEVEL:+ 0
-desc:Fires a gravity beam that hurts each monster in its path
-desc: and has a chance of teleporting it away.
-
-book:necromancy book:[Life Force Mastery]:5:1
-
-spell:Door Creation:13:9:40:12
-effect:TOUCH:MAKE_DOOR
-desc:A door is created on each empty floor space that is directly
-desc: adjacent to you.  These doors are closed, but not locked.
-
-spell:Stair Creation:24:20:50:20
-effect:CREATE_STAIRS
-desc:A stair (going up or down, chosen at random) is created on the space
-desc: where you are standing.  This will destroy any terrain feature that
-desc: was there before.  It will also destroy all items currently on the
-desc: floor where the spell is cast.
-
-spell:Teleport Level:28:17:65:20
-effect:TELEPORT_LEVEL
-desc:Teleports you 1 level up or 1 level down (chosen at random).
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set.
-
-spell:Word of Recall:30:25:75:15
-effect:RECALL
-desc:Teleports you from the dungeon to the town or from the town to the
-desc: deepest level you have visited in the dungeon.
-desc:  The recall effect is not immediate; it is delayed by 14+1d20 turns.
-desc:  During that delay, the spell can be canceled by invoking the spell
-desc: of recall again.
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set, unless Morgoth is dead.
-
-spell:Rune of Protection:36:60:70:40
-effect:RUNE
-desc:Inscribes a glyph of warding beneath you.
-desc:  Summoned monsters can't appear on the glyph.
-desc:  If a monster attempts to move onto the glyph or melee you while you
-desc: are standing on the glyph, it must first succeed in breaking the glyph.
-desc:  Higher level monsters are more likely to break the glyph.
-desc:  The glyph will remain where it is, until a monster succeeds in
-desc: breaking it, or until you leave the level.
-
-book:necromancy book:[Metamorphoses]:2:1
-
-spell:Greater Recharging:30:30:95:100
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:+ 50
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges,
-desc: but are overall much better than for the spell Lesser Recharging.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Elemental Brand:32:60:95:120
-effect:BRAND_AMMO
-desc:Brands one stack of ammunition with fire, cold, or poison
-desc: (selected at random) and at the same time attempts to improve
-desc: the to-hit bonus and the to-dam bonus of the same ammunition.
-desc:  The spell has no effect if the ammunition is already branded, has a
-desc: slay, is broken, or is cursed.
-
-book:necromancy book:[Necronomicon]:8:1
-
-spell:Earthquake:20:18:60:20
-effect:EARTHQUAKE
-param:10
-desc:Causes a 10-square radius earthquake around you.
-desc:  Earthquakes may damage monsters and destroy items in some
-desc: squares in the area of effect.
-desc:  Artifacts will not be destroyed by this spell.
-desc:  This spell has no effect when used in the town.
-
-spell:Bedlam:25:15:60:24
-effect:BALL:OLD_CONF:4
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Shoots a radius-4 confusion ball that doesn't cause physical
-desc: damage but has a chance to confuse each monster in the area of effect.
-desc:  Uniques or monsters that resist confusion are not affected.
-
-spell:Rend Soul:25:15:80:30
-effect:BOLT_OR_BEAM:NETHER
-param:4:1
-dice:11d$S
-expr:S:PLAYER_LEVEL:+ 0
-desc:Fires a nether bolt that always hits its target. Does
-desc: not affect undead.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Banishment:30:45:95:25
-effect:BANISH
-desc:Removes all monsters represented by a chosen symbol from the level.
-desc:  Uniques are not affected.
-desc:  You take 1d4 points of damage for every monster removed.
-
-spell:Word of Destruction:33:21:80:35
-effect:DESTRUCTION
-param:15
-desc:Destroys everything in a 15-square radius circle around you.
-desc:  All monsters, objects, and terrain features in the area of
-desc: effect are destroyed, except stairs and permanent walls.
-desc:  You will also be blinded for 10+1d10 turns, unless you
-desc: have resistance to blindness or light.
-desc:  This spell has no effect when used in the town.
-
-spell:Mass Banishment:35:75:90:100
-effect:MASS_BANISH
-desc:Removes all monsters within 20 squares of you.
-desc:  Uniques are not affected.
-desc:  You take 1d3 points of damage for every monster removed.
-
-spell:Chaos Strike:38:15:90:40
-effect:BOLT_OR_BEAM:CHAOS
-dice:13d$S
-expr:S:PLAYER_LEVEL:+ 0
-desc:Fires a chaos bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Mana Storm:42:16:95:200
-effect:BALL:MANA:3
-dice:$B
-expr:B:PLAYER_LEVEL:* 2 + 300
-desc:Shoots a radius-3 mana ball that does unresistable
-desc: damage to each monster in its area of effect.
-
-############### ASSASSIN ###############
-name:8:Assassin
-stats:2:1:-3:2:0
-skill-disarm:35:70
-skill-device:26:50
-skill-save:20:40
-skill-stealth:5:0
-skill-search:30:10
-skill-search-freq:22:10
-skill-melee:20:85
-skill-shoot:29:80
-skill-throw:66:30
-skill-dig:0:0
-info:4:25:25000:40
-attack:5:30:4
-equip:food:Ration of Food:1:3
-equip:light:Wooden Torch:1:3
-equip:necromancy book:[Beginner's Curses]:1:1
-equip:sword:Main Gauche:1:1
-equip:bow:Sling:1:1
-equip:shot:Iron Shot:15:20
-equip:scroll:Word of Recall:1:1
-flags:CUMBER_GLOVE | CHOOSE_SPELLS | PSEUDO_ID_IMPROV
-title:Trainee
-title:Myrmidon
-title:Initiate
-title:Knifer
-title:Bladesman
-title:Hashishin
-title:Black Dagger
-title:Shadowstrike
-title:Assassinator
-title:Death Lord
-
-magic:5:350:4:9
-
-book:necromancy book:[Beginner's Curses]:6:1
-
-spell:Detect Monsters:5:1:50:1
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all non-invisible monsters in the immediate area,
-desc: for one turn only.
-
-spell:Phase Door:7:2:55:1
-effect:TELEPORT
-dice:10
-desc:Teleports you randomly up to 10 squares away.
-
-spell:Light Area:9:3:60:1
-effect:LIGHT_AREA
-param:1:10
-dice:2d$S
-expr:S:PLAYER_LEVEL:/ 2
-desc:Lights up all squares in a level-dependant area, and hurts
-desc: all light-sensitive monsters in the area of effect.
-desc:  If you are in a room, the entire room will be lit up as well.
-
-spell:Object Detection:10:3:60:1
-effect:DETECT_GOLD
-dice:22d40
-effect:DETECT_OBJECTS
-dice:22d40
-desc:Detects all objects in the immediate area.
-
-spell:Find Traps, Doors & Stairs:8:3:50:1
-effect:DETECT_TRAPS
-dice:22d40
-effect:DETECT_DOORS
-dice:22d40
-effect:DETECT_STAIRS
-dice:22d40
-desc:Detects all traps, doors, and stairs in the immediate area.
-
-spell:Stinking Cloud:21:12:50:10
-effect:BALL:POIS:2
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 10
-desc:Shoots a radius-2 poison ball.
-
-book:necromancy book:[Dark Initiation]:7:1
-
-spell:Confuse Monster:15:6:75:1
-effect:BOLT_AWARE:OLD_CONF
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to confuse a single monster for a level-dependant duration.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Trap/Door Destruction:14:7:60:2
-effect:TOUCH:KILL_DOOR
-desc:Destroys all traps and doors within a 1-square radius of you.
-
-spell:Cure Poison:21:9:90:1
-effect:CURE:POISONED
-desc:Neutralizes poison.
-
-spell:Sleep Monster:19:8:85:1
-effect:BOLT_AWARE:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep a single monster.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Teleport Self:22:9:50:1
-effect:TELEPORT
-dice:$B
-expr:B:PLAYER_LEVEL:* 5
-desc:Teleports you randomly within the current level.
-
-spell:Spear of Light:23:10:95:1
-effect:LINE:LIGHT_WEAK
-dice:6d8
-desc:Fires a beam that lights up each square and hurts each
-desc: light-sensitive monster in its path.
-
-spell:Wonder:20:10:70:20
-effect:WONDER
-dice:$B+1d100
-expr:B:PLAYER_LEVEL:/ 5
-desc:Invokes a random spell effect.
-
-book:necromancy book:[Blood Novitiate]:6:1
-
-spell:Satisfy Hunger:25:12:95:1
-effect:SET_NOURISH
-dice:16999
-desc:Magically renders you well-fed (but not satiated).
-desc:  This will also cure a bloated stomach.
-
-spell:Lesser Recharging:27:15:99:1
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Turn Stone to Mud:24:11:70:1
-effect:LINE:KILL_WALL
-dice:20+1d30
-desc:Produces a beam that destroys the first section of wall it hits,
-desc: unless it is a permanent wall.  Each monster caught in the beam that
-desc: is susceptible to rock remover takes 20+1d30 points of damage.
-
-spell:Identify:18:18:60:2
-effect:IDENTIFY
-desc:Reveals the powers of an object.
-
-spell:Reveal Monsters:20:11:50:4
-effect:DETECT_INVISIBLE_MONSTERS
-dice:22d40
-effect:DETECT_VISIBLE_MONSTERS
-dice:22d40
-desc:Detects all monsters in the immediate area, for one turn only.
-
-spell:Slow Monster:28:20:70:2
-effect:BOLT_STATUS:OLD_SLOW
-dice:20
-desc:Attempts to slow a single monster.
-desc:  Uniques are not affected.
-
-book:necromancy book:[Frightful Realms]:3:1
-
-spell:Teleport Other:31:25:70:3
-effect:BOLT_STATUS:AWAY_ALL
-dice:$B
-expr:B:MAX_SIGHT:* 5
-desc:Produces a bolt that teleports the first monster in its path
-desc: up to 100 squares away.
-
-spell:Haste Self:32:25:70:6
-effect:TIMED_INC:FAST:5
-dice:$B+d20
-expr:B:PLAYER_LEVEL:+ 0
-desc:Hastes you (+10 to speed) for a level-dependant duration.
-
-spell:Mass Sleep:24:15:80:10
-effect:PROJECT_LOS:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep each monster within line of sight.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-book:necromancy book:[Mysteries of Angmar]:5:1
-
-spell:Resist Cold:16:12:50:40
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-desc:Grants you resistance to cold for 20+1d20 turns.
-
-spell:Resist Fire:19:12:50:40
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-desc:Grants you resistance to fire for 20+1d20 turns.
-
-spell:Resist Poison:30:25:75:60
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to poison for 20+1d20 turns.
-
-spell:Resistance:31:30:85:80
-effect:TIMED_INC:OPP_ACID
-dice:20+d20
-effect:TIMED_INC:OPP_ELEC
-dice:20+d20
-effect:TIMED_INC:OPP_COLD
-dice:20+d20
-effect:TIMED_INC:OPP_FIRE
-dice:20+d20
-effect:TIMED_INC:OPP_POIS
-dice:20+d20
-desc:Grants you resistance to acid, cold, fire, lightning, and poison for
-desc: 20+1d20 turns.
-
-spell:Shield:34:20:75:80
-effect:TIMED_INC:SHIELD
-dice:30+d20
-desc:Grants you +50 to AC for 30+1d20 turns.
-
-book:necromancy book:[Unholy Protection]:2:1
-
-spell:Shock Wave:35:25:80:50
-effect:BALL:SOUND:2
-dice:$B
-expr:B:PLAYER_LEVEL:+ 10
-desc:Shoots a radius-2 sound ball.
-desc:  Apart from doing sound damage, this also has a chance to stun
-desc: each monster in the area of effect.
-
-spell:Cloud Kill:25:20:60:15
-effect:BALL:POIS:3
-dice:$B
-expr:B:PLAYER_LEVEL:/ 2 + 40
-desc:Shoots a radius-3 poison ball.
-
-book:necromancy book:[Life Force Mastery]:4:1
-
-spell:Door Creation:17:7:30:15
-effect:TOUCH:MAKE_DOOR
-desc:A door is created on each empty floor space that is directly
-desc: adjacent to you.  These doors are closed, but not locked.
-
-spell:Stair Creation:25:12:40:25
-effect:CREATE_STAIRS
-desc:A stair (going up or down, chosen at random) is created on the space
-desc: where you are standing.  This will destroy any terrain feature that
-desc: was there before.  It will also destroy all items currently on the
-desc: floor where the spell is cast.
-
-spell:Teleport Level:25:20:60:20
-effect:TELEPORT_LEVEL
-desc:Teleports you 1 level up or 1 level down (chosen at random).
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set.
-
-spell:Word of Recall:36:40:80:18
-effect:RECALL
-desc:Teleports you from the dungeon to the town or from the town to the
-desc: deepest level you have visited in the dungeon.
-desc:  The recall effect is not immediate; it is delayed by 14+1d20 turns.
-desc:  During that delay, the spell can be canceled by invoking the spell
-desc: of recall again.
-desc:  This spell has no effect when the option to restrict the use of
-desc: stairs and recall is set, unless Morgoth is dead.
-
-book:necromancy book:[Metamorphoses]:6:1
-
-spell:Heroism:26:15:30:40
-effect:HEAL_HP
-dice:10
-effect:CURE:AFRAID
-effect:TIMED_INC:HERO
-dice:25+d25
-desc:Cures 10 points of damage, removes fear and grants you heroism
-desc: (resistance to fear, and a bonus of +12 to-hit) for 25+1d25 turns.
-
-spell:Berserker:28:20:60:60
-effect:HEAL_HP
-dice:30
-effect:CURE:AFRAID
-effect:TIMED_INC:SHERO
-dice:25+d25
-desc:Cures 30 points of damage, removes fear, and grants you berserk
-desc: strength (resistance to fear, a bonus of +24 to-hit, and a penalty
-desc: of -10 to AC) for 25+1d25 turns.
-
-spell:Enchant Armor:31:50:95:90
-effect:ENCHANT:TOAC
-dice:$B+1d3
-expr:B:PLAYER_LEVEL:/ 20 - 1
-desc:Attempts to improve the armour class bonus of a piece of armour.
-
-spell:Enchant Weapon:33:55:90:90
-effect:ENCHANT:TOBOTH
-dice:$B+1d4
-expr:B:PLAYER_LEVEL:/ 20 - 1
-desc:Attempts to improve the to-hit bonus and the to-dam bonus of a weapon.
-
-spell:Greater Recharging:35:40:95:100
-effect:RECHARGE
-dice:$B
-expr:B:PLAYER_LEVEL:+ 50
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges,
-desc: but are overall much better than for the spell Lesser Recharging.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Elemental Brand:37:60:80:120
-effect:BRAND_AMMO
-desc:Brands one stack of ammunition with fire, cold, or poison
-desc: (selected at random) and at the same time attempts to improve
-desc: the to-hit bonus and the to-dam bonus of the same ammunition.
-desc:  The spell has no effect if the ammunition is already branded, has a
-desc: slay, is broken, or is cursed.
-
-book:necromancy book:[Necronomicon]:1:1
-
-spell:Bedlam:29:20:70:20
-effect:BALL:OLD_CONF:4
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Shoots a radius-4 confusion ball that doesn't cause physical
-desc: damage but has a chance to confuse each monster in the area of effect.
-desc:  Uniques or monsters that resist confusion are not affected.
-
