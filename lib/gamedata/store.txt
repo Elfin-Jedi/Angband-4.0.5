@@ -151,7 +151,6 @@ normal:potion:Heroism
 normal:potion:Neutralize Poison
 normal:potion:Cure Serious Wounds
 normal:potion:Cure Critical Wounds
-buy:prayer book
 buy:scroll
 buy:potion
 buy:hafted
@@ -212,7 +211,6 @@ normal:staff:Light
 normal:staff:Mapping
 normal:staff:Detect Invisible
 normal:staff:Detect Evil
-buy:magic book
 buy:amulet
 buy:ring
 buy:staff
@@ -241,7 +239,7 @@ owner:15000:Skinbark of Mistwood (Ent)
 owner:20000:Gabbaram the Sage (Gnome)
 owner:20000:Bilbo the Tome-master (Hobbit)
 owner:25000:Silmarian the Joyous (Dunadan)
-slots:6:10
+slots:6:18
 turnover:9
 normal:magic book:[Magic for Beginners]
 normal:magic book:[Conjurings and Tricks]
