@@ -239,21 +239,21 @@ owner:15000:Skinbark of Mistwood (Ent)
 owner:20000:Gabbaram the Sage (Gnome)
 owner:20000:Bilbo the Tome-master (Hobbit)
 owner:25000:Silmarian the Joyous (Dunadan)
-slots:6:18
+slots:6:12
 turnover:9
-normal:magic book:[Magic for Beginners]
+always:magic book:[Magic for Beginners]
 normal:magic book:[Conjurings and Tricks]
 normal:magic book:[Incantations and Illusions]
 normal:magic book:[Sorcery and Evocations]
-normal:prayer book:[Beginners Handbook]
+always:prayer book:[Beginners Handbook]
 normal:prayer book:[Words of Wisdom]
 normal:prayer book:[Chants and Blessings]
 normal:prayer book:[Exorcism and Dispelling]
-normal:nature book:[Call of the Wild]
+always:nature book:[Call of the Wild]
 normal:nature book:[Communion with Nature]
 normal:nature book:[Gifts of Nature]
 normal:nature book:[Book of Combat]
-normal:necromancy book:[Beginner's Curses]
+always:necromancy book:[Beginner's Curses]
 normal:necromancy book:[Dark Initiation]
 normal:necromancy book:[Blood Novitiate]
 normal:necromancy book:[Frightful Realms]
