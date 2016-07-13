@@ -683,7 +683,7 @@ phrase:pure white hair
 chart:73:74:80:50
 phrase:pale yellow hair 
 chart:73:74:90:50
-phrase:grey-white hair
+phrase:grey-white hair 
 chart:73:74:100:50
 phrase:pale brown hair 
 
