@@ -1452,6 +1452,8 @@ static tval_desc sval_dependent[] =
 	{ TV_MUSHROOM,		"Mushrooms" },
 	{ TV_MAGIC_BOOK,	"Magic books" },
 	{ TV_PRAYER_BOOK,	"Prayer books" },
+	{ TV_NATURE_BOOK,	"Nature books"},
+	{ TV_NECROMANCY_BOOK, "Necrromancy books"},
 	{ TV_LIGHT,			"Lights" },
 	{ TV_FLASK,			"Flasks of oil" },
 	{ TV_GOLD,			"Money" },
@@ -1602,6 +1604,8 @@ static bool sval_menu(int tval, const char *desc)
 		case TV_LIGHT:
 		case TV_MAGIC_BOOK:
 		case TV_PRAYER_BOOK:
+		case TV_NATURE_BOOK:
+		case TV_NECROMANCY_BOOK:
 		case TV_DRAG_ARMOR:
 		case TV_GOLD:
 			/* leave sorted by sval */
