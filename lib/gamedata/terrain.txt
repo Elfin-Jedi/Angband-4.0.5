@@ -179,7 +179,7 @@ desc:A shop lined with shelves of mystical tomes.
 name:16:secret door
 graphics:#:w
 priority:10
-mimic:21
+mimic:22
 flags:WALL | ROCK | DOOR_ANY | GRANITE
 desc:A door that appears like a granite wall to untrained eyes.
 
