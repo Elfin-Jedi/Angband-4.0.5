@@ -619,7 +619,7 @@ effect:MON_TIMED_INC:INVISIBLE
 dice:50
 power:40
 lore:make self invisible
-message-vis:{name} disappears.
+message-vis:{name} tries to become invisible.
 
 name:HEAL
 hit:100
