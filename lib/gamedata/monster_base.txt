@@ -61,9 +61,9 @@ desc:Ainu/maia
 name:ant
 glyph:a
 pain:7
-flags:ANIMAL | WEIRD_MIND
+flags:WEIRD_MIND
 flags:BASH_DOOR
-#flags:INSECT
+flags:INSECT
 desc:Ant
 
 name:bat
@@ -87,8 +87,8 @@ desc:Canine (Dog)
 name:centipede
 glyph:c
 pain:5
-flags:ANIMAL | WEIRD_MIND
-#flags:INSECT
+flags:WEIRD_MIND
+flags:INSECT
 desc:Centipede
 
 name:creeping coins
@@ -161,7 +161,7 @@ desc:Golem
 name:humanoid
 glyph:h
 pain:1
-flags:OPEN_DOOR | BASH_DOOR
+flags:OPEN_DOOR | BASH_DOOR | HUMANOID
 desc:Hobbit/Elf/Dwarf
 
 name:hybrid
@@ -187,9 +187,9 @@ desc:Icky Thing
 name:insect
 glyph:I
 pain:7
-flags:ANIMAL | WEIRD_MIND 
+flags:WEIRD_MIND 
 flags:RAND_25 | RAND_50
-#flags:INSECT
+flags:INSECT
 desc:Insect
 
 name:jelly
@@ -202,9 +202,9 @@ desc:Jelly
 name:killer beetle
 glyph:K
 pain:7
-flags:ANIMAL | WEIRD_MIND
+flags:WEIRD_MIND
 flags:BASH_DOOR
-#flags:INSECT
+flags:INSECT
 desc:Killer Beetle
 
 name:goblin
@@ -275,7 +275,7 @@ glyph:m
 pain:2
 flags:NEVER_MOVE
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
-#flags:PLANT
+flags:PLANT
 desc:Mold
 
 name:mushroom
@@ -283,7 +283,7 @@ glyph:,
 pain:2
 flags:EMPTY_MIND | STUPID
 flags:HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
-#flags:PLANT
+flags:PLANT
 desc:Mushroom
 
 name:naga
@@ -317,15 +317,15 @@ desc:Orc
 name:person
 glyph:p
 pain:1
-flags:BASH_DOOR
+flags:BASH_DOOR | HUMANOID
 desc:Person/Human
 
 name:plant
 glyph:;
 pain:2
-flags:NEVER_MOVE | EMPTY_MIND | IM_POIS |
+flags:EMPTY_MIND | IM_POIS |
 flags:NO_FEAR | NO_CONF | NO_SLEEP
-#flags:PLANT
+flags:PLANT
 desc:Plant
 
 name:quadruped
@@ -373,12 +373,13 @@ name:spider
 glyph:S
 pain:7
 flags:BASH_DOOR
-#flags:INSECT
+flags:INSECT
 desc:Spider/Scorpion/Tick
 
 name:townsfolk
 glyph:t
 pain:4
+flags:HUMANOID
 desc:Townsfolk
 
 name:tree
@@ -386,7 +387,7 @@ glyph::
 pain:2
 flags:NEVER_MOVE | EMPTY_MIND | IM_POIS |
 flags:NO_FEAR | NO_CONF | NO_SLEEP
-#flags:PLANT 
+flags:PLANT 
 desc:Tree
 
 name:troll
@@ -419,8 +420,7 @@ desc:Vortex
 name:worm
 glyph:w
 pain:1
-flags:ANIMAL
-#flags:INSECT
+flags:INSECT
 desc:Worm/Worm Mass
 
 name:wraith
