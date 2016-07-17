@@ -1392,7 +1392,7 @@ equip:sword:Dagger:1:1
 equip:bow:Short Bow:1:1
 equip:arrow:Arrow:15:20
 equip:scroll:Word of Recall:1:1
-flags:CUMBER_GLOVE | EXTRA_SHOT | CHOOSE_SPELLS | PSEUDO_ID_IMPROV
+flags:EXTRA_SHOT | CHOOSE_SPELLS | PSEUDO_ID_IMPROV
 title:Runner
 title:Strider
 title:Scout
