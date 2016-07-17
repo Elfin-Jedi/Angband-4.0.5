@@ -1079,6 +1079,15 @@ void lore_append_movement(textblock *tb, const struct monster_race *race,
 	else if (rf_has(race->flags, RF_ORC))
 		textblock_append_c(tb, COLOUR_L_BLUE, " %s",
 						   lore_describe_race_flag(RF_ORC));
+	else if (rf_has(race->flags, RF_INSECT))
+		textblock_append_c(tb, COLOUR_L_BLUE, " %s",
+						   lore_describe_race_flag(RF_INSECT));
+	else if (rf_has(race->flags, RF_PLANT))
+		textblock_append_c(tb, COLOUR_L_BLUE, " %s",
+				lore_describe_race_flag(RF_PLANT));
+	else if (rf_has(race->flags, RF_HUMANOID))
+		textblock_append_c(tb, COLOUR_L_BLUE, " %s",
+				lore_describe_race_flag(RF_HUMANOID));
 	else
 		textblock_append_c(tb, COLOUR_L_BLUE, " creature");
 
