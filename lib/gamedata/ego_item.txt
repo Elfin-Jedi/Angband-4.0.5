@@ -767,7 +767,7 @@ alloc:100:1 to 40
 type:sword
 type:polearm
 type:hafted
-values:SLAY_HUMANOID[2]
+values:SLAY_HUMANOID[3]
 
 name:80:of Slay Animal
 info:0:6:3000:18
@@ -960,7 +960,7 @@ type:sword
 type:polearm
 type:hafted
 flags: 
-values:CON[d2] | STR[d2] | SLAY_HUMANOID[2]
+values:CON[d2] | STR[d2] | SLAY_HUMANOID[3]
 min-values:CON[0] | STR[0]
 
 ### Lanterns/torches
@@ -1128,7 +1128,7 @@ alloc:80:1 to 40
 type:shot
 type:arrow
 type:bolt
-values:SLAY_HUMANOID[2]
+values:SLAY_HUMANOID[3]
 
 name:118:of Slay Animal
 info:0:6:20:10
