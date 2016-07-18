@@ -27,7 +27,7 @@ Finish uploading edit files with normal line endings: object.txt, object-base.tx
 
 Add fire and cold resists to Fire and Frost Giants.
 
-Change Priest, Rogue, Ranger, Druid, Necromancer and Assassin spells to match Oangband.
+Change Priest, Rogue, Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
 
 Add more monsters from Unangband.
 
