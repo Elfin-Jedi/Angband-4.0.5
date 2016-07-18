@@ -342,7 +342,7 @@ flags:DROP_40
 flags:RAND_50 | OPEN_DOOR | BASH_DOOR | TAKE_ITEM
 desc:He doesn't take to strangers kindly.
 
-name:15:Red-Hatted Elf
+name:617:Red-Hatted Elf
 base:humanoid
 color:r
 info:110:100:80:12:3
@@ -352,7 +352,7 @@ flags:HAS_LIGHT | SEASONAL
 friends:30:1d5:Same
 desc:It's Yuletide and this elf has had a few too many.
 
-name:16:Father Christmas
+name:618:Father Christmas
 base:humanoid
 color:G
 info:100:1000:80:12:3
@@ -365,274 +365,9 @@ spell-freq:4
 spells:BLINK | HEAL
 desc:It's Saint Nick, out delivering presents to the town urchins.
 
-name:17:Busy-looking merchant
-base:townsfolk
-color:P
-info:110:6:100:1:0
-power:0:1:0:0:0
-blow:HIT:HURT:1d3
-flags:MALE | FORCE_DEPTH | ONLY_GOLD | DROP_40 |
-flags:OPEN_DOOR | TAKE_ITEM | HAS_LIGHT
-flags:RAND_50 
-desc:The typical ponce around town, with purse jingling, and
-desc: looking for more amulets of adornment to buy.
-
-name:18:Harry Goatleaf, Gatekeeper of Bree
-base:townsfolk
-color:s
-info:110:343:40:10:3
-power:0:5:0:0:0
-blow:GAZE
-blow:INSULT
-flags:UNIQUE | MALE | FORCE_DEPTH | ONLY_ITEM | DROP_1
-flags:DROP_GOOD | HAS_LIGHT
-flags:OPEN_DOOR | BASH_DOOR |
-desc:The suspicious and gruff keeper of the West-gate of Bree.  He betrayed
-desc: his people by letting Saruman's thugs into the city.
-
-name:19:Fairy light
-base:misc
-color:Y
-info:120:1:6:1:0
-power:0:1:0:0:0
-flags:FORCE_SLEEP | NEVER_BLOW | RAND_25 | RAND_50 |
-flags:EMPTY_MIND | HAS_LIGHT
-flags:NONLIVING | FORCE_DEPTH
-#flags:CAN_FLY | MUST_FLY | 
-desc:A shimmering ball of light which dances around town.
-
-name:20:Hobbit reveller
-base:humanoid
-color:b
-info:110:4:10:1:0
-power:0:2:0:0:0
-flags:MALE | NEVER_BLOW | FORCE_DEPTH | RAND_50 | ONLY_GOLD | ONLY_ITEM | HAS_LIGHT
-flags:DROP_60 |
-flags:SMART | OPEN_DOOR | TAKE_ITEM |
-friends:30:3d3:Same
-desc:He makes you sad to be leaving the Shire.
-
-name:21:Hobbit merchant
-base:humanoid
-color:B
-info:110:6:10:1:255
-power:0:1:0:0:0
-blow:HIT:HURT:1d3
-flags:MALE | FORCE_DEPTH | RAND_25 | ONLY_GOLD | DROP_60 |
-flags:SMART | OPEN_DOOR | TAKE_ITEM | HAS_LIGHT
-desc:The typical ponce around town, with purse jingling, and
-desc: looking for more amulets of adornment to buy.
-
-name:22:Hobbit veteran
-base:humanoid
-color:U
-info:110:22:10:20:250
-power:0:4:0:0:0
-blow:HIT:HURT:1d10
-flags:MALE | FORCE_DEPTH | RAND_25 | ONLY_ITEM | DROP_40 |
-flags:SMART | OPEN_DOOR | BASH_DOOR | TAKE_ITEM | HAS_LIGHT
-desc:A stalwart defender of the town.
-
-name:23:Large cockroach
-base:insect
-color:D
-info:110:1:20:1:5
-power:0:1:0:0:0
-blow:CRAWL
-flags:FORCE_DEPTH | RAND_25 | RAND_50 |
-flags:MULTIPLY
-#flags:INSECT
-friends:100:1d4:Same
-desc:A cockroach the size of your fist.
-
-name:24:Bumbling priest
-base:townsfolk
-color:g
-info:110:12:20:10:10
-power:0:3:0:0:0
-blow:HIT:HURT:1d5
-flags:MALE | FORCE_DEPTH | FORCE_SLEEP | RAND_25 | ONLY_ITEM | DROP_60 | HAS_LIGHT
-flags:OPEN_DOOR |
-spell-freq:4
-spells:HEAL | SCARE |
-desc:He is bumbling and ineffectual at the best of times.
-
-name:25:Cross-eyed mage
-base:townsfolk
-color:r
-info:110:10:20:6:5
-power:0:1:0:0:0
-blow:HIT:HURT:1d3
-flags:MALE | FORCE_DEPTH | FORCE_SLEEP | RAND_50 | ONLY_ITEM | DROP_60 |
-flags:OPEN_DOOR | HAS_LIGHT
-spell-freq:4
-spells:BLINK | CONF |
-desc:He can't see straight, let alone cast spells straight.
-
-name:26:Errand boy
-base:townsfolk
-color:G
-info:110:2:4:1:40
-power:0:1:0:0:0
-flags:MALE | FORCE_DEPTH | NEVER_BLOW |
-flags:OPEN_DOOR | TAKE_ITEM | HAS_LIGHT
-desc:He has no time to talk to you.
-
-name:27:Hobbit gentleman
-base:humanoid
-color:G
-info:110:2:4:1:40
-power:0:1:0:0:0
-flags:MALE | FORCE_DEPTH | NEVER_BLOW |
-flags:OPEN_DOOR | HAS_LIGHT
-desc:He is a merry looking man on an errand.
-
-name:28:Wide-eyed tourist
-base:townsfolk
-color:y
-info:110:6:10:5:10
-power:0:1:0:0:0
-blow:BEG
-flags:MALE | FORCE_DEPTH | RAND_25 | ONLY_GOLD | DROP_60 | HAS_LIGHT
-desc:This shill seems a little out of place and down on his luck.
-
-name:29:Innkeeper
-base:townsfolk
-color:W
-info:110:2:100:1:0
-power:0:1:0:0:0
-flags:FEMALE | FORCE_DEPTH | NEVER_BLOW | RAND_25 |
-flags:OPEN_DOOR | TAKE_ITEM | HAS_LIGHT
-desc:A middle-aged woman dressed in grey and silver.  She is very busy, and
-desc: doesn't even have time to gossip.
-
-name:30:Chicken
-base:bird
-color:w
-info:115:1:30:1:10
-power:0:1:0:0:0
-blow:BITE
-flags:FORCE_DEPTH | RAND_25 | RAND_50 |
-flags:ANIMAL |
-#flags:CAN_FLY | 
-desc:A barnyard chicken.
-
-name:31:Cow
-base:quadruped
-color:o
-info:105:7:30:1:10
-power:0:1:0:0:0
-blow:BUTT
-flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
-#flags:RIDING
-desc:A peacefully grazing bovine.
-
-name:32:Goat
-base:quadruped
-color:w
-info:110:4:30:1:10
-power:0:2:0:0:0
-blow:BUTT
-flags:FORCE_DEPTH | RAND_50 |
-flags:ANIMAL |
-#flags:RIDING
-desc:A bleating but harmless animal.
-
-name:33:Agent of the black market
-base:townsfolk
-color:D
-info:110:9:10:8:99
-power:0:4:0:0:0
-blow:HIT:HURT:1d6
-blow:TOUCH:EAT_ITEM
-blow:INSULT
-flags:MALE | DROP_60 |
-flags:OPEN_DOOR | BASH_DOOR | TAKE_ITEM |
-flags:EVIL |
-desc:He 'finds' new wares for the Black Market. From unwary adventurers... 
-
-name:34:Sparrow
-base:bird
-color:U
-info:110:1d1:30:1:10
-power:0:3:0:0:0
-blow:BITE:HURT:1d3
-flags:RAND_25 | FORCE_DEPTH
-flags:ANIMAL | 
-desc:Utterly harmless, except when angry.
-
-name:35:Chaffinch
-base:bird
-color:r
-info:110:1d1:30:1:10
-power:0:3:0:0:0
-blow:BITE:HURT:1d3
-flags:RAND_25 | FORCE_DEPTH
-flags:ANIMAL 
-desc:Utterly harmless, except when angry.
-
-name:36:Wild rabbit
-base:rodent
-color:U
-info:110:1d2:30:1:10
-power:0:3:0:0:0
-blow:BITE:HURT:1d3
-flags:RAND_50 | FORCE_DEPTH
-flags:ANIMAL |
-desc:It is not a carnivore, but will defend itself if you stray too 
-desc:close
-
-name:37:Woodsman
-base:townsfolk
-color:g
-info:110:3d3:10:1:255
-power:0:1:0:0:0
-blow:HIT:HURT:1d6
-blow:HIT:HURT:1d6
-flags:MALE |
-flags:RAND_25 | 
-flags:ONLY_GOLD | DROP_60 |
-flags:TAKE_ITEM | OPEN_DOOR | BASH_DOOR
-desc:He has an axe with a sharp and strong edge.
-
-name:38:Hobo
-base:townsfolk
-color:g
-info:110:1d2:6:1:0
-power:0:1:0:0:0
-blow:DROOL
-flags:MALE | FORCE_DEPTH
-flags:RAND_25 | 
-flags:TAKE_ITEM | OPEN_DOOR | BASH_DOOR
-desc:Ugly doesn't begin to describe him.
-
-name:39:Raving lunatic
-base:townsfolk
-color:G
-info:120:4d4:6:1:0
-power:0:1:0:0:0
-blow:DROOL
-flags:MALE | FORCE_DEPTH
-flags:RAND_25 | 
-flags:TAKE_ITEM
-desc:Drooling and comical, but then, what do you expect?
-
-name:40:Scrawny horse
-base:quadruped
-color:o
-info:110:4d5:20:5:30
-power:0:1:0:0:0
-blow:BITE:HURT:1d2
-blow:KICK:HURT:1d3
-flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
-#flags:RIDING
-desc:This pitiful horse has not been well fed, it walks unsteadily.
-
 ### Dungeon level 1 ###
 
-name:41:Grey mold
+name:15:Grey mold
 base:mold
 color:s
 info:110:2:2:1:0
@@ -652,7 +387,16 @@ blow:SPORE:CONFUSE:1d4
 flags:IM_POIS | NEVER_MOVE
 desc:Yum!  It looks quite tasty.
 
-name:42:Giant white centipede
+name:17:Giant yellow centipede
+base:centipede
+color:y
+info:110:7:8:14:30
+power:1:1:42:4:2
+blow:BITE:HURT:1d3
+blow:STING:HURT:1d3
+desc:It is about four feet long and carnivorous.
+
+name:18:Giant white centipede
 base:centipede
 color:w
 info:110:9:7:12:40
@@ -662,7 +406,7 @@ blow:STING:HURT:1d2
 flags:RAND_50 | BASH_DOOR
 desc:It is about four feet long and carnivorous.
 
-name:43:White icky thing
+name:19:White icky thing
 base:icky thing
 color:w
 info:110:6:12:8:10
@@ -672,7 +416,39 @@ flags:EMPTY_MIND
 flags:RAND_25
 desc:It is a smallish, slimy, icky creature.
 
-name:44:White snake
+name:20:Clear icky thing
+base:icky thing
+color:w
+info:110:6:12:7:10
+power:1:1:12:1:2
+blow:TOUCH:HURT:1d2
+flags:INVISIBLE | EMPTY_MIND
+flags:RAND_25
+flags:ATTR_CLEAR
+desc:It is a smallish, slimy, icky, blobby creature.
+
+name:21:Giant white mouse
+plural:Giant white mice
+base:rodent
+color:w
+info:110:2:8:4:20
+power:1:1:30:3:1
+blow:BITE:HURT:1d2
+flags:MULTIPLY
+flags:RAND_50
+desc:It is about three feet long with large teeth.
+
+name:22:Large brown snake
+base:snake
+color:u
+info:100:14:4:42:99
+power:1:1:40:4:3
+blow:BITE:HURT:1d3
+blow:CRUSH:HURT:1d4
+flags:RAND_25
+desc:It is about eight feet long.
+
+name:23:Large white snake
 base:snake
 color:w
 info:100:11:4:36:99
@@ -682,14 +458,25 @@ blow:CRUSH:HURT:1d1
 flags:RAND_50
 desc:It is about eight feet long.
 
-name:45:Small kobold
-base:goblin
+name:24:Small kobold
+base:kobold
 color:y
 info:110:8:20:24:70
 power:1:1:40:4:5
 blow:HIT:HURT:1d5
 flags:DROP_60
 desc:It is a squat and ugly humanoid figure with a canine face.
+
+name:26:White worm mass
+base:worm
+color:w
+info:100:10:7:1:14
+power:1:1:55:6:2
+blow:CRAWL:POISON:1d2
+flags:WEIRD_MIND | MULTIPLY | STUPID
+flags:RAND_25 | RAND_50
+flags:HURT_LIGHT | IM_POIS | NO_FEAR
+desc:It is a large slimy mass of worms.
 
 name:27:Floating eye
 base:eye
@@ -701,7 +488,7 @@ flags:NEVER_MOVE
 flags:HURT_LIGHT | NO_FEAR
 desc:A disembodied eye, floating a few feet above the ground.
 
-name:46:Rock lizard
+name:28:Rock lizard
 base:reptile
 color:U
 info:110:8:20:4:15
@@ -709,7 +496,7 @@ power:1:1:4:0:2
 blow:BITE:HURT:1d1
 desc:It is a small lizard with a hardened hide.
 
-name:47:Jackal
+name:29:Jackal
 base:canine
 color:U
 info:110:3:10:3:10
@@ -719,7 +506,7 @@ flags:GROUP_AI
 friends:100:2d7:Same
 desc:It is a yapping snarling dog, dangerous when in a pack.
 
-name:48:Worker ant
+name:30:Soldier ant
 base:ant
 color:W
 info:110:6:10:4:40
@@ -727,21 +514,31 @@ power:1:1:9:1:3
 blow:BITE:HURT:1d2
 desc:A large ant with powerful mandibles.
 
-name:49:Fruit bat
+name:31:Fruit bat
 base:bat
 color:o
 info:120:4:20:3:10
 power:1:1:8:0:1
 blow:BITE:HURT:1d1
-friends:80:2d4:same
 desc:A fast-moving pest.
 
-name:50:Shrieker mushroom patch
+### Dungeon level 2 ###
+
+name:25:Kobold
+base:kobold
+color:G
+info:110:12:20:24:70
+power:2:1:119:2:5
+blow:HIT:HURT:1d8
+flags:DROP_60
+desc:It is a small, dog-headed humanoid.
+
+name:32:Shrieker mushroom patch
 plural:Shrieker mushroom patches
 base:mushroom
 color:R
 info:110:1:4:1:0
-power:1:1:8:0:1
+power:2:1:8:0:1
 flags:NEVER_BLOW | NEVER_MOVE
 flags:IM_POIS
 flags:FORCE_SLEEP
@@ -749,107 +546,58 @@ spell-freq:4
 spells:SHRIEK
 desc:Yum!  It looks quite tasty.  It doesn't sound so nice, though...
 
-name:51:Metallic green centipede
+name:33:Blubbering icky thing
+base:icky thing
+color:W
+info:110:18:14:4:10
+power:2:1:150:3:8
+blow:CRAWL:POISON:1d4
+blow:CRAWL:EAT_FOOD
+flags:EMPTY_MIND
+flags:KILL_BODY | TAKE_ITEM
+flags:IM_POIS
+desc:It is a smallish, slimy, icky, hungry creature.
+
+name:34:Metallic green centipede
 base:centipede
 color:g
 info:120:10:5:4:10
-power:1:1:10:0:3
+power:2:1:10:0:3
 blow:CRAWL:HURT:1d1
 flags:RAND_50 | BASH_DOOR
 desc:It is about four feet long and carnivorous.
 
-name:52:Yellow mold
-base:mold
-color:y
-info:110:36:2:12:99
-power:1:1:10:0:4
-blow:SPORE:HURT:1d4
-flags:EMPTY_MIND | STUPID
-desc:It is a strange yellow growth on the dungeon floor.
-
-name:53:Blue fairy
-plural:Blue fairies
-base:hybrid
-color:B
-info:110:2:18:14:10
-power:1:1:0:0:1
-flags:NEVER_BLOW |
-flags:DROP_60 | HAS_LIGHT
-flags:RAND_50 | ATTR_FLICKER 
-#flags:CAN_FLY | MUST_FLY | EVASIVE | 
-spell-freq:2
-spells:BLINK |
-desc:A small winged figure surrounded by glowing blue light.
-
-name:54:Brown fairy
-plural:Brown fairies
-base:hybrid
-color:U
-info:110:5:18:18:10
-power:1:1:0:0:2
-flags:NEVER_BLOW | DROP_60 |
-flags:RAND_50 | ATTR_FLICKER 
-#flags:CAN_FLY | MUST_FLY | EVASIVE |
-spell-freq:2
-spells:BLINK | SCARE | SLOW |
-desc:It is a small winged humanoid surrounded by a glowing brown light.
-
-name:55:Whirlwind
-base:vortex
+name:35:Soldier
+base:person
 color:u
-info:115:6:25:5:0
-power:1:1:0:0:1
-blow:ENGULF:HURT:1d1
-flags:RAND_25 | RAND_50 | ONLY_ITEM | DROP_60 |
-flags:EMPTY_MIND | BASH_DOOR | NONLIVING | 
-flags:IM_POIS | NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
-desc:A small cyclone that stirs up the musty dungeon air.
-
-name:56:Insect swarm
-base:insect
-color:B
-info:120:3:20:4:10
-power:1:1:0:0:2
-blow:BITE:HURT:1d1
-blow:STING:HURT:1d1
-flags:RAND_25 |
-flags:WEIRD_MIND |
-flags:ANIMAL 
-#flags:CAN_FLY | MUST_FLY | INSECT
-desc:A lone insect may be harmless, but there's a whole swarm of them here! 
-
-name:57:Wizard eye
-base:eye
-color:s
-info:130:35:12:7:0
-power:1:4:0:0:6
-flags:NEVER_BLOW | NEVER_MOVE |
-flags:INVISIBLE |
-flags:HURT_LIGHT | NO_FEAR | NO_CONF |
-desc:A disembodied gazing eye, summoned by a wizard to spy on you.
-
-name:58:Newt
-base:amphibian
-color:y
-info:110:6:8:12:30
-power:1:1:0:0:4
-blow:BITE:HURT:1d7
-blow:BITE:HURT:1d7
-flags:WEIRD_MIND | 
-#flags:CAN_SWIM | 
-flags:ANIMAL
-desc:A small, harmless amphibian.
-
-### Dungeon level 2 ###
-
-name:59:Kobold
-base:goblin
-color:G
-info:110:12:20:24:70
-power:2:1:119:2:5
-blow:HIT:HURT:1d8
+info:110:23:20:24:80
+power:2:1:2232:55:6
+blow:HIT:HURT:1d7
+blow:HIT:HURT:1d7
+flags:MALE | HAS_LIGHT
 flags:DROP_60
-desc:It is a small, dog-headed humanoid.
+flags:OPEN_DOOR
+friends-base:20:1d3:person
+friends-base:40:1d3:person
+friends-base:80:1d3:person
+friends:50:1d2:Same
+desc:An inexperienced but tough warrior.
+
+name:36:Cutpurse
+base:person
+color:b
+info:110:20:20:18:10
+power:2:1:1440:36:6
+blow:HIT:HURT:1d6
+blow:TOUCH:EAT_GOLD
+flags:MALE | EVIL
+flags:DROP_40
+flags:OPEN_DOOR | TAKE_ITEM
+friends-base:20:1d3:person
+friends-base:40:1d3:person
+friends-base:80:1d3:person
+friends:50:1d2:Same
+desc:A rather shifty individual.
 
 name:37:Acolyte
 base:person
@@ -870,7 +618,7 @@ friends-base:80:1d3:person
 friends:50:1d2:Same
 desc:He is tripping over his priestly robes.
 
-name:60:Apprentice
+name:38:Apprentice
 base:person
 color:r
 info:110:15:20:9:15
@@ -889,8 +637,30 @@ friends-base:80:1d3:person
 friends:50:1d2:Same
 desc:He is leaving behind a trail of dropped spell components.
 
-name:61:Giant green frog
-base:amphibian
+name:39:Yellow mushroom patch
+plural:Yellow mushroom patches
+base:mushroom
+color:y
+info:110:1:2:1:0
+power:2:1:7:0:2
+blow:SPORE:TERRIFY:1d6
+flags:NEVER_MOVE
+flags:IM_POIS
+desc:Yum!  It looks quite tasty.
+
+name:40:White jelly
+plural:White jellies
+base:jelly
+color:w
+info:120:36:2:1:99
+power:2:1:40:1:10
+blow:TOUCH:POISON:1d2
+flags:NEVER_MOVE
+flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
+desc:It's a large pile of white flesh.
+
+name:41:Giant green frog
+base:reptile
 color:g
 info:110:9:12:9:30
 power:2:1:24:0:6
@@ -898,7 +668,7 @@ blow:BITE:HURT:1d3
 flags:RAND_25 | BASH_DOOR
 desc:It is as big as a wolf.
 
-name:62:Giant black ant
+name:42:Giant black ant
 base:ant
 color:D
 info:110:11:8:24:80
@@ -907,7 +677,17 @@ blow:BITE:HURT:1d4
 flags:RAND_25
 desc:It is about three feet long.
 
-name:63:White harpy
+name:43:Salamander
+base:reptile
+color:o
+info:110:14:8:24:80
+power:2:1:248:6:10
+blow:BITE:FIRE:1d3
+flags:RAND_25
+flags:IM_FIRE
+desc:A small black and orange lizard.
+
+name:44:White harpy
 plural:White harpies
 base:hybrid
 color:w
@@ -920,7 +700,7 @@ flags:FEMALE | EVIL | ANIMAL
 flags:RAND_50
 desc:A flying, screeching bird with a woman's face.
 
-name:64:Blue yeek
+name:45:Blue yeek
 base:yeek
 color:b
 info:110:7:18:16:10
@@ -928,6 +708,30 @@ power:2:1:44:1:4
 blow:HIT:HURT:1d5
 flags:DROP_60
 desc:A small humanoid figure.
+
+name:46:Grip, Farmer Maggot's dog
+base:canine
+color:y
+info:120:25:30:36:0
+power:2:1:280:7:30
+blow:BITE:HURT:1d4
+flags:UNIQUE
+flags:RAND_25 | BASH_DOOR
+flags:NO_CONF | NO_SLEEP
+desc:A rather vicious dog belonging to Farmer Maggot.  It thinks you are
+desc: stealing mushrooms.
+
+name:47:Fang, Farmer Maggot's dog
+base:canine
+color:y
+info:120:25:30:36:0
+power:2:1:280:7:30
+blow:BITE:HURT:1d4
+flags:UNIQUE
+flags:RAND_25 | BASH_DOOR
+flags:NO_CONF | NO_SLEEP
+desc:A rather vicious dog belonging to Farmer Maggot.  It thinks you are
+desc: stealing mushrooms.
 
 name:48:Green worm mass
 base:worm
@@ -940,7 +744,7 @@ flags:RAND_25 | RAND_50
 flags:HURT_LIGHT | IM_ACID | NO_FEAR
 desc:It is a large slimy mass of worms.
 
-name:65:Yellow snake
+name:49:Large yellow snake
 base:snake
 color:y
 info:100:18:5:45:75
@@ -950,101 +754,36 @@ blow:CRUSH:HURT:1d6
 flags:RAND_25
 desc:It is about ten feet long.
 
-name:66:Giant yellow centipede
-base:centipede
-color:y
-info:110:7:8:14:30
-power:1:1:42:4:2
-blow:BITE:HURT:1d3
-blow:STING:HURT:1d3
-desc:It is about four feet long and carnivorous.
+name:50:Cave spider
+base:spider
+color:p
+info:120:7:8:19:80
+power:2:1:252:6:7
+blow:BITE:HURT:1d4
+flags:ANIMAL | WEIRD_MIND
+flags:GROUP_AI
+friends:100:2d8:Same
+desc:It is a black spider that moves in fits and starts.
 
-name:67:Giant white louse
-plural:Giant white lice
-base:insect
-color:w
-info:120:1:6:6:10
-power:2:1:40:0:1
-blow:BITE:HURT:1d1
-flags:MULTIPLY
-desc:It is six inches long.
-
-name:68:Grey icky thing
-base:icky thing
-color:s
-info:110:18:14:14:15
-power:2:1:63:0:4
-blow:TOUCH:HURT:1d5
-flags:EMPTY_MIND
-desc:It is a smallish, slimy, icky, nasty creature.
-
-name:69:Small goblin
-base:goblin
-color:M
-info:110:8:20:16:10
-power:2:1:0:0:4
-blow:HIT:HURT:1d5
-flags:DROP_60
-flags:OPEN_DOOR |
-flags:ORC | EVIL | IM_POIS |
-desc:It is a squat and ugly humanoid figure.
-
-name:70:Huge brown bat
-base:bat
+name:51:Wild cat
+base:feline
 color:U
-info:130:7:8:12:30
-power:2:3:0:0:2
-blow:BITE:HURT:1d2
-flags:RAND_50 |
-flags:ANIMAL |
-#flags:CAN_FLY | MUST_FLY | EAT_BODY |
-friends:80:2d4:same
-desc:It screeches as it attacks.
+info:120:9:40:14:0
+power:2:2:184:4:8
+blow:CLAW:HURT:1d3
+blow:CLAW:HURT:1d3
+flags:BASH_DOOR
+desc:A larger than normal feline, hissing loudly.  Its velvet paws conceal a
+desc: fistful of needles.
 
-name:71:Giant green centipede
-base:centipede
-color:g
-info:110:9:7:10:40
-power:2:1:0:0:2
-blow:BITE:HURT:1d2
-blow:STING:HURT:1d2
-flags:RAND_50 |
-flags:WEIRD_MIND | BASH_DOOR |
-#flags:INSECT
-desc:It is about four feet long and carnivorous.
-
-name:72:Giant grey centipede
-base:centipede
+name:559:Crow
+base:bird
 color:s
-info:110:10:7:10:40
-power:2:1:0:0:3
+info:120:9:40:14:0
+power:2:2:184:4:8
 blow:BITE:HURT:1d3
-blow:STING:HURT:1d3
-flags:RAND_50 |
-flags:IM_ACID | IM_COLD |
-flags:WEIRD_MIND | BASH_DOOR |
-#flags:INSECT
-desc:It is about four feet long and carnivorous.
-
-name:73:Wild dog
-base:canine
-color:R
-info:115:9:20:16:5
-power:2:3:0:0:4
 blow:BITE:HURT:1d3
-flags:ANIMAL |
-#flags:EAT_BODY |
-desc:It is a snarling hungry dog, dangerous when in a pack.
-
-name:74:Giant field mouse
-base:rodent
-color:M
-info:110:4:8:4:20
-power:2:1:0:0:1
-blow:BITE:HURT:1d3
-flags:RAND_50 |
-flags:ANIMAL |
-desc:It is about three feet long with large teeth.
+desc:It is a hooded crow, gray except for the black wings and head.
 
 ### Dungeon level 3 ###
 
@@ -1084,6 +823,46 @@ spell-freq:15
 spells:BLINK
 desc:It is a ghastly, ghostly form.
 
+name:55:Metallic blue centipede
+base:centipede
+color:b
+info:120:12:6:7:15
+power:3:1:24:0:7
+blow:CRAWL:HURT:1d2
+flags:RAND_50 | BASH_DOOR
+desc:It is about four feet long and carnivorous.
+
+name:56:Giant white louse
+plural:Giant white lice
+base:louse
+color:w
+info:120:1:6:6:10
+power:3:1:40:0:1
+blow:BITE:HURT:1d1
+flags:RAND_25
+desc:It is six inches long.
+
+name:57:Black naga
+base:naga
+color:D
+info:110:27:16:60:180
+power:3:1:255:3:20
+blow:CRUSH:HURT:1d8
+flags:DROP_60
+flags:RAND_25
+desc:A large black serpent's body with a female torso.
+
+name:58:Spotted mushroom patch
+plural:Spotted mushroom patches
+base:mushroom
+color:o
+info:110:1:2:1:0
+power:3:1:6:0:3
+blow:SPORE:POISON:2d4
+flags:NEVER_MOVE
+flags:IM_POIS
+desc:Yum!  It looks quite tasty.
+
 name:59:Silver jelly
 plural:Silver jellies
 base:jelly
@@ -1112,13 +891,35 @@ spell-freq:15
 spells:DRAIN_MANA
 desc:It's a large pile of yellow flesh.
 
-name:75:Giant white ant
+name:61:Scruffy looking hobbit
+base:humanoid
+color:b
+info:110:9:16:9:10
+power:3:1:84:1:4
+blow:HIT:HURT:1d4
+blow:TOUCH:EAT_GOLD
+flags:MALE | EVIL
+flags:DROP_60
+flags:TAKE_ITEM
+desc:A short little guy, in bedraggled clothes.  He appears to be looking for a
+desc: good tavern.
+
+name:62:Giant white ant
 base:ant
 color:w
 info:110:11:8:19:80
 power:3:1:66:1:7
 blow:BITE:HURT:1d4
 desc:It is about two feet long and has sharp pincers.
+
+name:63:Yellow mold
+base:mold
+color:y
+info:110:36:2:12:99
+power:3:1:10:0:9
+blow:SPORE:HURT:1d4
+flags:EMPTY_MIND | STUPID
+desc:It is a strange yellow growth on the dungeon floor.
 
 name:64:Metallic red centipede
 base:centipede
@@ -1164,8 +965,8 @@ spell-freq:11
 spells:DRAIN_MANA
 desc:A disembodied eye, crackling with energy.
 
-name:76:Kobold shaman
-base:goblin
+name:604:Kobold shaman
+base:kobold
 color:r
 info:110:11:20:24:50
 power:3:1:1596:24:15
@@ -1175,206 +976,39 @@ spell-freq:5
 spells:CAUSE_1 | CONF | HEAL | MISSILE
 drop:magic book:[Magic for Beginners]:5:1:1
 drop:prayer book:[Beginners Handbook]:5:1:1
-friends-base:30:1d2:goblin
-friends-base:70:1d2:goblin
+friends-base:30:1d2:kobold
+friends-base:70:1d2:kobold
 desc:It is a kobold dressed in skins and gesturing wildly.
 
-name:77:Clear icky thing
-base:icky thing
-color:w
-info:110:6:12:7:10
-power:3:1:12:1:1
-blow:TOUCH:HURT:1d2
-flags:INVISIBLE | EMPTY_MIND
-flags:RAND_25
-flags:ATTR_CLEAR
-desc:It is a smallish, slimy, icky, blobby creature.
+### Dungeon level 4 ###
 
-name:78:Giant white mouse
-plural:Giant white mice
-base:rodent
-color:w
-info:110:2:8:4:20
-power:3:1:30:3:1
-blow:BITE:HURT:1d2
-flags:MULTIPLY
-flags:RAND_50
-desc:It is about three feet long with large teeth.
-
-name:79:Brown snake
-base:snake
-color:u
-info:100:14:4:42:99
-power:3:1:40:4:2
-blow:BITE:HURT:1d3
-blow:CRUSH:HURT:1d4
-flags:RAND_25
-desc:It is about eight feet long.
-
-name:80:White jelly
-plural:White jellies
-base:jelly
-color:w
-info:120:36:2:1:99
-power:3:1:40:1:4
-blow:TOUCH:POISON:1d2
-flags:NEVER_MOVE
-flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
-desc:It's a large pile of white flesh.
-
-name:81:Grip, Farmer Maggot's dog
-base:canine
-color:y
-info:120:25:30:36:0
-power:3:1:280:7:16
-blow:BITE:HURT:1d4
-flags:UNIQUE
-flags:RAND_25 | BASH_DOOR
-flags:NO_CONF | NO_SLEEP
-desc:A rather vicious dog belonging to Farmer Maggot.  It thinks you are
-desc: stealing mushrooms.
-
-name:82:Fang, Farmer Maggot's dog
-base:canine
-color:y
-info:120:25:30:36:0
-power:3:1:280:7:16
-blow:BITE:HURT:1d4
-flags:UNIQUE
-flags:RAND_25 | BASH_DOOR
-flags:NO_CONF | NO_SLEEP
-desc:A rather vicious dog belonging to Farmer Maggot.  It thinks you are
-desc: stealing mushrooms.
-
-name:83:Cave lizard
+name:68:Cave lizard
 base:reptile
 color:u
 info:110:11:8:19:80
-power:3:1:102:1:3
+power:4:1:102:1:8
 blow:BITE:HURT:1d5
 desc:It is an armoured lizard with a powerful bite.
 
-name:84:Spikey mushroom patch
-base:mushroom
-color:t
-info:130:20:2:30:0
-power:3:1:0:0:3
-blow:HIT:HURT:1d3
-spell-freq:5
-spells:SPIKE
-flags:NEVER_MOVE | STUPID | EMPTY_MIND |
-flags:IM_POIS | NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
-desc:Hmmm... it looks quite painful to eat.
-
-name:85:Wolf, Farmer Maggot's dog
-base:canine
-color:y
-info:120:25:30:36:0
-power:3:1:0:0:16
-blow:BITE:HURT:1d4
-flags:UNIQUE | RAND_25 
-flags:ANIMAL | NO_CONF | NO_SLEEP |
-#flags:EAT_BODY |
-desc:A rather vicious dog belonging to Farmer Maggot.  It thinks you are
-desc: stealing mushrooms.
-
-name:86:Brown mushroom patch
-base:mushroom
-color:u
-info:110:6:2:1:0
-power:3:1:0:0:1
-blow:SPORE:HURT:1d3
-flags:NEVER_MOVE 
-flags:STUPID | EMPTY_MIND |
-#flags:PLANT 
-desc:Yum!  It looks quite tasty.
-
-name:87:Silver mushroom patch
-base:mushroom
+name:69:Scout
+base:person
 color:W
-info:110:7:2:1:0
-power:3:1:0:0:1
-blow:SPORE:EAT_LIGHT:3d1
-flags:NEVER_MOVE | ATTR_FLICKER
-flags:STUPID | EMPTY_MIND |
-flags:IM_COLD | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:Yum!  It looks quite tasty.
-
-name:88:Giant grub
-base:insect
-color:P
-info:110:6:8:6:20
-power:3:3:0:0:2
-blow:BITE:HURT:1d2
-flags:RAND_50 |
-flags:MULTIPLY |
-#flags:INSECT
-desc:It is about three feet long with large teeth and wriggles.
-
-name:89:Brown ooze
-base:jelly
-color:u
-info:110:12:8:16:80
-power:3:1:0:0:2
-blow:TOUCH:HURT:1d3
-flags:RAND_25 | RAND_50 | ATTR_FLICKER
-flags:STUPID | EMPTY_MIND | DROP_40
-flags:IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:OOZE | 
-desc:It's brown and it's oozing.
-
-name:90:Animated limb
-base:misc
-color:r
-info:120:17:2:40:99
-power:3:1:0:0:3
-flags:NEVER_BLOW |
-flags:COLD_BLOOD | EMPTY_MIND | OPEN_DOOR | TAKE_ITEM |
-flags:UNDEAD | EVIL | NONLIVING | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:EVASIVE
-#mimic:corpse:corpse
-desc:It is a severed limb, brought back to life and scouting for its undead
-desc: master.
-
-name:91:Cave fish
-base:fish
-color:z
-info:120:7:8:16:80
-power:3:3:0:0:3
-blow:BITE:HURT:1d4
-#flags:CAN_SWIM | MUST_SWIM |
-flags:ANIMAL 
-friends:100:3d5:same
-desc:It is a blind, pale white fish that moves in fits and starts.
-
-name:92:Tangleweed
-base:plant
-color:g
-info:110:15:5:5:5
-power:3:3:0:0:3
-blow:CRUSH:HURT:1d4
-blow:CRUSH:HURT:1d4
-flags:FORCE_SLEEP | NEVER_MOVE | DROP_60 |
-flags:STUPID | COLD_BLOOD | EMPTY_MIND |
-#flags:PLANT 
-friends:100:3d3:same
-desc:A mass of vegetation.  As you pass near it, it reaches out tendrils to
-desc: ensnare you.  You can just make out skeletons of its previous victims
-desc: deep within the thickets. 
-
-name:93:Piranha
-base:fish
-color:B
-info:120:6:20:8:5
-power:3:1:0:0:9
-blow:BITE:HURT:13d1
-flags:ANIMAL | 
-#flags:CAN_SWIM | MUST_SWIM
-friends:40:1d4:same
-desc:Bloodthirsty fish who can smell your blood from a great distance.
-
-### Dungeon level 4 ###
+info:110:27:20:12:50
+power:4:1:3276:46:18
+blow:HIT:HURT:1d5
+blow:HIT:HURT:1d5
+flags:MALE | HAS_LIGHT
+flags:DROP_60
+flags:OPEN_DOOR
+flags:FORCE_SLEEP
+spell-freq:9
+spells:ARROW_1 | MISSILE
+drop:magic book:[Magic for Beginners]:3:1:1
+friends-base:20:1d3:person
+friends-base:40:1d3:person
+friends-base:80:1d3:person
+friends:50:1d2:Same
+desc:An agile hunter, ready and relaxed.
 
 name:70:Gallant
 base:person
@@ -1396,7 +1030,7 @@ friends-base:80:1d3:person
 friends:50:1d2:Same
 desc:An adventurer both devoutly religious and skillful in combat.
 
-name:94:Blue jelly
+name:71:Blue jelly
 plural:Blue jellies
 base:jelly
 color:b
@@ -1440,7 +1074,7 @@ flags:RAND_25 | RAND_50
 flags:HURT_LIGHT | IM_COLD | NO_FEAR
 desc:It is a large slimy mass of worms.
 
-name:95:Grey snake
+name:75:Large grey snake
 base:snake
 color:s
 info:100:27:6:61:100
@@ -1450,8 +1084,8 @@ blow:CRUSH:HURT:1d8
 flags:RAND_25
 desc:It is about ten feet long.
 
-name:96:Kobold archer
-base:goblin
+name:94:Kobold archer
+base:kobold
 color:W
 info:110:24:20:24:70
 power:4:1:1624:23:20
@@ -1459,9 +1093,21 @@ blow:HIT:HURT:1d9
 flags:DROP_40
 spell-freq:5
 spells:ARROW_2
-friends-base:30:1d2:goblin
-friends-base:70:1d2:goblin
+friends-base:30:1d2:kobold
+friends-base:70:1d2:kobold
 desc:It is an ugly dog-headed humanoid wielding a bow.
+
+name:548:Silver mouse
+plural:Silver mice
+base:rodent
+color:W
+info:110:2:8:4:20
+power:4:1:220:3:1
+blow:BITE:EAT_LIGHT:1d2
+flags:MULTIPLY
+flags:RAND_50
+desc:It is about three feet long with large teeth.  As the light of your lamp
+desc: falls on it, it seems to grow stronger.
 
 name:560:Raven
 base:bird
@@ -1472,473 +1118,9 @@ blow:BITE:HURT:1d4
 blow:BITE:HURT:1d4
 desc:Larger than a crow, and pitch black.
 
-name:97:White worm mass
-base:worm
-color:w
-info:100:10:7:1:14
-power:4:1:55:6:2
-blow:CRAWL:POISON:1d2
-flags:WEIRD_MIND | MULTIPLY | STUPID
-flags:RAND_25 | RAND_50
-flags:HURT_LIGHT | IM_POIS | NO_FEAR
-desc:It is a large slimy mass of worms.
-
-name:98:Cutpurse
-base:person
-color:b
-info:110:20:20:18:10
-power:4:1:1440:36:5
-blow:HIT:HURT:1d6
-blow:TOUCH:EAT_GOLD
-flags:MALE | EVIL
-flags:DROP_40
-flags:OPEN_DOOR | TAKE_ITEM
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:A rather shifty individual.
-
-name:99:Acolyte
-base:person
-color:g
-info:110:18:20:15:80
-power:4:1:3498:87:3
-blow:HIT:HURT:1d5
-flags:MALE | HAS_LIGHT
-flags:DROP_40
-flags:OPEN_DOOR
-flags:FORCE_SLEEP
-spell-freq:12
-spells:CAUSE_1 | HEAL | SCARE
-drop:prayer book:[Beginners Handbook]:5:1:1
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:He is tripping over his priestly robes.
-
-name:100:Yellow mushroom patch
-plural:Yellow mushroom patches
-base:mushroom
-color:y
-info:110:1:2:1:0
-power:4:1:7:0:1
-blow:SPORE:TERRIFY:1d6
-flags:NEVER_MOVE
-flags:IM_POIS
-desc:Yum!  It looks quite tasty.
-
-name:101:Cave spider
-base:spider
-color:p
-info:120:7:8:19:80
-power:4:1:252:6:3
-blow:BITE:HURT:1d4
-flags:ANIMAL | WEIRD_MIND
-flags:GROUP_AI
-friends:100:2d8:Same
-desc:It is a black spider that moves in fits and starts.
-
-name:102:Metallic blue centipede
-base:centipede
-color:b
-info:120:12:6:7:15
-power:4:1:24:0:3
-blow:CRAWL:HURT:1d2
-flags:RAND_50 | BASH_DOOR
-desc:It is about four feet long and carnivorous.
-
-name:103:Spotted mushroom patch
-plural:Spotted mushroom patches
-base:mushroom
-color:o
-info:110:1:2:1:0
-power:4:1:6:0:3
-blow:SPORE:POISON:2d4
-flags:NEVER_MOVE
-flags:IM_POIS
-desc:Yum!  It looks quite tasty.
-
-name:104:Scruffy looking hobbit
-base:humanoid
-color:b
-info:110:9:16:9:10
-power:4:1:84:1:3
-blow:HIT:HURT:1d4
-blow:TOUCH:EAT_GOLD
-flags:MALE | EVIL
-flags:DROP_60
-flags:TAKE_ITEM
-desc:A short little guy, in bedraggled clothes.  He appears to be looking for a
-desc: good tavern.
-
-name:105:Blue ooze
-base:jelly
-color:b
-info:110:8:8:19:80
-power:4:1:48:0:1
-blow:CRAWL:COLD:1d4
-flags:DROP_40
-flags:RAND_25 | RAND_50
-flags:IM_COLD | NO_CONF | NO_SLEEP
-desc:It's blue and it's oozing.
-
-name:106:Giant brown bat
-base:bat
-color:u
-info:130:14:10:18:30
-power:4:1:210:1:3
-blow:BITE:HURT:1d3
-flags:RAND_50
-friends:80:2d4:same
-desc:It screeches as it attacks.
-
-name:107:Crow
-base:bird
-color:s
-info:120:9:40:14:0
-power:4:2:184:4:5
-blow:BITE:HURT:1d3
-blow:BITE:HURT:1d3
-desc:It is a hooded crow, gray except for the black wings and head.
-
-name:108:Novice Mage
-base:person
-color:r
-info:110:21:20:12:10
-power:4:3:0:0:5
-blow:HIT:HURT:1d6
-flags:MALE | HAS_LIGHT
-flags:DROP_40
-flags:OPEN_DOOR
-flags:FORCE_SLEEP
-spell-freq:12
-spells:BLIND | BLINK | CONF | MISSILE
-drop:magic book:[Magic for Beginners]:5:1:1
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:He is leaving behind a trail of dropped spell components.
-
-name:109:Goblin
-base:goblin
-color:g
-info:110:12:20:16:10
-power:4:1:0:0:4
-blow:HIT:HURT:1d8
-flags:DROP_60
-flags:OPEN_DOOR | BASH_DOOR |
-flags:ORC | EVIL | IM_POIS |
-desc:It is a small, ugly humanoid.
-
-name:110:Memory moss
-base:plant
-color:G
-info:110:15:30:1:5
-power:4:1:0:0:5
-blow:HIT:CONFUSE:1d4
-flags:FORCE_SLEEP | NEVER_MOVE |
-flags:STUPID | COLD_BLOOD | EMPTY_MIND |
-flags:NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-spell-freq:4
-spells:FORGET |
-desc:A mass of green vegetation.  You don't remember seeing anything like it
-desc: before.
-
-name:111:Ted Sandyman the Miller
-base:humanoid
-color:s
-info:115:42:16:5:10
-power:4:4:0:0:40
-blow:HIT:HURT:1d7
-blow:HIT:HURT:1d7
-flags:UNIQUE | MALE | ONLY_ITEM | DROP_2 | DROP_GOOD |
-flags:HAS_LIGHT | OPEN_DOOR | BASH_DOOR | 
-desc:A surly grimy-faced and black-handed hobbit.
-
-name:112:Bill Ferny, Agent of Saruman
-base:person
-color:b
-info:115:60:13:2:10
-power:4:3:0:0:47
-blow:HIT:HURT:1d7
-blow:HIT:HURT:1d7
-blow:INSULT
-flags:UNIQUE | MALE | ONLY_ITEM | DROP_2 | DROP_GOOD |
-flags:HAS_LIGHT | OPEN_DOOR | BASH_DOOR |
-desc:A swarthy man of Bree.  He has heavy black brows and dark scornful eyes;
-desc: his large mouth is curled in a sneer.  He sells anything to anybody and
-desc: enjoys making mischief for his personal amusement.
-
-name:113:Lotho Sackville-Baggins, Betrayer of the Shire
-base:humanoid
-color:p
-info:120:48:16:8:10
-power:4:3:0:0:52
-blow:HIT:HURT:1d6
-blow:HIT:HURT:1d6
-flags:UNIQUE | MALE | ONLY_ITEM | DROP_2 | DROP_GOOD |
-flags:HAS_LIGHT | OPEN_DOOR | BASH_DOOR |
-desc:The `Chief Shiriff' of Bag End.  Using money obtained from Isengard and
-desc: the sale of pipe-weed, he bought up much property in the Shire and
-desc: supported the ruffians known as `The Chief's Men'.  After imprisoning
-desc: Will Whitfoot, the rightful Mayor of the Shire, Lotho took over and
-desc: began industrializing and regimenting life in the Shire.
-
-name:114:White mushroom patch
-base:mushroom
-color:w
-info:110:7:2:1:0
-power:4:1:0:0:1
-blow:SPORE:COLD:2d4
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:IM_COLD | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:Yum!  It looks quite tasty.
-
-name:115:Blue mushroom patch
-base:mushroom
-color:b
-info:110:10:2:1:0
-power:4:1:0:0:2
-blow:SPORE:ELEC:2d4
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:IM_ELEC | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:Yum!  It looks quite tasty.
-
-name:116:Giant clear ant
-base:ant
-color:w
-info:110:12:12:18:60
-power:4:1:0:0:2
-blow:BITE:HURT:1d4
-flags:ATTR_CLEAR | RAND_25 |
-flags:INVISIBLE | WEIRD_MIND | BASH_DOOR |
-#flags:INSECT
-desc:It is large and has venomous mandibles.
-
-name:117:Giant black centipede
-base:centipede
-color:D
-info:110:12:7:10:40
-power:4:2:0:0:4
-blow:BITE:HURT:1d3
-blow:STING:POISON:1d4
-flags:RAND_50 |
-flags:WEIRD_MIND | BASH_DOOR |
-#flags:INSECT
-desc:It is about four feet long and carnivorous.
-
-name:118:Giant emerald frog
-base:amphibian
-color:g
-info:110:9:12:8:30
-power:4:4:0:0:3
-blow:BITE:HURT:1d3
-flags:RAND_25 |
-flags:MULTIPLY | BASH_DOOR |
-flags:ANIMAL | ATTR_FLICKER
-#flags:CAN_SWIM | EAT_BODY |
-desc:It is as big as a wolf.
-
-name:119:Giant black frog
-base:amphibian
-color:D
-info:110:18:12:18:50
-power:4:1:0:0:3
-blow:BITE:HURT:1d6
-flags:RAND_25 |
-flags:BASH_DOOR | 
-flags:ANIMAL |
-#flags:CAN_SWIM | EAT_BODY |
-desc:It looks poisonous.
-
-name:120:Giant maggot
-base:insect
-color:m
-info:110:10:8:8:20
-power:4:3:0:0:4
-blow:BITE:HURT:1d3
-flags:RAND_50 |
-flags:MULTIPLY |
-#flags:INSECT
-desc:It is about four feet long with large teeth and wriggles.
-
-name:121:Black snake
-base:snake
-color:D
-info:100:17:5:38:60
-power:4:1:0:0:3
-blow:BITE:HURT:1d4
-blow:CRUSH:HURT:1d6
-#blow:CRUSH:HURT_MANA:1d6
-flags:RAND_25 |
-flags:ANIMAL | IM_POIS |
-spell-freq:5
-spells:DRAIN_MANA
-desc:It is about ten feet long.
-
-name:122:Copper snake
-base:snake
-color:u
-info:110:7:5:15:50
-power:4:1:0:0:5
-blow:BITE:POISON:2d3
-flags:RAND_25 | ATTR_FLICKER
-flags:ANIMAL | IM_POIS |
-#flags:EAT_BODY |
-desc:It is about three feet long.
-
-name:123:Giant brown mouse
-base:rodent
-color:u
-info:110:6:8:6:20
-power:4:3:0:0:4
-blow:BITE:HURT:2d2
-flags:RAND_50 |
-flags:MULTIPLY |
-flags:ANIMAL |
-desc:It is about three feet long with large teeth.
-
-name:124:Baboon
-base:yeti
-color:i
-info:110:21:10:10:0
-power:4:1:0:0:5
-blow:HIT:HURT:1d6
-#blow:SHOT:HURT:1d5
-flags:MALE |
-flags:SMART | OPEN_DOOR | TAKE_ITEM |
-spell-freq:3
-spells:SHOT_1
-desc:A squat, ugly humanoid covered with grime. He looks a bit like a
-desc: stunted chimpanzee.
-
-name:125:Maggot mass
-base:worm
-color:m
-info:100:12:7:3:10
-power:4:1:0:0:2
-blow:CRAWL:POISON:1d2
-#blow:CRAWL:DISEASE:1d2
-flags:RAND_25 | RAND_50 |
-flags:STUPID | WEIRD_MIND | MULTIPLY |
-flags:UNDEAD | NONLIVING | HURT_LIGHT | NO_FEAR |
-#flags:INSECT
-desc:A disgusting and diseased mass of maggots.
-
-name:126:Noxious mushroom patch
-base:mushroom
-color:t
-info:110:9:4:1:0
-power:4:1:0:0:2
-blow:SPORE:POISON:2d4
-#blow:SPORE:DISEASE:2d4
-flags:NEVER_MOVE | ONLY_ITEM | DROP_60 | 
-flags:STUPID | COLD_BLOOD | EMPTY_MIND |
-flags:IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:A small patch of mushrooms, oozing with an unpleasant ichor.
-
-name:127:Noxious mold
-base:mold
-color:t
-info:110:44:2:8:30
-power:4:1:0:0:5
-blow:SPORE:POISON:1d5
-#blow:SPORE:DISEASE:1d5
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:It is a strange noxious growth on the dungeon floor.
-
-name:128:Slime mold
-base:mushroom
-color:g
-info:100:4:4:1:10
-power:4:1:0:0:1
-blow:CRAWL:POISON:1d1
-flags:NEVER_MOVE | ONLY_ITEM | 
-flags:STUPID | EMPTY_MIND | MULTIPLY |
-flags:NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT
-mimic:food:slime mold
-desc:Hideous green blobs:  crawling, oozing, and breeding.
-
-name:129:Animated torch
-base:mimic
-color:u
-info:110:10:8:4:10
-power:4:1:0:0:4
-blow:HIT:FIRE:1d4
-flags:FORCE_SLEEP | RAND_50 | ONLY_ITEM | 
-flags:STUPID | HAS_LIGHT | EMPTY_MIND |
-flags:NONLIVING | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-flags-off:NEVER_MOVE
-mimic:light:wooden torch
-desc:A torch that somehow seems to have come alive.
-
-name:130:Yellow fairy
-base:hybrid
-color:y
-info:110:12:18:12:10
-power:4:1:0:0:5
-flags:NEVER_BLOW | DROP_60 |
-flags:HAS_LIGHT | OPEN_DOOR | ATTR_FLICKER 
-#flags:CAN_FLY | MUST_FLY | EVASIVE 
-spell-freq:2
-spells:BO_ELEC | BLINK | SCARE | SLOW |
-desc:A little winged humanoid surrounded by a glowing yellow lite.
-
-name:131:Unseen servant
-base:elemental
-color:M
-info:115:38:12:28:40
-power:4:2:0:0:4
-flags:NEVER_BLOW |
-flags:INVISIBLE | COLD_BLOOD | EMPTY_MIND | OPEN_DOOR | 
-flags:EVIL | NONLIVING | IM_ACID | IM_ELEC | IM_POIS | NO_FEAR 
-flags:NO_CONF | NO_SLEEP | TAKE_ITEM |
-desc:It is impossible to define its form but it serves someone.
-
-name:132:Swordfish
-base:fish
-color:W
-info:120:12:14:10:20
-power:4:2:0:0:15
-blow:STING:HURT:7d1
-blow:STING:HURT:7d1
-flags:ANIMAL | 
-#flags:CAN_SWIM | MUST_SWIM
-desc:An animal with a swordlike "beak".
-
-name:133:Novice mindcrafter
-base:person
-color:y
-info:110:16:20:10:5
-power:4:1:0:0:18
-blow:HIT:HURT:1d9
-flags:DROP_60 | 
-flags:OPEN_DOOR | 
-flags:HAS_LIGHT | NO_CONF | NO_SLEEP
-spell-freq:12
-spells:BLIND | SLOW | CONF | SCARE
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:A novice in the arts of mind over matter.
-
 ### Dungeon level 5 ###
 
-name:134:Bullroarer the Hobbit
+name:76:Bullroarer the Hobbit
 base:humanoid
 color:U
 info:120:60:16:12:30
@@ -1964,6 +1146,17 @@ flags:IM_ACID
 desc:A large green serpent with a female's torso.  Her green skin glistens with
 desc: acid.
 
+name:79:Blue ooze
+base:jelly
+color:b
+info:110:8:8:19:80
+power:5:1:48:0:7
+blow:CRAWL:COLD:1d4
+flags:DROP_40
+flags:RAND_25 | RAND_50
+flags:IM_COLD | NO_CONF | NO_SLEEP
+desc:It's blue and it's oozing.
+
 name:80:Green glutton ghost
 base:ghost
 color:g
@@ -1986,18 +1179,18 @@ flags:NEVER_MOVE
 flags:HURT_LIGHT | IM_ACID | HURT_COLD | NO_CONF | NO_SLEEP
 desc:It is a large pile of pulsing green flesh.
 
-name:135:Large kobold
-base:goblin
+name:82:Large kobold
+base:kobold
 color:b
 info:110:65:20:48:70
 power:5:1:2132:23:25
 blow:HIT:HURT:1d10
 flags:DROP_60
-friends-base:50:1d2:goblin
-friends-base:30:1d2:goblin
+friends-base:50:1d2:kobold
+friends-base:30:1d2:kobold
 desc:It is a man-sized figure with the all too recognizable face of a kobold.
 
-name:136:Skeleton kobold
+name:83:Skeleton kobold
 base:skeleton
 color:w
 info:110:23:20:39:80
@@ -2006,6 +1199,15 @@ blow:HIT:HURT:1d6
 flags:EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is a small animated kobold skeleton.
+
+name:84:Grey icky thing
+base:icky thing
+color:s
+info:110:18:14:14:15
+power:5:1:63:0:10
+blow:TOUCH:HURT:1d5
+flags:EMPTY_MIND
+desc:It is a smallish, slimy, icky, nasty creature.
 
 name:85:Disenchanter eye
 base:eye
@@ -2031,7 +1233,7 @@ flags:RAND_25 | RAND_50 | BASH_DOOR
 flags:HURT_LIGHT | IM_FIRE | NO_FEAR
 desc:It is a large slimy mass of worms.
 
-name:137:Copperhead snake
+name:87:Copperhead snake
 base:snake
 color:o
 info:110:14:6:30:10
@@ -2043,7 +1245,7 @@ desc:It has a copper head and sharp venomous fangs.
 
 name:182:Giant white dragon fly
 plural:Giant white dragon flies
-base:insect
+base:dragon fly
 color:w
 info:110:14:12:30:1
 power:5:2:352:3:15
@@ -2055,7 +1257,7 @@ desc:It is a large fly that drips frost.
 
 name:208:Giant green dragon fly
 plural:Giant green dragon flies
-base:insect
+base:dragon fly
 color:g
 info:110:14:12:30:1
 power:5:2:168:1:16
@@ -2078,408 +1280,6 @@ flags:NEVER_MOVE
 flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
 desc:It is a large pile of rotting flesh, whose touch spoils your food.  The
 desc: terrible smell it exudes is also very hard to get rid of...
-
-name:138:Blubbering icky thing
-base:icky thing
-color:W
-info:110:18:14:4:10
-power:5:1:150:3:6
-blow:CRAWL:POISON:1d4
-blow:CRAWL:EAT_FOOD
-flags:EMPTY_MIND
-flags:KILL_BODY | TAKE_ITEM
-flags:IM_POIS
-desc:It is a smallish, slimy, icky, hungry creature.
-
-name:139:Soldier
-base:person
-color:u
-info:110:23:20:24:80
-power:5:1:2232:55:6
-blow:HIT:HURT:1d7
-blow:HIT:HURT:1d7
-flags:MALE | HAS_LIGHT
-flags:DROP_60
-flags:OPEN_DOOR
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:An inexperienced but tough warrior.
-
-name:140:Salamander
-base:reptile
-color:o
-info:110:14:8:24:80
-power:5:1:248:6:6
-blow:BITE:FIRE:1d3
-flags:RAND_25
-flags:IM_FIRE
-desc:A small black and orange lizard.
-
-name:141:Wild cat
-base:feline
-color:U
-info:120:9:40:14:0
-power:5:2:184:4:5
-blow:CLAW:HURT:1d3
-blow:CLAW:HURT:1d3
-flags:BASH_DOOR
-desc:A larger than normal feline, hissing loudly.  Its velvet paws conceal a
-desc: fistful of needles.
-
-name:142:Black naga
-base:naga
-color:D
-info:110:27:16:60:180
-power:5:1:255:3:6
-blow:CRUSH:HURT:1d8
-flags:DROP_60
-flags:RAND_25
-desc:A large black serpent's body with a female torso.
-
-name:143:Scout
-base:person
-color:W
-info:110:27:20:12:50
-power:5:1:3276:46:7
-blow:HIT:HURT:1d5
-blow:HIT:HURT:1d5
-flags:MALE | HAS_LIGHT
-flags:DROP_60
-flags:OPEN_DOOR
-flags:FORCE_SLEEP
-spell-freq:9
-spells:ARROW_1 | MISSILE
-drop:magic book:[Magic for Beginners]:3:1:1
-friends-base:20:1d3:person
-friends-base:40:1d3:person
-friends-base:80:1d3:person
-friends:50:1d2:Same
-desc:An agile hunter, ready and relaxed.
-
-name:144:Green mold
-base:mold
-color:g
-info:110:95:2:16:75
-power:5:1:240:1:6
-blow:SPORE:TERRIFY:1d4
-flags:EMPTY_MIND | STUPID
-flags:IM_ACID
-desc:It is a strange growth on the dungeon floor.
-
-name:145:Giant fruit fly
-plural:Giant fruit flies
-base:insect
-color:G
-info:120:3:8:16:10
-power:5:3:480:1:7
-blow:BITE:HURT:1d2
-desc:A fast-breeding, annoying pest.
-
-name:146:Gnome mage
-base:humanoid
-color:r
-info:110:32:18:30:20
-power:5:2:6069:11:6
-blow:HIT:HURT:1d5
-flags:MALE | EVIL
-flags:DROP_60
-flags:FORCE_SLEEP
-spell-freq:4
-spells:BLINK | DARKNESS
-spells:BO_COLD
-spells:S_MONSTER
-drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Conjurings and Tricks]:5:1:1
-friends:100:4d4:Same
-desc:A mage of short stature.
-
-name:147:Giant Silver mouse
-plural:Giant Silver mice
-base:rodent
-color:W
-info:110:2:8:4:20
-power:5:1:220:3:2
-blow:BITE:EAT_LIGHT:1d2
-flags:MULTIPLY
-flags:RAND_50
-desc:It is about three feet long with large teeth.  As the light of your lamp
-desc: falls on it, it seems to grow stronger.
-
-name:148:Goblin archer
-base:goblin
-color:W
-info:110:24:20:16:10
-power:5:1:0:0:7
-blow:HIT:HURT:1d9
-flags:DROP_60 |
-flags:OPEN_DOOR | TAKE_ITEM |
-flags:ORC | EVIL | HURT_LIGHT | IM_POIS |
-spell-freq:5
-spells:ARROW_1
-desc:It is an ugly humanoid wielding a bow.
-
-name:149:Bert the Stone Troll
-base:troll
-color:s
-info:110:116:20:40:50
-power:5:6:0:0:100
-blow:HIT:HURT:3d7
-blow:HIT:HURT:1d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-#flags:EAT_BODY |
-spell-freq:7
-spells:BOULDER_1
-friends:100:1d1:Tom the Stone Troll
-friends:100:1d1:Bill the Stone Troll
-desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called
-desc: Bill and Tom.
-
-name:150:Bill the Stone Troll
-base:troll
-color:s
-info:110:116:20:40:50
-power:5:6:0:0:100
-blow:HIT:HURT:3d7
-blow:HIT:HURT:1d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-#flags:EAT_BODY |
-spell-freq:7
-spells:BOULDER_1
-friends:100:1d1:Bert the Stone Troll
-friends:100:1d1:Tom the Stone Troll
-desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
-desc: and Tom.
-
-name:151:Tom the Stone Troll
-base:troll
-color:s
-info:110:116:20:40:50
-power:5:6:0:0:100
-blow:HIT:HURT:3d7
-blow:HIT:HURT:1d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-#flags:EAT_BODY |
-spell-freq:7
-spells:BOULDER_1
-friends:100:1d1:Bert the Stone Troll
-friends:100:1d1:Bill the Stone Troll
-desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
-desc: and Bill.
-
-name:152:Stone jelly
-base:jelly
-color:W
-info:120:48:2:1:99
-power:5:1:0:0:6
-blow:CRUSH:HURT:1d5
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:HURT_LIGHT | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-spell-freq:5
-spells:SHOT_1
-desc:Its a large pile of stone-coloured flesh.
-
-name:153:Scarecrow
-base:golem
-color:Y
-info:110:18:12:30:10
-power:5:1:0:0:4
-blow:HIT:HURT:1d3
-blow:TOUCH:TERRIFY
-flags:RAND_50 |
-flags:EMPTY_MIND | BASH_DOOR |
-flags:UNDEAD | ANIMAL | NONLIVING | NO_FEAR | NO_CONF |
-desc:A straw-filled figure animated by the malevolent spirits of dead birds.
-
-name:154:Red mushroom patch
-base:mushroom
-color:r
-info:110:12:2:1:0
-power:5:1:0:0:2
-blow:SPORE:FIRE:3d4
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:IM_FIRE | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:PLANT 
-desc:Yum!  It looks quite tasty.
-
-name:155:Soldier ant
-base:ant
-color:z
-info:110:12:10:3:10
-power:5:3:0:0:5
-blow:BITE:HURT:2d5
-flags:WEIRD_MIND | BASH_DOOR |
-desc:A large ant with powerful mandibles.
-
-name:156:Giant green ant
-base:ant
-color:g
-info:110:14:8:16:80
-power:5:2:0:0:6
-blow:BITE:POISON:1d6
-flags:WEIRD_MIND | BASH_DOOR |
-desc:It is about three feet long and has poisonous pincers.
-
-name:157:Huge white bat
-base:bat
-color:W
-info:130:18:10:15:30
-power:5:3:0:0:7
-blow:BITE:HURT:1d4
-flags:RAND_50 |
-#flags:CAN_FLY | MUST_FLY | EAT_BODY |
-flags:ANIMAL | IM_COLD |
-friends:80:2d4:same
-desc:It screeches as it attacks.
-
-name:158:Giant blue centipede
-base:centipede
-color:b
-info:110:18:8:10:40
-power:5:2:0:0:5
-blow:BITE:HURT:1d3
-blow:STING:HURT:1d4
-flags:WEIRD_MIND | BASH_DOOR |
-desc:It is about five feet long and carnivorous.
-
-name:159:Guard dog
-base:canine
-color:u
-info:120:15:30:16:0
-power:5:1:0:0:4
-blow:BITE:HURT:1d4
-flags:RAND_25 |
-flags:BASH_DOOR | 
-flags:ANIMAL
-#flags:EAT_BODY |
-desc:A rather vicious dog.  It thinks you are a thief.
-
-name:160:Giant tree frog
-base:amphibian
-color:G
-info:110:13:12:16:30
-power:5:1:0:0:7
-blow:BITE:HURT:2d3
-#blow:SPIT:SLOW
-flags:RAND_25 |
-flags:ANIMAL | BASH_DOOR |
-#flags:CAN_SWIM | CAN_CLIMB | EAT_BODY | 
-spell-freq:2
-spells:SLOW
-desc:It is as big as a wolf.
-
-name:161:Greedy looking gnome
-base:humanoid
-color:y
-info:110:13:18:14:10
-power:5:1:0:0:6
-blow:HIT:HURT:1d7
-blow:TOUCH:EAT_ITEM
-flags:MALE | DROP_60 |
-flags:SMART | OPEN_DOOR | TAKE_ITEM | 
-spell-freq:5
-spells:CONF | SLOW |
-desc:A sly fellow of short stature. He appears to be looking for 
-desc:a quick profit.
-
-name:162:Haughty looking elf
-base:humanoid
-color:W
-info:110:21:18:16:10
-power:5:1:0:0:7
-blow:HIT:HURT:1d5
-blow:HIT:HURT:1d5
-#blow:ARROW:HURT:2d6
-flags:MALE | FORCE_SLEEP | DROP_60 |
-flags:SMART | OPEN_DOOR | BASH_DOOR | TAKE_ITEM |
-spell-freq:4
-spells:ARROW_1
-desc:An arrogant elf with an air of disdain. He appears to be looking
-desc: for somewhere a little more sophisticated.
-
-name:163:Blue icky thing
-base:icky thing
-color:b
-info:110:18:14:14:20
-power:5:1:0:0:6
-blow:TOUCH:COLD:2d3
-flags:RAND_50 |
-flags:EMPTY_MIND |
-desc:It is a smallish, slimy, icky, pestilent creature.
-
-name:164:Boiling ooze
-base:jelly
-color:r
-info:110:12:8:16:80
-power:5:1:0:0:5
-blow:CRAWL:FIRE:2d4
-flags:RAND_25 | RAND_50 | ATTR_FLICKER
-flags:STUPID | EMPTY_MIND | DROP_40
-flags:IM_FIRE | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
-#flags:OOZE | 
-desc:It's red and it's oozing.
-
-name:165:Green snake
-base:snake
-color:G
-info:100:3:5:39:60
-power:5:1:0:0:2
-blow:BITE:POISON:1d5
-blow:SPIT:POISON:1d5
-flags:RAND_25 |
-flags:ANIMAL | IM_POIS |
-#flags:EAT_BODY |
-desc:It is about two feet long.
-
-name:166:Forest goblin
-base:goblin
-color:G
-info:110:34:20:32:30
-power:5:3:0:0:6
-blow:HIT:HURT:1d5
-#blow:SHOT:HURT:1d5
-flags:MALE | DROP_60 |
-flags:OPEN_DOOR | BASH_DOOR | TAKE_ITEM |
-flags:ORC | EVIL | IM_POIS |
-spell-freq:4
-spells:ARROW_1
-desc:He is an ugly, green skinned primative looking humanoid.
-
-name:167:White mold
-base:mold
-color:w
-info:110:66:2:12:99
-power:5:1:0:0:6
-blow:TOUCH:POISON:2d6
-flags:NEVER_MOVE |
-flags:STUPID | EMPTY_MIND |
-flags:IM_POIS | NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP |
-desc:A strange white growth on the dungeon floor.
-
-name:168:Giant pack rat
-base:rodent
-color:I
-info:110:5:8:12:20
-power:5:1:0:0:1
-blow:BITE:POISON:1d4
-flags:RAND_25 |
-flags:SMART | 
-flags:ANIMAL |
-#flags:EAT_BODY |
-friends:100:2d5:same
-desc:It is a rodent of unusual size.
 
 ### Dungeon level 6 ###
 
@@ -2516,6 +1316,15 @@ blow:SPORE:CONFUSE:1d4
 flags:EMPTY_MIND | STUPID
 desc:A strange brown growth on the dungeon floor.
 
+name:93:Giant brown bat
+base:bat
+color:u
+info:130:14:10:18:30
+power:6:1:210:1:10
+blow:BITE:HURT:1d3
+flags:RAND_50
+desc:It screeches as it attacks.
+
 name:95:Creeping silver coins
 plural:Piles of creeping silver coins
 base:creeping coins
@@ -2527,7 +1336,7 @@ blow:TOUCH:POISON:2d6
 desc:It appears to be a pile of silver coins.
 mimic:gold:silver
 
-name:2096:Snaga
+name:96:Snaga
 base:orc
 color:U
 info:110:36:20:48:70
@@ -2553,7 +1362,7 @@ desc: to frighten its prey.
 
 name:231:Giant black dragon fly
 plural:Giant black dragon flies
-base:insect
+base:dragon fly
 color:s
 info:120:14:12:30:1
 power:6:2:368:3:18
@@ -2565,7 +1374,7 @@ desc:The size of a large bird, this fly drips caustic acid.
 
 name:234:Giant gold dragon fly
 plural:Giant gold dragon flies
-base:insect
+base:dragon fly
 color:y
 info:120:14:12:30:1
 power:6:2:416:3:18
@@ -2579,7 +1388,7 @@ desc: pervades the air.
 
 ### Dungeon level 7 ###
 
-name:2098:Cave orc
+name:98:Cave orc
 base:orc
 color:G
 info:110:55:20:48:70
@@ -2650,7 +1459,7 @@ flags:HURT_LIGHT | HURT_COLD | NO_CONF | NO_SLEEP
 desc:It is a large pulsating mound of red flesh.
 
 name:104:Giant red frog
-base:amphibian
+base:reptile
 color:r
 info:110:23:12:19:50
 power:7:1:756:4:16
@@ -2668,7 +1477,7 @@ flags:EMPTY_MIND
 flags:IM_ACID
 desc:It is a smallish, slimy, icky, acidic creature.
 
-name:2106:Zombified kobold
+name:106:Zombified kobold
 base:zombie
 color:s
 info:110:27:20:21:100
@@ -2720,7 +1529,7 @@ blow:BITE:HURT:1d6
 desc:It is a black lizard with overlapping scales and a powerful jaw.
 
 name:110:Mughash the Kobold Lord
-base:goblin
+base:kobold
 color:v
 info:110:150:20:30:40
 power:7:3:7917:47:100
@@ -2738,7 +1547,7 @@ desc:Strong and powerful, for a kobold.
 
 ### Dungeon level 8 ###
 
-name:2111:Wormtongue, Agent of Saruman
+name:111:Wormtongue, Agent of Saruman
 base:person
 color:B
 info:110:250:20:45:10
@@ -2774,7 +1583,7 @@ friends:100:5d4:Snaga
 desc:A captain of a regiment of weaker orcs, Lagduf keeps his troop in order
 desc: with displays of excessive violence.
 
-name:2113:Brown yeek
+name:113:Brown yeek
 base:yeek
 color:u
 info:110:18:18:21:10
@@ -2798,6 +1607,16 @@ flags:FORCE_SLEEP
 spell-freq:9
 spells:BR_FIRE
 desc:A large black and yellow lizard.  You'd better run away!
+
+name:116:Green mold
+base:mold
+color:g
+info:110:95:2:16:75
+power:8:1:240:1:28
+blow:SPORE:TERRIFY:1d4
+flags:EMPTY_MIND | STUPID
+flags:IM_ACID
+desc:It is a strange growth on the dungeon floor.
 
 name:117:Skeleton orc
 base:skeleton
@@ -2922,7 +1741,7 @@ spell-freq:8
 spells:BLINK | CAUSE_1 | MISSILE
 desc:An orc dressed in skins who gestures wildly.
 
-name:2127:Baby blue dragon
+name:127:Baby blue dragon
 base:dragon
 color:b
 info:110:88:20:36:70
@@ -2938,7 +1757,7 @@ spells:BR_ELEC
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale blue.
 
-name:2128:Baby white dragon
+name:128:Baby white dragon
 base:dragon
 color:w
 info:110:88:20:36:70
@@ -2954,7 +1773,7 @@ spells:BR_COLD
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale white.
 
-name:2129:Baby green dragon
+name:129:Baby green dragon
 base:dragon
 color:g
 info:110:88:20:36:70
@@ -2970,7 +1789,7 @@ spells:BR_POIS
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a sickly green.
 
-name:2130:Baby black dragon
+name:130:Baby black dragon
 base:dragon
 color:s
 info:110:88:20:36:70
@@ -2986,7 +1805,7 @@ spells:BR_ACID
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a dull black.
 
-name:2131:Baby red dragon
+name:131:Baby red dragon
 base:dragon
 color:r
 info:110:88:20:36:70
@@ -3085,7 +1904,7 @@ flags:ANIMAL | WEIRD_MIND
 flags:IM_POIS
 desc:It is a vast black spider whose bulbous body is bloated with poison.
 
-name:2136:Dark elven mage
+name:136:Dark elven mage
 base:humanoid
 color:r
 info:120:39:20:24:30
@@ -3103,7 +1922,7 @@ drop:magic book:[Magic for Beginners]:10:1:1
 drop:magic book:[Conjurings and Tricks]:10:1:1
 desc:A dark elven figure, dressed all in black, hurling spells at you.
 
-name:2137:Orfax, Son of Boldor
+name:137:Orfax, Son of Boldor
 base:yeek
 color:B
 info:120:120:18:24:10
@@ -3124,7 +1943,7 @@ friends:50:1d3:Master yeek
 desc:He's just like his daddy!  He knows mighty spells, but fortunately he is a
 desc: yeek.
 
-name:2138:Dark elven warrior
+name:138:Dark elven warrior
 base:humanoid
 color:u
 info:110:60:20:24:40
@@ -3148,7 +1967,7 @@ flags:NEVER_MOVE
 flags:ATTR_CLEAR
 desc:Yum!  It looks quite tasty.
 
-name:2140:Grishnákh, the Hill Orc
+name:140:Grishnákh, the Hill Orc
 base:orc
 color:y
 info:110:230:20:30:50
@@ -3251,6 +2070,15 @@ flags:GROUP_AI
 friends:100:2d10:Same
 desc:It howls and snaps at you.
 
+name:148:Giant fruit fly
+plural:Giant fruit flies
+base:insect
+color:G
+info:120:3:8:16:10
+power:10:3:480:1:4
+blow:BITE:HURT:1d2
+desc:A fast-breeding, annoying pest.
+
 name:149:Panther
 base:feline
 color:u
@@ -3262,7 +2090,7 @@ flags:BASH_DOOR
 desc:A large black cat, stalking you with intent.  It thinks you're its next
 desc: meal.
 
-name:2150:Brigand
+name:150:Brigand
 base:person
 color:b
 info:110:41:20:48:5
@@ -3280,7 +2108,7 @@ desc:He is eyeing your backpack.
 
 ### Dungeon level 11 ###
 
-name:2151:Baby multi-hued dragon
+name:151:Baby multi-hued dragon
 base:dragon
 color:v
 info:110:114:20:36:70
@@ -3308,7 +2136,7 @@ flags:ANIMAL
 flags:BASH_DOOR
 desc:A strange hybrid of eagle and horse.  It looks weird.
 
-name:2153:Zombified orc
+name:153:Zombified orc
 base:zombie
 color:s
 info:110:50:20:36:90
@@ -3319,6 +2147,24 @@ blow:HIT:HURT:1d4
 flags:ORC | EMPTY_MIND
 flags:NO_FEAR
 desc:It is a shambling orcish corpse leaving behind a trail of flesh.
+
+name:154:Gnome mage
+base:humanoid
+color:r
+info:110:32:18:30:20
+power:11:2:6069:11:38
+blow:HIT:HURT:1d5
+flags:MALE | EVIL
+flags:DROP_60
+flags:FORCE_SLEEP
+spell-freq:4
+spells:BLINK | DARKNESS
+spells:BO_COLD
+spells:S_MONSTER
+drop:magic book:[Magic for Beginners]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
+friends:100:4d4:Same
+desc:A mage of short stature.
 
 ### Dungeon level 12 ###
 
@@ -3332,7 +2178,7 @@ flags:RAND_50
 flags:IM_POIS
 desc:It has glistening black skin, a sleek body and highly venomous fangs.
 
-name:2156:White wolf
+name:156:White wolf
 plural:White wolves
 base:canine
 color:w
@@ -3391,7 +2237,7 @@ friends:100:1d1:Bullroarer the Hobbit
 friends:100:1d1:Grishnákh, the Hill Orc
 desc:A leader of a band of raiding orcs, he picks on hobbits.
 
-name:2160:Master yeek
+name:160:Master yeek
 base:yeek
 color:U
 info:110:60:18:28:10
@@ -3430,7 +2276,7 @@ friends:50:1d2:Easterling warrior
 friends:50:1d2:Same
 desc:A robed man, dedicated to his god.
 
-name:2162:Dark elven priest
+name:162:Dark elven priest
 base:humanoid
 color:g
 info:120:39:20:45:40
@@ -3469,7 +2315,7 @@ flags:EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is an animated human skeleton.
 
-name:2165:Zombified human
+name:165:Zombified human
 base:zombie
 color:s
 info:110:54:20:36:100
@@ -3506,7 +2352,7 @@ spell-freq:15
 spells:SCARE | TPORT
 desc:A ghostly apparition that shrieks horribly.
 
-name:2168:Easterling warrior
+name:168:Easterling warrior
 base:person
 color:u
 info:110:54:20:51:70
@@ -3756,7 +2602,7 @@ desc:It is a large wolf with eyes full of cunning.
 
 name:187:Giant black louse
 plural:Giant black lice
-base:insect
+base:louse
 color:D
 info:120:2:6:8:10
 power:14:1:360:0:3
@@ -6560,6 +5406,63 @@ friends:100:2d4:Stone Troll
 friends:100:4d4:Same
 desc:A huge, ugly, half-human in search of plunder.
 
+name:343:Bert the Stone Troll
+base:troll
+color:s
+info:120:1100:20:84:50
+power:34:7:1127124:59:2000
+blow:HIT:HURT:6d6
+blow:HIT:HURT:6d6
+blow:BITE:HURT:3d10
+flags:UNIQUE | MALE | REGENERATE
+flags:DROP_1 | DROP_GOOD | ONLY_ITEM
+flags:MOVE_BODY | TAKE_ITEM
+flags:HURT_ROCK | HURT_LIGHT | IM_COLD
+spell-freq:7
+spells:BOULDER
+friends:100:1d1:Tom the Stone Troll
+friends:100:1d1:Bill the Stone Troll
+desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
+desc: Bill and Tom.
+
+name:344:Bill the Stone Troll
+base:troll
+color:s
+info:120:1100:20:84:50
+power:34:7:1127124:59:2000
+blow:HIT:HURT:6d6
+blow:HIT:HURT:6d6
+blow:BITE:HURT:3d10
+flags:UNIQUE | MALE | REGENERATE
+flags:DROP_1 | DROP_GOOD | ONLY_ITEM
+flags:MOVE_BODY | TAKE_ITEM
+flags:HURT_ROCK | HURT_LIGHT | IM_COLD
+spell-freq:7
+spells:BOULDER
+friends:100:1d1:Bert the Stone Troll
+friends:100:1d1:Tom the Stone Troll
+desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
+desc: Bert and Tom.
+
+name:345:Tom the Stone Troll
+base:troll
+color:s
+info:120:1100:20:84:50
+power:34:7:1127124:59:2000
+blow:HIT:HURT:6d6
+blow:HIT:HURT:6d6
+blow:BITE:HURT:3d10
+flags:UNIQUE | MALE | REGENERATE
+flags:DROP_1 | DROP_GOOD | ONLY_ITEM
+flags:MOVE_BODY | TAKE_ITEM
+flags:HURT_ROCK | HURT_LIGHT | IM_COLD
+spell-freq:7
+spells:BOULDER
+friends:100:1d1:Bert the Stone Troll
+friends:100:1d1:Bill the Stone Troll
+desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
+desc: Bert and Bill.
+
 name:347:Spectre
 base:ghost
 color:U
@@ -7368,7 +6271,7 @@ flags:NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP | GROUP_AI
 spell-freq:2
 spells:S_KIN
-#friends:100:2d6:Soldier ant
+friends:100:2d6:Soldier ant
 friends:60:2d3:Giant silver ant
 friends:60:2d3:Giant grey ant
 friends:60:2d3:Giant blue ant
@@ -8317,7 +7220,7 @@ flags:DROP_3 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:IM_COLD
 spell-freq:7
-spells:BOULDER_2
+spells:BOULDER
 friends:60:2d3:Half-troll
 friends:60:2d3:Cave troll
 friends:40:2d3:Olog
@@ -9051,7 +7954,7 @@ spells:HEAL
 spells:S_ANIMAL
 drop:prayer book:[Chants and Blessings]:8:1:1
 drop:prayer book:[Exorcism and Dispelling]:8:1:1
-friends:50:2d4:spider
+friends-base:50:2d4:spider
 desc:A lord of all that is natural, skilled in the mystic ways.  He is a master
 desc: of martial arts and is at one with nature, able to summon help from the
 desc: wild if need be.
@@ -9471,7 +8374,7 @@ spells:HEAL | MIND_BLAST
 spells:S_ANIMAL | S_HOUND | S_SPIDER
 drop:prayer book:[Chants and Blessings]:5:1:1
 drop:prayer book:[Exorcism and Dispelling]:15:1:1
-friends:80:3d5:spider
+friends-base:80:3d5:spider
 desc:He is one of the few true masters of the art, being extremely skillful in
 desc: all forms of unarmed combat and controlling the world's natural creatures
 desc: with disdainful ease.
