@@ -1612,7 +1612,8 @@ blow:HIT:CONFUSE:1d4
 flags:FORCE_SLEEP | NEVER_MOVE |
 flags:STUPID | COLD_BLOOD |
 spell-freq:4
-spells:FORGET | INVISIBLE
+spells:FORGET | 
+#spells:INVISIBLE
 desc:A mass of green vegetation.  You don't remember seeing anything like it
 desc: before.
 
@@ -1864,17 +1865,7 @@ flags:INVISIBLE | COLD_BLOOD | OPEN_DOOR |
 flags:EVIL | IM_ACID | IM_ELEC | TAKE_ITEM |
 desc:It is impossible to define its form but it serves someone.
 
-name:131:Swordfish
-base:fish
-color:W
-info:120:12:14:10:20
-power:4:2:0:0:15
-blow:STING:HURT:7d1
-blow:STING:HURT:7d1
-#flags:CAN_SWIM | MUST_SWIM
-desc:An animal with a swordlike "beak".
-
-name:132:Novice mindcrafter
+name:131:Novice mindcrafter
 base:person
 color:y
 info:110:16:20:10:5
@@ -1893,7 +1884,7 @@ desc:A novice in the arts of mind over matter.
 
 ### Dungeon level 5 ###
 
-name:133:Bullroarer the Hobbit
+name:132:Bullroarer the Hobbit
 base:humanoid
 color:U
 info:120:60:16:12:30
@@ -1941,7 +1932,7 @@ flags:NEVER_MOVE
 flags:HURT_LIGHT | IM_ACID | HURT_COLD | NO_CONF | NO_SLEEP
 desc:It is a large pile of pulsing green flesh.
 
-name:134:Large kobold
+name:133:Large kobold
 base:goblin
 color:b
 info:110:65:20:48:70
@@ -1952,7 +1943,7 @@ friends-base:50:1d2:goblin
 friends-base:30:1d2:goblin
 desc:It is a man-sized figure with the all too recognizable face of a kobold.
 
-name:135:Skeleton kobold
+name:134:Skeleton kobold
 base:skeleton
 color:w
 info:110:23:20:39:80
@@ -1986,7 +1977,7 @@ flags:RAND_25 | RAND_50 | BASH_DOOR
 flags:HURT_LIGHT | IM_FIRE | NO_FEAR
 desc:It is a large slimy mass of worms.
 
-name:136:Copperhead snake
+name:135:Copperhead snake
 base:snake
 color:o
 info:110:14:6:30:10
@@ -2034,7 +2025,7 @@ flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
 desc:It is a large pile of rotting flesh, whose touch spoils your food.  The
 desc: terrible smell it exudes is also very hard to get rid of...
 
-name:137:Blubbering icky thing
+name:136:Blubbering icky thing
 base:icky thing
 color:W
 info:110:18:14:4:10
@@ -2046,7 +2037,7 @@ flags:KILL_BODY | TAKE_ITEM
 flags:IM_POIS
 desc:It is a smallish, slimy, icky, hungry creature.
 
-name:138:Soldier
+name:137:Soldier
 base:person
 color:u
 info:110:23:20:24:80
@@ -2062,7 +2053,7 @@ friends-base:80:1d3:person
 friends:50:1d2:Same
 desc:An inexperienced but tough warrior.
 
-name:139:Salamander
+name:138:Salamander
 base:reptile
 color:o
 info:110:14:8:24:80
@@ -2072,7 +2063,7 @@ flags:RAND_25
 flags:IM_FIRE
 desc:A small black and orange lizard.
 
-name:140:Wild cat
+name:139:Wild cat
 base:feline
 color:U
 info:120:9:40:14:0
@@ -2083,7 +2074,7 @@ flags:BASH_DOOR
 desc:A larger than normal feline, hissing loudly.  Its velvet paws conceal a
 desc: fistful of needles.
 
-name:141:Black naga
+name:140:Black naga
 base:naga
 color:D
 info:110:27:16:60:180
@@ -2093,7 +2084,7 @@ flags:DROP_60
 flags:RAND_25
 desc:A large black serpent's body with a female torso.
 
-name:142:Scout
+name:141:Scout
 base:person
 color:W
 info:110:27:20:12:50
@@ -2113,7 +2104,7 @@ friends-base:80:1d3:person
 friends:50:1d2:Same
 desc:An agile hunter, ready and relaxed.
 
-name:143:Green mold
+name:142:Green mold
 base:mold
 color:g
 info:110:95:2:16:75
@@ -2123,7 +2114,7 @@ flags:EMPTY_MIND | STUPID
 flags:IM_ACID
 desc:It is a strange growth on the dungeon floor.
 
-name:144:Giant fruit fly
+name:143:Giant fruit fly
 plural:Giant fruit flies
 base:insect
 color:G
@@ -2132,7 +2123,7 @@ power:5:3:480:1:7
 blow:BITE:HURT:1d2
 desc:A fast-breeding, annoying pest.
 
-name:145:Gnome mage
+name:144:Gnome mage
 base:humanoid
 color:r
 info:110:32:18:30:20
@@ -2150,7 +2141,7 @@ drop:magic book:[Conjurings and Tricks]:5:1:1
 friends:100:4d4:Same
 desc:A mage of short stature.
 
-name:146:Giant Silver mouse
+name:145:Giant Silver mouse
 plural:Giant Silver mice
 base:rodent
 color:W
@@ -2162,7 +2153,7 @@ flags:RAND_50
 desc:It is about three feet long with large teeth.  As the light of your lamp
 desc: falls on it, it seems to grow stronger.
 
-name:147:Goblin archer
+name:146:Goblin archer
 base:goblin
 color:W
 info:110:24:20:16:10
@@ -2175,7 +2166,7 @@ spell-freq:5
 spells:ARROW_1
 desc:It is an ugly humanoid wielding a bow.
 
-name:148:Bert the Stone Troll
+name:147:Bert the Stone Troll
 base:troll
 color:s
 info:110:116:20:40:50
@@ -2194,7 +2185,7 @@ friends:100:1d1:Bill the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called
 desc: Bill and Tom.
 
-name:149:Bill the Stone Troll
+name:148:Bill the Stone Troll
 base:troll
 color:s
 info:110:116:20:40:50
@@ -2213,7 +2204,7 @@ friends:100:1d1:Tom the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
 desc: and Tom.
 
-name:150:Tom the Stone Troll
+name:149:Tom the Stone Troll
 base:troll
 color:s
 info:110:116:20:40:50
@@ -2232,7 +2223,7 @@ friends:100:1d1:Bill the Stone Troll
 desc:Big, brawny, powerful and with a taste for dwarf.  He has friends called Bert
 desc: and Bill.
 
-name:151:Stone jelly
+name:150:Stone jelly
 base:jelly
 color:W
 info:120:48:2:1:99
@@ -2244,7 +2235,7 @@ spell-freq:5
 spells:SHOT_1
 desc:Its a large pile of stone-coloured flesh.
 
-name:152:Scarecrow
+name:151:Scarecrow
 base:golem
 color:Y
 info:110:18:12:30:10
@@ -2256,7 +2247,7 @@ flags:BASH_DOOR |
 flags:UNDEAD | ANIMAL |
 desc:A straw-filled figure animated by the malevolent spirits of dead birds.
 
-name:153:Red mushroom patch
+name:152:Red mushroom patch
 plural:Red mushroom patches
 base:mushroom
 color:r
@@ -2268,7 +2259,7 @@ flags:IM_FIRE |
 flags-off:HURT_FIRE
 desc:Yum!  It looks quite tasty.
 
-name:154:Soldier ant
+name:153:Soldier ant
 base:ant
 color:z
 info:110:12:10:3:10
@@ -2276,7 +2267,7 @@ power:5:3:0:0:5
 blow:BITE:HURT:2d5
 desc:A large ant with powerful mandibles.
 
-name:155:Giant green ant
+name:154:Giant green ant
 base:ant
 color:g
 info:110:14:8:16:80
@@ -2284,7 +2275,7 @@ power:5:2:0:0:6
 blow:BITE:POISON:1d6
 desc:It is about three feet long and has poisonous pincers.
 
-name:156:Huge white bat
+name:155:Huge white bat
 base:bat
 color:W
 info:130:18:10:15:30
@@ -2296,7 +2287,7 @@ flags:IM_COLD |
 friends:80:2d4:same
 desc:It screeches as it attacks.
 
-name:157:Giant blue centipede
+name:156:Giant blue centipede
 base:centipede
 color:b
 info:110:18:8:10:40
@@ -2306,7 +2297,7 @@ blow:STING:HURT:1d4
 flags:BASH_DOOR |
 desc:It is about five feet long and carnivorous.
 
-name:158:Guard dog
+name:157:Guard dog
 base:canine
 color:u
 info:120:15:30:16:0
@@ -2317,7 +2308,7 @@ flags:BASH_DOOR |
 #flags:EAT_BODY |
 desc:A rather vicious dog.  It thinks you are a thief.
 
-name:159:Giant tree frog
+name:158:Giant tree frog
 base:amphibian
 color:G
 info:110:13:12:16:30
@@ -2331,7 +2322,7 @@ spell-freq:2
 spells:SLOW
 desc:It is as big as a wolf.
 
-name:160:Greedy looking gnome
+name:159:Greedy looking gnome
 base:humanoid
 color:y
 info:110:13:18:14:10
@@ -2345,7 +2336,7 @@ spells:CONF | SLOW |
 desc:A sly fellow of short stature. He appears to be looking for 
 desc:a quick profit.
 
-name:161:Haughty looking elf
+name:160:Haughty looking elf
 base:humanoid
 color:W
 info:110:21:18:16:10
@@ -2359,7 +2350,7 @@ spells:ARROW_1
 desc:An arrogant elf with an air of disdain. He appears to be looking
 desc: for somewhere a little more sophisticated.
 
-name:162:Blue icky thing
+name:161:Blue icky thing
 base:icky thing
 color:b
 info:110:18:14:14:20
@@ -2368,7 +2359,7 @@ blow:TOUCH:COLD:2d3
 flags:EMPTY_MIND |
 desc:It is a smallish, slimy, icky, pestilent creature.
 
-name:163:Boiling ooze
+name:162:Boiling ooze
 base:jelly
 color:r
 info:110:12:8:16:80
@@ -2380,7 +2371,7 @@ flags:IM_FIRE | IM_POIS | NO_CONF | NO_SLEEP |
 #flags:OOZE | 
 desc:It's red and it's oozing.
 
-name:164:Green snake
+name:163:Green snake
 base:snake
 color:G
 info:100:3:5:39:60
@@ -2392,7 +2383,7 @@ flags:IM_POIS |
 #flags:EAT_BODY |
 desc:It is about two feet long.
 
-name:165:Forest goblin
+name:164:Forest goblin
 base:goblin
 color:G
 info:110:34:20:32:30
@@ -2405,7 +2396,7 @@ spell-freq:4
 spells:SHOT_1
 desc:He is an ugly, green skinned primative looking humanoid.
 
-name:166:White mold
+name:165:White mold
 base:mold
 color:w
 info:110:66:2:12:99
@@ -2414,7 +2405,7 @@ blow:TOUCH:POISON:2d6
 flags:STUPID | EMPTY_MIND |
 desc:A strange white growth on the dungeon floor.
 
-name:167:Giant pack rat
+name:166:Giant pack rat
 base:rodent
 color:I
 info:110:5:8:12:20
