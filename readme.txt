@@ -15,6 +15,8 @@ Enjoy!
 
 -- The Angband Dev Team
 
+---------------------------------------
+
 To-do (eventually (a reminder for myself)):
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
