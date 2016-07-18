@@ -25,7 +25,7 @@ Find out how to fix monster invisibility spell, so the monster both disappears/c
 
 Finish uploading edit files with normal line endings: monster-base.txt, object.txt, object-base.txt, p-race.txt.
 
-Added fire and cold resists to Fire and Frost Giants.
+Add fire and cold resists to Fire and Frost Giants.
 
 Change Priest, Rogue, Ranger, Druid, Necromancer and Assassin spells to match Oangband.
 
