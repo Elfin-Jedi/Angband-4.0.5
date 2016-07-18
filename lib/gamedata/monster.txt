@@ -2481,7 +2481,7 @@ blow:TOUCH:POISON:2d6
 desc:It appears to be a pile of silver coins.
 mimic:gold:silver
 
-name:96:Snaga
+name:2096:Snaga
 base:orc
 color:U
 info:110:36:20:48:70
@@ -2533,7 +2533,7 @@ desc: pervades the air.
 
 ### Dungeon level 7 ###
 
-name:98:Cave orc
+name:2098:Cave orc
 base:orc
 color:G
 info:110:55:20:48:70
@@ -2622,7 +2622,7 @@ flags:EMPTY_MIND
 flags:IM_ACID
 desc:It is a smallish, slimy, icky, acidic creature.
 
-name:106:Zombified kobold
+name:2106:Zombified kobold
 base:zombie
 color:s
 info:110:27:20:21:100
@@ -2674,7 +2674,7 @@ blow:BITE:HURT:1d6
 desc:It is a black lizard with overlapping scales and a powerful jaw.
 
 name:110:Mughash the Kobold Lord
-base:kobold
+base:goblin
 color:v
 info:110:150:20:30:40
 power:7:3:7917:47:100
@@ -2692,7 +2692,7 @@ desc:Strong and powerful, for a kobold.
 
 ### Dungeon level 8 ###
 
-name:111:Wormtongue, Agent of Saruman
+name:2111:Wormtongue, Agent of Saruman
 base:person
 color:B
 info:110:250:20:45:10
@@ -2728,7 +2728,7 @@ friends:100:5d4:Snaga
 desc:A captain of a regiment of weaker orcs, Lagduf keeps his troop in order
 desc: with displays of excessive violence.
 
-name:113:Brown yeek
+name:2113:Brown yeek
 base:yeek
 color:u
 info:110:18:18:21:10
@@ -2886,7 +2886,7 @@ spell-freq:8
 spells:BLINK | CAUSE_1 | MISSILE
 desc:An orc dressed in skins who gestures wildly.
 
-name:127:Baby blue dragon
+name:2127:Baby blue dragon
 base:dragon
 color:b
 info:110:88:20:36:70
@@ -2902,7 +2902,7 @@ spells:BR_ELEC
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale blue.
 
-name:128:Baby white dragon
+name:2128:Baby white dragon
 base:dragon
 color:w
 info:110:88:20:36:70
@@ -2918,7 +2918,7 @@ spells:BR_COLD
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale white.
 
-name:129:Baby green dragon
+name:2129:Baby green dragon
 base:dragon
 color:g
 info:110:88:20:36:70
@@ -2934,7 +2934,7 @@ spells:BR_POIS
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a sickly green.
 
-name:130:Baby black dragon
+name:2130:Baby black dragon
 base:dragon
 color:s
 info:110:88:20:36:70
@@ -2950,7 +2950,7 @@ spells:BR_ACID
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a dull black.
 
-name:131:Baby red dragon
+name:2131:Baby red dragon
 base:dragon
 color:r
 info:110:88:20:36:70
@@ -3049,7 +3049,7 @@ flags:ANIMAL | WEIRD_MIND
 flags:IM_POIS
 desc:It is a vast black spider whose bulbous body is bloated with poison.
 
-name:136:Dark elven mage
+name:2136:Dark elven mage
 base:humanoid
 color:r
 info:120:39:20:24:30
@@ -3067,7 +3067,7 @@ drop:magic book:[Magic for Beginners]:10:1:1
 drop:magic book:[Conjurings and Tricks]:10:1:1
 desc:A dark elven figure, dressed all in black, hurling spells at you.
 
-name:137:Orfax, Son of Boldor
+name:2137:Orfax, Son of Boldor
 base:yeek
 color:B
 info:120:120:18:24:10
@@ -3088,7 +3088,7 @@ friends:50:1d3:Master yeek
 desc:He's just like his daddy!  He knows mighty spells, but fortunately he is a
 desc: yeek.
 
-name:138:Dark elven warrior
+name:2138:Dark elven warrior
 base:humanoid
 color:u
 info:110:60:20:24:40
@@ -3235,7 +3235,7 @@ flags:BASH_DOOR
 desc:A large black cat, stalking you with intent.  It thinks you're its next
 desc: meal.
 
-name:150:Brigand
+name:2150:Brigand
 base:person
 color:b
 info:110:41:20:48:5
@@ -3253,7 +3253,7 @@ desc:He is eyeing your backpack.
 
 ### Dungeon level 11 ###
 
-name:151:Baby multi-hued dragon
+name:2151:Baby multi-hued dragon
 base:dragon
 color:v
 info:110:114:20:36:70
@@ -3281,7 +3281,7 @@ flags:ANIMAL
 flags:BASH_DOOR
 desc:A strange hybrid of eagle and horse.  It looks weird.
 
-name:153:Zombified orc
+name:2153:Zombified orc
 base:zombie
 color:s
 info:110:50:20:36:90
@@ -3323,7 +3323,7 @@ flags:RAND_50
 flags:IM_POIS
 desc:It has glistening black skin, a sleek body and highly venomous fangs.
 
-name:156:White wolf
+name:2156:White wolf
 plural:White wolves
 base:canine
 color:w
@@ -3382,7 +3382,7 @@ friends:100:1d1:Bullroarer the Hobbit
 friends:100:1d1:Grishnákh, the Hill Orc
 desc:A leader of a band of raiding orcs, he picks on hobbits.
 
-name:160:Master yeek
+name:2160:Master yeek
 base:yeek
 color:U
 info:110:60:18:28:10
@@ -3421,7 +3421,7 @@ friends:50:1d2:Easterling warrior
 friends:50:1d2:Same
 desc:A robed man, dedicated to his god.
 
-name:162:Dark elven priest
+name:2162:Dark elven priest
 base:humanoid
 color:g
 info:120:39:20:45:40
@@ -3460,7 +3460,7 @@ flags:EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is an animated human skeleton.
 
-name:165:Zombified human
+name:2165:Zombified human
 base:zombie
 color:s
 info:110:54:20:36:100
@@ -6551,63 +6551,6 @@ friends:100:2d4:Stone Troll
 friends:100:4d4:Same
 desc:A huge, ugly, half-human in search of plunder.
 
-name:343:Bert the Stone Troll
-base:troll
-color:s
-info:120:1100:20:84:50
-power:34:7:1127124:59:2000
-blow:HIT:HURT:6d6
-blow:HIT:HURT:6d6
-blow:BITE:HURT:3d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-spell-freq:7
-spells:BOULDER
-friends:100:1d1:Tom the Stone Troll
-friends:100:1d1:Bill the Stone Troll
-desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
-desc: Bill and Tom.
-
-name:344:Bill the Stone Troll
-base:troll
-color:s
-info:120:1100:20:84:50
-power:34:7:1127124:59:2000
-blow:HIT:HURT:6d6
-blow:HIT:HURT:6d6
-blow:BITE:HURT:3d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-spell-freq:7
-spells:BOULDER
-friends:100:1d1:Bert the Stone Troll
-friends:100:1d1:Tom the Stone Troll
-desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
-desc: Bert and Tom.
-
-name:345:Tom the Stone Troll
-base:troll
-color:s
-info:120:1100:20:84:50
-power:34:7:1127124:59:2000
-blow:HIT:HURT:6d6
-blow:HIT:HURT:6d6
-blow:BITE:HURT:3d10
-flags:UNIQUE | MALE | REGENERATE
-flags:DROP_1 | DROP_GOOD | ONLY_ITEM
-flags:MOVE_BODY | TAKE_ITEM
-flags:HURT_ROCK | HURT_LIGHT | IM_COLD
-spell-freq:7
-spells:BOULDER
-friends:100:1d1:Bert the Stone Troll
-friends:100:1d1:Bill the Stone Troll
-desc:Big, brawny, powerful and with a taste for hobbit.  He has friends called
-desc: Bert and Bill.
-
 name:347:Spectre
 base:ghost
 color:U
@@ -8365,7 +8308,7 @@ flags:DROP_3 | DROP_GOOD | ONLY_ITEM
 flags:MOVE_BODY | TAKE_ITEM
 flags:IM_COLD
 spell-freq:7
-spells:BOULDER
+spells:BOULDER_2
 friends:60:2d3:Half-troll
 friends:60:2d3:Cave troll
 friends:40:2d3:Olog
