@@ -29,7 +29,7 @@ Add fire and cold resists to Fire and Frost Giants.
 
 Change Priest, Rogue, Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
 
-Add more monsters from Unangband.
+Add rest of level 5 monsters from Unangband.
 
 Add sexes back in to birth choices, also add Poschangband style race-type list.
 
