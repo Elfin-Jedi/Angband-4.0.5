@@ -1365,11 +1365,10 @@ bool effect_handler_DETECT_VISIBLE_MONSTERS(effect_handler_context_t *context)
 		/* Only detect nearby monsters */
 		if (x < x1 || y < y1 || x > x2 || y > y2) continue;
 
-		/* Exclude monsters that are invisible or out of range */
-			if (!(rf_has(mon->race->flags, RF_INVISIBLE ||
-		mon->m_timed[MON_TMD_INVISIBLE]) ||
-		mflag_has(mon->mflag, MFLAG_UNAWARE))) 
-                {
+		/* Include monsters that are visible and not mimics */
+			if (!(rf_has(mon->race->flags, RF_INVISIBLE)) && !(mon->m_timed[MON_TMD_INVISIBLE]) 
+                        && !(mflag_has(mon->mflag, MFLAG_UNAWARE)));
+                        {
 			/* Hack -- Detect the monster */
 			mflag_on(mon->mflag, MFLAG_MARK);
 			mflag_on(mon->mflag, MFLAG_SHOW);
