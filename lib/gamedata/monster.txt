@@ -1611,7 +1611,7 @@ power:4:1:0:0:5
 blow:HIT:CONFUSE:1d4
 flags:FORCE_SLEEP | NEVER_MOVE |
 flags:STUPID | COLD_BLOOD |
-spell-freq:4
+spell-freq:10
 spells:FORGET | INVISIBLE
 desc:A mass of green vegetation.  You don't remember seeing anything like it
 desc: before.
