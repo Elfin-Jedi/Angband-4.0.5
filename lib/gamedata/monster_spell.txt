@@ -619,7 +619,8 @@ effect:MON_TIMED_INC:INVISIBLE
 dice:50
 power:40
 lore:make self invisible
-message-vis:{name} tries to become invisible.
+message-vis:{name} calls a cloak of darkness about {pronoun} body.
+message-invis:You hear a very quiet noise.
 
 name:HEAL
 hit:100
