@@ -494,7 +494,7 @@ info:20:120:3
 history:42:20:10
 height:130:16
 weight:475:75
-#F:RES_FIRE
+values:RES_FIRE[1]
 
 name:24:Frost Giant
 stats:7:-1:-5:-4:3
@@ -512,7 +512,7 @@ info:20:120:3
 history:42:20:10
 height:130:16
 weight:475:75
-#F:RES_COLD
+values:RES_COLD[1]
 
 name:25:Beorning
 stats:2:-2:0:0:2
