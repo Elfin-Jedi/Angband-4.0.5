@@ -25,8 +25,6 @@ Find out how to fix monster invisibility spell, so the iinvisible monster can't 
 
 Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
 
-Add fire and cold resists to Fire and Frost Giants.
-
 Change Priest, Rogue, Ranger, Paladin, Druid, Necromancer, and Assassin spells to match Oangband.
 
 Add rest of level 5 monsters from Unangband.
