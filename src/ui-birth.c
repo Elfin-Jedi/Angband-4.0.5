@@ -236,6 +236,7 @@ static const char *get_flag_desc(bitflag flag)
 	{
 		case OF_SUST_STR: return "Sustains strength";
 		case OF_SUST_DEX: return "Sustains dexterity";
+                case OF_SUST_WIS: return "Sustains wisdom";
 		case OF_SUST_CON: return "Sustains constitution";
 		case OF_PROT_BLIND: return "Resists blindness";
 		case OF_HOLD_LIFE: return "Sustains experience";
@@ -252,6 +253,8 @@ static const char *get_resist_desc(int element)
 	switch (element)
 	{
 		case ELEM_POIS: return "Resists poison";
+                case ELEM_FIRE: return "Resists fire";
+                case ELEM_COLD: return "Resists cold";       
 		case ELEM_LIGHT: return "Resists light damage";
 		case ELEM_DARK: return "Resists darkness damage";
 
