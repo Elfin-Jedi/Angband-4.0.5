@@ -25,7 +25,7 @@ Find out how to fix monster invisibility spell, so the invisible monster can't b
 
 Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
 
-Change Priest, Rogue, Ranger, Paladin, Druid, Necromancer, and Assassin spells to match Oangband.
+Change Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
 
 Add rest of level 5 monsters from Unangband.
 
