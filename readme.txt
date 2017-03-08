@@ -19,11 +19,15 @@ Enjoy!
 
 To-do (eventually (a reminder for myself)):
 
+Upload edited monster-base.txt.
+
+Change whirlwind monster to a vortex.
+
+Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
+
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
 
 Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), and reappears again.
-
-Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
 
 Change Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
 
