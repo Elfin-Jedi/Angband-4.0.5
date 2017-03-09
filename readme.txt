@@ -29,13 +29,15 @@ Add player races from Faangband.
 
 Start Adding Poschengband races.
 
+Add Poschangband style race-type list.
+
 Disable monster invisibility spell. (It was making it so Grip, Farmer Maggot's Dog seemedd to be invisible, but could only be seen with Detect Monsters. Even Detect Invisible wouldn't do it.)
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
 
 Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), and reappears again.
 
-Add sexes back in to birth choices, also add Poschangband style race-type list.
+Add sexes back in to birth choices.
 
 Start adding player spells from Oangband that aren't easily made from existing effects.
 
