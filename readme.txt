@@ -19,9 +19,7 @@ Enjoy!
 
 To-do (eventually (a reminder for myself)):
 
-Upload edited monster-base.txt.
-
-Disable monster invisibility spell. (It was making it so Grip, Farmer Maggot's Dog could only be seen with Detect Monsters. Even Detect Invisible wouldn't do it.)
+Disable monster invisibility spell. (It was making it so Grip, Farmer Maggot's Dog seemedd to be invisible, but could only be seen with Detect Monsters. Even Detect Invisible wouldn't do it.)
 
 Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
 
