@@ -21,8 +21,6 @@ To-do (eventually (a reminder for myself)):
 
 Upload edited monster-base.txt.
 
-Change whirlwind monster to a vortex.
-
 Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
