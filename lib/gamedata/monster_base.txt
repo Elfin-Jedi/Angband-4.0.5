@@ -52,6 +52,14 @@ flags:IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 desc:Ainu/maia
 
+name:amphibian
+glyph:F
+pain:7
+flags:ANIMAL | WEIRD_MIND
+flags:RAND_50 | BASH_DOOR
+flags:FORCE_SLEEP
+desc:Amphibian
+
 name:ant
 glyph:a
 pain:7
@@ -100,14 +108,6 @@ flags:DRAGON | EVIL
 flags:FORCE_SLEEP
 desc:Dragon
 
-name:dragon fly
-glyph:F
-pain:7
-flags:ANIMAL | WEIRD_MIND
-flags:RAND_50 | BASH_DOOR
-flags:FORCE_SLEEP
-desc:Dragon Fly
-
 name:eye
 glyph:e
 pain:1
@@ -127,6 +127,13 @@ pain:6
 flags:ANIMAL
 desc:Feline (Cat)
 
+name:fish
+glyph:l
+pain:5
+flags:ANIMAL | WEIRD_MIND
+flags:RAND_50
+desc:Fish
+
 name:ghost
 glyph:G
 pain:1
@@ -140,8 +147,16 @@ glyph:P
 pain:1
 flags:GIANT | EVIL
 flags:BASH_DOOR
-spells:BOULDER
+spells:BOULDER_2
 desc:Giant Humanoid
+
+name:goblin
+glyph:k
+pain:1
+flags:EVIL
+flags:OPEN_DOOR | BASH_DOOR
+flags:IM_POIS
+desc:Goblin/Kobold
 
 name:golem
 glyph:g
@@ -180,7 +195,7 @@ desc:Icky Thing
 name:insect
 glyph:I
 pain:7
-flags:ANIMAL | WEIRD_MIND | MULTIPLY
+flags:ANIMAL | WEIRD_MIND
 flags:RAND_25 | RAND_50
 desc:Insect
 
@@ -198,14 +213,6 @@ flags:ANIMAL | WEIRD_MIND
 flags:BASH_DOOR
 desc:Killer Beetle
 
-name:kobold
-glyph:k
-pain:1
-flags:EVIL
-flags:OPEN_DOOR | BASH_DOOR
-flags:IM_POIS
-desc:Kobold
-
 name:lich
 glyph:L
 pain:1
@@ -215,13 +222,6 @@ flags:IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
 flags:FORCE_SLEEP
 spells:BRAIN_SMASH
 desc:Lich
-
-name:louse
-glyph:l
-pain:7
-flags:ANIMAL | WEIRD_MIND | MULTIPLY
-flags:RAND_50
-desc:Louse
 
 name:lurker
 glyph:.
@@ -258,6 +258,14 @@ pain:1
 flags:DEMON | EVIL
 flags:IM_FIRE
 desc:Minor Demon
+
+name:misc
+glyph:~
+pain:1
+flags:COLD_BLOOD | EMPTY_MIND | UNAWARE
+flags:NO_FEAR | NO_CONF | NO_SLEEP
+flags:FORCE_SLEEP
+desc:Misc
 
 name:mold
 glyph:m
@@ -300,6 +308,13 @@ pain:1
 flags:BASH_DOOR
 desc:Person/Human
 
+name:plant
+glyph:;
+pain:2
+flags:NEVER_MOVE
+flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
+desc:Plant
+
 name:quadruped
 glyph:q
 pain:4
@@ -319,7 +334,7 @@ name:reptile
 glyph:R
 pain:5
 flags:ANIMAL | HURT_COLD
-desc:Reptile/Amphibian
+desc:Reptile
 
 name:rodent
 glyph:r
@@ -351,6 +366,13 @@ name:townsfolk
 glyph:t
 pain:4
 desc:Townsfolk
+
+name:tree
+glyph::
+pain:2
+flags:NEVER_MOVE
+flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
+desc:Tree
 
 name:troll
 glyph:T
@@ -413,7 +435,7 @@ pain:1
 flags:ANIMAL
 flags:OPEN_DOOR | BASH_DOOR
 flags:IM_COLD
-desc:Yeti
+desc:Yeti/Monkey
 
 name:zephyr hound
 glyph:Z
