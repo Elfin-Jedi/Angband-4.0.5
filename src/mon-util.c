@@ -293,7 +293,7 @@ void update_mon(struct monster *mon, struct chunk *c, bool full)
 				rf_on(lore->flags, RF_INVISIBLE);
 
 				/* Handle "invisible" monsters */
-				if (rf_has(mon->race->flags, RF_INVISIBLE)) || (mon->m_timed[MON_TMD_INVISIBLE]) {
+				if (rf_has(mon->race->flags, RF_INVISIBLE || mon->m_timed[MON_TMD_INVISIBLE])  ) {
 					/* See invisible */
 					if (player_of_has(player, OF_SEE_INVIS))
 					{
