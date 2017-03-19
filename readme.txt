@@ -23,9 +23,9 @@ Finish uploading edit files with normal line endings: object.txt, object-base.tx
 
 Add rest of level 5 monsters from Unangband.
 
-Change Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
+Change spells to match FAangband.
 
-Add player races from Faangband.
+Add player races from FAangband.
 
 Start Adding Poschengband races.
 
@@ -37,7 +37,7 @@ Find out how to fix monster invisibility spell, so the invisible monster can't b
 
 Add sexes back in to birth choices.
 
-Start adding player spells from Oangband that aren't easily made from existing effects.
+Start adding player spells from FAangband that aren't easily made from existing effects.
 
 Add framework for special abilities like Zangband-descended variants.
 
