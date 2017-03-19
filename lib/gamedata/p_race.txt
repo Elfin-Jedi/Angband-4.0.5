@@ -10,7 +10,7 @@
 
 # Format:
 # name:race number:race name
-# stats:str:int:wis:dex:con
+# stats:str:int:wistats:dex:con
 # skill-disarm:base
 # skill-device:base
 # skill-save:base
@@ -260,13 +260,13 @@ height:37:4
 weight:65:5
 values:RES_POIS[1]
 
-name:11:Man of Bree
+name:11:Man of Bree 
 stats:0:0:0:0:0
 skill-disarm:0
 skill-device:0
 skill-save:0
 skill-stealth:0
-skill-search:0
+skill-search:15
 skill-search-freq:10
 skill-melee:0
 skill-shoot:0
@@ -295,7 +295,7 @@ height:57:4
 weight:90:10
 obj-flags:SUST_DEX
 
-name:13:Shadow Fairy
+name:13:Shadow Fairy 
 stats:-6:3:4:2:-3
 skill-disarm:7
 skill-device:20
@@ -391,7 +391,8 @@ info:12:130:2
 history:45:3000:50
 height:69:5
 weight:170:20
-#Undead
+values:RES_POIS[1]
+values:RES_COLD[3]
 
 name:18:Man of Dale
 stats:0:0:0:0:0
@@ -567,6 +568,8 @@ info:12:140:3
 history:48:14:9
 height:69:5
 weight:170:20
+values:RES_POIS[1]
+values:RES_COLD[1]
 #F:SHAPESHIFT_BAT
 #F:NO_RES_LIGHT
 
@@ -783,10 +786,11 @@ info:9:190:0
 history:121:0:100
 height:72:6
 weight:170:20
+values:RES_LIGHT[1]
 #U:ANGEL
 
 name:40:Demon
-stats:2:2:-3:0:0
+stats:2:3:-3:0:0
 skill-disarm:2
 skill-device:10
 skill-save:0
@@ -801,6 +805,8 @@ info:10:180:0
 history:124:0:100
 height:36:2
 weight:50:5
+obj-flags:SUST_INT
+values:RES_FIRE[1]
 #U:DEMON
 
 #Shapeshifts from Unangband, may need to move elsewhere. Activate @.
@@ -862,3 +868,4 @@ weight:50:5
 #S:-1:0:0:0:0:0:4:0
 #R:0:0:0:3:3:0:0:0:0
 #X:0:4:51
+
