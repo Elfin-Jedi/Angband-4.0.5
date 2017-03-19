@@ -19,7 +19,7 @@ Enjoy!
 
 To-do (eventually (a reminder for myself)):
 
-Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
+Finish uploading edit files with normal line endings: object.txt, object-base.txt.
 
 Add rest of level 5 monsters from Unangband.
 
