@@ -391,6 +391,8 @@ info:12:130:2
 history:45:3000:50
 height:69:5
 weight:170:20
+values:RES_POIS[1]
+values:RES_COLD[3]
 
 name:18:Man of Dale
 stats:0:0:0:0:0
@@ -566,6 +568,8 @@ info:12:140:3
 history:48:14:9
 height:69:5
 weight:170:20
+values:RES_POIS[1]
+values:RES_COLD[1]
 #F:SHAPESHIFT_BAT
 #F:NO_RES_LIGHT
 
@@ -767,14 +771,14 @@ weight:170:25
 obj-flags:SUST_WIS
 
 name:39:Angel
-stats:-2:0:1:0:-2
+stats:2:0:2:0:-2
 skill-disarm:0
 skill-device:0
-skill-save:0
-skill-stealth:0
+skill-save:10
+skill-stealth:-2
 skill-search:0
 skill-search-freq:10
-skill-melee:-1
+skill-melee:5
 skill-shoot:0
 skill-throw:0
 skill-dig:-5
@@ -782,14 +786,15 @@ info:9:190:0
 history:121:0:100
 height:72:6
 weight:170:20
+values:RES_LIGHT[1]
 #U:ANGEL
 
 name:40:Demon
-stats:2:2:-3:0:0
-skill-disarm:0
+stats:2:3:-3:0:0
+skill-disarm:2
 skill-device:10
 skill-save:0
-skill-stealth:0
+skill-stealth:2
 skill-search:3
 skill-search-freq:10
 skill-melee:5
@@ -800,9 +805,11 @@ info:10:180:0
 history:124:0:100
 height:36:2
 weight:50:5
+obj-flags:SUST_INT
+values:RES_FIRE[1]
 #U:DEMON
 
-#Shapeshifts from Unangband, may need to move elsewhere. Activate #@.
+#Shapeshifts from Unangband, may need to move elsewhere. Activate @.
 
 #N:29:Goat
 #S:0:0:0:0:0:0:0:0

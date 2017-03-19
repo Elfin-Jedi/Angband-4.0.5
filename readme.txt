@@ -19,19 +19,17 @@ Enjoy!
 
 To-do (eventually (a reminder for myself)):
 
-Finish uploading edit files with normal line endings: object.txt, object-base.txt, p-race.txt.
+Finish uploading edit files with normal line endings: object.txt, object-base.txt.
 
 Add rest of level 5 monsters from Unangband.
 
-Change Ranger, Druid, Necromancer, and Assassin spells to match Oangband.
+Change spells to match FAangband.
 
-Add player races from Faangband.
+Add player races from FAangband.
 
 Start Adding Poschengband races.
 
 Add Poschangband style race-type list.
-
-Disable monster invisibility spell. (It was making it so Grip, Farmer Maggot's Dog seemedd to be invisible, but could only be seen with Detect Monsters. Even Detect Invisible wouldn't do it.)
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
 
@@ -39,7 +37,7 @@ Find out how to fix monster invisibility spell, so the invisible monster can't b
 
 Add sexes back in to birth choices.
 
-Start adding player spells from Oangband that aren't easily made from existing effects.
+Start adding player spells from FAangband that aren't easily made from existing effects.
 
 Add framework for special abilities like Zangband-descended variants.
 

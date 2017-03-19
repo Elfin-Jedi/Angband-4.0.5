@@ -1367,7 +1367,7 @@ bool effect_handler_DETECT_VISIBLE_MONSTERS(effect_handler_context_t *context)
 
 		/* Exclude monsters that are invisible or out of range */
 			if (!(rf_has(mon->race->flags, RF_INVISIBLE)) && !(mon->m_timed[MON_TMD_INVISIBLE]) 
-                        && !(mflag_has(mon->mflag, MFLAG_UNAWARE)));
+                        && !(mflag_has(mon->mflag, MFLAG_UNAWARE)))
                         {
 			/* Hack -- Detect the monster */
 			mflag_on(mon->mflag, MFLAG_MARK);
@@ -1439,7 +1439,7 @@ bool effect_handler_DETECT_INVISIBLE_MONSTERS(effect_handler_context_t *context)
 		if (x < x1 || y < y1 || x > x2 || y > y2) continue;
 
 		/* Detect invisible monsters */
-		if (rf_has(mon->race->flags, RF_INVISIBLE) || mon->m_timed[MON_TMD_INVISIBLE] ) {
+                if (rf_has(mon->race->flags, RF_INVISIBLE) || mon->m_timed[MON_TMD_INVISIBLE]) {
 			/* Take note that they are invisible */
 			rf_on(lore->flags, RF_INVISIBLE);
 

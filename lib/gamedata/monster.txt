@@ -2416,6 +2416,57 @@ flags:SMART |
 friends:100:2d5:same
 desc:It is a rodent of unusual size.
 
+name:167:Noxious jelly
+base:jelly
+color:t
+info:110:88:2:1:99
+power:5:1:0:0:6
+blow:TOUCH:POISON:2d6
+#blow:TOUCH:DISEASE:2d6
+flags:NEVER_MOVE |
+flags:HURT_LIGHT | NO_STUN | NO_CONF |
+desc:It is a large pile of rotting jelly, excreting a disgusting slime.
+
+name:168:Dwarf python
+base:snake
+color:Y
+info:110:21:6:35:30
+power:5:1:0:0:5
+blow:CRUSH:HURT:1d8
+flags:RAND_25 |
+flags:WEIRD_MIND |
+#flags:EAT_BODY |
+desc:One of the smaller pythons; it is about ten feet long and quite muscular.
+
+name:169:Apprentice archer
+base:person
+color:W
+info:110:15:20:8:20
+power:5:1:0:0:5
+blow:HIT:HURT:1d5
+#blow:ARROW:HURT:2d6
+flags:MALE | FORCE_SLEEP | ONLY_GOLD |
+flags:SMART | OPEN_DOOR | TAKE_ITEM |
+spell-freq:1_IN_2
+spells:ARROW_1
+friends-base:20:1d3:person
+friends-base:40:1d3:person
+friends-base:80:1d3:person
+friends:50:1d2:Same
+desc:A nasty little fellow with a bow and arrow.
+
+name:170:Mummified cat
+base:feline
+color:W
+info:110:9:40:12:0
+power:5:1:0:0:5
+blow:CLAW:POISON:1d6
+flags:COLD_BLOOD | EMPTY_MIND | BASH_DOOR | 
+flags:UNDEAD | EVIL | NONLIVING | IM_POIS | NO_FEAR | NO_CONF |
+flags:NO_SLEEP |
+#flags:EAT_BODY |
+desc:A cat wrapped in bandages with a blank stare.  It won't give up.
+
 ### Dungeon level 6 ###
 
 #name:77:Wizard's apprentice
@@ -3487,7 +3538,7 @@ spell-freq:15
 spells:SCARE | TPORT
 desc:A ghostly apparition that shrieks horribly.
 
-name:168:Easterling warrior
+name:2168:Easterling warrior
 base:person
 color:u
 info:110:54:20:51:70
