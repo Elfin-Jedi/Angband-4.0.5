@@ -127,6 +127,8 @@ phrase:You are one of several children of a Hobbit
 chart:10:11:100
 phrase:You are the only child of a Hobbit 
 
+chart:11:3:10
+phrase:Bum.
 chart:11:3:20
 phrase:Burglar.  
 chart:11:3:30
@@ -134,7 +136,7 @@ phrase:Miller.
 chart:11:3:40
 phrase:Tavern Owner.  
 chart:11:3:50
-phrase:Archer.  
+phrase:Home Owner.  
 chart:11:3:80
 phrase:Warrior.  
 chart:11:3:95
@@ -1108,3 +1110,127 @@ phrase:who arranged for your banishment due to some percieved trechery,
 chart:127:0:100:50
 phrase:and now you seek revenge.
 
+chart:128:133:40:50
+phrase:You are of the Nandor.  
+chart:128:133:75:55
+phrase:You were born by the River Adurant.  
+chart:128:133:90:55
+phrase:You followed Denethor across the Ered Luin.  
+chart:128:133:95:60
+phrase:You are of the clan of Lenwë.  
+chart:128:133:98:65
+phrase:You are regarded as a leader of the Nandor.  
+chart:128:133:100:70
+phrase:You were a counsellor of Denethor son of Lenwë.  
+
+chart:129:133:40:50
+phrase:You are of the Sindar.  
+chart:129:133:75:55
+phrase:You are from the Forest of Neldoreth.  
+chart:129:133:90:55
+phrase:You have lived in Menegroth.  
+chart:129:133:95:60
+phrase:You have served in the border guard of Doriath.  
+chart:129:133:98:65
+phrase:You were born on the journey from Cuiviénen.  
+chart:129:133:100:70
+phrase:You are of the court of Thingol Greycloak.
+
+chart:130:131:85:45
+phrase:You are one of two children of a Petty-Dwarf 
+chart:130:131:100:55
+phrase:You are the only child of a Petty-Dwarf 
+
+chart:131:57:20:55
+phrase:Beggar.  
+chart:131:57:50:70
+phrase:Vagabond.  
+chart:131:57:75:85
+phrase:Assassin.  
+chart:131:57:95:100
+phrase:Warrior.  
+chart:131:57:100:125
+phrase:Mage.
+
+chart:132:133:40:50
+phrase:You are a scion of the House of the Tower of Snow.  
+chart:132:133:75:55
+phrase:You were born into the House of the Hammer of Wrath.  
+chart:132:133:90:55
+phrase:You were born in Nevrast.  
+chart:132:133:95:60
+phrase:You have served in the Guard of the Fountains.  
+chart:132:133:98:65
+phrase:You followed Turgon from Valinor.  
+chart:132:133:100:70
+phrase:You fought in the Nirnaeth Arnoediad.  
+
+chart:133:134:60:50
+phrase:You are one of several children 
+chart:133:134:100:55
+phrase:You are the only child 
+
+chart:134:54:40:80
+phrase:of a Ranger.  
+chart:134:54:70:90
+phrase:of an Archer.  
+chart:134:54:87:110
+phrase:of a Warrior.  
+chart:134:54:95:125
+phrase:of a Mage.  
+chart:134:54:100:140
+phrase:of a Lord.
+
+chart:135:136:10:25
+phrase:You are the illegitimate and unacknowledged child 
+chart:135:136:20:35
+phrase:You are the illegitimate but acknowledged child 
+chart:135:136:95:45
+phrase:You are one of several children 
+chart:135:136:100:50
+phrase:You are the first child 
+
+chart:136:3:40:65
+phrase:of a servant from Dorthonion.  
+chart:136:3:65:80
+phrase:of a Haladin woodsman.  
+chart:136:3:80:90
+phrase:of a foot-soldier slain in the Dagor Bragollach.  
+chart:136:3:90:105
+phrase:of a fugitive of the House of Bëor.  
+chart:136:3:96:120
+phrase:of a dispossessed landowner of Dor-Lómin.  
+chart:136:3:99:130
+phrase:of a guard of Handir of Brethil.  
+chart:136:3:100:140
+phrase:of a lesser branch of the House of Hador.
+
+chart:137:138:10:35
+phrase:You are the bastard child of a Dark Elf 
+chart:137:138:30:45
+phrase:You are one of several children of a Dark Elf 
+chart:137:138:55:50
+phrase:You are the second child of a Dark Elf 
+chart:137:138:80:55
+phrase:You are the first child of a Dark Elf 
+chart:137:138:100:60
+phrase:You are the only child of a Dark Elf 
+
+chart:138:54:5:25
+phrase:whose identity you are uncertain of.  
+chart:138:54:20:35
+phrase:Captive.  
+chart:138:54:40:45
+phrase:Fighter.  
+chart:138:54:50:50
+phrase:Ranger.  
+chart:138:54:70:65
+phrase:Scribe.  
+chart:138:54:83:75
+phrase:Witch.  
+chart:138:54:93:90
+phrase:Alchemist.  
+chart:138:54:98:110
+phrase:Lady.  
+chart:138:54:100:140
+phrase:Queen.
