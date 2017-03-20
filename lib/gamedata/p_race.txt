@@ -932,6 +932,7 @@ history:28:200:100
 height:86:10
 weight:185:17
 #F:NO_AGGRAVATE
+values:RES_DARK[1]
 
 #Shapeshifts from Unangband, may need to move elsewhere. Activate @.
 
