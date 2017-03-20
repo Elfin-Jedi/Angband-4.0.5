@@ -881,7 +881,6 @@ obj-flags:FREE_ACT
 
 name:45:Longbeard
 stats:3:1:-1:2:2
-R:2:2:10:-2:2:11:3:0
 skill-disarm:0
 skill-device:10
 skill-save:0
@@ -890,7 +889,7 @@ skill-search:0
 skill-search-freq:11
 skill-melee:2
 skill-shoot:0
-skill-throw:0
+skill-throw:3
 skill-dig:0
 info:12:2:5
 history:132:20:10
