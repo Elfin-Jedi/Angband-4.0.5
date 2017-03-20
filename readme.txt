@@ -25,8 +25,6 @@ Add rest of level 5 monsters from Unangband.
 
 Change spells to match FAangband.
 
-Add player races from FAangband.
-
 Start Adding Poschengband races.
 
 Add Poschangband style race-type list.
