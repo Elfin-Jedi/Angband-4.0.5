@@ -84,7 +84,7 @@ static bool mon_resist_effect(const struct monster *mon, int ef_idx, int timer, 
 	if (ef_idx == MON_TMD_FAST) return (FALSE);
 	
 	/* Becoming invisible never fails */
-	if (ef_idx == MON_TMD_INVISIBLE) return (false);
+	if (ef_idx == MON_TMD_INVISIBLE) return (FALSE);
 	
 	/* Some effects are marked to never fail */
 	if (flag & MON_TMD_FLG_NOFAIL) return (FALSE);
@@ -214,7 +214,7 @@ static bool mon_set_timed(struct monster *mon, int ef_idx, int timer,
 		player->upkeep->redraw |= (PR_HEALTH);
 	
 	if (ef_idx == MON_TMD_INVISIBLE) {
-    update_mon(mon, cave, false);
+    update_mon(mon, cave, true);
 }
 
 	/* Update the visuals, as appropriate. */
