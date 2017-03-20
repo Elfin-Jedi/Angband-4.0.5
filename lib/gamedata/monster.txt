@@ -2467,6 +2467,61 @@ flags:NO_SLEEP |
 #flags:EAT_BODY |
 desc:A cat wrapped in bandages with a blank stare.  It won't give up.
 
+name:171:Nibelung
+base:humanoid
+color:D
+info:110:20:20:12:5
+power:5:3:0:0:6
+blow:HIT:HURT:1d6
+blow:TOUCH:EAT_GOLD
+flags:MALE | DROP_60 |
+flags:TAKE_ITEM | EVIL | HURT_LIGHT | 
+desc:Night dwarfs collecting riches.
+
+name:172:Killer bee
+base:insect
+color:Y
+info:120:5:12:24:10
+power:5:3:0:0:5
+blow:STING:POISON:1d4
+flags:ATTR_FLICKER
+#flags:CAN_FLY | INSECT
+friends:70:2d4:same
+desc:It is poisonous and aggressive.
+
+name:173:Giant leech
+base:worm
+color:v
+info:120:24:10:20:50
+power:5:1:0:0:20
+blow:BITE:HURT:4d1
+#blow:BITE:HURT:4d1
+flags:ANIMAL | WEIRD_MIND | RAND_25 |
+#flags:CAN_SWIM | MUST_SWIM | INSECT
+desc:Yech! The disgusting thing only wants your blood!
+
+name:174:Barracuda
+base:fish
+color:b
+info:120:36:20:45:20
+power:5:2:0:0:30
+#blow:BITE:HURT:13d1
+blow:BITE:HURT:2d7
+#flags:CAN_SWIM | MUST_SWIM
+desc:A predatory fish with razor-sharp teeth.
+
+name:175:Horse
+base:quadruped
+color:o
+info:110:44:20:30:30
+power:5:1:0:0:25
+blow:BITE:HURT:1d8
+blow:KICK:HURT:2d4
+flags:ANIMAL | 
+#flags:RIDING
+desc:As for the horse with the animal of four feet which can run fast, 
+desc:it was utilized for a long time as the vehicle of the human.
+
 ### Dungeon level 6 ###
 
 #name:77:Wizard's apprentice
