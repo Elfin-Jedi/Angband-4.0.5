@@ -236,13 +236,14 @@ static const char *get_flag_desc(bitflag flag)
 	{
 		case OF_SUST_STR: return "Sustains strength";
 		case OF_SUST_DEX: return "Sustains dexterity";
-                case OF_SUST_WIS: return "Sustains wisdom";
+        case OF_SUST_WIS: return "Sustains wisdom";
 		case OF_SUST_CON: return "Sustains constitution";
 		case OF_PROT_BLIND: return "Resists blindness";
 		case OF_HOLD_LIFE: return "Sustains experience";
 		case OF_FREE_ACT: return "Resists paralysis";
 		case OF_REGEN: return "Regenerates quickly";
 		case OF_SEE_INVIS: return "Sees invisible creatures";
+		case OF_TELEPATHY: return "Has telepathy";
 
 		default: return "Undocumented flag";
 	}
