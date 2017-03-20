@@ -149,7 +149,15 @@ graphics:light red
 flags:HATES_FIRE | EASY_KNOW
 
 name:prayer book:Prayer Book~
+graphics:light blue
+flags:HATES_FIRE | EASY_KNOW
+
+name:magic book:Nature Book~
 graphics:light green
+flags:HATES_FIRE | EASY_KNOW
+
+name:magic book:Necromancy Book~
+graphics:light purple
 flags:HATES_FIRE | EASY_KNOW
 
 name:gold
