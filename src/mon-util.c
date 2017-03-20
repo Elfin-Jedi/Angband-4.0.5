@@ -305,7 +305,8 @@ void update_mon(struct monster *mon, struct chunk *c, bool full)
 				/* Handle "normal" monsters */
 				else {
 					/* Easy to see */
-					easy = flag = TRUE;                
+					easy = flag = TRUE;
+				}            
 			}
 		}
 	}
