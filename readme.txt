@@ -21,7 +21,7 @@ To-do (eventually (a reminder for myself)):
 
 Finish uploading edit files with normal line endings: object.txt, object-base.txt.
 
-Add rest of level 5 monsters from Unangband.
+Add level 6 monsters from Unangband.
 
 Change spells to match FAangband.
 
