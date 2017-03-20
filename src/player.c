@@ -46,6 +46,7 @@ player_other *op_ptr = &player_other_body;
 struct player *player;
 
 struct player_body *bodies;
+struct player_sex *sexes;
 struct player_race *races;
 struct player_class *classes;
 
@@ -60,6 +61,13 @@ struct magic_realm realms[REALM_MAX] =
 	#undef REALM
 };
 
+/*
+ * Player sex info
+ */
+typedef struct player_sex {
+	const char *title;		/* Type of sex */
+	const char *winner;		/* Name of winner */
+} player_sex;
 
 /**
  * Base experience levels, may be adjusted up for race and/or class

@@ -39,6 +39,14 @@ enum
 	STAT_MAX
 };
 
+/** Sexes **/
+
+/* Maximum number of player "sex" types (see "table.c", etc) */
+#define MAX_SEXES            2
+
+/* Player sex constants (hard-coded by save-files, arrays, etc) */
+#define SEX_FEMALE		0
+#define SEX_MALE		1
 
 /**
  * Player race and class flags
@@ -494,6 +502,9 @@ struct player {
 	s16b py;			/* Player location */
 	s16b px;			/* Player location */
 
+        byte psex;			/* Sex index */
+        
+        const struct player_sex *sex;
 	const struct player_race *race;
 	const struct player_class *class;
 

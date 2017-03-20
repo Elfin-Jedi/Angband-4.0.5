@@ -23,6 +23,7 @@
 #include "game-input.h"
 #include "obj-tval.h"
 #include "player.h"
+#include "player-sex.h"
 #include "ui-birth.h"
 #include "ui-display.h"
 #include "ui-game.h"
@@ -60,6 +61,7 @@ enum birth_stage
 	BIRTH_BACK = -1,
 	BIRTH_RESET = 0,
 	BIRTH_QUICKSTART,
+        BIRTH_SEX_CHOICE,
 	BIRTH_RACE_CHOICE,
 	BIRTH_CLASS_CHOICE,
 	BIRTH_ROLLER_CHOICE,
@@ -75,6 +77,7 @@ enum birth_stage
 enum birth_questions
 {
 	BQ_METHOD = 0,
+        BQ_SEX,
 	BQ_RACE,
 	BQ_CLASS,
 	BQ_ROLLER,
@@ -113,7 +116,7 @@ static enum birth_stage textui_birth_quickstart(void)
 		
 		if (ke.code == 'N' || ke.code == 'n') {
 			cmdq_push(CMD_BIRTH_RESET);
-			next = BIRTH_RACE_CHOICE;
+			next = BIRTH_SEX_CHOICE;
 		} else if (ke.code == KTRL('X')) {
 			quit(NULL);
 		} else if ( !arg_force_name && (ke.code == 'C' || ke.code == 'c')) {
@@ -149,6 +152,7 @@ static struct menu race_menu, class_menu, roller_menu;
 #define TABLE_ROW        9
 
 #define QUESTION_COL     2
+#define SEX_COL         2
 #define RACE_COL         2
 #define RACE_AUX_COL    19
 #define CLASS_COL       19
@@ -161,6 +165,7 @@ static struct menu race_menu, class_menu, roller_menu;
 /**
  * upper left column and row, width, and lower column
  */
+static region gender_region = {SEX_COL, TABLE_ROW, 14, MENU_ROWS};
 static region race_region = {RACE_COL, TABLE_ROW, 17, MENU_ROWS};
 static region class_region = {CLASS_COL, TABLE_ROW, 17, MENU_ROWS};
 static region roller_region = {ROLLER_COL, TABLE_ROW, 34, MENU_ROWS};
@@ -236,9 +241,11 @@ static const char *get_flag_desc(bitflag flag)
 	{
 		case OF_SUST_STR: return "Sustains strength";
 		case OF_SUST_DEX: return "Sustains dexterity";
+                case OF_SUST_INT: return "Sustains Intelligence";
                 case OF_SUST_WIS: return "Sustains wisdom";
 		case OF_SUST_CON: return "Sustains constitution";
 		case OF_PROT_BLIND: return "Resists blindness";
+                case OF_PROT_FEAR: return "Resists fear";
 		case OF_HOLD_LIFE: return "Sustains experience";
 		case OF_FREE_ACT: return "Resists paralysis";
 		case OF_REGEN: return "Regenerates quickly";
@@ -448,6 +455,7 @@ static void init_birth_menu(struct menu *menu, int n_choices,
 static void setup_menus(void)
 {
 	int i, n;
+        struct player_sex *s;
 	struct player_class *c;
 	struct player_race *r;
 
@@ -458,9 +466,20 @@ static void setup_menus(void)
 
 	struct birthmenu_data *mdata;
 
+        /* Count the sexes */
+	n = 0;
+	for (s = sexes; s; s = s->next) n++;
+        
 	/* Count the races */
 	n = 0;
 	for (r = races; r; r = r->next) n++;
+        
+        /* Sex menu fairly straightforward */
+	init_birth_menu(&sex_menu, MAX_SEXES, p_ptr->psex, &gender_region, TRUE, NULL);
+	mdata = sex_menu.menu_data;
+	for (i = 0; i < MAX_SEXES; i++)
+		mdata->items[i] = sex_info[i].title;
+	mdata->hint = "Sex does not have any significant gameplay effects.";
 
 	/* Race menu. */
 	init_birth_menu(&race_menu, n, player->race ? player->race->ridx : 0,
@@ -509,6 +528,7 @@ static void free_birth_menu(struct menu *menu)
 static void free_birth_menus(void)
 {
 	/* We don't need these any more. */
+        free_birth_menu(&sex_menu);
 	free_birth_menu(&race_menu);
 	free_birth_menu(&class_menu);
 	free_birth_menu(&roller_menu);
@@ -1134,10 +1154,22 @@ int textui_do_birth(void)
 				break;
 			}
 
+                        case BIRTH_SEX_CHOICE:
 			case BIRTH_CLASS_CHOICE:
 			case BIRTH_RACE_CHOICE:
 			case BIRTH_ROLLER_CHOICE:
 			{
+                                struct menu *menu = &sex_menu;
+				cmd_code command = CMD_CHOOSE_SEX;
+                                
+                                Term_clear();
+				print_menu_instructions();
+
+				if (current_stage > BIRTH_SEX_CHOICE) {
+					menu_refresh(&sex_menu, FALSE);
+					menu = &race_menu;
+					command = CMD_CHOOSE_RACE;
+                                
 				struct menu *menu = &race_menu;
 				cmd_code command = CMD_CHOOSE_RACE;
 
