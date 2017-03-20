@@ -40,6 +40,7 @@ typedef enum cmd_code {
 	 */
 	CMD_BIRTH_INIT,
 	CMD_BIRTH_RESET,
+        CMD_CHOOSE_SEX,      
 	CMD_CHOOSE_RACE,
 	CMD_CHOOSE_CLASS,
 	CMD_BUY_STAT,
