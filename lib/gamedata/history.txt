@@ -1234,3 +1234,6 @@ chart:138:54:98:110
 phrase:Lady.  
 chart:138:54:100:140
 phrase:Queen.
+
+chart:139:0:100:50
+phrase:No history available.
