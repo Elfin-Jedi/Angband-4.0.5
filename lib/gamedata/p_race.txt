@@ -938,8 +938,10 @@ info:9:1:2
 history:28:200:100
 height:86:10
 weight:185:17
-#flags:NO_AGGRAVATE
 values:RES_DARK[1]
+#flags:NO_AGGRAVATE | SPELL_CAP
+#obj-flags:SEE_INVIS_20
+#powers:MAGIC_MISSILE
 
 name:48:Amberite
 stats:1:2:2:2:3
@@ -1021,7 +1023,7 @@ height:135:14
 weight:325:28
 values:RES_FIRE[1]
 values:RES_NETHER[1]
-obj-flags:HOLD_LIFE | SEE_INVIS
+obj-flags:HOLD_LIFE
 #obj-flags:SEE_INVIS_10
 #powers:DEMON_BREATH
 #flags:DEMON
@@ -1084,6 +1086,25 @@ weight:240:60
 #flags:NO_BOOTS | SPEED[p_lvl_>10]
 #powers:JUMP
 #nat-attack:HOOVES
+
+name:55:Cyclops
+stats:4:-3:-2:-3:4
+skill-disarm:-4
+skill-device:-5
+skill-save:-3
+skill-stealth:-2
+skill-search:-2
+skill-search-freq:5
+skill-melee:15
+skill-shoot:12
+skill-throw:20
+skill-dig:10
+info:24:155:1
+history:139:20:10
+height:130:16
+weight:475:75
+values:RES_SOUND[1]
+#powers:THROW_BOULDER
 
 #Shapeshifts from Unangband, may need to move elsewhere. Activate @.
 
