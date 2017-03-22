@@ -1835,7 +1835,7 @@ color:u
 info:110:10:8:4:10
 power:4:1:0:0:4
 blow:HIT:FIRE:1d4
-flags:FORCE_SLEEP | RAND_50 | ONLY_ITEM | 
+flags:FORCE_SLEEP | RAND_50 | ONLY_ITEM | HURT_FIRE
 flags:STUPID | HAS_LIGHT | EMPTY_MIND | UNAWARE
 flags:NONLIVING | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP |
 mimic:light:wooden torch
@@ -2242,7 +2242,7 @@ power:5:1:0:0:4
 blow:HIT:HURT:1d3
 blow:TOUCH:TERRIFY
 flags:RAND_50 |
-flags:BASH_DOOR |
+flags:BASH_DOOR | HURT_FIRE
 flags:UNDEAD | ANIMAL |
 desc:A straw-filled figure animated by the malevolent spirits of dead birds.
 
