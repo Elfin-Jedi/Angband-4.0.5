@@ -820,10 +820,11 @@ static void generate_stats(int stats[STAT_MAX], int points_spent[STAT_MAX],
  * This fleshes out a full player based on the choices currently made,
  * and so is called whenever things like race or class are chosen.
  */
-void player_generate(struct player *p, const player_sex *s, const struct player_race *r, 
+void player_generate(struct player *p, const struct player_sex *s, 
+                                         const struct player_race *r, 
 					 const struct player_class *c, bool old_history)
 {
-        if (!s) s = &sex_info[p->psex];
+        if (!s) s = p->psex;
 	if (!c)
 		c = p->class;
 	if (!r)
@@ -866,7 +867,7 @@ static void do_birth_reset(bool use_quickstart, birther *quickstart_prev)
 	if (use_quickstart && quickstart_prev)
 		load_roller_data(quickstart_prev, NULL);
 
-	player_generate(player, NULL, NULL, use_quickstart && quickstart_prev);
+	player_generate(player, NULL, NULL, NULL, use_quickstart && quickstart_prev);
 
 	player->depth = 0;
 
@@ -889,7 +890,7 @@ void do_cmd_birth_init(struct command *cmd)
 		save_roller_data(&quickstart_prev);
 		quickstart_allowed = TRUE;
 	} else {
-		player_generate(player, &sex_info[p_ptr->psex], player_id2race(0), player_id2class(0), FALSE);
+		player_generate(player, player_id2sex(0), player_id2race(0), player_id2class(0), FALSE);
 		quickstart_allowed = FALSE;
 	}
 
@@ -920,13 +921,13 @@ void do_cmd_choose_sex(struct command *cmd)
 {
 	int choice;
 	cmd_get_arg_choice(cmd, "choice", &choice);
-	player_generate(player, NULL, NULL, FALSE);
+	player_generate(player, player_id2sex(choice), NULL, NULL, FALSE);
 }
 void do_cmd_choose_race(struct command *cmd)
 {
 	int choice;
 	cmd_get_arg_choice(cmd, "choice", &choice);
-	player_generate(player, player_id2race(choice), NULL, FALSE);
+	player_generate(player, NULL, player_id2race(choice), NULL, FALSE);
 
 	reset_stats(stats, points_spent, &points_left, FALSE);
 	generate_stats(stats, points_spent, &points_left);
@@ -937,7 +938,7 @@ void do_cmd_choose_class(struct command *cmd)
 {
 	int choice;
 	cmd_get_arg_choice(cmd, "choice", &choice);
-	player_generate(player, NULL, player_id2class(choice), FALSE);
+	player_generate(player, NULL, NULL, player_id2class(choice), FALSE);
 
 	reset_stats(stats, points_spent, &points_left, FALSE);
 	generate_stats(stats, points_spent, &points_left);

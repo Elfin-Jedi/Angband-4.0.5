@@ -23,7 +23,6 @@
 #include "game-input.h"
 #include "obj-tval.h"
 #include "player.h"
-#include "player-sex.h"
 #include "ui-birth.h"
 #include "ui-display.h"
 #include "ui-game.h"
@@ -475,10 +474,9 @@ static void setup_menus(void)
 	for (r = races; r; r = r->next) n++;
         
         /* Sex menu fairly straightforward */
-	init_birth_menu(&sex_menu, MAX_SEXES, p_ptr->psex, &gender_region, TRUE, NULL);
-	mdata = sex_menu.menu_data;
-	for (i = 0; i < MAX_SEXES; i++)
-		mdata->items[i] = sex_info[i].title;
+	init_birth_menu(&sex_menu, n, player->sex ? player->sex->sidx : 0,
+                        &gender_region, TRUE);
+        mdata = sex_menu.menu_data;
 	mdata->hint = "Sex does not have any significant gameplay effects.";
 
 	/* Race menu. */
@@ -1155,27 +1153,25 @@ int textui_do_birth(void)
 			}
 
                         case BIRTH_SEX_CHOICE:
-			case BIRTH_CLASS_CHOICE:
 			case BIRTH_RACE_CHOICE:
+                        case BIRTH_CLASS_CHOICE:
 			case BIRTH_ROLLER_CHOICE:
 			{
                                 struct menu *menu = &sex_menu;
+
 				cmd_code command = CMD_CHOOSE_SEX;
-                                
-                                Term_clear();
-				print_menu_instructions();
 
 				if (current_stage > BIRTH_SEX_CHOICE) {
 					menu_refresh(&sex_menu, FALSE);
 					menu = &race_menu;
 					command = CMD_CHOOSE_RACE;
-                                
+                                }
 				struct menu *menu = &race_menu;
 				cmd_code command = CMD_CHOOSE_RACE;
 
 				Term_clear();
 				print_menu_instructions();
-
+                                
 				if (current_stage > BIRTH_RACE_CHOICE) {
 					menu_refresh(&race_menu, FALSE);
 					menu = &class_menu;
