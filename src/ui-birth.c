@@ -1158,19 +1158,16 @@ int textui_do_birth(void)
 			case BIRTH_ROLLER_CHOICE:
 			{
                                 struct menu *menu = &sex_menu;
-
 				cmd_code command = CMD_CHOOSE_SEX;
+                                
+				Term_clear();
+				print_menu_instructions();
 
 				if (current_stage > BIRTH_SEX_CHOICE) {
 					menu_refresh(&sex_menu, FALSE);
 					menu = &race_menu;
 					command = CMD_CHOOSE_RACE;
                                 }
-				struct menu *menu = &race_menu;
-				cmd_code command = CMD_CHOOSE_RACE;
-
-				Term_clear();
-				print_menu_instructions();
                                 
 				if (current_stage > BIRTH_RACE_CHOICE) {
 					menu_refresh(&race_menu, FALSE);

@@ -61,14 +61,6 @@ struct magic_realm realms[REALM_MAX] =
 	#undef REALM
 };
 
-/*
- * Player sex info
- */
-typedef struct player_sex {
-	const char *title;		/* Type of sex */
-	const char *winner;		/* Name of winner */
-} player_sex;
-
 /**
  * Base experience levels, may be adjusted up for race and/or class
  */

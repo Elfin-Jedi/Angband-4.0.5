@@ -196,6 +196,18 @@ struct player_body {
 extern struct player_body *bodies;
 
 /**
+ * Player gender info
+ */
+struct player_sex {
+	struct player_sex *next;
+	const char *name;
+	
+	unsigned int sidx;    
+};
+
+extern struct player_sex *sexes;
+
+/**
  * Player racial info
  */
 struct player_race {

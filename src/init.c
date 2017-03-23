@@ -3230,6 +3230,52 @@ static struct file_parser p_race_parser = {
 };
 
 /**
+ * Parsing functions for psex.txt
+ */
+static enum parser_error parse_p_sex_name(struct parser *p) {
+	struct player_sex *s = mem_zalloc(sizeof *s);
+        
+	s->sidx = parser_getuint(p, "index");
+	s->name = string_make(parser_getstr(p, "name"));
+	return PARSE_ERROR_NONE;
+}
+        static void cleanup_p_sex(void)
+{
+	struct player_sex *p = sexes;
+	struct player_sex *next;
+
+	while (p) {
+		next = p->next;
+		string_free((char *)p->name);
+		mem_free(p);
+		p = next;
+	}
+}
+        struct parser *init_parse_p_sex(void) {
+	struct parser *p = parser_new();
+	parser_setpriv(p, NULL);
+	parser_reg(p, "name uint index str name", parse_p_sex_name);
+        	return p;
+}        
+        static errr run_parse_p_sex(struct parser *p) {
+	return parse_file(p, "p_sex");
+}
+
+static errr finish_parse_p_sex(struct parser *p) {
+	races = parser_priv(p);
+	parser_destroy(p);
+	return 0;
+}
+        
+static struct file_parser p_sex_parser = {
+	"p_sex",
+	init_parse_p_sex,
+	run_parse_p_sex,
+	finish_parse_p_sex,
+	cleanup_p_sex
+};      
+
+/**
  * Parsing functions for class.txt
  */
 static enum parser_error parse_class_name(struct parser *p) {
