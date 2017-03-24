@@ -23,4 +23,6 @@ Add a message for Reduce Cuts and Poison, so it is clear that it has reduced cut
 
 Fix Resist Magic, TIMED_INVULN has an entirely different effect in Vanilla.
 
-Add Magic Book #2.
+Add Magic Book for Mages #2.
+
+Add all the other books.
