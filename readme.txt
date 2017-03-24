@@ -17,26 +17,10 @@ Enjoy!
 
 ---------------------------------------
 
-To-do (eventually (a reminder for myself)):
+To-do (so far, this branch (a reminder for myself)):
 
-Finish uploading edit files with normal line endings: object.txt, object-base.txt.
+Add a message for Reduce Cuts and Poison, so it is clear that it has reduced cuts.
 
-Add rest of level 5 monsters from Unangband.
+Fix Resist Magic, TIMED_INVULN has an entirely different effect in Vanilla.
 
-Change spells to match FAangband.
-
-Start Adding Poschengband races.
-
-Add Poschangband style race-type list.
-
-Figure out why new spellbooks don't display in inventory and shop lists, fix.
-
-Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), actually disappears, and reappears again. All in the same build.
-
-Add sexes back in to birth choices.
-
-Start adding player spells from FAangband that aren't easily made from existing effects.
-
-Add framework for special abilities like Zangband-descended variants.
-
-Start attempting to add terrain from Unangband.
+Add Magic Book #2.
