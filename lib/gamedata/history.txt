@@ -1152,18 +1152,18 @@ phrase:Warrior.
 chart:131:57:100:125
 phrase:Mage.
 
-chart:132:133:40:50
-phrase:You are a scion of the House of the Tower of Snow.  
-chart:132:133:75:55
-phrase:You were born into the House of the Hammer of Wrath.  
-chart:132:133:90:55
-phrase:You were born in Nevrast.  
-chart:132:133:95:60
-phrase:You have served in the Guard of the Fountains.  
-chart:132:133:98:65
-phrase:You followed Turgon from Valinor.  
-chart:132:133:100:70
-phrase:You fought in the Nirnaeth Arnoediad.  
+chart:132:16:40:50
+phrase:You are a scion of the House of the Tower of Snow. 
+chart:132:16:75:55
+phrase:You were born into the House of the Hammer of Wrath. 
+chart:132:16:90:55
+phrase:You were born in Nevrast. 
+chart:132:16:95:60
+phrase:You have served in the Guard of the Fountains. 
+chart:132:16:98:65
+phrase:You followed Turgon from Valinor. 
+chart:132:16:100:70
+phrase:You fought in the Nirnaeth Arnoediad. 
 
 chart:133:134:60:50
 phrase:You are one of several children 
@@ -1233,4 +1233,4 @@ phrase:Alchemist.
 chart:138:54:98:110
 phrase:Lady.  
 chart:138:54:100:140
-phrase:Queen.
+phrase:Queen.  
