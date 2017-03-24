@@ -25,7 +25,7 @@ Add level 6 monsters from Unangband.
 
 Change spells to match FAangband.
 
-Add "Immune to Cold" flag for Man of Erech characters.
+Add "Immune to Cold" flag for Man of Erech characters?
 
 Start Adding Poschengband races.
 
@@ -33,7 +33,7 @@ Add Poschangband style race-type list.
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
 
-Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), actually disappears, and reappears again. All in the same build.
+Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), and reappears again.
 
 Add sexes back in to birth choices.
 
