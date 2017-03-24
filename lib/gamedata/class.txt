@@ -165,66 +165,61 @@ title:Arch-Mage
 
 magic:1:300:1:9
 
-book:magic book:[Magic for Beginners]:8:1
+book:magic book:[Magic for Beginners]:9:1
 
-spell:Magic Missile:1:1:22:4
-effect:BOLT_OR_BEAM:MISSILE:-10
-dice:$Dd4
-expr:D:PLAYER_LEVEL:- 1 / 5 + 3
-desc:Fires a magic missile that always hits its target and does
-desc: unresistable damage.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
+spell:Fire Bolt:1:1:22:2
+effect:BOLT:FIRE
+dice:$Dd3
+expr:D:PLAYER_LEVEL:/ 10 + 4
+desc:Fires a bolt of fire.
 
-spell:Detect Monsters:1:1:23:4
+spell:Detect Monsters:1:1:23:2
 effect:DETECT_VISIBLE_MONSTERS
 dice:22d40
-desc:Detects all non-invisible monsters in the immediate area,
-desc: for one turn only.
+desc:Detects nearby monsters that are not invisible.
 
-spell:Phase Door:1:2:24:4
+spell:Phase Door:2:1:24:2
 effect:TELEPORT
 dice:10
-desc:Teleports you randomly up to 10 squares away.
+desc:Random minor displacement.
 
-spell:Light Area:1:2:26:4
-effect:LIGHT_AREA
-param:1:10
-dice:2d$S
-expr:S:PLAYER_LEVEL:/ 2
-desc:Lights up all squares in a level-dependant area, and hurts
-desc: all light-sensitive monsters in the area of effect.
-desc:  If you are in a room, the entire room will be lit up as well.
-
-spell:Combat Poison:3:1:25:2
-effect:TIMED_DEC:POISONED:2
-desc:Halves the remaining duration of any current poisoning.
-
-spell:Cure Light Wounds:4:2:25:3
-effect:HEAL_HP
-dice:15+m15
-effect:CURE:BLIND
-effect:TIMED_DEC:CUT
-dice:20
-effect:TIMED_DEC:CONFUSED
-dice:20
-desc:Cures 1
-
-spell:Find Traps, Doors & Stairs:5:3:25:3
+spell:Find Traps/Doors/Stairs:3:3:25:3
 effect:DETECT_TRAPS
 dice:22d40
 effect:DETECT_DOORS
 dice:22d40
 effect:DETECT_STAIRS
 dice:22d40
-desc:Detects all traps, doors, and stairs in the immediate area.
+desc:Detects nearby traps, doors, and stairs.
 
-spell:Stinking Cloud:6:3:27:4
+spell:Light Area:3:2:25:2
+effect:LIGHT_AREA
+param:1:10
+dice:2d$S
+expr:S:PLAYER_LEVEL:/ 2
+desc:Permanently lights up a level-dependant area or a room.
+
+spell:Stinking Cloud:4:3:25:3
 effect:BALL:POIS:2
 dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
-desc:Shoots a radius-2 poison ball.
+desc:Fires a ball of poison.
+
+spell:Reduce Cuts and Poison:5:2:25:3
+effect:TIMED_DEC:POISONED:2
+effect:TIMED_DEC:CUT:2
+desc:Reduces cuts and poisoning.
+
+spell:Resist Magic:5:7:26:5
+effect:TIMED_INC:INVULN
+dice:$B+d20
+expr:B:PLAYER_LEVEL:+ 0
+desc:Short term increase in saving throw and armour class, and protection from 
+desc:blindness and confusion.
+
+spell:Identify:6:8:30:6
+effect:IDENTIFY
+desc:Standard identification.
 
 book:magic book:[Conjurings and Tricks]:9:1
 
