@@ -19,7 +19,7 @@ Enjoy!
 
 To-do (so far, this branch (a reminder for myself)):
 
-Add a message for Reduce Cuts and Poison, so it is clear that it has reduced cuts.
+Fix Reduce Cuts and Poison, add a message for TIMED_DEC:CUT so it is clear that it has reduced cuts.
 
 Fix Resist Magic, TIMED_INVULN has an entirely different effect in Vanilla.
 
