@@ -2678,8 +2678,8 @@ power:6:1:0:0:9
 flags:NEVER_BLOW | RAND_25
 flags:NO_CONF | NO_SLEEP | ATTR_FLICKER
 #flags:CAN_FLY | MUST_FLY
-spell-freq:10
-spells:BR_CONF
+#spell-freq:10
+#spells:BR_CONF
 desc:This vast gleaming bronze fly has wings which beat mesmerically fast.
 
 name:193:Radbug, the Goblin
@@ -2705,8 +2705,7 @@ color:M
 info:110:15:12:30:10
 power:6:3:0:0:9
 blow:HIT:HURT:1d3
-flags:EMPTY_MIND | HURT_FIRE
-flags:NONLIVING | IM_POIS | NO_FEAR | NO_CONF |
+flags:HURT_FIRE | IM_POIS
 friends:60:1d6:same
 desc:A small, wooden doll-like figure with a menacing painted face.
 
@@ -2717,8 +2716,7 @@ info:100:51:12:30:10
 power:6:1:0:0:10
 blow:CRUSH:HURT:1d6
 blow:CRUSH:HURT:1d6
-flags:EMPTY_MIND | BASH_DOOR | HURT_FIRE
-flags:NONLIVING | IM_POIS | NO_FEAR | NO_CONF |
+flags:BASH_DOOR | HURT_FIRE | IM_POIS
 desc:A lumbering figure powered by oaken cogs and pine cone gears.
 
 name:196:Green mushroom patch
@@ -2736,7 +2734,7 @@ color:D
 info:110:12:2:1:0
 power:6:1:0:0:2
 blow:SPORE:LOSE_INT:4d2
-flags:NEVER_MOVE 
+flags:NEVER_MOVE
 desc:Yum!  It looks quite tasty.
 
 name:198:Copper mushroom patch
@@ -2745,7 +2743,7 @@ color:u
 info:110:12:2:1:0
 power:6:1:0:0:2
 blow:SPORE:LOSE_DEX:3d2
-flags:NEVER_MOVE | ATTR_FLICKER | IM_ACID  
+flags:NEVER_MOVE | ATTR_FLICKER | IM_ACID 
 desc:Yum!  It looks quite tasty.
 
 name:199:Slimy mushroom patch
@@ -2764,10 +2762,9 @@ info:110:15:30:1:5
 power:6:1:0:0:8
 blow:GAZE:BLIND:1d4
 blow:GAZE:BLIND:1d4
-flags:FORCE_SLEEP | NEVER_MOVE |
-flags:STUPID | COLD_BLOOD | EMPTY_MIND |
-flags:NO_FEAR | NO_STUN | NO_CONF | NO_SLEEP | 
-spell-freq:1_IN_3
+flags:FORCE_SLEEP
+flags:STUPID | COLD_BLOOD | EMPTY_MIND | NO_STUN 
+spell-freq:3
 spells:BLIND | INVISIBLE
 desc:A mass of orange vegetation. Its many eyes follow your every movement.
 
@@ -2792,6 +2789,28 @@ flags:IM_ACID | IM_COLD |
 #flags:CAN_FLY | EAT_BODY |
 friends:80:2d4:same
 desc:It screeches as it attacks.
+
+name:203:Giant brown centipede
+base:centipede
+color:u
+info:110:13:7:10:40
+power:6:1:0:0:4
+blow:BITE:HURT:2d3
+blow:STING:HURT:1d4
+flags:RAND_25 | BASH_DOOR |
+desc:It is about four feet long and carnivorous.
+
+name:204:Blind eye
+base:eye
+color:w
+info:110:31:2:6:10
+power:6:1:0:0:1
+flags:NEVER_BLOW | NEVER_MOVE |
+#flags:CAN_FLY | MUST_FLY |
+flags:HURT_LIGHT | NO_FEAR |
+spell-freq:3
+spells:BLINK | DRAIN_MANA | BLIND |
+desc:A strange eye, milky white with blindness.
 
 ### Dungeon level 7 ###
 
