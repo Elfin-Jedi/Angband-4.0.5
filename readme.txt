@@ -27,8 +27,6 @@ Add BR_CONF for Giant Bronze Dragon Flies.
 
 Change spells to match FAangband.
 
-Add "Immune to Cold" flag for Man of Erech characters?
-
 Start Adding Poschengband races.
 
 Add Poschangband style race-type list.
