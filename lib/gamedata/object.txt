@@ -3992,28 +3992,28 @@ properties:1:30:25
 alloc:40:1 to 100
 combat:0:1d1:0:0:0
 
-name:461:[Conjurings and Tricks]
+name:461:[Minor Powers]
 graphics:?:R
 type:magic book
 properties:5:30:100
 alloc:40:5 to 100
 combat:0:1d1:0:0:0
 
-name:462:[Incantations and Illusions]
+name:462:[Useful Magic]
 graphics:?:R
 type:magic book
 properties:10:30:400
 alloc:40:10 to 100
 combat:0:1d1:0:0:0
 
-name:463:[Sorcery and Evocations]
+name:463:[Battle Spells]
 graphics:?:R
 type:magic book
 properties:20:30:800
 alloc:40:20 to 100
 combat:0:1d1:0:0:0
 
-name:464:[Beginners Handbook]
+name:464:[Novice's Handbook]
 graphics:?:B
 type:prayer book
 properties:1:30:25
@@ -4099,7 +4099,7 @@ combat:0:1d1:0:0:0
 
 ##### Special Books (note resistances) #####
 
-name:468:[Resistances of Scarabtarices]
+name:468:[Magical Defences]
 graphics:?:r
 type:magic book
 properties:40:30:10000
@@ -4107,7 +4107,7 @@ alloc:15:40 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:469:[Raal's Tome of Destruction]
+name:469:[Escapes and Trickery]
 graphics:?:r
 type:magic book
 properties:50:30:20000
@@ -4115,7 +4115,7 @@ alloc:15:50 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:470:[Mordenkainen's Escapes]
+name:470:[Advanced Sorcery]
 graphics:?:r
 type:magic book
 properties:60:30:30000
@@ -4123,7 +4123,7 @@ alloc:15:60 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:471:[Tenser's Transformations]
+name:471:[Power and Destruction]
 graphics:?:r
 type:magic book
 properties:70:30:50000
@@ -4131,7 +4131,7 @@ alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:472:[Kelek's Grimoire of Power]
+name:472:[Book of Runes]
 graphics:?:r
 type:magic book
 properties:80:30:90000
@@ -4171,7 +4171,7 @@ alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:477:[Wrath of God]
+name:477:[Wrath of the Valar]
 graphics:?:b
 type:prayer book
 properties:80:30:90000
@@ -4179,7 +4179,7 @@ alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:584:[Radagast's Shapeshifts]
+name:584:[Yavanna's Shapeshifts]
 graphics:?:g
 type:nature book
 properties:40:30:10000
@@ -4211,7 +4211,7 @@ alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:588:[Spirit of Yavanna]
+name:588:[Powers of Aman]
 graphics:?:g
 type:nature book
 properties:80:30:90000

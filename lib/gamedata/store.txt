@@ -242,10 +242,10 @@ owner:25000:Silmarian the Joyous (Dunadan)
 slots:6:12
 turnover:9
 always:magic book:[Magic for Beginners]
-normal:magic book:[Conjurings and Tricks]
-normal:magic book:[Incantations and Illusions]
-normal:magic book:[Sorcery and Evocations]
-always:prayer book:[Beginners Handbook]
+normal:magic book:[Minor Powers]
+normal:magic book:[Useful Magic]
+normal:magic book:[Battle Spells]
+always:prayer book:[Novice's Handbook]
 normal:prayer book:[Words of Wisdom]
 normal:prayer book:[Chants and Blessings]
 normal:prayer book:[Exorcism and Dispelling]
