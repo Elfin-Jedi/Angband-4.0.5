@@ -222,64 +222,53 @@ spell:Identify:6:8:30:6
 effect:IDENTIFY
 desc:Standard identification.
 
-book:magic book:[Minor Powers]:9:1
+book:magic book:[Minor Powers]:8:1
 
 spell:Lightning Bolt:7:3:30:6
-effect:BOLT_OR_BEAM:ELEC
+effect:BOLT_OR_BEAM:ELEC:-10
 dice:$Dd8
 expr:D:PLAYER_LEVEL:- 5 / 5 + 2
 desc:Fires a bolt or beam of lightning.
 
-spell:Lightning Bolt:7:3:30:6
-effect:BEAM:ELEC
-dice:$Dd6
-expr:D:PLAYER_LEVEL:- 5 / 6 + 3
-desc:Fires a lightning beam that hurts each monster in its path.
+spell:Confuse Monster:7:3:30:6
+effect:BOLT_AWARE:OLD_CONF
+dice:$B
+expr:B:PLAYER_LEVEL:+ 10
+desc:Attempts to confuse one monster.
 
-spell:Trap/Door Destruction:9:3:30:6
+spell:Telekinesis:8:4:30:6
 effect:TOUCH:KILL_DOOR
-desc:Destroys all traps and doors within a 1-square radius of you.
+desc:Fetches an item from a distance. (Actually casts Trap/Door Destruction. For now.)
 
 spell:Sleep Monster:9:4:30:6
 effect:BOLT_AWARE:OLD_SLEEP
 dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep a single monster.
-desc:  Uniques and monsters that resist confusion are not affected.
+expr:B:PLAYER_LEVEL:+ 10
+desc:Attempts to put a monster to sleep.
 
-spell:Cure Poison:11:5:35:6
-effect:CURE:POISONED
-desc:Neutralizes poison.
-
-spell:Teleport Self:11:5:35:6
+spell:Teleport Self:9:4:30:6
 effect:TELEPORT
 dice:$B
-expr:B:PLAYER_LEVEL:* 5
-desc:Teleports you randomly within the current level.
+expr:B:PLAYER_LEVEL:* 2 + 50
+desc:Random major displacement.
 
-spell:Spear of Light:12:5:30:7
+spell:Spear of Light:11:5:35:6
 effect:LINE:LIGHT_WEAK
 dice:6d8
-desc:Fires a beam that lights up each square and hurts each
-desc: light-sensitive monster in its path.
+desc:Fires a line of weak light.  Affects light-hating creatures.
 
-spell:Recharge Item I:13:5:40:9
+spell:Frost Beam:13:5:40:7
+effect:BEAM:COLD
+dice:$Dd8
+expr:D:PLAYER_LEVEL:- 5 / 4 + 5
+desc:Fires a beam of cold.
+
+spell:Magical Throw:13:5:40:8
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
 desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
-
-spell:Cone of Cold (Frost Bolt):13:5:44:7
-effect:BOLT_OR_BEAM:COLD:-10
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 5
-desc:Fires a frost bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
+desc:Throws an item using mental strength. (Actually casts Recharge Item I. For now.)
 
 book:magic book:[Useful Magic]:7:1
 
