@@ -19,9 +19,13 @@ Enjoy!
 
 To-do (so far, this branch (a reminder for myself)):
 
-Fix Reduce Cuts and Poison, add a message for TIMED_DEC:CUT so it is clear that it has reduced cuts.
+(Mage Book #1) Fix Reduce Cuts and Poison, add a message for TIMED_DEC:CUT so it is clear that it has reduced cuts.
 
-Fix Resist Magic, TIMED_INVULN has an entirely different effect in Vanilla.
+(Mage Book #1) Add/Fix Resist Magic (TIMED_INVULN has an entirely different effect in Vanilla.)
+
+(Mage Book #2) Add Telekinesis.
+
+(Mage Book #2) Add Magical Throw.
 
 Add Magic Book for Mages #2.
 
