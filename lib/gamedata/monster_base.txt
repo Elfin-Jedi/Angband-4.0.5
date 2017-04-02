@@ -64,7 +64,7 @@ name:ant
 glyph:a
 pain:7
 flags:ANIMAL | WEIRD_MIND
-flags:BASH_DOOR
+flags:BASH_DOOR | INSECT
 desc:Ant
 
 name:bat
@@ -88,7 +88,7 @@ desc:Canine (Dog)
 name:centipede
 glyph:c
 pain:5
-flags:ANIMAL | WEIRD_MIND
+flags:ANIMAL | WEIRD_MIND | INSECT
 desc:Centipede
 
 name:creeping coins
@@ -169,7 +169,7 @@ desc:Golem
 name:humanoid
 glyph:h
 pain:1
-flags:OPEN_DOOR | BASH_DOOR
+flags:OPEN_DOOR | BASH_DOOR | HUMANOID
 desc:Hobbit/Elf/Dwarf
 
 name:hybrid
@@ -195,7 +195,7 @@ desc:Icky Thing
 name:insect
 glyph:I
 pain:7
-flags:ANIMAL | WEIRD_MIND
+flags:ANIMAL | WEIRD_MIND | INSECT
 flags:RAND_25 | RAND_50
 desc:Insect
 
@@ -209,7 +209,7 @@ desc:Jelly
 name:killer beetle
 glyph:K
 pain:7
-flags:ANIMAL | WEIRD_MIND
+flags:ANIMAL | WEIRD_MIND | INSECT
 flags:BASH_DOOR
 desc:Killer Beetle
 
@@ -264,20 +264,20 @@ glyph:~
 pain:1
 flags:COLD_BLOOD | EMPTY_MIND | UNAWARE
 flags:NO_FEAR | NO_CONF | NO_SLEEP
-flags:FORCE_SLEEP
+flags:FORCE_SLEEP | NONLIVING
 desc:Misc
 
 name:mold
 glyph:m
 pain:2
-flags:NEVER_MOVE
+flags:NEVER_MOVE | PLANT
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Mold
 
 name:mushroom
 glyph:,
 pain:2
-flags:EMPTY_MIND | STUPID
+flags:EMPTY_MIND | STUPID | PLANT
 flags:HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Mushroom
 
@@ -291,27 +291,27 @@ desc:Naga
 name:ogre
 glyph:O
 pain:1
-flags:GIANT | EVIL
+flags:GIANT | EVIL | HUMANOID
 flags:OPEN_DOOR | BASH_DOOR
 desc:Ogre
 
 name:orc
 glyph:o
 pain:1
-flags:MALE | ORC | EVIL
+flags:MALE | ORC | EVIL | HUMANOID
 flags:OPEN_DOOR | BASH_DOOR
 desc:Orc
 
 name:person
 glyph:p
 pain:1
-flags:BASH_DOOR
+flags:BASH_DOOR | HUMANOID
 desc:Person/Human
 
 name:plant
 glyph:;
 pain:2
-flags:NEVER_MOVE
+flags:NEVER_MOVE | PLANT
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Plant
 
@@ -359,25 +359,26 @@ desc:Snake
 name:spider
 glyph:S
 pain:7
-flags:BASH_DOOR
+flags:BASH_DOOR | INSECT
 desc:Spider/Scorpion/Tick
 
 name:townsfolk
 glyph:t
 pain:4
+flags:HUMANOID
 desc:Townsfolk
 
 name:tree
 glyph::
 pain:2
-flags:NEVER_MOVE
+flags:NEVER_MOVE | PLANT
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Tree
 
 name:troll
 glyph:T
 pain:1
-flags:TROLL | EVIL
+flags:TROLL | EVIL | HUMANOID
 flags:OPEN_DOOR | BASH_DOOR
 desc:Troll
 
@@ -404,7 +405,7 @@ desc:Vortex
 name:worm
 glyph:w
 pain:1
-flags:ANIMAL
+flags:ANIMAL | INSECT
 desc:Worm/Worm Mass
 
 name:wraith

@@ -243,6 +243,7 @@ static const char *get_flag_desc(bitflag flag)
 		case OF_FREE_ACT: return "Resists paralysis";
 		case OF_REGEN: return "Regenerates quickly";
 		case OF_SEE_INVIS: return "Sees invisible creatures";
+		case OF_PROT_FEAR: return "Resists fear";
 		case OF_TELEPATHY: return "Has telepathy";
 
 		default: return "Undocumented flag";
