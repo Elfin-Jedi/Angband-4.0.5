@@ -208,27 +208,27 @@ desc:Fires a ball of poison.
 spell:Reduce Cuts and Poison:5:2:25:3
 effect:TIMED_DEC:POISONED:2
 effect:TIMED_DEC:CUT:2
-desc:Reduces cuts and poisoning.
+desc:Reduces cuts and poisoning. (Yes, cuts too. It just doesn't give you a
+desc:message yet.)
 
 spell:Resist Magic:5:7:26:5
 effect:TIMED_INC:INVULN
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
 desc:Short term increase in saving throw and armour class, and protection from 
-desc:blindness and confusion.
+desc:blindness and confusion. (Doesn't have listed effect yet. Needs custom work.)
 
 spell:Identify:6:8:30:6
 effect:IDENTIFY
 desc:Standard identification.
 
-book:magic book:[Conjurings and Tricks]:9:1
+book:magic book:[Minor Powers]:9:1
 
-spell:Confuse Monster:7:3:30:5
-effect:BOLT_AWARE:OLD_CONF
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to confuse a single monster for a level-dependant duration.
-desc:  Uniques and monsters that resist confusion are not affected.
+spell:Lightning Bolt:7:3:30:6
+effect:BOLT_OR_BEAM:ELEC
+dice:$Dd8
+expr:D:PLAYER_LEVEL:- 5 / 5 + 2
+desc:Fires a bolt or beam of lightning.
 
 spell:Lightning Bolt:7:3:30:6
 effect:BEAM:ELEC
@@ -281,7 +281,7 @@ desc:  Sometimes a beam is fired instead that hurts each monster
 desc: in its path.
 desc:  The chance to get a beam goes up with your character level.
 
-book:magic book:[Incantations and Illusions]:7:1
+book:magic book:[Useful Magic]:7:1
 
 spell:Satisfy Hunger:14:8:45:7
 effect:SET_NOURISH
@@ -329,7 +329,7 @@ effect:DETECT_VISIBLE_MONSTERS
 dice:22d40
 desc:Detects all monsters in the immediate area, for one turn only.
 
-book:magic book:[Sorcery and Evocations]:7:1
+book:magic book:[Battle Spells]:7:1
 
 spell:Frost Ball:22:12:75:9
 effect:BALL:COLD:2
@@ -382,7 +382,7 @@ desc:  You will also be blinded for 10+1d10 turns, unless you
 desc: have resistance to blindness or light.
 desc:  This spell has no effect when used in the town.
 
-book:magic book:[Resistances of Scarabtarices]:5:1
+book:magic book:[Magical Defences]:5:1
 
 spell:Resist Fire:21:5:50:20
 effect:TIMED_INC:OPP_FIRE
@@ -418,7 +418,7 @@ dice:20+d20
 desc:Grants you resistance to acid, cold, fire, lightning, and poison for
 desc: 20+1d20 turns.
 
-book:magic book:[Raal's Tome of Destruction]:6:1
+book:magic book:[Escapes and Trickery]:6:1
 
 spell:Acid Bolt:16:6:55:20
 effect:BOLT_OR_BEAM:ACID
@@ -467,7 +467,7 @@ expr:B:PLAYER_LEVEL:* 2 + 300
 desc:Shoots a radius-3 mana ball that does unresistable
 desc: damage to each monster in its area of effect.
 
-book:magic book:[Mordenkainen's Escapes]:5:1
+book:magic book:[Advanced Sorcery]:5:1
 
 spell:Door Creation:12:4:20:16
 effect:TOUCH:MAKE_DOOR
@@ -502,7 +502,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Tenser's Transformations]:5:1
+book:magic book:[Power and Destruction]:5:1
 
 spell:Clear Mind  (Turn Stone to Mud):18:0:50:22
 effect:LINE:KILL_WALL
@@ -536,7 +536,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Kelek's Grimoire of Power]:5:1
+book:magic book:[Book of Runes]:5:1
 
 spell:Detect Evil:5:2:50:10
 effect:DETECT_EVIL
@@ -585,7 +585,7 @@ info:2:20:15000:40
 attack:4:35:3
 equip:food:Ration of Food:1:3
 equip:light:Wooden Torch:1:3
-equip:prayer book:[Beginners Handbook]:1:1
+equip:prayer book:[Novice's Handbook]:1:1
 equip:hafted:Mace:1:1
 equip:potion:Cure Serious Wounds:2:2
 equip:scroll:Word of Recall:1:1
@@ -603,7 +603,7 @@ title:Patriarch
 
 magic:1:350:2:9
 
-book:prayer book:[Beginners Handbook]:7:2
+book:prayer book:[Novice's Handbook]:7:2
 
 spell:Detect Evil:1:1:10:4
 effect:DETECT_EVIL
@@ -1001,7 +1001,7 @@ desc: to-dam bonus of the same weapon.
 desc:  The prayer has no effect if the weapon is an artifact or ego item,
 desc: is already branded, has a slay, is broken, or is cursed.
 
-book:prayer book:[Wrath of God]:5:2
+book:prayer book:[Wrath of the Valar]:5:2
 
 spell:Dispel Undead:15:7:70:25
 effect:PROJECT_LOS_AWARE:DISP_UNDEAD
@@ -1116,7 +1116,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
 desc:Shoots a radius-2 poison ball.
 
-book:magic book:[Conjurings and Tricks]:7:1
+book:magic book:[Minor Powers]:7:1
 
 spell:Confuse Monster:15:6:75:1
 effect:BOLT_AWARE:OLD_CONF
@@ -1158,7 +1158,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Incantations and Illusions]:6:1
+book:magic book:[Useful Magic]:6:1
 
 spell:Satisfy Hunger:25:12:95:1
 effect:SET_NOURISH
@@ -1199,7 +1199,7 @@ dice:20
 desc:Attempts to slow a single monster.
 desc:  Uniques are not affected.
 
-book:magic book:[Sorcery and Evocations]:3:1
+book:magic book:[Battle Spells]:3:1
 
 spell:Teleport Other:31:25:70:3
 effect:BOLT_STATUS:AWAY_ALL
@@ -1221,7 +1221,7 @@ expr:B:PLAYER_LEVEL:+ 0
 desc:Attempts to put to sleep each monster within line of sight.
 desc:  Uniques and monsters that resist confusion are not affected.
 
-book:magic book:[Resistances of Scarabtarices]:5:1
+book:magic book:[Magical Defences]:5:1
 
 spell:Resist Cold:16:12:50:40
 effect:TIMED_INC:OPP_COLD
@@ -1257,7 +1257,7 @@ effect:TIMED_INC:SHIELD
 dice:30+d20
 desc:Grants you +50 to AC for 30+1d20 turns.
 
-book:magic book:[Raal's Tome of Destruction]:2:1
+book:magic book:[Escapes and Trickery]:2:1
 
 spell:Shock Wave:35:25:80:50
 effect:BALL:SOUND:2
@@ -1273,7 +1273,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 40
 desc:Shoots a radius-3 poison ball.
 
-book:magic book:[Mordenkainen's Escapes]:4:1
+book:magic book:[Advanced Sorcery]:4:1
 
 spell:Door Creation:17:7:30:15
 effect:TOUCH:MAKE_DOOR
@@ -1303,7 +1303,7 @@ desc: of recall again.
 desc:  This spell has no effect when the option to restrict the use of
 desc: stairs and recall is set, unless Morgoth is dead.
 
-book:magic book:[Tenser's Transformations]:6:1
+book:magic book:[Power and Destruction]:6:1
 
 spell:Heroism:26:15:30:40
 effect:HEAL_HP
@@ -1354,7 +1354,7 @@ desc: the to-hit bonus and the to-dam bonus of the same ammunition.
 desc:  The spell has no effect if the ammunition is already branded, has a
 desc: slay, is broken, or is cursed.
 
-book:magic book:[Kelek's Grimoire of Power]:1:1
+book:magic book:[Book of Runes]:1:1
 
 spell:Bedlam:29:20:70:20
 effect:BALL:OLD_CONF:4
@@ -1622,7 +1622,7 @@ effect:SENSE_OBJECTS
 dice:22d40
 desc:Detects all treasure in the immediate area.
 
-book:nature book:[Radagast's Shapeshifts]:5:3
+book:nature book:[Yavanna's Shapeshifts]:5:3
 
 spell:Resist Cold:8:15:50:30
 effect:TIMED_INC:OPP_COLD
@@ -1782,7 +1782,7 @@ desc: the to-hit bonus and the to-dam bonus of the same ammunition.
 desc:  The spell has no effect if the ammunition is already branded, has a
 desc: slay, is broken, or is cursed.
 
-book:nature book:[Spirit of Yavanna]:3:3
+book:nature book:[Powers of Aman]:3:3
 
 spell:Earthquake:30:28:60:16
 effect:EARTHQUAKE
@@ -1829,7 +1829,7 @@ info:6:35:60000:40
 attack:5:30:5
 equip:food:Ration of Food:1:3
 equip:light:Wooden Torch:1:3
-equip:prayer book:[Beginners Handbook]:1:1
+equip:prayer book:[Novice's Handbook]:1:1
 equip:sword:Dagger:1:1
 equip:scroll:Protection from Evil:1:1
 equip:scroll:Word of Recall:1:1
@@ -1847,7 +1847,7 @@ title:Paladin Lord
 
 magic:1:400:2:9
 
-book:prayer book:[Beginners Handbook]:7:2
+book:prayer book:[Novice's Handbook]:7:2
 
 spell:Detect Evil:1:1:30:4
 effect:DETECT_EVIL
@@ -2195,7 +2195,7 @@ desc: to-dam bonus of the same weapon.
 desc:  The prayer has no effect if the weapon is an artifact or ego item,
 desc: is already branded, has a slay, is broken, or is cursed.
 
-book:prayer book:[Wrath of God]:3:2
+book:prayer book:[Wrath of the Valar]:3:2
 
 spell:Dispel Undead:20:13:70:20
 effect:PROJECT_LOS_AWARE:DISP_UNDEAD
@@ -2474,7 +2474,7 @@ desc:  You will also be blinded for 10+1d10 turns, unless you
 desc: have resistance to blindness or light.
 desc:  This spell has no effect when used in the town.
 
-book:nature book:[Radagast's Shapeshifts]:5:3
+book:nature book:[Yavanna's Shapeshifts]:5:3
 
 spell:Resist Fire:21:5:50:20
 effect:TIMED_INC:OPP_FIRE
@@ -2628,7 +2628,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:nature book:[Spirit of Yavanna]:5:3
+book:nature book:[Powers of Aman]:5:3
 
 spell:Detect Evil:5:2:50:10
 effect:DETECT_EVIL
