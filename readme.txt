@@ -27,6 +27,6 @@ To-do (so far, this branch (a reminder for myself)):
 
 (Mage Book #2) Add Magical Throw.
 
-Add Magic Book for Mages #2.
+Add Magic Book for Mages #3.
 
 Add all the other books.
