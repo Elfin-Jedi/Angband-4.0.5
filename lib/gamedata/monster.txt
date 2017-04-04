@@ -2551,7 +2551,7 @@ flags:OPEN_DOOR
 flags:FORCE_SLEEP
 spell-freq:9
 spells:CAUSE_1 | SCARE
-drop:prayer book:[Beginners Handbook]:3:1:1
+drop:prayer book:[Novice's Handbook]:3:1:1
 friends-base:20:1d3:person
 friends-base:40:1d3:person
 friends-base:80:1d3:person
@@ -2811,6 +2811,120 @@ flags:HURT_LIGHT | NO_FEAR |
 spell-freq:3
 spells:BLINK | DRAIN_MANA | BLIND |
 desc:A strange eye, milky white with blindness.
+
+name:205:Giant ebony frog
+base:amphibian
+color:D
+info:110:18:12:18:50
+power:6:5:0:0:10
+blow:BITE:HURT:1d6
+flags:ATTR_FLICKER
+flags:MULTIPLY |
+#flags:CAN_SWIM | EAT_BODY |
+desc:It looks poisonous.
+
+name:206:Giant blue frog
+base:amphibian
+color:B
+info:110:18:12:12:50
+power:6:1:0:0:8
+blow:BITE:POISON:2d4
+flags:RAND_25 |
+#flags:CAN_SWIM | EAT_BODY |
+flags:IM_POIS
+desc:It looks poisonous.
+
+name:207:Surly looking dwarf
+base:humanoid
+color:M
+info:110:24:16:20:10
+power:6:1:0:0:10
+blow:HIT:HURT:1d7
+blow:HIT:HURT:1d7
+flags:MALE | DROP_60 |
+flags:SMART | TAKE_ITEM |
+desc:A scowling short chap with a two-foot beard. He appears to
+desc: be looking for a good smithy to sharpen his axe.
+
+name:208:Gnome illusionist
+base:humanoid
+color:Y
+info:110:31:20:10:10
+power:6:1:0:0:7
+blow:HIT:HURT:1d5
+flags:MALE | FORCE_SLEEP | DROP_1 |
+flags:SMART | EVIL |
+spell-freq:3
+spells:HASTE | BLINK | DARKNESS | BLIND | CONF | SLOW |
+desc:An illusionist of short stature.
+
+name:209:Brain ooze
+base:jelly
+color:I
+info:110:16:8:7:0
+power:6:1:0:0:5
+blow:CRAWL:CONFUSE:1d1
+blow:CRAWL:HURT:5d1
+flags:RAND_25 | RAND_50 | DROP_40
+flags:NO_CONF | NO_SLEEP |
+desc:It oozes towards you, and your head starts to hurt...
+
+name:210:Brown icky thing
+base:icky thing
+color:u
+info:110:27:14:14:20
+power:6:1:0:0:7
+blow:TOUCH:HURT:2d5
+#blow:TOUCH:LOSE_CHR:2d5
+flags:EMPTY_MIND |
+desc:It is a smallish, slimy, icky, diseased creature.
+
+name:211:Orange icky thing
+base:icky thing
+color:o
+info:100:34:15:20:20
+power:6:1:0:0:7
+blow:CRAWL:POISON:1d4
+blow:CRAWL:EAT_LIGHT
+blow:HIT:HURT:1d4
+blow:HIT:HURT:1d4
+flags:FORCE_SLEEP | SMART | OPEN_DOOR |
+flags:EVIL | IM_POIS |
+spell-freq:5
+spells:SCARE | BLIND | CONF |
+desc:It is a strange, slimy, icky creature, with rudimentary intelligence,
+desc: but evil cunning.  It hungers for food, and you look tasty.
+
+name:212:Brown jelly
+base:jelly
+color:u
+info:110:139:2:1:99
+power:6:1:0:0:8
+blow:TOUCH:HURT:1d4
+blow:TOUCH:HURT:1d4
+flags:NEVER_MOVE |
+flags:HURT_LIGHT | NO_CONF | NO_SLEEP |
+desc:It is a large pulsating mound of brown flesh.
+
+name:213:Boiling jelly
+base:jelly
+color:r
+info:110:162:2:1:99
+power:6:1:0:0:9
+blow:TOUCH:FIRE:1d8
+flags:NEVER_MOVE |
+flags:HURT_LIGHT | NO_CONF | NO_SLEEP |
+desc:It is a large bubbling mound of red flesh.
+
+name:214:Red ooze
+base:jelly
+color:r
+info:110:17:8:16:80
+power:6:1:0:0:7
+blow:TOUCH:LOSE_STR:2d4
+flags:RAND_25 | RAND_50 | DROP_40
+flags:IM_POIS | NO_CONF | NO_SLEEP |
+desc:It's red and it's oozing.
 
 ### Dungeon level 7 ###
 
@@ -4255,7 +4369,7 @@ power:16:4:10740:5:4
 blow:BITE:CONFUSE:2d2
 desc:A giant buzzing wasp, its stinger drips venom.
 
-name:211:Ulfast, Son of Ulfang
+name:2211:Ulfast, Son of Ulfang
 base:person
 color:U
 info:110:340:20:48:40
@@ -4348,7 +4462,7 @@ spells:BLIND | BLINK | CONF | SCARE | TELE_LEVEL | TELE_TO
 spells:TPORT
 desc:The lawful evil master's favourite pet.
 
-name:214:Forest troll
+name:2214:Forest troll
 base:troll
 color:g
 info:110:110:20:75:80

@@ -1,3 +1,12 @@
+Fast way to compile on windows, download mingw (make sure you have the makefile building programs), enter Command Prompt, cd to My-Angband-4.0.5-master\src. Type make -f makefile.win mingw=yes.
+
+Note: After you create your character it will complain about a parse error in the graphics, but will load fine (except with the wrong terrain graphics in the town). This is because I added more monsters and a bookstore that the graphics do not support. Go to the Options menu, find the graphics sub-menu and change to none. This will fix the otherwise annoying graphics inconsistencies, and prevent future non-fatal parse error complaining. (Fatal parse errors shouldn't show up unless you mess with the gamedata files.)
+
+I chose the name VarAngband or variety angband, because that is my main goal - to include as much variety as possible, in a game with re-Tolkienized or at least non-Zelazny monsters ie. Morgoth (instead of Serpent of Chaos) etc. There is still a lot of progress to be made, before I will feel ready to create an official release.
+
+Note: The download still has the old name of My-Angband-4.0.5.
+
+------------------------------
 
 To-do (so far, this branch (a reminder for myself)):
 
@@ -22,7 +31,7 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 Add Magic Book for Mages #3.
 
-Add all the other books.
+Add all the other books' spells, right now all the Nature and Necromancy books use the old Mage spells.
 
 -------------------------------------
 
@@ -32,6 +41,16 @@ Find out how to fix monster invisibility spell, so the invisible monster can't b
 
 Add sexes back in to birth choices.
 
-Add framework for special abilities like Zangband-descended variants.
+Create a PosChengband-style race catagory birth menu.
+
+Add PosChengband races, monster races, and classes.
+
+Set up birth menu system: Choose gender, choose normal or monster race, choose race catagory, choose race, if normal races - choose between FAangband-based and PosChengband-based class/magic system, choose class, if PosChengband-based - choose magic realms.
+
+Possibly (and probably controversially) add a birth option to use either the six gender system from ancient Judaism: Zachar (male), Nekeivah (female), Androgynos (both), Tumtum (indeterminate), Ay'lonit (trans->male), and Saris (trans->female); (http://www.sojourngsd.org/blog/sixgenders) or the old Native American gender system with 3-5 genders (more difficult because of different traditions/languages and is less clearly defined) basically: Female, Male, Masculine Female, Feminine Male, and Two-Spirit; (https://indiancountrymedianetwork.com/news/opinions/two-spirits-one-heart-five-genders/) instead of the semi-modern European binary system.
+
+Add framework for special abilities like Zangband-descended variants. Add Shapeshifts for Maiar, Vampires, Werewolves, Beornings, & spells.
 
 Start attempting to add terrain from Unangband.
+
+Add Pathfinder / D&D 3.5 races? Maybe even some Star Wars / Star Trek races? (Because I've always wanted to play a Twi'lek Rogue.)
