@@ -52,3 +52,5 @@ Possibly (and probably controversially) add a birth option to use either the six
 Add framework for special abilities like Zangband-descended variants.
 
 Start attempting to add terrain from Unangband.
+
+Add Pathfinder / D&D 3.5 races? Maybe even some Star Wars / Star Trek races? (Because I've always wanted to play a Twi'lek Rogue.)
