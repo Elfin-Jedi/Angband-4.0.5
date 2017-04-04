@@ -1171,15 +1171,15 @@ chart:133:134:100:55
 phrase:You are the only child 
 
 chart:134:54:40:80
-phrase:of a Ranger.  
+phrase:of a Ranger. 
 chart:134:54:70:90
 phrase:of an Archer.  
 chart:134:54:87:110
 phrase:of a Warrior.  
 chart:134:54:95:125
-phrase:of a Mage.  
+phrase:of a Mage. 
 chart:134:54:100:140
-phrase:of a Lord.
+phrase:of a Lord. 
 
 chart:135:136:10:25
 phrase:You are the illegitimate and unacknowledged child 
