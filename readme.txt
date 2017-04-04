@@ -41,6 +41,8 @@ Find out how to fix monster invisibility spell, so the invisible monster can't b
 
 Add sexes back in to birth choices.
 
+Create a PosChengband-style race catagory birth menu.
+
 Add framework for special abilities like Zangband-descended variants.
 
 Start attempting to add terrain from Unangband.
