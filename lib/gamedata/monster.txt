@@ -851,7 +851,7 @@ flags:OPEN_DOOR
 flags:FORCE_SLEEP
 spell-freq:12
 spells:CAUSE_1 | HEAL | SCARE
-drop:prayer book:[Novice's Handbook]:5:1:1
+drop:prayer book:[Beginners Handbook]:5:1:1
 friends-base:20:1d3:person
 friends-base:40:1d3:person
 friends-base:80:1d3:person
@@ -1146,7 +1146,7 @@ flags:DROP_40
 spell-freq:5
 spells:CAUSE_1 | CONF | HEAL | MISSILE
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:prayer book:[Novice's Handbook]:5:1:1
+drop:prayer book:[Beginners Handbook]:5:1:1
 friends-base:30:1d2:goblin
 friends-base:70:1d2:goblin
 desc:It is a kobold dressed in skins and gesturing wildly.
@@ -1428,7 +1428,7 @@ flags:OPEN_DOOR
 flags:FORCE_SLEEP
 spell-freq:12
 spells:CAUSE_1 | HEAL | SCARE
-drop:prayer book:[Novice's Handbook]:5:1:1
+drop:prayer book:[Beginners Handbook]:5:1:1
 friends-base:20:1d3:person
 friends-base:40:1d3:person
 friends-base:80:1d3:person
@@ -2037,7 +2037,7 @@ spells:BLINK | DARKNESS
 spells:BO_COLD
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 friends:100:4d4:Same
 desc:A mage of short stature.
 
@@ -2812,6 +2812,110 @@ spell-freq:3
 spells:BLINK | DRAIN_MANA | BLIND |
 desc:A strange eye, milky white with blindness.
 
+name:205:Giant ebony frog
+base:amphibian
+color:D
+info:110:18:12:18:50
+power:6:5:0:0:10
+blow:BITE:HURT:1d6
+flags:ATTR_FLICKER
+flags:MULTIPLY |
+#flags:CAN_SWIM | EAT_BODY |
+desc:It looks poisonous.
+
+name:206:Giant blue frog
+base:amphibian
+color:B
+info:110:18:12:12:50
+power:6:1:0:0:8
+blow:BITE:POISON:2d4
+flags:RAND_25 |
+#flags:CAN_SWIM | EAT_BODY |
+flags:IM_POIS
+desc:It looks poisonous.
+
+name:207:Surly looking dwarf
+base:humanoid
+color:M
+info:110:24:16:20:10
+power:6:1:0:0:10
+blow:HIT:HURT:1d7
+blow:HIT:HURT:1d7
+flags:MALE | DROP_60 |
+flags:SMART | TAKE_ITEM |
+desc:A scowling short chap with a two-foot beard. He appears to
+desc: be looking for a good smithy to sharpen his axe.
+
+name:208:Gnome illusionist
+base:humanoid
+color:Y
+info:110:31:20:10:10
+power:6:1:0:0:7
+blow:HIT:HURT:1d5
+flags:MALE | FORCE_SLEEP | DROP_1 |
+flags:SMART | EVIL |
+spell-freq:3
+spells:HASTE | BLINK | DARKNESS | BLIND | CONF | SLOW |
+desc:An illusionist of short stature.
+
+name:209:Brain ooze
+base:jelly
+color:I
+info:110:16:8:7:0
+power:6:1:0:0:5
+blow:CRAWL:CONFUSE:1d1
+blow:CRAWL:HURT:5d1
+flags:RAND_25 | RAND_50 | DROP_40
+flags:NO_CONF | NO_SLEEP |
+desc:It oozes towards you, and your head starts to hurt...
+
+name:210:Brown icky thing
+base:icky thing
+color:u
+info:110:27:14:14:20
+power:6:1:0:0:7
+blow:TOUCH:HURT:2d5
+#blow:TOUCH:LOSE_CHR:2d5
+flags:EMPTY_MIND |
+desc:It is a smallish, slimy, icky, diseased creature.
+
+name:211:Orange icky thing
+base:icky thing
+color:o
+info:100:34:15:20:20
+power:6:1:0:0:7
+blow:CRAWL:POISON:1d4
+blow:CRAWL:EAT_LIGHT
+blow:HIT:HURT:1d4
+blow:HIT:HURT:1d4
+flags:FORCE_SLEEP | SMART | OPEN_DOOR |
+flags:EVIL | IM_POIS |
+spell-freq:5
+spells:SCARE | BLIND | CONF |
+desc:It is a strange, slimy, icky creature, with rudimentary intelligence,
+desc: but evil cunning.  It hungers for food, and you look tasty.
+
+name:212:Brown jelly
+base:jelly
+color:u
+info:110:139:2:1:99
+power:6:1:0:0:8
+blow:TOUCH:HURT:1d4
+blow:TOUCH:HURT:1d4
+flags:NEVER_MOVE |
+flags:HURT_LIGHT | NO_CONF | NO_SLEEP |
+desc:It is a large pulsating mound of brown flesh.
+
+name:213:Boiling jelly
+base:jelly
+color:r
+info:110:162:2:1:99
+power:6:1:0:0:9
+blow:TOUCH:FIRE:1d8
+flags:NEVER_MOVE |
+flags:HURT_LIGHT | NO_CONF | NO_SLEEP |
+desc:It is a large bubbling mound of red flesh.
+
 ### Dungeon level 7 ###
 
 name:2098:Cave orc
@@ -3140,7 +3244,7 @@ blow:HIT:HURT:1d6
 flags:DROP_60
 flags:HURT_LIGHT
 flags:FORCE_SLEEP
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 drop:prayer book:[Words of Wisdom]:5:1:1
 spell-freq:8
 spells:BLINK | CAUSE_1 | MISSILE
@@ -3324,7 +3428,7 @@ spell-freq:5
 spells:BLIND | CONF | DARKNESS | MISSILE
 spells:BA_POIS
 drop:magic book:[Magic for Beginners]:10:1:1
-drop:magic book:[Minor Powers]:10:1:1
+drop:magic book:[Conjurings and Tricks]:10:1:1
 desc:A dark elven figure, dressed all in black, hurling spells at you.
 
 name:2137:Orfax, Son of Boldor
@@ -3543,7 +3647,7 @@ spells:BLINK | DARKNESS
 spells:BO_COLD
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 friends:100:4d4:Same
 desc:A mage of short stature.
 
@@ -3632,7 +3736,7 @@ spells:BLIND | BLINK | SLOW | TPORT
 spells:BA_POIS
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 desc:A small humanoid that radiates some power.
 
 name:161:Priest
@@ -3649,7 +3753,7 @@ flags:FORCE_SLEEP
 spell-freq:3
 spells:CAUSE_2 | HEAL | SCARE
 spells:S_MONSTER
-drop:prayer book:[Novice's Handbook]:8:1:1
+drop:prayer book:[Beginners Handbook]:8:1:1
 drop:prayer book:[Words of Wisdom]:8:1:1
 friends:50:1d2:Brigand
 friends:50:1d2:Illusionist
@@ -3670,8 +3774,8 @@ flags:HURT_LIGHT
 flags:FORCE_SLEEP
 spell-freq:5
 spells:BLIND | CAUSE_2 | CONF | DARKNESS | HEAL
-drop:prayer book:[Novice's Handbook]:8:1:1
-drop:prayer book:[Novice's Handbook]:8:1:1
+drop:prayer book:[Beginners Handbook]:8:1:1
+drop:prayer book:[Beginners Handbook]:8:1:1
 desc:A dark elven figure, dressed all in black, chanting curses and waiting to
 desc: deliver your soul to hell.
 
@@ -3856,8 +3960,8 @@ flags:FORCE_SLEEP
 spell-freq:3
 spells:BLIND | BLINK | CONF | DARKNESS | HASTE | HOLD
 spells:SLOW | TPORT
-drop:magic book:[Minor Powers]:8:1:1
-drop:magic book:[Useful Magic]:8:1:1
+drop:magic book:[Conjurings and Tricks]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
 friends:50:1d2:Brigand
 friends:50:1d2:Priest
 friends:50:1d2:Easterling warrior
@@ -3879,7 +3983,7 @@ spell-freq:3
 spells:BLIND | BLINK | HASTE | HOLD | SLOW
 spells:BO_ELEC | BO_FIRE
 spells:S_ANIMAL
-drop:prayer book:[Novice's Handbook]:8:1:1
+drop:prayer book:[Beginners Handbook]:8:1:1
 drop:prayer book:[Words of Wisdom]:8:1:1
 desc:A priest devoted to Nature.
 
@@ -4255,7 +4359,7 @@ power:16:4:10740:5:4
 blow:BITE:CONFUSE:2d2
 desc:A giant buzzing wasp, its stinger drips venom.
 
-name:211:Ulfast, Son of Ulfang
+name:2211:Ulfast, Son of Ulfang
 base:person
 color:U
 info:110:340:20:48:40
@@ -4836,8 +4940,8 @@ flags:FORCE_SLEEP
 spell-freq:5
 spells:BLIND | CONF | DARKNESS | HASTE
 spells:BO_COLD | BO_FIRE
-drop:magic book:[Minor Powers]:5:1:1
-drop:magic book:[Useful Magic]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
 friends:80:1d3:Dark elf
 friends:70:1d2:Dark elven warrior
 friends:50:1d1:Dark elven mage
@@ -4858,8 +4962,8 @@ spell-freq:4
 spells:ARROW_2 | BLINK | MISSILE
 spells:BO_COLD | BO_ELEC
 spells:S_ANIMAL
-drop:magic book:[Minor Powers]:5:1:1
-drop:magic book:[Useful Magic]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
 friends:50:1d1:Easterling champion
 friends:50:1d1:Master rogue
 friends:50:1d2:Illusionist
@@ -5484,7 +5588,7 @@ flags:HURT_LIGHT | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:5
 spells:BLINK | CAUSE_1 | DARKNESS | MISSILE | SCARE
-drop:prayer book:[Novice's Handbook]:5:1:1
+drop:prayer book:[Beginners Handbook]:5:1:1
 drop:prayer book:[Words of Wisdom]:5:1:1
 desc:A troll who is so bright he knows how to read.
 
@@ -5750,8 +5854,8 @@ spell-freq:4
 spells:HEAL | HOLD | TRAPS
 spells:BA_COLD
 spells:S_MONSTER
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:5:1:1
 desc:A hideous ogre wrapped in black sorcerous robes.
 
 name:298:Vampire
@@ -5944,8 +6048,8 @@ spell-freq:3
 spells:BLIND | CONF | HASTE | TELE_TO | TPORT
 spells:BO_COLD | BO_ELEC | BO_FIRE
 spells:S_MONSTER
-drop:magic book:[Useful Magic]:10:1:1
-drop:magic book:[Battle Spells]:7:1:1
+drop:magic book:[Incantations and Illusions]:10:1:1
+drop:magic book:[Sorcery and Evocations]:7:1:1
 friends-base:100:1d1:golem
 desc:A mage of some power - you can tell by the size of his hat.
 
@@ -7441,8 +7545,8 @@ spell-freq:2
 spells:HOLD | TPORT
 spells:BO_FIRE
 spells:S_DEMON
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends-base:50:1d3:minor demon
 friends:100:1d1:Quasit
 desc:A figure twisted by evil standing in robes of deepest crimson.
@@ -8153,8 +8257,8 @@ flags:FORCE_SLEEP
 spell-freq:2
 spells:BLIND
 spells:S_DRAGON
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends-base:30:1d1:dragon
 friends-base:60:1d1:dragon
 desc:This elusive female spellcaster has a special affinity for dragons, whom
@@ -8178,8 +8282,8 @@ spells:BLIND | BLINK | CAUSE_3 | CONF | TELE_TO | TRAPS
 spells:BA_COLD | BA_FIRE
 spells:BO_ACID
 spells:S_DRAGON | S_MONSTER | S_UNDEAD
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:10:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:10:1:1
 friends:30:1d1:Master thief
 friends:30:1d1:Ranger chieftain
 friends:30:1d1:Patriarch
@@ -8419,8 +8523,8 @@ spells:TELE_TO
 spells:BA_COLD | BA_FIRE
 spells:BO_ACID
 spells:S_DEMON | S_MONSTER | S_UNDEAD
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:10:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:10:1:1
 desc:A dark elven figure, dressed in deepest black.  Power seems to crackle from
 desc: his slender frame.
 
@@ -8499,8 +8603,8 @@ spells:ARROW_2 | ARROW_3 | ARROW_4 | BLINK | HASTE | MISSILE
 spells:BA_COLD
 spells:BO_ELEC | BO_FIRE
 spells:S_ANIMAL
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends:30:1d1:Master thief
 friends:30:1d1:Sorcerer
 friends:30:1d1:Patriarch
