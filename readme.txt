@@ -31,7 +31,7 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 Add Magic Book for Mages #3.
 
-Add all the other books.
+Add all the other books' spells, right now all the Nature and Necromancy books use the old Mage spells.
 
 -------------------------------------
 
