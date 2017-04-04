@@ -4,6 +4,8 @@ Note: After you create your character it will complain about a parse error in th
 
 I chose the name VarAngband or variety angband, because that is my main goal - to include as much variety as possible, in a game with non-Zelazny monsters ie. Morgoth (instead of Serpent of Chaos) etc. There is still a lot of progress to be made, before I will feel ready to create an official release.
 
+Note: The download still has the old name of My-Angband-4.0.5.
+
 ------------------------------
 
 To-do (so far, this branch (a reminder for myself)):
