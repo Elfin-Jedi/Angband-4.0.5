@@ -928,7 +928,7 @@ skill-shoot:2
 skill-throw:-1
 skill-dig:0
 info:9:1:2
-history:28:200:100
+history:137:200:100
 height:86:10
 weight:185:17
 #F:NO_AGGRAVATE
