@@ -3032,6 +3032,63 @@ spell-freq:6
 spells:BLINK | TELE_TO | CAUSE_1 | SCARE | SLOW |
 desc:A floating skull possessed by a malignant spirit.
 
+name:223:Gazing eye
+base:eye
+color:s
+info:120:35:12:7:0
+power:6:1:0:0:6
+flags:NEVER_BLOW | NEVER_MOVE |
+flags:HURT_LIGHT | NO_FEAR | NO_CONF |
+spell-freq:4
+spells:MISSILE |
+spells:DRAIN_MANA |
+desc:A lidless gazing eye, crackling with mana.
+
+name:224:Dead ant
+base:ant
+color:R
+info:110:17:12:34:60
+power:6:2:0:0:11
+blow:BITE:HURT:1d4
+blow:STING:POISON:1d4
+flags:COLD_BLOOD | EMPTY_MIND |
+flags:UNDEAD | EVIL | NONLIVING | IM_COLD | IM_POIS | NO_FEAR | NO_CONF |
+flags:NO_SLEEP |
+desc:It is large and has venomous mandibles.
+
+name:225:Rotten icky thing
+base:icky thing
+color:P
+info:110:18:14:14:20
+power:6:1:0:0:9
+blow:HIT:HURT:1d6
+#blow:EXPLODE:SLIME:4d6
+flags:EMPTY_MIND |
+flags:UNDEAD | NONLIVING |
+desc:It is a smallish, slimy, icky, undead creature. It looks unstable...
+
+name:226:Grid bug
+base:insect
+color:v
+info:110:5:10:2:10
+power:6:2:0:0:3
+blow:BITE:ELEC:1d4
+flags:STUPID | 
+#flags:CAN_FLY |
+friends:100:4d3:same
+desc:A strange electric bug.
+
+name:227:Swordfish
+base:fish
+color:W
+info:120:16:14:10:20
+power:6:1:0:0:10
+blow:HIT:HURT:1d5
+blow:HIT:HURT:1d5
+flags:COLD_BLOOD | 
+#flags:CAN_SWIM | MUST_SWIM |
+desc:A fish with a swordlike "beak".
+
 ### Dungeon level 7 ###
 
 name:2098:Cave orc
@@ -4134,6 +4191,20 @@ flags:IM_ACID | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
 desc:A fast moving highly acidic jelly thing, that is eating away the floor it
 desc: rests on.
 
+name:228:Giant slug
+base:worm
+color:U
+info:100:118:10:25:25
+power:13:1:0:0:25
+blow:BITE:ACID:2d5
+blow:BITE:ACID:2d7
+flags:ANIMAL | EMPTY_MIND | KILL_ITEM | KILL_BODY | 
+#flags:CAN_SWIM | INSECT
+spell-freq:10
+spells:BR_ACID
+desc:It is slowly making its way towards you, eating everything in 
+desc:its path...
+
 ### Dungeon level 14 ###
 
 name:180:Giant flea
@@ -4652,7 +4723,7 @@ desc:A whirling form of sentient rock.
 
 ### Dungeon level 18 ###
 
-name:206:Orc captain
+name:2206:Orc captain
 base:orc
 color:o
 info:110:110:20:88:30
@@ -4700,7 +4771,7 @@ friends:100:2d7:Same
 desc:Flames lick at its feet and its tongue is a blade of fire.  You can feel a
 desc: furnace heat radiating from the creature.
 
-name:222:Cold hound
+name:2222:Cold hound
 base:zephyr hound
 color:w
 info:110:35:30:36:0
@@ -4717,7 +4788,7 @@ friends:100:2d7:Same
 desc:A hound as tall as a man, this creature appears to be composed of angular
 desc: planes of ice.  Cold radiates from it and freezes your breath in the air.
 
-name:223:Energy hound
+name:2223:Energy hound
 base:zephyr hound
 color:b
 info:110:35:30:36:0
