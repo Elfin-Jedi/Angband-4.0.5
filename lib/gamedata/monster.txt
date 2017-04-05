@@ -2237,6 +2237,7 @@ desc:A sly fellow of short stature. He appears to be looking for
 desc:a quick profit.
 
 name:161:Haughty looking elf
+plural:Haughty looking elves
 base:humanoid
 color:W
 info:110:21:18:16:10
@@ -2318,6 +2319,7 @@ friends:100:2d5:same
 desc:It is a rodent of unusual size.
 
 name:168:Noxious jelly
+plural:Noxious jellies
 base:jelly
 color:t
 info:110:88:2:1:99
@@ -2391,6 +2393,7 @@ friends:70:2d4:same
 desc:It is poisonous and aggressive.
 
 name:174:Giant leech
+plural:Giant leeches
 base:worm
 color:v
 info:120:24:10:20:50
@@ -2729,6 +2732,7 @@ flags:NEVER_MOVE |
 desc:Yum!  It looks quite tasty.
 
 name:197:Black mushroom patch
+plural:Black mushroom patches
 base:mushroom
 color:D
 info:110:12:2:1:0
@@ -2738,6 +2742,7 @@ flags:NEVER_MOVE
 desc:Yum!  It looks quite tasty.
 
 name:198:Copper mushroom patch
+plural:Copper mushroom patches
 base:mushroom
 color:u
 info:110:12:2:1:0
@@ -2747,6 +2752,7 @@ flags:NEVER_MOVE | ATTR_FLICKER | IM_ACID
 desc:Yum!  It looks quite tasty.
 
 name:199:Slimy mushroom patch
+plural:Slimy mushroom patches
 base:mushroom
 color:M
 info:110:18:2:1:0
@@ -2835,6 +2841,7 @@ flags:IM_POIS
 desc:It looks poisonous.
 
 name:207:Surly looking dwarf
+plural:Surly looking dwarves
 base:humanoid
 color:M
 info:110:24:16:20:10
@@ -2896,6 +2903,7 @@ desc:It is a strange, slimy, icky creature, with rudimentary intelligence,
 desc: but evil cunning.  It hungers for food, and you look tasty.
 
 name:212:Brown jelly
+plural:Brown jellies
 base:jelly
 color:u
 info:110:139:2:1:99
@@ -2907,6 +2915,7 @@ flags:HURT_LIGHT | NO_CONF | NO_SLEEP |
 desc:It is a large pulsating mound of brown flesh.
 
 name:213:Boiling jelly
+plural:Boiling jellies
 base:jelly
 color:r
 info:110:162:2:1:99
@@ -2925,6 +2934,103 @@ blow:TOUCH:LOSE_STR:2d4
 flags:RAND_25 | RAND_50 | DROP_40
 flags:IM_POIS | NO_CONF | NO_SLEEP |
 desc:It's red and it's oozing.
+
+name:215:Blue snake
+base:snake
+color:b
+info:100:25:5:40:60
+power:6:1:0:0:7
+blow:BITE:HURT:1d4
+blow:CRUSH:ELEC:1d6
+flags:RAND_25 | IM_ELEC |
+#flags:EAT_BODY |
+desc:It is about ten feet long and charged with electricity.
+
+name:216:Red snake
+base:snake
+color:r
+info:100:17:5:39:60
+power:6:1:0:0:7
+blow:BITE:POISON:1d5
+blow:GAZE:CONFUSE
+flags:RAND_25 | IM_FIRE |
+#flags:EAT_BODY |
+desc:It is about six feet long.
+
+name:217:Boa constrictor
+base:snake
+color:R
+info:100:41:5:45:30
+power:6:1:0:0:8
+blow:BITE:HURT:1d5
+blow:CRUSH:HURT:2d6
+flags:RAND_25 | 
+#flags:EAT_BODY |
+desc:It is about sixteen feet long.
+
+name:218:River goblin
+base:goblin
+color:B
+info:110:34:20:32:30
+power:6:3:0:0:9
+blow:HIT:HURT:2d4
+flags:MALE | DROP_60 | ORC |
+#flags:CAN_SWIM | 
+friends:100:2d5:same
+desc:He is an ugly, piratical looking humanoid armed with a hook.
+
+name:219:Apprentice shaman
+base:person
+color:P
+info:110:10:20:6:5
+power:6:1:0:0:2
+blow:HIT:HURT:1d4
+flags:MALE | FORCE_SLEEP | DROP_60 |
+flags:HAS_LIGHT | OPEN_DOOR |
+spell-freq:4
+spells:MISSILE |
+spells:HEAL | BLINK | SCARE |
+spells:S_ANIMAL |
+friends-base:20:1d3:person
+friends-base:40:1d3:person
+friends-base:80:1d3:person
+friends:50:1d2:Same
+desc:He waves a magical talisman at you.
+
+name:220:Giant black mouse
+plural:Giant black mice
+base:rodent
+color:D
+info:110:8:8:8:20
+power:6:3:0:0:6
+blow:BITE:HURT:3d2
+flags:RAND_50 |
+flags:MULTIPLY |
+desc:It is about three feet long with large teeth.
+
+name:221:Rabid jackal
+base:canine
+color:G
+info:110:6:15:5:5
+power:6:1:0:0:6
+blow:BITE:POISON:2d3
+blow:BITE:POISON:2d3
+#blow:BITE:DISEASE:2d3
+#blow:BITE:DISEASE:2d3
+flags:WEIRD_MIND | NO_FEAR |
+#flags:EAT_BODY |
+desc:A large dog, foaming at the mouth.
+
+name:222:Floating skull
+base:skeleton
+color:B
+info:110:26:15:30:30
+power:6:2:0:0:8
+blow:BITE:HURT:1d5
+flags:SMART | NONLIVING
+spell-freq:6
+spells:BLINK | TELE_TO | CAUSE_1 | SCARE | SLOW |
+desc:A floating skull possessed by a malignant spirit.
 
 ### Dungeon level 7 ###
 
