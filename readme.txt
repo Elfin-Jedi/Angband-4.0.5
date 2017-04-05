@@ -11,7 +11,7 @@ To-do (so far, this branch (a reminder for myself)):
 
 Finish uploading edit files with normal line endings: object.txt.
 
-Add level 6 monsters from Unangband.
+Add level 7 monsters from Unangband.
 
 Add BR_CONF for Giant Bronze Dragon Flies.
 
