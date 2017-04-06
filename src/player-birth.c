@@ -89,7 +89,7 @@ typedef struct birther /*lovely*/ birther; /*sometimes we think she's a dream*/
  */
 struct birther
 {
-        byte sex;
+        const struct player_sex *sex;
 	const struct player_race *race;
 	const struct player_class *class;
 

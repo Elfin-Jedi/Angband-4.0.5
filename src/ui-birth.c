@@ -141,7 +141,7 @@ static enum birth_stage textui_birth_quickstart(void)
 /**
  * The various menus
  */
-static struct menu race_menu, class_menu, roller_menu;
+static struct menu sex_menu, race_menu, class_menu, roller_menu;
 
 /**
  * Locations of the menus, etc. on the screen
@@ -151,12 +151,13 @@ static struct menu race_menu, class_menu, roller_menu;
 #define TABLE_ROW        9
 
 #define QUESTION_COL     2
-#define SEX_COL         2
-#define RACE_COL         2
-#define RACE_AUX_COL    19
-#define CLASS_COL       19
-#define CLASS_AUX_COL   36
-#define ROLLER_COL      36
+#define SEX_COL          2
+#define SEX_AUX_COL     19
+#define RACE_COL        19
+#define RACE_AUX_COL    36
+#define CLASS_COL       36
+#define CLASS_AUX_COL   53
+#define ROLLER_COL      53
 #define HIST_INSTRUCT_ROW 18
 
 #define MENU_ROWS TABLE_ROW + 14
@@ -280,6 +281,74 @@ static const char *get_pflag_desc(bitflag flag)
 	}
 }
 
+        static void sex_help(int i, void *db, const region *l)
+{
+	int j;
+	size_t k;
+	struct player_sex *s = player_id2sex(i);
+	int len = (STAT_MAX + 1) / 2;
+
+	int n_flags = 0;
+	int flag_space = 3;
+
+	if (!r) return;
+
+	/* Output to the screen */
+	text_out_hook = text_out_to_screen;
+	
+	/* Indent output */
+	text_out_indent = SEX_AUX_COL;
+	Term_gotoxy(SEX_AUX_COL, TABLE_ROW);
+
+	for (j = 0; j < len; j++) {  
+		const char *name = stat_names_reduced[j];
+		int adj = r->r_adj[j];
+
+		text_out_e("%s%+3d", name, adj);
+
+		if (j * 2 + 1 < STAT_MAX) {
+			name = stat_names_reduced[j + len];
+			adj = r->r_adj[j + len];
+			text_out_e("  %s%+3d", name, adj);
+		}
+
+		text_out("\n");
+	}
+	
+	text_out_e("\n");
+	skill_help(NULL, NULL, NULL, NULL, NULL);
+	text_out_e("\n");
+
+	for (k = 0; k < OF_MAX; k++) {
+		if (n_flags >= flag_space) break;
+		if (!of_has(r->flags, k)) continue;
+		text_out_e("\n%s", get_flag_desc(k));
+		n_flags++;
+	}
+
+	for (k = 0; k < ELEM_MAX; k++) {
+		if (n_flags >= flag_space) break;
+		if (r->el_info[k].res_level != 1) continue;
+		text_out_e("\n%s", get_resist_desc(k));
+		n_flags++;
+	}
+
+	for (k = 0; k < PF_MAX; k++) {
+		if (n_flags >= flag_space) break;
+		if (!pf_has(r->pflags, k)) continue;
+		text_out_e("\n%s", get_pflag_desc(k));
+		n_flags++;
+	}
+
+	while(n_flags < flag_space) {
+		text_out_e("\n");
+		n_flags++;
+	}
+
+	/* Reset text_out() indentation */
+	text_out_indent = 0;
+}
+        
 static void race_help(int i, void *db, const region *l)
 {
 	int j;
@@ -475,9 +544,8 @@ static void setup_menus(void)
         
         /* Sex menu fairly straightforward */
 	init_birth_menu(&sex_menu, n, player->sex ? player->sex->sidx : 0,
-                        &gender_region, TRUE);
+                        &gender_region, TRUE, sex_help);
         mdata = sex_menu.menu_data;
-	mdata->hint = "Sex does not have any significant gameplay effects.";
 
 	/* Race menu. */
 	init_birth_menu(&race_menu, n, player->race ? player->race->ridx : 0,
