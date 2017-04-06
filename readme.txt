@@ -7,7 +7,7 @@ I chose the name VarAngband or variety angband, because that is my main goal - t
 
 Basic changes so far
 
-Races added from Unangband (though without shapeshifts), EyAngband, FAangband, and some from PosChengband (though without special abilities, non-humanoid bodies (Centaur), or flags gained at a later level). 55 Total, I know some of them are repetitive.
+Races added from Unangband (though without shapeshifts), EyAngband, FAangband, and some from PosChengband (though without special abilities, non-humanoid bodies (Centaur), or flags gained at a later level). 55 Total, I know some of them are very or even compeletely similar to each other.
 
 Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
 
