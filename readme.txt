@@ -3,10 +3,23 @@ Fast way to compile on windows, download mingw (make sure you have the makefile 
 Note: After you create your character it will complain about a parse error in the graphics, but will load fine (except with the wrong terrain graphics in the town). This is because I added more monsters and a bookstore that the graphics do not support. (And haven't figured out where the default preferences are set.) Go to the Options menu, find the graphics sub-menu and change to none. This will fix the otherwise annoying graphics inconsistencies, and prevent future non-fatal parse error complaining. (Fatal parse errors ideally shouldn't show up unless you change the gamedata files.)
 
 I chose the name VarAngband or variety angband, because that is my main goal - to include as much variety as possible, in a game with re-Tolkienized or at least non-Zelazny monsters ie. Morgoth (instead of Serpent of Chaos) etc. There is still a lot of progress to be made, before I will feel ready to create an official release.
+------------------------------
+
+Changes so far
+
+Races added from Unangband (though without shapeshifts), EyAngband, and FAangband.
+
+Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
+
+Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because of duplicate numbers.)
+
+Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-2, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
+
+Weapons added from Hengband, a few other variants.
 
 ------------------------------
 
-To-do (so far, this branch (a reminder for myself)):
+To-do (a reminder for myself):
 
 
 Finish uploading edit files with normal line endings: object.txt.
@@ -21,7 +34,7 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 (Mage Book #1) Fix Reduce Cuts and Poison - add a message for TIMED_DEC:CUT so it is clear that it has reduced cuts.
 
-(Mage Book #1) Add/Fix Resist Magic - TIMED_INVULN has an entirely different effect in Vanilla.
+(Mage Book #1) Add/Fix Resist Magic - TIMED_INVULN has an entirely different effect in Vanilla. (And makes this spell ridiculously unbalanced.)
 
 (Mage Book #2) Add Telekinesis.
 
