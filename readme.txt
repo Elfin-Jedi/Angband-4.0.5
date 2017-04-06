@@ -35,7 +35,7 @@ Add all the other books' spells, right now all the Nature and Necromancy classes
 
 Figure out why new spellbooks don't display in inventory and shop lists, fix.
 
-Find out how to fix monster invisibility spell, so the invisible monster can't be detected by detect monsters, displays 2nd message ({monster} disappears!), and reappears again.
+Find out how to fix monster invisibility spell, so the monster displays the 2nd message ({monster} disappears!), and reappears again.
 
 Add sexes back in to birth choices.
 
