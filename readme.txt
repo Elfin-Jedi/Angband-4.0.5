@@ -1,4 +1,4 @@
-Fast way to compile on windows, download mingw (make sure you have the makefile building programs), enter Command Prompt, change directory to varangbnad-master\src. Type make -f makefile.win mingw=yes.
+Fast way to compile on windows, download mingw (make sure you have the makefile building programs), enter Command Prompt, change directory to varangbnad-master\src. Type make -f makefile.win.
 
 Note: After you create your character it will complain about a parse error in the graphics, but will load fine (except with the wrong terrain graphics in the town). This is because I added more monsters and a bookstore that the graphics do not support. (And haven't figured out where the default preferences are set.) Go to the Options menu, find the graphics sub-menu and change to none. This will fix the otherwise annoying graphics inconsistencies, and prevent future non-fatal parse error complaining. (Fatal parse errors ideally shouldn't show up unless you change the gamedata files.)
 
@@ -7,7 +7,7 @@ I chose the name VarAngband or variety angband, because that is my main goal - t
 
 Basic changes so far
 
-Races added from Unangband (though without shapeshifts), EyAngband, and FAangband. 48 Total, I know some of them are repetitive.
+Races added from Unangband (though without shapeshifts), EyAngband, FAangband, and some from PosChengband (though without special abilities, non-humanoid bodies (Centaur), or flags gained at a later level). 55 Total, I know some of them are repetitive.
 
 Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
 
