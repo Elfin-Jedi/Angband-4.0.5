@@ -1083,19 +1083,6 @@ spells:DRAIN_MANA
 desc:It is a large pile of silver flesh that sucks all light from its
 desc: surroundings.
 
-name:60:Yellow jelly
-plural:Yellow jellies
-base:jelly
-color:y
-info:120:45:2:1:99
-power:3:1:520:8:12
-blow:TOUCH:POISON:1d3
-flags:NEVER_MOVE
-flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
-spell-freq:15
-spells:DRAIN_MANA
-desc:It's a large pile of yellow flesh.
-
 name:76:Giant white ant
 base:ant
 color:w
@@ -1103,15 +1090,6 @@ info:110:11:8:19:80
 power:3:1:66:1:7
 blow:BITE:HURT:1d4
 desc:It is about two feet long and has sharp pincers.
-
-name:64:Metallic red centipede
-base:centipede
-color:r
-info:120:18:8:10:20
-power:3:1:54:0:12
-blow:CRAWL:HURT:1d2
-flags:RAND_25 | BASH_DOOR
-desc:It is about four feet long and carnivorous.
 
 name:65:Yellow worm mass
 base:worm
@@ -1355,17 +1333,6 @@ flags:NEVER_MOVE
 flags:HURT_LIGHT | IM_COLD | NO_CONF | NO_SLEEP
 desc:It's a large pile of pulsing blue flesh.
 
-name:72:Creeping copper coins
-plural:Piles of creeping copper coins
-base:creeping coins
-color:u
-info:100:32:3:28:10
-power:4:3:378:5:9
-blow:HIT:HURT:1d4
-blow:TOUCH:POISON:2d4
-desc:It appears to be a pile of copper coins.
-mimic:gold:copper
-
 name:96:Grey snake
 base:snake
 color:s
@@ -1534,13 +1501,14 @@ desc:It is a small, ugly humanoid.
 name:110:Memory moss
 base:plant
 color:G
-info:110:15:30:1:5
-power:4:1:0:0:5
+info:110:2:30:1:5
+power:4:3:81:0:5
+blow:HIT:CONFUSE:1d4
 blow:HIT:CONFUSE:1d4
 flags:FORCE_SLEEP | NEVER_MOVE |
 flags:STUPID | COLD_BLOOD |
-spell-freq:10
-spells:FORGET | INVISIBLE
+spell-freq:6
+spells:FORGET | INVIS
 desc:A mass of green vegetation.  You don't remember seeing anything like it
 desc: before.
 
@@ -1835,17 +1803,6 @@ flags:IM_ACID
 desc:A large green serpent with a female's torso.  Her green skin glistens with
 desc: acid.
 
-name:80:Green glutton ghost
-base:ghost
-color:g
-info:130:8:10:24:10
-power:5:1:324:3:15
-blow:TOUCH:EAT_FOOD:1d1
-flags:DROP_40 | DROP_60
-flags:RAND_25 | RAND_50
-flags-off:IM_COLD
-desc:It is a very ugly green ghost with a voracious appetite.
-
 name:81:Green jelly
 plural:Green jellies
 base:jelly
@@ -1878,17 +1835,6 @@ flags:EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is a small animated kobold skeleton.
 
-name:86:Red worm mass
-base:worm
-color:r
-info:100:23:7:14:10
-power:5:1:3442:38:6
-blow:CRAWL:FIRE:1d6
-flags:WEIRD_MIND | MULTIPLY | STUPID
-flags:RAND_25 | RAND_50 | BASH_DOOR
-flags:HURT_LIGHT | IM_FIRE | NO_FEAR
-desc:It is a large slimy mass of worms.
-
 name:136:Copperhead snake
 base:snake
 color:o
@@ -1898,19 +1844,6 @@ blow:BITE:POISON:2d4
 flags:RAND_50
 flags:IM_POIS
 desc:It has a copper head and sharp venomous fangs.
-
-name:208:Giant green dragon fly
-plural:Giant green dragon flies
-base:insect
-color:g
-info:110:14:12:30:1
-power:5:2:168:1:16
-blow:BITE:POISON:1d6
-flags:RAND_25
-flags:IM_POIS
-spell-freq:10
-spells:BR_POIS
-desc:A vast, foul-smelling dragonfly.
 
 name:549:Rot jelly
 plural:Rot jellies
@@ -2428,18 +2361,6 @@ desc:it was utilized for a long time as the vehicle of the human.
 
 ### Dungeon level 6 ###
 
-name:88:Purple mushroom patch
-plural:Purple mushroom patches
-base:mushroom
-color:P
-info:110:1:2:1:0
-power:6:2:53:0:15
-blow:SPORE:LOSE_CON:1d2
-blow:SPORE:LOSE_CON:1d2
-blow:SPORE:LOSE_CON:1d2
-flags:NEVER_MOVE
-desc:Yum!  It looks quite tasty.
-
 name:177:Brown mold
 base:mold
 color:u
@@ -2482,17 +2403,6 @@ friends:100:2d9:Same
 desc:He is one of the many weaker 'slave' orcs, often mistakenly known as a
 desc: goblin.
 
-name:97:Rattlesnake
-base:snake
-color:r
-info:110:24:6:36:10
-power:6:1:532:4:20
-blow:BITE:POISON:2d5
-flags:RAND_50
-flags:IM_POIS
-desc:It is recognized by the hard-scaled end of its body that is often rattled
-desc: to frighten its prey.
-
 name:231:Giant black dragon fly
 plural:Giant black dragon flies
 base:insect
@@ -2504,20 +2414,6 @@ flags:IM_ACID
 spell-freq:10
 spells:BR_ACID
 desc:The size of a large bird, this fly drips caustic acid.
-
-name:234:Giant gold dragon fly
-plural:Giant gold dragon flies
-base:insect
-color:y
-info:120:14:12:30:1
-power:6:2:416:3:18
-blow:BITE:HURT:1d3
-flags:RAND_25
-flags:IM_FIRE
-spell-freq:10
-spells:BR_SOUN
-desc:Large beating wings support this dazzling insect.  A loud buzzing noise
-desc: pervades the air.
 
 name:179:Grey mushroom patch
 plural:Grey mushroom patches
@@ -2771,7 +2667,7 @@ blow:GAZE:BLIND:1d4
 flags:FORCE_SLEEP
 flags:STUPID | COLD_BLOOD | EMPTY_MIND | NO_STUN 
 spell-freq:3
-spells:BLIND | INVISIBLE
+spells:BLIND | INVIS
 desc:A mass of orange vegetation. Its many eyes follow your every movement.
 
 name:201:Guardian ant
@@ -3091,7 +2987,7 @@ desc:A fish with a swordlike "beak".
 
 ### Dungeon level 7 ###
 
-name:2098:Cave orc
+name:228:Cave orc
 base:orc
 color:G
 info:110:55:20:48:70
@@ -3103,7 +2999,7 @@ friends:50:1d8:Snaga
 friends:100:2d6:Same
 desc:He is often found in huge numbers in deep caves.
 
-name:99:Wood spider
+name:229:Wood spider
 base:spider
 color:U
 info:120:11:8:19:80
@@ -3115,7 +3011,7 @@ flags:IM_POIS | GROUP_AI
 friends:100:2d7:Same
 desc:It scuttles towards you.
 
-name:100:Manes
+name:230:Manes
 plural:Manes
 base:minor demon
 color:u
@@ -3127,7 +3023,7 @@ flags:NO_FEAR
 friends:100:2d7:Same
 desc:It is a minor but aggressive demon.
 
-name:101:Bloodshot eye
+name:231:Bloodshot eye
 base:eye
 color:r
 info:110:45:2:7:10
@@ -3150,7 +3046,7 @@ flags:DROP_60
 flags:RAND_25 | TAKE_ITEM
 desc:A large red snake with a woman's torso.
 
-name:104:Giant red frog
+name:232:Giant red frog
 base:reptile
 color:r
 info:110:23:12:19:50
@@ -3159,7 +3055,7 @@ blow:BITE:LOSE_STR:2d4
 flags:RAND_50 | BASH_DOOR
 desc:It looks poisonous.
 
-name:105:Green icky thing
+name:233:Green icky thing
 base:icky thing
 color:g
 info:110:23:14:14:20
@@ -3169,7 +3065,7 @@ flags:EMPTY_MIND
 flags:IM_ACID
 desc:It is a smallish, slimy, icky, acidic creature.
 
-name:2106:Zombified kobold
+name:234:Zombified kobold
 base:zombie
 color:s
 info:110:27:20:21:100
@@ -3181,7 +3077,7 @@ flags:NO_FEAR
 desc:It is an animated kobold corpse.  Flesh falls off in large chunks as it
 desc: shambles forward.
 
-name:107:Lost soul
+name:235:Lost soul
 base:ghost
 color:B
 info:110:9:12:12:10
@@ -3194,7 +3090,7 @@ spell-freq:15
 spells:DRAIN_MANA | TPORT
 desc:It is almost insubstantial.
 
-name:108:Dark elf
+name:236:Dark elf
 plural:Dark elves
 base:humanoid
 color:D
@@ -3211,7 +3107,7 @@ spells:CONF | DARKNESS
 desc:An elven figure with jet black skin and white hair, his eyes are large and
 desc: twisted with evil.
 
-name:109:Night lizard
+name:237:Night lizard
 base:reptile
 color:b
 info:110:18:20:19:30
@@ -3220,7 +3116,7 @@ blow:BITE:HURT:1d6
 blow:BITE:HURT:1d6
 desc:It is a black lizard with overlapping scales and a powerful jaw.
 
-name:110:Mughash the Kobold Lord
+name:238:Mughash the Kobold Lord
 base:goblin
 color:v
 info:110:150:20:30:40
@@ -3236,6 +3132,357 @@ friends:100:1d3:Kobold shaman
 friends:100:1d5:Kobold archer
 friends:100:1d5:Large kobold
 desc:Strong and powerful, for a kobold.
+
+name:239:Yellow jelly
+plural:Yellow jellies
+base:jelly
+color:y
+info:120:45:2:1:99
+power:7:1:520:8:12
+blow:TOUCH:POISON:1d3
+flags:NEVER_MOVE
+flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
+spell-freq:15
+spells:DRAIN_MANA
+desc:It's a large pile of yellow flesh.
+
+name:240:Metallic red centipede
+base:centipede
+color:r
+info:120:18:8:10:20
+power:7:1:54:0:12
+blow:CRAWL:HURT:1d2
+flags:RAND_25 | BASH_DOOR
+desc:It is about four feet long and carnivorous.
+
+name:241:Creeping copper coins
+plural:Piles of creeping copper coins
+base:creeping coins
+color:u
+info:100:32:3:28:10
+power:7:3:378:5:9
+blow:HIT:HURT:1d4
+blow:TOUCH:POISON:2d4
+desc:It appears to be a pile of copper coins.
+mimic:gold:copper
+
+name:242:Green glutton ghost
+base:ghost
+color:g
+info:130:8:10:24:10
+power:7:1:324:3:15
+blow:TOUCH:EAT_FOOD:1d1
+flags:DROP_40 | DROP_60
+flags:RAND_25 | RAND_50
+flags-off:IM_COLD
+desc:It is a very ugly green ghost with a voracious appetite.
+
+name:243:Red worm mass
+base:worm
+color:r
+info:100:23:7:14:10
+power:7:1:3442:38:6
+blow:CRAWL:FIRE:1d6
+flags:WEIRD_MIND | MULTIPLY | STUPID
+flags:RAND_25 | RAND_50 | BASH_DOOR
+flags:HURT_LIGHT | IM_FIRE | NO_FEAR
+desc:It is a large slimy mass of worms.
+
+name:244:Purple mushroom patch
+plural:Purple mushroom patches
+base:mushroom
+color:P
+info:110:1:2:1:0
+power:7:2:53:0:15
+blow:SPORE:LOSE_CON:1d2
+blow:SPORE:LOSE_CON:1d2
+blow:SPORE:LOSE_CON:1d2
+flags:NEVER_MOVE
+desc:Yum!  It looks quite tasty.
+
+name:245:Rattlesnake
+base:snake
+color:r
+info:110:24:6:36:10
+power:7:1:532:4:20
+blow:BITE:POISON:2d5
+flags:RAND_50
+flags:IM_POIS
+desc:It is recognized by the hard-scaled end of its body that is often rattled
+desc: to frighten its prey.
+
+name:246:Giant black louse
+plural:Giant black lice
+base:insect
+color:D
+info:120:2:6:8:10
+power:7:1:360:0:3
+blow:BITE:HURT:1d2
+desc:It makes you itch just to look at it.
+
+name:247:Giant green dragon fly
+plural:Giant green dragon flies
+base:insect
+color:g
+info:110:14:12:30:1
+power:7:2:168:1:16
+blow:BITE:POISON:1d6
+flags:RAND_25
+flags:IM_POIS
+spell-freq:10
+spells:BR_POIS
+desc:A vast, foul-smelling dragonfly.
+
+name:248:Blink dog
+base:canine
+color:B
+info:120:36:20:24:10
+power:7:2:12312:5:50
+blow:BITE:HURT:1d8
+flags:RAND_25 | BASH_DOOR | GROUP_AI
+spell-freq:4
+spells:BLINK | TELE_TO
+friends:100:2d7:Same
+desc:A strange magical member of the canine race, its form seems to shimmer and
+desc: fade in front of your very eyes.
+
+name:249:Giant gold dragon fly
+plural:Giant gold dragon flies
+base:insect
+color:y
+info:120:14:12:30:1
+power:7:2:416:3:18
+blow:BITE:HURT:1d3
+flags:RAND_25
+flags:IM_FIRE
+spell-freq:10
+spells:BR_SOUN
+desc:Large beating wings support this dazzling insect.  A loud buzzing noise
+desc: pervades the air.
+
+name:250:Blue dragon bat
+base:bat
+color:b
+info:130:10:12:39:10
+power:7:1:1782:0:54
+blow:BITE:ELEC:1d3
+flags:RAND_50 | BASH_DOOR
+flags:IM_ELEC
+flags:FORCE_SLEEP
+spell-freq:4
+spells:BR_ELEC
+desc:It is a glowing blue bat with a sharp tail.
+
+name:251:Craban
+plural:Crebain
+base:bird
+color:D
+info:120:9:40:14:0
+power:7:4:1944:1:20
+blow:CLAW:HURT:1d4
+blow:CLAW:HURT:1d4
+spell-freq:8
+spells:SHRIEK
+flags:GROUP_AI
+friends:100:3d3:Same
+desc:A type of crow, specially bred by the forces of evil as spies; their
+desc: rudimentary intelligence guided by an evil mind has tracked you down, and
+desc: now they seek to alert other evil creatures to your presence.
+
+name:252:Clear snake
+base:snake
+color:w
+info:100:45:5:38:75
+power:7:1:0:0:5
+blow:BITE:HURT:1d4
+blow:CRUSH:HURT:1d6
+flags:ATTR_CLEAR | RAND_25 |
+flags:INVISIBLE
+#flags:EAT_BODY |
+desc:It is about ten feet long and stealthy.
+
+name:253:Skeleton goblin
+base:skeleton
+color:w
+info:110:21:20:26:40
+power:7:1:0:0:13
+blow:HIT:HURT:1d6
+flags:EMPTY_MIND | BASH_DOOR |
+flags:ORC | NONLIVING | IM_ELEC
+desc:It is a small animated goblin skeleton.
+
+name:254:Wood elf
+base:humanoid
+color:g
+info:110:37:20:16:20
+power:7:1:0:0:12
+blow:HIT:HURT:1d6
+blow:HIT:POISON:1d6
+flags:MALE | FORCE_SLEEP |
+flags:HAS_LIGHT | TAKE_ITEM | 
+spell-freq:3
+spells:POISON_DART | DARKNESS | CONF |
+desc:An elven figure.
+
+name:255:Goblin wizard
+base:goblin
+color:R
+info:110:58:18:24:10
+power:7:1:0:0:14
+blow:HIT:HURT:1d8
+flags:FORCE_SLEEP | DROP_60 |
+flags:ORC | HURT_LIGHT
+spell-freq:3
+spells:BA_POIS |
+spells:BLINK | TPORT | TELE_TO | BLIND | SLOW |
+spells:S_MONSTER |
+desc:A small ugly humanoid that radiates some power.
+
+name:256:Rock python
+base:snake
+color:U
+info:100:55:5:55:30
+power:7:1:0:0:10
+blow:BITE:HURT:1d5
+blow:CRUSH:HURT:2d6
+#blow:SHOT:HURT:1d10
+flags:RAND_25 |
+#flags:EAT_BODY |
+spell-freq:5
+spells:SHOT_1
+desc:It is about twenty feet long.
+
+name:257:Moross moss
+base:plant
+color:y
+info:110:15:30:1:5
+power:7:1:0:0:11
+blow:HIT:LOSE_DEX:1d4
+blow:HIT:LOSE_DEX:1d4
+flags:FORCE_SLEEP 
+flags:STUPID | COLD_BLOOD | EMPTY_MIND |
+flags:NO_STUN 
+spell-freq:7
+spells:TELE_TO | SLOW |
+spells:INVIS
+desc:A mass of yellow vegetation. You feel apathetic looking at its sluggish
+desc: fronds.
+
+name:258:Night willow
+base:tree
+color:D
+info:100:297:6:5:10
+power:7:1:0:0:10
+flags:NEVER_BLOW | DROP_60 |
+flags:STUPID | EMPTY_MIND |
+flags:UNDEAD | EVIL | NONLIVING | IM_COLD
+spell-freq:4
+spells:DARKNESS | DRAIN_MANA | SCARE | BLIND | HOLD |
+desc:It is a twisted black-barked tree. A tree can't possibly hurt you, but
+desc: you feel fear, disorientation and drowsiness as you approach.
+
+name:259:Thorn tree
+base:tree
+color:U
+info:110:192:2:20:0
+power:7:1:0:0:11
+blow:BITE:HURT:1d4
+flags:DROP_60 |
+flags:STUPID | EMPTY_MIND |
+spell-freq:5
+spells:SPIKE
+desc:It has branches covered with cruel-looking thorns.
+
+name:260:Giant long-eared bat
+base:bat
+color:M
+info:130:22:12:22:30
+power:7:3:0:0:13
+blow:BITE:HURT:1d4
+blow:CLAW:HURT:1d2
+blow:CLAW:HURT:1d2
+flags:RAND_50 |
+#flags:CAN_FLY | MUST_FLY | EAT_BODY |
+friends:80:2d4:same
+desc:It screeches as it attacks.
+
+name:261:Giant ebony bat
+base:bat
+color:D
+info:130:31:10:15:30
+power:7:3:0:0:12
+blow:BITE:HURT:1d6
+flags:RAND_50 | ATTR_FLICKER
+#flags:CAN_FLY | EAT_BODY |
+friends:80:2d4:same
+desc:It screeches as it attacks.
+
+name:262:Giant red centipede
+base:centipede
+color:r
+info:120:13:12:26:40
+power:7:2:0:0:10
+blow:BITE:HURT:1d2
+blow:STING:POISON:1d2
+flags:BASH_DOOR |
+desc:It is about six feet long and carnivorous.
+
+name:263:Eye sore
+base:eye
+color:t
+info:110:58:2:6:10
+power:7:1:0:0:13
+blow:GAZE:HURT:1d6
+blow:GAZE:HURT:1d6
+blow:GAZE:HURT:1d6
+blow:GAZE:HURT:1d6
+flags:NEVER_MOVE |
+#flags:CAN_FLY | MUST_FLY |
+flags:HURT_LIGHT | NO_FEAR |
+spell-freq:5
+spells:DRAIN_MANA |
+desc:A disembodied eye, hideously ugly.
+
+name:264:Gnome rogue
+base:humanoid
+color:b
+info:110:38:18:28:10
+power:7:1:0:0:14
+blow:HIT:HURT:2d4
+blow:TOUCH:EAT_GOLD
+flags:MALE | DROP_60
+flags:SMART | TAKE_ITEM | 
+flags:EVIL |
+spell-freq:5
+spells:BLINK | CONF | SLOW |
+desc:A thief of short stature.
+
+name:265:Gnome priest
+base:humanoid
+color:T
+info:110:35:18:24:10
+power:7:1:0:0:12
+blow:HIT:HURT:2d4
+flags:MALE | FORCE_SLEEP | DROP_60|
+flags:SMART | TAKE_ITEM | 
+flags:EVIL |
+spell-freq:5
+spells:HEAL | CAUSE_1
+spells:S_MONSTER |
+desc:A priest of short stature.
+
+name:266:Dwarven priest
+base:humanoid
+color:B
+info:110:42:18:28:10
+power:7:1:0:0:14
+blow:HIT:HURT:2d4
+flags:MALE | FORCE_SLEEP | DROP_60 
+flags:SMART | TAKE_ITEM | 
+spell-freq:5
+spells:HEAL | CAUSE_1 | SCARE | BLIND |
+desc:A dwarven priest with a three-foot beard, and hammer swung
+desc: devoutly to his cause.
 
 ### Dungeon level 8 ###
 
@@ -4272,15 +4519,6 @@ flags:RAND_25 | BASH_DOOR
 friends:100:2d7:Same
 desc:It is a large wolf with eyes full of cunning.
 
-name:187:Giant black louse
-plural:Giant black lice
-base:insect
-color:D
-info:120:2:6:8:10
-power:14:1:360:0:3
-blow:BITE:HURT:1d2
-desc:It makes you itch just to look at it.
-
 name:188:Lurker
 base:lurker
 color:w
@@ -4578,7 +4816,7 @@ spells:BLIND | BLINK | CONF | SCARE | TELE_LEVEL | TELE_TO
 spells:TPORT
 desc:The chaotic evil master's favourite pet.
 
-name:226:Uruk
+name:2226:Uruk
 base:orc
 color:B
 info:110:70:20:75:30
@@ -4604,22 +4842,6 @@ blow:BITE:HURT:1d12
 blow:CRUSH:HURT:1d10
 flags:ANIMAL
 desc:A huge, beastly bear, more savage than most of its kind.
-
-name:561:Craban
-plural:Crebain
-base:bird
-color:D
-info:120:9:40:14:0
-power:16:4:1944:1:20
-blow:CLAW:HURT:1d4
-blow:CLAW:HURT:1d4
-spell-freq:8
-spells:SHRIEK
-flags:GROUP_AI
-friends:100:3d3:Same
-desc:A type of crow, specially bred by the forces of evil as spies; their
-desc: rudimentary intelligence guided by an evil mind has tracked you down, and
-desc: now they seek to alert other evil creatures to your presence.
 
 ### Dungeon level 17 ###
 
@@ -4827,19 +5049,6 @@ mimic:potion:Experience
 mimic:potion:Augmentation
 mimic:potion:Speed
 
-name:225:Blink dog
-base:canine
-color:B
-info:120:36:20:24:10
-power:18:2:12312:5:50
-blow:BITE:HURT:1d8
-flags:RAND_25 | BASH_DOOR | GROUP_AI
-spell-freq:4
-spells:BLINK | TELE_TO
-friends:100:2d7:Same
-desc:A strange magical member of the canine race, its form seems to shimmer and
-desc: fade in front of your very eyes.
-
 name:229:Shambling mound
 base:mushroom
 color:g
@@ -4950,7 +5159,7 @@ desc: heard for quite some distance, alerting other monsters to your presence.
 
 ### Dungeon level 20 ###
 
-name:235:Bolg, Son of Azog
+name:2235:Bolg, Son of Azog
 base:orc
 color:P
 info:120:500:20:60:20
@@ -4997,7 +5206,7 @@ spell-freq:9
 spells:SCARE
 desc:A strange reptilian hybrid with three heads, guarding its hoard.
 
-name:238:Earth hound
+name:2238:Earth hound
 base:zephyr hound
 color:u
 info:110:68:30:36:0
@@ -5032,7 +5241,7 @@ friends:100:2d7:Same
 desc:Swirling vapours surround this beast as it floats towards you, seemingly
 desc: walking on air.  Noxious gases sting your throat.
 
-name:240:Sabre-tooth tiger
+name:2240:Sabre-tooth tiger
 base:feline
 color:y
 info:120:150:40:60:0
@@ -5045,7 +5254,7 @@ flags:BASH_DOOR
 desc:A fierce and dangerous cat, its huge tusks and sharp claws would lacerate
 desc: even the strongest armour.
 
-name:241:Water hound
+name:2241:Water hound
 base:zephyr hound
 color:s
 info:110:68:30:36:0
@@ -5100,7 +5309,7 @@ blow:CLAW:HURT:1d10
 blow:BITE:HURT:2d8
 desc:A tall shaggy, furry humanoid, it could call the yeti brother.
 
-name:245:Werewolf
+name:2245:Werewolf
 plural:Werewolves
 base:canine
 color:D
@@ -5201,19 +5410,6 @@ friends:50:1d3:Orc captain
 friends:100:4d4:Uruk
 desc:A large and powerful orc, captain of one of Saruman's orcish regiments.
 
-name:250:Blue dragon bat
-base:bat
-color:b
-info:130:10:12:39:10
-power:21:1:1782:0:54
-blow:BITE:ELEC:1d3
-flags:RAND_50 | BASH_DOOR
-flags:IM_ELEC
-flags:FORCE_SLEEP
-spell-freq:4
-spells:BR_ELEC
-desc:It is a glowing blue bat with a sharp tail.
-
 name:251:Scroll mimic
 base:mimic
 glyph:?
@@ -5287,7 +5483,7 @@ spell-freq:6
 spells:BR_ELEC
 desc:A shimmering tornado of air, sparks crackle along its length.
 
-name:256:Mummified orc
+name:2256:Mummified orc
 base:zombie
 color:w
 info:110:68:20:33:75
@@ -5385,7 +5581,7 @@ spell-freq:11
 spells:DRAIN_MANA
 desc:It is a strangely moving puddle.
 
-name:261:Easterling champion
+name:2261:Easterling champion
 base:person
 color:u
 info:110:90:20:60:60
@@ -5419,7 +5615,7 @@ friends:100:1d1:Bolg, son of Azog
 desc:He is also known as the King of Khazad-dûm.  His ego is renowned to be 
 desc: bigger than his head.
 
-name:263:Master rogue
+name:2263:Master rogue
 base:person
 color:b
 info:120:75:20:45:5
@@ -6758,20 +6954,6 @@ friends:50:1d1:Mage
 friends:50:1d1:Black knight
 desc:A humanoid clothed in black who moves with blinding speed.
 
-name:332:Memory moss
-base:mushroom
-color:r
-info:110:2:30:1:5
-power:32:3:81:0:150
-blow:HIT:CONFUSE:1d4
-blow:HIT:CONFUSE:1d4
-flags:NEVER_MOVE
-flags:FORCE_SLEEP
-spell-freq:6
-spells:FORGET
-desc:A mass of green vegetation.  You don't remember seeing anything like it
-desc: before.
-
 name:380:Young multi-hued dragon
 base:dragon
 color:v
@@ -7497,7 +7679,7 @@ flags:DROP_20
 friends:100:4d4:Olog
 desc:It is a massive intelligent troll with needle-sharp fangs.
 
-name:247:Cloud giant
+name:2247:Cloud giant
 base:giant
 color:b
 info:110:368:20:90:40

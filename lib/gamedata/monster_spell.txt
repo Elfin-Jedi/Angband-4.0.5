@@ -54,6 +54,15 @@ message-vis: {name} flings a pebble.
 message-invis:You hear something.
 message-miss: {name} flings a pebble, but misses.
 
+name:POISON_DART
+hit:40
+effect:BOLT:POIS
+dice:2d5
+lore:throw a poison dart
+message-vis:{name} throws a poison dart.
+message-invis:You hear something.
+message-miss:{name} throws a poison dart, but misses.
+
 name:ARROW_1
 hit:40
 effect:BOLT:ARROW
@@ -170,6 +179,15 @@ power:20
 lore:sound
 message-vis:{name} breathes sound.
 message-invis:You hear an echoing roar.
+
+#name:BR_CONF
+#msgt:BR_CONF
+#hit:100
+#effect:BREATH:CONF:2
+#power:20
+#lore:sound
+#message-vis:{name} breathes confusion.
+#message-invis:You hear an confusing roar.
 
 name:BR_CHAO
 msgt:BR_CHAOS
@@ -613,7 +631,7 @@ lore:haste-self
 message-vis:{name} concentrates on {pronoun} body.
 message-invis:Something mutters.
 
-name:INVISIBLE
+name:INVIS
 hit:100
 effect:MON_TIMED_INC:INVISIBLE
 dice:50
