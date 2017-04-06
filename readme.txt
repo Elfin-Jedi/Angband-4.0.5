@@ -1,13 +1,13 @@
-Fast way to compile on windows, download mingw (make sure you have the makefile building programs), enter Command Prompt, change directory to VarAngbnad-master\src. Type make -f makefile.win mingw=yes.
+Fast way to compile on windows, download mingw (make sure you have the makefile building programs), enter Command Prompt, change directory to varangbnad-master\src. Type make -f makefile.win mingw=yes.
 
 Note: After you create your character it will complain about a parse error in the graphics, but will load fine (except with the wrong terrain graphics in the town). This is because I added more monsters and a bookstore that the graphics do not support. (And haven't figured out where the default preferences are set.) Go to the Options menu, find the graphics sub-menu and change to none. This will fix the otherwise annoying graphics inconsistencies, and prevent future non-fatal parse error complaining. (Fatal parse errors ideally shouldn't show up unless you change the gamedata files.)
 
 I chose the name VarAngband or variety angband, because that is my main goal - to include as much variety as possible, in a game with re-Tolkienized or at least non-Zelazny monsters ie. Morgoth (instead of Serpent of Chaos) etc. There is still a lot of progress to be made, before I will feel ready to create an official release.
 ------------------------------
 
-Changes so far
+Basic changes so far
 
-Races added from Unangband (though without shapeshifts), EyAngband, and FAangband.
+Races added from Unangband (though without shapeshifts), EyAngband, and FAangband. 48 Total, I know some of them are repetitive.
 
 Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
 
@@ -15,7 +15,7 @@ Monsters added from Unangband up to level 7. (This does mean that non-friended m
 
 Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-2, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
 
-Weapons added from Hengband, a few other variants.
+Some other objects added from other variants (mostly weapons).
 
 ------------------------------
 
@@ -65,3 +65,5 @@ Add framework for special abilities like Zangband-descended variants. Add Shapes
 Start attempting to add terrain from Unangband.
 
 Add Pathfinder / D&D 3.5 races? Maybe even some Star Wars / Star Trek races? (Because I've always wanted to play a Twi'lek Rogue.)
+
+Make it so monsters drop corpses, that can be cooked or salted to make food, or traded for bounties. (Unangband/PosChengband)
