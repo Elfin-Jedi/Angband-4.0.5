@@ -11,7 +11,7 @@ Races added from Unangband (though without shapeshifts), EyAngband, and FAangban
 
 Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
 
-Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because of duplicate numbers.)
+Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because I haven't got there yet and they have duplicate numbers.)
 
 Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-2, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
 
