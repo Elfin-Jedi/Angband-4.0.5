@@ -399,6 +399,15 @@ static void project_monster_handler_SOUND(project_monster_handler_context_t *con
 	project_monster_breath(context, RSF_BR_SOUN, 2);
 }
 
+/* Confusion -- Confusion breathers resist */
+static void project_monster_handler_CONF(project_monster_handler_context_t *context)
+{
+	int player_amount = (10 + randint1(15) + context->r + player->lev / 5) / (context->r + 1);
+	int monster_amount = (10 + randint1(15) + context->r) / (context->r + 1);
+	project_monster_timed_damage(context, MON_TMD_CONF, player_amount, monster_amount);
+	project_monster_breath(context, RSF_BR_CONF, 2);
+}
+
 /* Shards -- Shard breathers resist */
 static void project_monster_handler_SHARD(project_monster_handler_context_t *context)
 {
