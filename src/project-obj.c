@@ -239,6 +239,10 @@ static void project_object_handler_SOUND(project_object_handler_context_t *conte
 	project_object_elemental(context, ELEM_SOUND, "shatters", "shatter");
 }
 
+static void project_object_handler_CONF(project_object_handler_context_t *context)
+{
+}
+
 /* Shards -- potions and flasks */
 static void project_object_handler_SHARD(project_object_handler_context_t *context)
 {

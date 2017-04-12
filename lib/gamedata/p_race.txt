@@ -311,7 +311,9 @@ info:8:140:6
 history:29:200:100
 height:77:8
 weight:85:5
-#values:NO_AGGRAVATE
+obj-flags:FEATHER
+#flags:NO_AGGRAVATE
+#flags:LEVITATION
 
 name:14:Maia
 stats:2:3:3:2:4
@@ -329,15 +331,15 @@ info:25:100:3
 history:27:10000:5000
 height:130:45
 weight:290:25
-#F:SHAPESHIFT_MOUSE
-#F:SHAPESHIFT_BAT
-#F:SHAPESHIFT_CAT
-#F:SHAPESHIFT_GOAT
-#F:SHAPESHIFT_HOUND
-#F:SHAPESHIFT_CHEETAH
-#F:SHAPESHIFT_LION
-#F:SHAPESHIFT_SERPENT
-#F:ACTIVATE_CALL_LIGHT
+#powers:SHAPESHIFT_MOUSE
+#powers:SHAPESHIFT_BAT
+#powers:SHAPESHIFT_CAT
+#powers:SHAPESHIFT_GOAT
+#powers:SHAPESHIFT_HOUND
+#powers:SHAPESHIFT_CHEETAH
+#powers:SHAPESHIFT_LION
+#powers:SHAPESHIFT_SERPENT
+#powers:CALL_LIGHT
 
 name:15:Ent
 stats:4:0:0:-5:1
@@ -355,8 +357,7 @@ info:12:130:0
 history:31:120:60
 height:78:26
 weight:230:14
-#values:NO_IM_FIRE | NO_RES_FIRE |
-#values:NO_FEATHER |
+#vulnerabilities:FIRE | FALL
 
 name:16:Drúadan
 stats:2:-5:3:-2:3
@@ -393,7 +394,8 @@ history:45:3000:50
 height:69:5
 weight:170:20
 values:RES_POIS[1]
-values:RES_COLD[3]
+values:RES_COLD[1]
+#flags:UNDEAD
 
 name:18:Man of Dale
 stats:0:0:0:0:0
@@ -533,7 +535,7 @@ info:12:140:0
 history:42:20:10
 height:69:5
 weight:170:20
-#F:SHAPESHIFT_BEAR
+#powers:SHAPESHIFT_BEAR
 
 name:26:Werewolf
 stats:2:-2:0:0:2
@@ -551,7 +553,7 @@ info:12:140:0
 history:48:14:6
 height:69:5
 weight:170:20
-#F:SHAPESHIFT_WOLF
+#powers:SHAPESHIFT_WOLF
 
 name:27:Vampire
 stats:2:-2:0:0:2
@@ -571,8 +573,9 @@ height:69:5
 weight:170:20
 values:RES_POIS[1]
 values:RES_COLD[1]
-#F:SHAPESHIFT_BAT
-#F:NO_RES_LIGHT
+#powers:SHAPESHIFT_BAT
+#vulnerabilities:LIGHT
+#flags:UNDEAD
 
 name:28:Goblin
 stats:-2:1:0:5:-6
@@ -643,8 +646,8 @@ info:15:120:2
 history:44:20:10
 height:135:14
 weight:325:28
-#F:STONESKIN
-#F:NO_FEATHER |
+#flags:STONESKIN
+#vulnerabilities:FALL
 
 name:32:Grippli
 stats:-3:1:1:2:1
@@ -698,7 +701,7 @@ info:7:110:3
 history:92:6:10
 height:47:3
 weight:120:10
-#F:RES_DISEASE
+#values:RES_DISEASE[1]
 
 name:35:Felpurr
 stats:-2:1:0:1:-1
@@ -716,7 +719,7 @@ info:10:125:2
 history:100:7:14
 height:60:4
 weight:105:6
-#F:LUCK
+#flags:LUCK
 
 name:36:Ursa
 stats:3:-3:0:-2:2
@@ -787,7 +790,9 @@ info:9:190:0
 history:121:0:100
 height:72:6
 weight:170:20
+obj-flags:FEATHER
 values:RES_LIGHT[1]
+#flags:LEVITATION
 
 name:40:Demon
 stats:2:3:-3:0:0
@@ -805,9 +810,11 @@ info:10:180:0
 history:124:0:100
 height:36:2
 weight:50:5
-obj-flags:SUST_INT
+obj-flags:SUST_INT | FEATHER
 values:RES_DARK[1]
 values:RES_FIRE[1]
+#flags:LEVITATION
+#flags:DEMON
 
 name:41:Easterling
 stats:1:0:0:0:1
@@ -928,11 +935,176 @@ skill-shoot:2
 skill-throw:-1
 skill-dig:0
 info:9:1:2
-history:28:200:100
+history:137:200:100
 height:86:10
 weight:185:17
-#F:NO_AGGRAVATE
 values:RES_DARK[1]
+#flags:NO_AGGRAVATE | SPELL_CAP
+#obj-flags:SEE_INVIS_20
+#powers:MAGIC_MISSILE
+
+name:48:Amberite
+stats:1:2:2:2:3
+skill-disarm:4
+skill-device:5
+skill-save:3
+skill-stealth:2
+skill-search:3
+skill-search-freq:13
+skill-melee:10
+skill-shoot:10
+skill-throw:13
+skill-dig:5
+info:20:100:0
+history:139:120:60
+height:80:6
+weight:190:20
+obj-flags:SUST_CON | REGEN
+#powers:shadow_shifting[30] | pattern_mindwalk[40]
+
+name:49:Android
+stats:3:-1:-5:1:3
+skill-disarm:0
+skill-device:-5
+skill-save:0
+skill-stealth:1
+skill-search:3
+skill-search-freq:14
+skill-melee:10
+skill-shoot:10
+skill-throw:20
+skill-dig:10
+info:26:200:0
+history:139:120:60
+height:80:6
+weight:190:20
+obj-flags:SLOW_DIGEST | FREE_ACT | HOLD_LIFE
+values:RES_POIS[1]
+#flags:NONLIVING
+#food:OIL_FLASK
+#vulnerabilities:ELEC
+#powers:ray_gun[1] | blaster[10] | bazooka[25]
+#powers:beam_cannon[35] | rocket[45]
+
+name:50:Archon
+stats:2:0:4:1:2
+skill-disarm:0
+skill-device:12
+skill-save:8
+skill-stealth:2
+skill-search:2
+skill-search-freq:11
+skill-melee:10
+skill-shoot:10
+skill-throw:10
+skill-dig:5
+info:22:200:3
+history:139:0:100
+height:72:6
+weight:170:20
+obj-flags:SEE_INVIS | FEATHER
+#flags:LEVITATION
+
+name:51:Balrog
+stats:4:2:-10:2:3
+skill-disarm:-3
+skill-device:12
+skill-save:15
+skill-stealth:-2
+skill-search:1
+skill-search-freq:8
+skill-melee:25
+skill-shoot:20
+skill-throw:0
+skill-dig:10
+info:24:180:5
+history:139:0:100
+height:135:14
+weight:325:28
+values:RES_FIRE[1]
+values:RES_NETHER[1]
+obj-flags:HOLD_LIFE
+#obj-flags:SEE_INVIS_10
+#powers:DEMON_BREATH
+#flags:DEMON
+
+name:52:Barbarian
+stats:3:-2:-1:1:2
+skill-disarm:-2
+skill-device:-10
+skill-save:2
+skill-stealth:-1
+skill-search:1
+skill-search-freq:7
+skill-melee:15
+skill-shoot:10
+skill-throw:12
+skill-dig:7
+info:22:135:0
+history:139:160:0
+height:64:1
+weight:140:20
+obj-flags:PROT_FEAR
+#powers:BERSERK
+
+name:53:Beastman
+stats:2:-2:-1:-1:2
+skill-disarm:-5
+skill-device:-2
+skill-save:-1
+skill-stealth:-1
+skill-search:-1
+skill-search-freq:5
+skill-melee:8
+skill-shoot:5
+skill-throw:12
+skill-dig:2
+info:22:150:0
+history:139:160:0
+height:64:1
+weight:140:20
+obj-flags:PROT_CONF
+values:RES_SOUND[1]
+#player-flags:GAIN_MUTATION[every_level]
+
+name:54:Centaur
+stats:3:-2:1:2:1
+skill-disarm:0
+skill-device:-5
+skill-save:2
+skill-stealth:1
+skill-search:3
+skill-search-freq:5
+skill-melee:10
+skill-shoot:12
+skill-throw:10
+skill-dig:7
+info:22:190:0
+history:139:10:20
+height:90:16
+weight:240:60
+#flags:NO_BOOTS | SPEED[p_lvl_>10]
+#powers:JUMP
+#nat-attack:HOOVES
+
+name:55:Cyclops
+stats:4:-3:-2:-3:4
+skill-disarm:-4
+skill-device:-5
+skill-save:-3
+skill-stealth:-2
+skill-search:-2
+skill-search-freq:5
+skill-melee:15
+skill-shoot:12
+skill-throw:20
+skill-dig:10
+info:24:155:1
+history:139:20:10
+height:130:16
+weight:475:75
+values:RES_SOUND[1]
+#powers:THROW_BOULDER
 
 #Shapeshifts from Unangband, may need to move elsewhere. Activate @.
 

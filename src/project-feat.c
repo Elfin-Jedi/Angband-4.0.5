@@ -404,6 +404,16 @@ static void project_feature_handler_SOUND(project_feature_handler_context_t *con
 	}
 }
 
+static void project_feature_handler_CONF(project_feature_handler_context_t *context)
+{
+	/* Grid is in line of sight and player is not blind */
+	if (square_isview(cave, context->y, context->x) &&
+		!player->timed[TMD_BLIND]) {
+		/* Observe */
+		context->obvious = TRUE;
+	}
+}
+
 static void project_feature_handler_SHARD(project_feature_handler_context_t *context)
 {
 	/* Grid is in line of sight and player is not blind */

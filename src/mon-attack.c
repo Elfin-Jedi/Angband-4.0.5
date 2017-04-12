@@ -83,6 +83,9 @@ static void remove_bad_spells(struct monster *mon, bitflag f[RSF_SIZE])
 	
 	/* Don't haste if hasted with time remaining */
 	if (mon->m_timed[MON_TMD_FAST] > 10) rsf_off(f2, RSF_HASTE);
+	
+	/* Don't turn invisible if invisible with time remaining */
+	if (mon->m_timed[MON_TMD_INVISIBLE] > 0) rsf_off(f2, RSF_INVIS);
 
 	/* Don't teleport to if the player is already next to us */
 	if (mon->cdis == 1) rsf_off(f2, RSF_TELE_TO);

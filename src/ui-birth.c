@@ -236,15 +236,19 @@ static const char *get_flag_desc(bitflag flag)
 	{
 		case OF_SUST_STR: return "Sustains strength";
 		case OF_SUST_DEX: return "Sustains dexterity";
-        case OF_SUST_WIS: return "Sustains wisdom";
+                case OF_SUST_INT: return "Sustains intelligence";
+                case OF_SUST_WIS: return "Sustains wisdom";
 		case OF_SUST_CON: return "Sustains constitution";
 		case OF_PROT_BLIND: return "Resists blindness";
+                case OF_PROT_CONF: return "Resists confusion";
+                case OF_PROT_FEAR: return "Resists fear";
 		case OF_HOLD_LIFE: return "Sustains experience";
 		case OF_FREE_ACT: return "Resists paralysis";
 		case OF_REGEN: return "Regenerates quickly";
 		case OF_SEE_INVIS: return "Sees invisible creatures";
-		case OF_PROT_FEAR: return "Resists fear";
 		case OF_TELEPATHY: return "Has telepathy";
+                case OF_SLOW_DIGEST: return "Needs less food";
+                case OF_FEATHER: return "Falls slowly";
 
 		default: return "Undocumented flag";
 	}
@@ -259,7 +263,9 @@ static const char *get_resist_desc(int element)
                 case ELEM_COLD: return "Resists cold";       
 		case ELEM_LIGHT: return "Resists light damage";
 		case ELEM_DARK: return "Resists darkness damage";
-
+                case ELEM_NETHER: return "Resists nether";
+                case ELEM_SOUND: return "Resists sound";
+                        
 		default: return "Undocumented element";
 	}
 }

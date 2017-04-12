@@ -24,6 +24,7 @@ ELEM(POIS,		"poison",			"poison gas",		"poison",			1,  RV(3,0,0,0),	3,		800,	MSG
 ELEM(LIGHT,		"light",			"light",			"something",		4,  RV(6,1,6,0),	6,		400,	MSG_BR_LIGHT,	COLOUR_ORANGE)
 ELEM(DARK,		"dark",				"dark",				"something",		4,  RV(6,1,6,0),	6,		400,	MSG_BR_DARK,	COLOUR_L_DARK)
 ELEM(SOUND,		"sound",			"sound",			"noise",			5,  RV(6,1,6,0),	6,		500,	MSG_BR_SOUND,	COLOUR_YELLOW)
+ELEM(CONF,		"confusion",		"confusion",		"something strange",5,  RV(6,1,6,0),	6,		500,	MSG_BR_CONF,	COLOUR_L_UMBER)
 ELEM(SHARD,		"shards",			"shards",			"something sharp",	6,  RV(6,1,6,0),	6,		500,	MSG_BR_SHARDS,	COLOUR_UMBER)
 ELEM(NEXUS,		"nexus",			"nexus",			"something strange",6,  RV(6,1,6,0),	6,		400,	MSG_BR_NEXUS,	COLOUR_L_RED)
 ELEM(NETHER,	"nether",			"nether",			"something cold",	6,  RV(6,1,6,0),	6,		550,	MSG_BR_NETHER,	COLOUR_L_GREEN)

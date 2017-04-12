@@ -223,6 +223,21 @@ static void project_player_handler_SOUND(project_player_handler_context_t *conte
 	}
 }
 
+static void project_player_handler_CONF(project_player_handler_context_t *context)
+{
+	if (player_resists(player, ELEM_CONF)) {
+		msg("You resist the effect!");
+		return;
+	}
+
+	/* Confuse */
+	if (!player_of_has(player, OF_PROT_CONF)) {
+		int duration = 5 + randint1(context->dam / 3);
+		if (duration > 35) duration = 35;
+		(void)player_inc_timed(player, TMD_CONFUSED, duration, TRUE, TRUE);
+	}
+}
+
 static void project_player_handler_SHARD(project_player_handler_context_t *context)
 {
 	if (player_resists(player, ELEM_SHARD)) {
