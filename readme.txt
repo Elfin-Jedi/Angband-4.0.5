@@ -35,7 +35,9 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 (Mage Book #2) Add Magical Throw.
 
-Add Magic Book for Mages #3.
+(Mage Book #3) Add Detect Enchantment.
+
+Add Magic Book for Mages #4.
 
 Add all the other books' spells, right now all the Nature and Necromancy classes use the old Mage, Rogue, and Ranger spells.
 
