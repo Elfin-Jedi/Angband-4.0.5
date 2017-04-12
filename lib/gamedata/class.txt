@@ -267,56 +267,48 @@ spell:Magical Throw:13:5:40:8
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Adds charges to a stack of wands or staves.
 desc:Throws an item using mental strength. (Actually casts Recharge Item I. For now.)
 
 book:magic book:[Useful Magic]:7:1
 
-spell:Satisfy Hunger:14:8:45:7
-effect:SET_NOURISH
-dice:16999
-desc:Magically renders you well-fed (but not satiated).
-desc:  This will also cure a bloated stomach.
-
-spell:Polymorph Other:15:7:45:7
-effect:BOLT_STATUS:OLD_POLY
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to polymorph a single monster.
-desc:  Uniques are not affected.
-
-spell:Identify:17:12:75:8
-effect:IDENTIFY
-desc:Reveals the powers of an object.
-
-spell:Sleep Monsters:17:7:50:8
-effect:PROJECT_LOS:OLD_SLEEP
-dice:$B
-expr:B:PLAYER_LEVEL:+ 0
-desc:Attempts to put to sleep each monster within line of sight.
-desc:  Uniques and monsters that resist confusion are not affected.
-
-spell:Fire Bolt:19:7:50:8
-effect:BOLT_OR_BEAM:FIRE
-dice:$Dd8
-expr:D:PLAYER_LEVEL:- 5 / 4 + 6
-desc:Fires a fire bolt that always hits its target.
-desc:  Sometimes a beam is fired instead that hurts each monster
-desc: in its path.
-desc:  The chance to get a beam goes up with your character level.
-
-spell:Slow Monster:19:7:50:8
-effect:BOLT_STATUS:OLD_SLOW
-dice:20
-desc:Attempts to slow a single monster.
-desc:  Uniques are not affected.
-
-spell:Tap Magical Energy (Reveal Monsters):20:2:50:8
+spell:Detect Invisible:15:4:45:8
 effect:DETECT_INVISIBLE_MONSTERS
 dice:22d40
-effect:DETECT_VISIBLE_MONSTERS
+desc:Detects nearby invisible monsters.
+
+spell:Magic Disarm:15:7:45:7
+effect:TOUCH:KILL_TRAP
+desc:Disarms all traps adjacent to you.
+
+spell:Blink Monster:16:7:45:7
+effect:BOLT_STATUS:AWAY_ALL
+dice:$B
+expr:B:PLAYER_LEVEL:/ 10 + 5
+desc:Teleports a monster a short distance.
+
+spell:Cure:16:6:40:6
+effect:CURE:POISONED
+effect:CURE:STUN
+effect:CURE:CUT
+desc:Removes all poison, cuts and stunning.
+
+spell:Detect Enchantment:16:6:50:10
+effect:DETECT_GOLD
 dice:22d40
-desc:Detects all monsters in the immediate area, for one turn only.
+effect:SENSE_OBJECTS
+dice:22d40
+desc:Detects nearby enchanted objects. (Actually casts Treasure Detection.)
+
+spell:Stone To Mud:18:7:45:9
+effect:LINE:KILL_WALL
+dice:20+1d30
+desc:Melts a wall square to floor.
+
+spell:Minor Recharge:19:12:50:10
+effect:RECHARGE
+dice:$B
+expr:B:PLAYER_LEVEL:/ 5 + 2
+desc:Minor recharging.
 
 book:magic book:[Battle Spells]:7:1
 
@@ -990,7 +982,7 @@ desc: to-dam bonus of the same weapon.
 desc:  The prayer has no effect if the weapon is an artifact or ego item,
 desc: is already branded, has a slay, is broken, or is cursed.
 
-book:prayer book:[Wrath of the Valar]:5:2
+book:prayer book:[Wrath of God]:5:2
 
 spell:Dispel Undead:15:7:70:25
 effect:PROJECT_LOS_AWARE:DISP_UNDEAD
@@ -1611,7 +1603,7 @@ effect:SENSE_OBJECTS
 dice:22d40
 desc:Detects all treasure in the immediate area.
 
-book:nature book:[Yavanna's Shapeshifts]:5:3
+book:nature book:[Radagast's Shapeshifts]:5:3
 
 spell:Resist Cold:8:15:50:30
 effect:TIMED_INC:OPP_COLD
@@ -1771,7 +1763,7 @@ desc: the to-hit bonus and the to-dam bonus of the same ammunition.
 desc:  The spell has no effect if the ammunition is already branded, has a
 desc: slay, is broken, or is cursed.
 
-book:nature book:[Powers of Aman]:3:3
+book:nature book:[Spirit of Yavanna]:3:3
 
 spell:Earthquake:30:28:60:16
 effect:EARTHQUAKE
@@ -2184,7 +2176,7 @@ desc: to-dam bonus of the same weapon.
 desc:  The prayer has no effect if the weapon is an artifact or ego item,
 desc: is already branded, has a slay, is broken, or is cursed.
 
-book:prayer book:[Wrath of the Valar]:3:2
+book:prayer book:[Wrath of God]:3:2
 
 spell:Dispel Undead:20:13:70:20
 effect:PROJECT_LOS_AWARE:DISP_UNDEAD
@@ -2463,7 +2455,7 @@ desc:  You will also be blinded for 10+1d10 turns, unless you
 desc: have resistance to blindness or light.
 desc:  This spell has no effect when used in the town.
 
-book:nature book:[Yavanna's Shapeshifts]:5:3
+book:nature book:[Radagast's Shapeshifts]:5:3
 
 spell:Resist Fire:21:5:50:20
 effect:TIMED_INC:OPP_FIRE
@@ -2617,7 +2609,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:nature book:[Powers of Aman]:5:3
+book:nature book:[Spirit of Yavanna]:5:3
 
 spell:Detect Evil:5:2:50:10
 effect:DETECT_EVIL
