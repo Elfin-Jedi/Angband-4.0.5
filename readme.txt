@@ -21,9 +21,6 @@ Some other objects added from other variants (mostly weapons).
 
 To-do (a reminder for myself):
 
-
-Finish uploading edit files with normal line endings: object.txt.
-
 Add level 7 monsters from Unangband.
 
 -------------------------------------
