@@ -27,8 +27,6 @@ Add level 7 monsters from Unangband.
 
 Start adding player spells from FAangband that aren't easily made from existing effects.
 
-(Mage Book #1) Fix Reduce Cuts and Poison - add a message for TIMED_DEC:CUT so it is clear that it has reduced cuts.
-
 (Mage Book #1) Add/Fix Resist Magic - TIMED_INVULN has an entirely different effect in Vanilla. (And makes this spell ridiculously unbalanced.)
 
 (Mage Book #2) Add Telekinesis.
