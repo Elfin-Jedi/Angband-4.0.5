@@ -26,8 +26,6 @@ Finish uploading edit files with normal line endings: object.txt.
 
 Add level 7 monsters from Unangband.
 
-Add BR_CONF for Giant bronze dragon flies.
-
 -------------------------------------
 
 Start adding player spells from FAangband that aren't easily made from existing effects.
