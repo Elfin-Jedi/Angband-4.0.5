@@ -208,8 +208,7 @@ desc:Fires a ball of poison.
 spell:Reduce Cuts and Poison:5:2:25:3
 effect:TIMED_DEC:POISONED:2
 effect:TIMED_DEC:CUT:2
-desc:Reduces cuts and poisoning. (Yes, cuts too. It just doesn't give you a
-desc:message yet.)
+desc:Reduces cuts and poisoning.
 
 spell:Resist Magic:5:7:26:5
 effect:TIMED_INC:INVULN
