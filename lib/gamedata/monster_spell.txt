@@ -94,7 +94,7 @@ name:ARROW_4
 hit:50
 effect:BOLT:ARROW
 dice:7d6
-lore:fires missiles
+lore:fire missiles
 message-vis:{name} fires a seeker arrow, but misses.
 message-invis:You hear a loud thwang.
 message-miss:{name} fires a seeker arrow, but misses.
@@ -180,14 +180,14 @@ lore:sound
 message-vis:{name} breathes sound.
 message-invis:You hear an echoing roar.
 
-#name:BR_CONF
-#msgt:BR_CONF
-#hit:100
-#effect:BREATH:CONF:2
-#power:20
-#lore:sound
-#message-vis:{name} breathes confusion.
-#message-invis:You hear an confusing roar.
+name:BR_CONF
+msgt:BR_CONF
+hit:100
+effect:BREATH:CONF:2
+power:20
+lore:sound
+message-vis:{name} breathes confusion.
+message-invis:You hear a bewildering roar.
 
 name:BR_CHAO
 msgt:BR_CHAOS

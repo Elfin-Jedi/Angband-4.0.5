@@ -2577,8 +2577,8 @@ power:6:1:0:0:9
 flags:NEVER_BLOW | RAND_25
 flags:NO_CONF | NO_SLEEP | ATTR_FLICKER
 #flags:CAN_FLY | MUST_FLY
-#spell-freq:10
-#spells:BR_CONF
+spell-freq:10
+spells:BR_CONF
 desc:This vast gleaming bronze fly has wings which beat mesmerically fast.
 
 name:193:Radbug, the Goblin
@@ -3483,6 +3483,16 @@ spell-freq:5
 spells:HEAL | CAUSE_1 | SCARE | BLIND |
 desc:A dwarven priest with a three-foot beard, and hammer swung
 desc: devoutly to his cause.
+
+name:267:Yellow icky thing
+base:icky thing
+color:y
+info:110:22:14:12:20
+power:7:1:0:0:11
+blow:TOUCH:POISON:3d5
+flags:EMPTY_MIND |
+flags:IM_POIS |
+desc:It is a smallish, slimy, icky, poisonous creature.
 
 ### Dungeon level 8 ###
 
