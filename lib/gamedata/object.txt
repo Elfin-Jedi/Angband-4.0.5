@@ -669,7 +669,6 @@ alloc:20:16 to 100
 combat:0:2d3:0:0:0
 
 
-
 ### Clubs ###
 
 name:55:& Mace~
@@ -812,7 +811,6 @@ alloc:20:14 to 100
 combat:0:1d9:0:0:0
 
 
-
 ### Axes ###
 
 name:70:& Beaked Axe~
@@ -863,7 +861,6 @@ type:polearm
 properties:0:110:10
 alloc:20:1 to 100
 combat:0:1d4:0:0:0
-
 
 
 ### Other misc polearms ###
@@ -4097,6 +4094,7 @@ properties:40:30:800
 alloc:50:20 to 100
 combat:0:1d1:0:0:0
 
+
 ##### Special Books (note resistances) #####
 
 name:468:[Magical Defences]
@@ -4171,7 +4169,7 @@ alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:477:[Wrath of the Valar]
+name:477:[Wrath of God]
 graphics:?:b
 type:prayer book
 properties:80:30:90000
@@ -4179,7 +4177,7 @@ alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:584:[Yavanna's Shapeshifts]
+name:584:[Radagast's Shapeshifts]
 graphics:?:g
 type:nature book
 properties:40:30:10000
@@ -4211,7 +4209,7 @@ alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
 
-name:588:[Powers of Aman]
+name:588:[Spirit of Yavanna]
 graphics:?:g
 type:nature book
 properties:80:30:90000
@@ -4258,6 +4256,8 @@ properties:80:30:90000
 alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+
+
 
 ##### Chests #####
 
@@ -4577,28 +4577,3 @@ type:gold
 name:537:adamantite
 graphics:$:G
 type:gold
-
-
-##### "Morgoth Artifacts" #####
-
-# These objects are never created without being turned into artifacts.
-# This simplifies the code for "killing the winner monster".
-
-name:540:& Mighty Hammer~
-graphics:\:D
-type:hafted
-properties:15:200:1000
-combat:0:3d9:0:0:0
-flags:INSTA_ART | QUEST_ART
-
-name:542:& Massive Iron Crown~
-graphics:]:D
-type:crown
-properties:44:20:1000
-combat:0:1d1:0:0:0
-flags:INSTA_ART | QUEST_ART
-
-
-#The "Special Artifacts" are now automatically generated from artifact.txt
-
-#Next number 594.
