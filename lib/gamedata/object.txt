@@ -4577,3 +4577,28 @@ type:gold
 name:537:adamantite
 graphics:$:G
 type:gold
+
+
+##### "Morgoth Artifacts" #####
+
+# These objects are never created without being turned into artifacts.
+# This simplifies the code for "killing the winner monster".
+
+name:540:& Mighty Hammer~
+graphics:\:D
+type:hafted
+properties:15:200:1000
+combat:0:3d9:0:0:0
+flags:INSTA_ART | QUEST_ART
+
+name:542:& Massive Iron Crown~
+graphics:]:D
+type:crown
+properties:44:20:1000
+combat:0:1d1:0:0:0
+flags:INSTA_ART | QUEST_ART
+
+
+#The "Special Artifacts" are now automatically generated from artifact.txt
+
+#Next number 594.
