@@ -310,7 +310,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
 desc:Minor recharging.
 
-book:magic book:[Battle Spells]:8:1
+book:magic book:[Battle Spells]:9:1
 
 spell:Sleep Monsters:20:7:50:10
 effect:PROJECT_LOS:OLD_SLEEP
@@ -355,7 +355,14 @@ dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
 desc:Temporarily hasten yourself.
 
-spell:Hold Monsters:30:35:60:30
+spell:Rune of Magic Influence:30:35:60:30
+effect:TIMED_INC:FAST:5
+dice:$B+d20
+expr:B:PLAYER_LEVEL:+ 0
+desc:Lays a rune which increases (player) or decreases (monster) the saving throw 
+desc:of one standing on it.  Maximum of four runes. (Actually casts Haste Self.)
+
+spell:Hold Monsters:35:30:80:15
 effect:TIMED_INC:FAST:5
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
