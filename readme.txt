@@ -13,7 +13,7 @@ Classes added from Oangband/FAangband. (No ability framework, don't really want,
 
 Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because I haven't got there yet and they have duplicate numbers.)
 
-Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-3, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
+Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-4, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
 
 Some other objects added from other variants (mostly weapons).
 
@@ -35,7 +35,13 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 (Mage Book #3) Add Detect Enchantment.
 
-Add Magic Book for Mages #4.
+(Mage Book #4) Add Thrust Away.
+
+(Mage Book #4) Add Tap Magical Energy.
+
+(Mage Book #4) Add Hold Monsters.
+
+Add Magic Book for Mages #5.
 
 Add all the other books' spells, right now all the Nature and Necromancy classes use the old Mage, Rogue, and Ranger spells.
 
