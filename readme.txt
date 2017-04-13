@@ -13,7 +13,7 @@ Classes added from Oangband/FAangband. (No ability framework, don't really want,
 
 Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because I haven't got there yet and they have duplicate numbers.)
 
-Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-4, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
+Spellbooks added from FAangband, still with Vanilla Mage, Ranger, and Rogue spells. Nature and Necromancy books don't display names in inventory or shop lists.
 
 Some other objects added from other variants (mostly weapons).
 
@@ -25,27 +25,7 @@ Add level 7 monsters from Unangband.
 
 -------------------------------------
 
-Start adding player spells from FAangband that aren't easily made from existing effects.
-
-(Mage Book #1) Add/Fix Resist Magic - TIMED_INVULN has an entirely different effect in Vanilla. (And makes this spell ridiculously unbalanced.)
-
-(Mage Book #2) Add Telekinesis.
-
-(Mage Book #2) Add Magical Throw.
-
-(Mage Book #3) Add Detect Enchantment.
-
-(Mage Book #4) Add Thrust Away.
-
-(Mage Book #4) Add Tap Magical Energy.
-
-(Mage Book #4) Add Rune of Magic Influence.
-
-(Mage Book #4) Add Hold Monsters.
-
-Add Magic Book for Mages #5.
-
-Add all the other books' spells, right now all the Nature and Necromancy classes use the old Mage, Rogue, and Ranger spells.
+Finish player-spells branch, merge.
 
 -------------------------------------
 
