@@ -281,6 +281,13 @@ flags:FEMALE | EVIL | HURT_COLD
 flags:BASH_DOOR
 desc:Naga
 
+name:nest
+glyph:<
+pain:2
+flags:EMPTY_MIND | STUPID
+flags:NEVER_MOVE
+desc:Nest
+
 name:ogre
 glyph:O
 pain:1
