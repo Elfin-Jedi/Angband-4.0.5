@@ -208,7 +208,8 @@ desc:Fires a ball of poison.
 spell:Reduce Cuts and Poison:5:2:25:3
 effect:TIMED_DEC:POISONED:2
 effect:TIMED_DEC:CUT:2
-desc:Reduces cuts and poisoning.
+desc:Reduces cuts and poisoning. (Yes, cuts too. It just doesn't give you a
+desc:message yet.)
 
 spell:Resist Magic:5:7:26:5
 effect:TIMED_INC:INVULN
@@ -309,58 +310,57 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
 desc:Minor recharging.
 
-book:magic book:[Battle Spells]:7:1
+book:magic book:[Battle Spells]:8:1
 
-spell:Frost Ball:22:12:75:9
-effect:BALL:COLD:2
+spell:Sleep Monsters:20:7:50:10
+effect:PROJECT_LOS:OLD_SLEEP
 dice:$B
-expr:B:PLAYER_LEVEL:+ 30
-desc:Shoots a radius-2 frost ball.
+expr:B:PLAYER_LEVEL:+ 10
+desc:Attempts to put all monsters in line of sight to sleep.
 
-spell:Recharge Item II:23:10:75:11
+spell:Thrust Away:20:8:55:10
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:+ 10
-desc:Adds charges to a stack of wands or staves.
-desc:  Chance of success and number of charges gained increase with your
-desc: level and decrease with level of wand or staff and number of charges.
-desc:  A failed attempt to recharge destroys one wand or staff from the stack.
+desc:Fires a short-range beam of force. (Actually casts Recharge Item II.)
 
-spell:Teleport Other:25:12:60:11
-effect:BOLT_STATUS:AWAY_ALL
-dice:$B
-expr:B:MAX_SIGHT:* 5
-desc:Produces a bolt that teleports the first monster in its path
-desc: up to 100 squares away.
-
-spell:Haste Self:25:12:65:11
-effect:TIMED_INC:FAST:5
-dice:$B+d20
-expr:B:PLAYER_LEVEL:+ 0
-desc:Hastes you (+10 to speed) for a level-dependant duration.
-
-spell:Fire Ball:29:16:65:12
+spell:Fire Ball:22:12:70:12
 effect:BALL:FIRE:2
 dice:$B
 expr:B:PLAYER_LEVEL:+ 55
-desc:Shoots a radius-2 fire ball.
+desc:Fires a ball of fire.
 
-spell:Hold Monsters (Treasure Detection):35:30:80:15
-effect:DETECT_GOLD
-dice:22d40
-effect:SENSE_OBJECTS
-dice:22d40
-desc:Detects all treasure in the immediate area.
+spell:Tap Magical Energy:22:2:50:12
+effect:TIMED_INC:FAST:5
+dice:$B+d20
+expr:B:PLAYER_LEVEL:+ 0
+desc:Turns rod, wand, or staff energy into mana.  Rods have little energy.
+desc: (Actually casts Haste Self.)
 
-spell:Word of Destruction:37:30:80:15
-effect:DESTRUCTION
-param:15
-desc:Destroys everything in a 15-square radius circle around you.
-desc:  All monsters, objects, and terrain features in the area of
-desc: effect are destroyed, except stairs and permanent walls.
-desc:  You will also be blinded for 10+1d10 turns, unless you
-desc: have resistance to blindness or light.
-desc:  This spell has no effect when used in the town.
+spell:Slow Monster:23:7:55:12
+effect:BOLT_STATUS:OLD_SLOW
+dice:$B
+expr:B:PLAYER_LEVEL:+ 10
+desc:Attempts to slow a monster down.
+
+spell:Teleport Other:25:12:60:13
+effect:BOLT_STATUS:AWAY_ALL
+dice:$B
+expr:B:PLAYER_LEVEL:/ 2 + 45
+desc:Teleports an opponent away.
+
+spell:Haste Self:25:12:65:15
+effect:TIMED_INC:FAST:5
+dice:$B+d20
+expr:B:PLAYER_LEVEL:+ 0
+desc:Temporarily hasten yourself.
+
+spell:Hold Monsters:30:35:60:30
+effect:TIMED_INC:FAST:5
+dice:$B+d20
+expr:B:PLAYER_LEVEL:+ 0
+desc:Puts target creatures in Stasis.  They are completely paralyzed and 
+desc:invulnerable. (Actually casts Haste Self.)
 
 book:magic book:[Magical Defences]:5:1
 
