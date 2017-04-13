@@ -39,6 +39,8 @@ Start adding player spells from FAangband that aren't easily made from existing 
 
 (Mage Book #4) Add Tap Magical Energy.
 
+(Mage Book #4) Add Rune of Magic Influence.
+
 (Mage Book #4) Add Hold Monsters.
 
 Add Magic Book for Mages #5.
