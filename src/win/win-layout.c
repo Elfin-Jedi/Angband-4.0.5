@@ -69,7 +69,7 @@ int default_layout_win(term_data *data, int maxterms)
 	bottom = sy - r.bottom;
 
 	if ((sx == 1024) && (sy == 768)) {
-		arg_graphics = 0;
+		arg_graphics = 3;
 		arg_graphics_nice = 0;
 		tile_width = 4;
 		tile_height = 2;
@@ -161,7 +161,7 @@ int default_layout_win(term_data *data, int maxterms)
 		return 0;
 	}
 	if ((sx == 1280) && (sy == 1024)) {
-		arg_graphics = 0;
+		arg_graphics = 5;
 		arg_graphics_nice = 0;
 		tile_width = 4;
 		tile_height = 2;
@@ -280,7 +280,7 @@ int default_layout_win(term_data *data, int maxterms)
 		sub_font = NULL;/* "6x10x.fon"; */
 		fx2 = 6;
 		fy2 = 10;
-		mode = 4;
+		mode = 0;
 		mult_wid = 1;
 		mult_hgt = 1;
 	} else if (sy <= 800) {
@@ -292,7 +292,7 @@ int default_layout_win(term_data *data, int maxterms)
 		sub_font = "6x10x.fon";
 		fx2 = 6;
 		fy2 = 10;
-		mode = 3;
+		mode = 0;
 		mult_wid = 4;
 		mult_hgt = 2;
 	} else if (sy <= 1024) {
@@ -304,7 +304,7 @@ int default_layout_win(term_data *data, int maxterms)
 		sub_font = "6x10x.fon";
 		fx2 = 6;
 		fy2 = 10;
-		mode = 5;
+		mode = 0;
 		mult_wid = 6;
 		mult_hgt = 3;
 	} else if (sy <= 1600) {
@@ -316,7 +316,7 @@ int default_layout_win(term_data *data, int maxterms)
 		sub_font = "8x12x.fon";
 		fx2 = 8;
 		fy2 = 12;
-		mode = 5;
+		mode = 0;
 		mult_wid = 3;
 		mult_hgt = 2;
 	} else {
@@ -328,7 +328,7 @@ int default_layout_win(term_data *data, int maxterms)
 		sub_font = "12x18x.fon";
 		fx2 = 12;
 		fy2 = 18;
-		mode = 5;
+		mode = 0;
 		mult_wid = 4;
 		mult_hgt = 2;
 	}
