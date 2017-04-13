@@ -818,7 +818,7 @@ flags:HURT_LIGHT | NO_FEAR | NO_CONF |
 desc:A disembodied gazing eye, summoned by a wizard to spy on you.
 
 name:58:Newt
-base:amphibian
+base:fish
 color:y
 info:110:6:8:12:30
 power:1:1:0:0:4
@@ -878,7 +878,7 @@ friends:50:1d2:Same
 desc:He is leaving behind a trail of dropped spell components.
 
 name:61:Giant green frog
-base:amphibian
+base:fish
 color:g
 info:110:9:12:9:30
 power:2:1:24:0:6
@@ -1596,7 +1596,7 @@ flags:BASH_DOOR |
 desc:It is about four feet long and carnivorous.
 
 name:118:Giant emerald frog
-base:amphibian
+base:fish
 color:g
 info:110:9:12:8:30
 power:4:4:0:0:3
@@ -1608,7 +1608,7 @@ flags:ATTR_FLICKER
 desc:It is as big as a wolf.
 
 name:119:Giant black frog
-base:amphibian
+base:fish
 color:D
 info:110:18:12:18:50
 power:4:1:0:0:3
@@ -2142,7 +2142,7 @@ flags:BASH_DOOR |
 desc:A rather vicious dog.  It thinks you are a thief.
 
 name:159:Giant tree frog
-base:amphibian
+base:fish
 color:G
 info:110:13:12:16:30
 power:5:1:0:0:7
@@ -2715,7 +2715,7 @@ spells:BLINK | DRAIN_MANA | BLIND |
 desc:A strange eye, milky white with blindness.
 
 name:205:Giant ebony frog
-base:amphibian
+base:fish
 color:D
 info:110:18:12:18:50
 power:6:5:0:0:10
@@ -2726,7 +2726,7 @@ flags:MULTIPLY |
 desc:It looks poisonous.
 
 name:206:Giant blue frog
-base:amphibian
+base:fish
 color:B
 info:110:18:12:12:50
 power:6:1:0:0:8
@@ -3493,6 +3493,136 @@ blow:TOUCH:POISON:3d5
 flags:EMPTY_MIND |
 flags:IM_POIS |
 desc:It is a smallish, slimy, icky, poisonous creature.
+
+name:268:Red icky thing
+base:icky thing
+color:R
+info:110:27:14:14:20
+power:7:1:0:0:13
+blow:TOUCH:LOSE_STR:2d5
+flag:EMPTY_MIND |
+desc:It is a smallish, slimy, icky, pestilent creature.
+
+name:269:Giant red dragon fly
+plural:Giant red dragon flies
+base:insect
+color0:r
+info:120:30:20:24:50
+power:7:1:0:0:13
+blow:BITE:TERRIFY:1d6
+flags:FORCE_SLEEP | BASH_DOOR |
+#flags:CAN_FLY | MUST_FLY
+spell-freq:10
+spells:BR_FIRE
+desc:A vast, fiery-bright dragonfly.
+
+name:270:Giant blue dragon fly
+plural:Giant blue dragon flies
+base:insect
+color:b
+info:120:26:20:24:50
+power:7:1:0:0:12
+blow:BITE:HURT:1d6
+flags:FORCE_SLEEP | BASH_DOOR | 
+#flags:CAN_FLY | MUST_FLY
+spell-freq:10
+spells:BR_ELEC
+desc:A vast, lightning-struck dragonfly.
+
+name:271:Silver mold
+base:mold
+color:W
+info:110:70:2:20:70
+power:7:1:0:0:14
+blow:TOUCH:POISON:6d6
+flags:STUPID | EMPTY_MIND | NO_STUN
+flags:ATTR_FLICKER | 
+desc:It is a strange silver growth on the dungeon floor.
+
+name:272:White naga
+base:naga
+color:w
+info:110:34:17:40:120
+power:7:1:0:0:13
+blow:CRUSH:HURT:1d8
+blow:STING:HURT:1d6
+flags:RAND_25 | DROP_60 |
+#flags:CAN_SWIM | 
+flags:IM_POIS |
+desc:A large white serpent's body with a female torso.
+
+name:273:Giant spotted rat
+base:rodent
+color:z
+info:110:8:8:20:20
+power:7:3:0:0:8
+blow:BITE:POISON:1d5
+flags:RAND_25 |
+flags:SMART | MULTIPLY | 
+#flags:EAT_BODY |
+desc:It is a rodent of unusual size.
+
+name:274:Giant black rat
+base:rodent
+color:D
+info:110:7:8:16:20
+power:7:3:0:0:8
+blow:BITE:POISON:1d5
+flags:RAND_25 |
+flags:SMART | MULTIPLY | 
+#flags:EAT_BODY |
+flags:IM_POIS |
+desc:It is a rodent of unusual size.
+
+name:275:Goblin dart-thrower
+base:goblin
+color:s
+info:110:27:24:13:20
+power:7:2:0:0:10
+blow:HIT:HURT:1d8
+blow:HIT:POISON:2d5
+flags:DROP_60 |
+flags:OPEN_DOOR | TAKE_ITEM |
+flags:ORC | EVIL | IM_POIS |
+spell-freq:5
+spells:POISON_DART
+friends:80:2d3:same
+desc:A shifty-looking ugly humanoid that throws poisoned darts.  Usually
+desc: found in small groups.
+
+name:276:Zombified dog
+base:canine
+color:y
+info:110:27:32:18:15
+power:7:3:0:0:10
+blow:BITE:HURT:1d5
+flags:COLD_BLOOD | EMPTY_MIND | 
+#flags:EAT_BODY |
+flags:UNDEAD | EVIL | NONLIVING | IM_POIS | NO_FEAR | NO_CONF |
+flags:NO_SLEEP |
+spell-freq:5
+spells:HASTE 
+friends:100:3d5:same
+desc:It is a dead dog, following you - its flesh rotting and the skin flayed
+desc: from its bones.
+
+name:277:Ant nest
+base:nest
+color:U
+info:110:70:20:3:40
+power:7:1:0:0:1
+flags:FORCE_SLEEP | NEVER_BLOW | NEVER_MOVE | ONLY_GOLD | DROP_60 |
+flags:DROP_GOOD |
+flags:STUPID | EMPTY_MIND | BASH_DOOR |
+flags:HURT_ROCK | NO_FEAR | NO_CONF | NO_SLEEP |
+#spells:S_ANT
+friends-base:100:2d4:ant
+friends-base:100:2d4:ant
+friends-base:100:2d4:ant
+friends-base:100:1d5:ant
+friends-base:100:1d5:ant
+desc:A mound of earth, crawling with ants of various shapes and sizes.  There
+desc: might be something valuable inside.
 
 ### Dungeon level 8 ###
 

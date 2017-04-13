@@ -52,14 +52,6 @@ flags:IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 desc:Ainu/maia
 
-name:amphibian
-glyph:F
-pain:7
-flags:ANIMAL | WEIRD_MIND
-flags:RAND_50 | BASH_DOOR
-flags:FORCE_SLEEP
-desc:Amphibian
-
 name:ant
 glyph:a
 pain:7
@@ -128,11 +120,12 @@ flags:ANIMAL
 desc:Feline (Cat)
 
 name:fish
-glyph:l
+glyph:F
 pain:5
 flags:ANIMAL | WEIRD_MIND
-flags:RAND_50
-desc:Fish
+flags:RAND_50 | BASH_DOOR
+flags:FORCE_SLEEP
+desc:Fish/Amphibian
 
 name:ghost
 glyph:G
