@@ -394,7 +394,6 @@ room:2
 alloc:1:50
 obj-rarity:10
 mon-base:fish
-mon-base:amphibian
 
 name:42:Plants/Trees
 room:2

@@ -3500,13 +3500,13 @@ color:R
 info:110:27:14:14:20
 power:7:1:0:0:13
 blow:TOUCH:LOSE_STR:2d5
-flag:EMPTY_MIND |
+flags:EMPTY_MIND |
 desc:It is a smallish, slimy, icky, pestilent creature.
 
 name:269:Giant red dragon fly
 plural:Giant red dragon flies
 base:insect
-color0:r
+color:r
 info:120:30:20:24:50
 power:7:1:0:0:13
 blow:BITE:TERRIFY:1d6
@@ -5821,7 +5821,7 @@ spell-freq:10
 spells:DRAIN_MANA | SCARE
 desc:It is a ghostly apparition with a humanoid form.
 
-name:268:Ibun, Son of Mîm
+name:2268:Ibun, Son of Mîm
 base:humanoid
 color:o
 info:110:820:20:96:10
@@ -5840,7 +5840,7 @@ spells:BO_FIRE
 desc:One of the last of the Petty-Dwarves.  Ibun is a tricky sorcerous little
 desc: being, full of mischief.
 
-name:269:Khîm, Son of Mîm
+name:2269:Khîm, Son of Mîm
 base:humanoid
 color:o
 info:110:820:20:96:10
@@ -5874,7 +5874,7 @@ spell-freq:7
 spells:SCARE
 desc:A strange reptilian hybrid with four heads, guarding its hoard.
 
-name:271:Mummified human
+name:2271:Mummified human
 base:zombie
 color:w
 info:110:85:20:51:70
