@@ -681,16 +681,6 @@ blow:HIT:HURT:1d5
 flags:DROP_60
 desc:It is a squat and ugly humanoid figure with a canine face.
 
-name:27:Floating eye
-base:eye
-color:o
-info:110:11:2:7:10
-power:1:1:32:3:1
-blow:GAZE:PARALYZE
-flags:NEVER_MOVE
-flags:HURT_LIGHT | NO_FEAR
-desc:A disembodied eye, floating a few feet above the ground.
-
 name:46:Rock lizard
 base:reptile
 color:U
@@ -918,17 +908,6 @@ blow:HIT:HURT:1d5
 flags:DROP_60
 desc:A small humanoid figure.
 
-name:48:Green worm mass
-base:worm
-color:g
-info:100:15:7:3:10
-power:2:1:892:22:3
-blow:CRAWL:ACID:1d3
-flags:WEIRD_MIND | MULTIPLY | STUPID
-flags:RAND_25 | RAND_50
-flags:HURT_LIGHT | IM_ACID | NO_FEAR
-desc:It is a large slimy mass of worms.
-
 name:65:Yellow snake
 base:snake
 color:y
@@ -1090,17 +1069,6 @@ info:110:11:8:19:80
 power:3:1:66:1:7
 blow:BITE:HURT:1d4
 desc:It is about two feet long and has sharp pincers.
-
-name:65:Yellow worm mass
-base:worm
-color:y
-info:100:18:7:4:10
-power:3:2:1045:16:4
-blow:CRAWL:LOSE_DEX:1d3
-flags:WEIRD_MIND | MULTIPLY | STUPID
-flags:RAND_25 | RAND_50
-flags:HURT_LIGHT | NO_FEAR
-desc:It is a large slimy mass of worms.
 
 name:66:Clear worm mass
 base:worm
@@ -1803,17 +1771,6 @@ flags:IM_ACID
 desc:A large green serpent with a female's torso.  Her green skin glistens with
 desc: acid.
 
-name:81:Green jelly
-plural:Green jellies
-base:jelly
-color:g
-info:120:99:2:1:99
-power:5:1:840:9:18
-blow:TOUCH:ACID:1d2
-flags:NEVER_MOVE
-flags:HURT_LIGHT | IM_ACID | HURT_COLD | NO_CONF | NO_SLEEP
-desc:It is a large pile of pulsing green flesh.
-
 name:134:Large kobold
 base:goblin
 color:b
@@ -1844,19 +1801,6 @@ blow:BITE:POISON:2d4
 flags:RAND_50
 flags:IM_POIS
 desc:It has a copper head and sharp venomous fangs.
-
-name:549:Rot jelly
-plural:Rot jellies
-base:jelly
-color:u
-info:120:90:2:36:99
-power:5:1:1350:15:15
-blow:TOUCH:EAT_FOOD:2d3
-blow:TOUCH:LOSE_WIS:2d3
-flags:NEVER_MOVE
-flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
-desc:It is a large pile of rotting flesh, whose touch spoils your food.  The
-desc: terrible smell it exudes is also very hard to get rid of...
 
 name:137:Blubbering icky thing
 base:icky thing
@@ -2402,18 +2346,6 @@ friends:30:1d3:Crow
 friends:100:2d9:Same
 desc:He is one of the many weaker 'slave' orcs, often mistakenly known as a
 desc: goblin.
-
-name:231:Giant black dragon fly
-plural:Giant black dragon flies
-base:insect
-color:s
-info:120:14:12:30:1
-power:6:2:368:3:18
-flags:NEVER_BLOW | RAND_25
-flags:IM_ACID
-spell-freq:10
-spells:BR_ACID
-desc:The size of a large bird, this fly drips caustic acid.
 
 name:179:Grey mushroom patch
 plural:Grey mushroom patches
@@ -3669,7 +3601,7 @@ desc:Yech! The disgusting thing only wants your blood!
 
 ### Dungeon level 8 ###
 
-name:2111:Wormtongue, Agent of Saruman
+name:281:Wormtongue, Agent of Saruman
 base:person
 color:B
 info:110:250:20:45:10
@@ -3705,7 +3637,7 @@ friends:100:5d4:Snaga
 desc:A captain of a regiment of weaker orcs, Lagduf keeps his troop in order
 desc: with displays of excessive violence.
 
-name:2113:Brown yeek
+name:282:Brown yeek
 base:yeek
 color:u
 info:110:18:18:21:10
@@ -3713,9 +3645,6 @@ power:8:1:170:0:11
 blow:HIT:HURT:1d6
 flags:DROP_40
 desc:It is a strange small humanoid.
-
-#name:114:Tracker
-#Deleted
 
 name:115:Giant salamander
 base:reptile
@@ -3750,9 +3679,6 @@ flags:ORC | EMPTY_MIND
 flags:OPEN_DOOR | BASH_DOOR
 desc:It is an animated orc skeleton.
 
-#name:118:Honor guard
-#Deleted
-
 name:119:Lemure
 base:minor demon
 color:U
@@ -3764,7 +3690,7 @@ flags:NO_FEAR
 friends:100:2d7:Same
 desc:It is the larval form of a major demon.
 
-name:120:Hill orc
+name:283:Hill orc
 base:orc
 color:u
 info:110:65:20:48:70
@@ -3799,30 +3725,340 @@ blow:BITE:HURT:1d4
 flags:NO_FEAR
 desc:Trained to hunt and kill without fear.
 
-### Dungeon level 9 ###
+name:284:Floating eye
+base:eye
+color:o
+info:110:11:2:7:10
+power:8:1:32:3:1
+blow:GAZE:PARALYZE
+flags:NEVER_MOVE
+flags:HURT_LIGHT | NO_FEAR
+#flags:CAN_FLY | MUST_FLY |
+desc:A disembodied eye, floating a few feet above the ground.
 
-name:122:Yeti
+name:285:Green worm mass
+base:worm
+color:g
+info:100:15:7:3:10
+power:8:1:892:22:3
+blow:CRAWL:ACID:1d3
+flags:WEIRD_MIND | MULTIPLY | STUPID
+flags:RAND_25 | RAND_50
+flags:HURT_LIGHT | IM_ACID | NO_FEAR
+desc:It is a large slimy mass of worms.
+
+name:286:Yellow worm mass
+base:worm
+color:y
+info:100:18:7:4:10
+power:8:2:1045:16:4
+blow:CRAWL:LOSE_DEX:1d3
+flags:WEIRD_MIND | MULTIPLY | STUPID
+flags:RAND_25 | RAND_50
+flags:HURT_LIGHT | NO_FEAR
+desc:It is a large slimy mass of worms.
+
+name:287:Green jelly
+plural:Green jellies
+base:jelly
+color:g
+info:120:99:2:1:99
+power:8:1:840:9:18
+blow:TOUCH:ACID:1d2
+flags:NEVER_MOVE
+flags:HURT_LIGHT | IM_ACID | HURT_COLD | NO_CONF | NO_SLEEP
+desc:It is a large pile of pulsing green flesh.
+
+name:288:Yeti
 plural:Yeti
 base:yeti
 color:w
 info:110:55:20:36:30
-power:9:3:1353:4:30
+power:8:3:1353:4:30
 blow:CLAW:HURT:1d3
 blow:CLAW:HURT:1d3
 blow:BITE:HURT:1d4
 desc:A large white figure covered in shaggy fur.
 
-name:123:Bloodshot icky thing
+name:289:Bloodshot icky thing
 base:icky thing
 color:r
 info:110:32:14:21:20
-power:9:3:1122:3:24
+power:8:3:1122:3:24
 blow:TOUCH:HURT:1d4
 blow:CRAWL:ACID:2d4
 flags:EMPTY_MIND
 spell-freq:11
 spells:DRAIN_MANA
 desc:It is a strange, slimy, icky creature.
+
+name:290:Giant red ant
+base:ant
+color:r
+info:110:18:12:40:60
+power:9:2:920:2:22
+blow:BITE:HURT:1d4
+blow:STING:LOSE_STR:1d4
+desc:It is large and has venomous mandibles.
+
+name:291:Zombified orc
+base:zombie
+color:s
+info:110:50:20:36:90
+power:8:1:1353:2:30
+blow:HIT:HURT:1d4
+blow:HIT:HURT:1d4
+blow:HIT:HURT:1d4
+flags:ORC | EMPTY_MIND
+flags:NO_FEAR
+desc:It is a shambling orcish corpse leaving behind a trail of flesh.
+
+name:292:Giant flea
+base:insect
+color:s
+info:120:3:8:30:10
+power:8:3:1620:1:4
+blow:BITE:HURT:1d2
+flags:BASH_DOOR
+desc:It makes you itch just to look at it.
+
+name:293:Flesh golem
+base:golem
+color:R
+info:110:54:12:36:10
+power:8:2:1518:1:50
+blow:HIT:HURT:1d6
+blow:HIT:HURT:1d6
+flags:BASH_DOOR
+desc:A shambling humanoid monster with long scars.
+
+name:294:Warg
+base:canine
+color:s
+info:120:36:20:30:10
+power:8:2:5040:5:40
+blow:BITE:HURT:1d8
+flags:EVIL | GROUP_AI
+flags:RAND_25 | BASH_DOOR
+friends:100:2d7:Same
+desc:It is a large wolf with eyes full of cunning.
+
+name:295:Potion mimic
+base:mimic
+glyph:!
+color:w
+info:110:55:25:36:0
+power:8:3:2640:1:60
+blow:HIT:POISON:3d4
+blow:HIT:HURT:2d3
+blow:HIT:HURT:2d3
+flags:HURT_COLD
+spell-freq:6
+spells:BO_COLD
+desc:A strange creature that disguises itself as a discarded potion bottle to
+desc: lure unsuspecting adventurers within reach of its venomous claws.
+mimic:potion:Healing
+mimic:potion:*Healing*
+mimic:potion:Life
+mimic:potion:Experience
+mimic:potion:Augmentation
+mimic:potion:Speed
+
+name:296:Giant black dragon fly
+plural:Giant black dragon flies
+base:insect
+color:s
+info:120:14:12:30:1
+power:8:2:368:3:18
+flags:NEVER_BLOW | RAND_25
+flags:IM_ACID
+#flags:CAN_FLY | MUST_FLY |
+spell-freq:10
+spells:BR_ACID
+desc:The size of a large bird, this fly drips caustic acid.
+
+name:297:Red dragon bat
+base:bat
+color:r
+info:130:14:12:42:10
+power:8:1:2376:0:60
+blow:BITE:FIRE:1d3
+flags:HAS_LIGHT
+flags:RAND_50 | BASH_DOOR
+flags:IM_FIRE
+flags:FORCE_SLEEP
+spell-freq:4
+spells:BR_FIRE
+desc:It is a sharp-tailed bat, wreathed in fire.
+
+name:298:Rot jelly
+plural:Rot jellies
+base:jelly
+color:u
+info:120:90:2:36:99
+power:8:1:1350:15:15
+blow:TOUCH:EAT_FOOD:2d3
+blow:TOUCH:LOSE_WIS:2d3
+flags:NEVER_MOVE
+flags:HURT_LIGHT | IM_POIS | HURT_COLD | NO_CONF | NO_SLEEP
+desc:It is a large pile of rotting flesh, whose touch spoils your food.  The
+desc: terrible smell it exudes is also very hard to get rid of...
+
+name:299:Giant tan bat
+base:bat
+color:U
+info:130:14:12:30:10
+power:8:2:1680:1:18
+blow:BITE:TERRIFY:1d3
+blow:CLAW:HURT:1d2
+blow:CLAW:HURT:1d2
+flags:RAND_50
+flags:FORCE_SLEEP
+desc:A giant bat, the beating of whose wings produces a strangely unnerving
+desc: noise.
+
+name:300:Cave bear
+base:quadruped
+color:u
+info:110:36:10:52:30
+power:8:1:1320:3:25
+blow:CLAW:HURT:1d6
+blow:CLAW:HURT:1d6
+blow:BITE:HURT:1d8
+flags:ANIMAL
+flags:RAND_25
+desc:A large bear appears to have made its home in this cave.  It is hungry, and
+desc: you are trespassing in its territory.
+
+name:301:Large goblin
+base:goblin
+color:b
+info:110:61:20:32:30
+power:8:1:0:0:14
+blow:HIT:HURT:1d10
+flags:DROP_60 |
+flags:ORC | EVIL
+desc:It a man-sized figure with the all too recognizable face of a goblin.
+
+name:302:Zombified goblin
+base:zombie
+color:m
+info:110:27:20:14:30
+power:8:1:0:0:16
+blow:HIT:POISON:1d6
+blow:HIT:HURT:2d4
+flags:EMPTY_MIND | 
+flags:ORC | NONLIVING | 
+desc:It is an animated goblin corpse.  Flesh falls off in large chunks as it
+desc: shambles forward.
+
+name:303:the Dunlending Agent of the Nazgul
+base:person
+color:B
+power:8:4:0:0:100
+blow:HIT:HURT:1d5
+blow:HIT:HURT:1d5
+blow:TOUCH:EAT_GOLD
+flags:UNIQUE | MALE | FORCE_SLEEP | ONLY_ITEM | DROP_1 |
+flags:DROP_GOOD | DROP_GREAT |
+flags:OPEN_DOOR | TAKE_ITEM |
+flags:ORC | EVIL |
+spell-freq:5
+spells:BA_POIS | BO_COLD |
+spells:HEAL | TRAPS | SLOW |
+desc:A squint-eyed southerner working with Bill Ferny as a spy in Bree.  He
+desc: is an outlaw driven from Dunland, where many said that he had orc-blood
+desc: in him.  Originally a servant of Saruman in the Shire, he betrayed his
+desc: master when interrogated on the road by the Lord of the Nazgul.  He was
+desc: then sent to Bree as a spy in their service.
+
+name:304:Goblin shaman
+base:goblin
+color:p
+info:110:39:20:15:20
+power:8:1:0:0:14
+blow:HIT:HURT:1d6
+blow:HIT:HURT:1d6
+flags:MALE | FORCE_SLEEP | DROP_60 |
+flags:OPEN_DOOR | 
+flags:ORC | EVIL | HURT_LIGHT | IM_POIS |
+spell-freq:5
+spells:MISSILE |
+spells:BLINK | CAUSE_1 |
+desc:A goblin dressed in skins who gestures wildly.
+
+name:305:White slime
+base:jelly
+color:w
+info:115:5:4:1:0
+power:8:4:0:0:3
+blow:TOUCH:HURT:1d4
+flags:NEVER_MOVE | RAND_25 | RAND_50 |
+flags:COLD_BLOOD | MULTIPLY |
+flags:IM_ACID | IM_POIS | NO_STUN | NO_CONF | NO_SLEEP |
+flags:ATTR_FLICKER
+friends:100:1d4:same
+desc:Ugh! It quickly creeps along the dungeon floor.
+
+name:306:Giant ebony ant
+base:ant
+color:D
+info:110:64:12:24:60
+power:8:2:0:0:16
+blow:BITE:HURT:2d3
+flags:ATTR_FLICKER |
+desc:It is large and has venomous mandibles.
+
+name:307:Green dragon bat
+base:bat
+color:g
+info:130:15:12:22:50
+power:8:3:0:0:9
+blow:BITE:POISON:1d3
+flags:FORCE_SLEEP | RAND_50 |
+#flags:CAN_FLY | MUST_FLY | EAT_BODY |
+flags:BASH_DOOR | IM_POIS |
+spell-freq:4
+spells:BR_POIS |
+desc:It is a sharp-tailed bat, rank with venom.
+
+name:308:White dragon bat
+base:bat
+color:w
+info:130:13:12:28:50
+power:8:3:0:0:11
+blow:BITE:COLD:1d3
+flags:FORCE_SLEEP | RAND_50 |
+flags:COLD_BLOOD | BASH_DOOR | 
+flags:DRAGON | ANIMAL | IM_COLD |
+#flags:CAN_FLY | MUST_FLY | EAT_BODY 
+spell-freq:4
+spells:BR_COLD |
+desc:It is a sharp-tailed bat, clouded in frost.
+
+name:309:Metallic black centipede
+base:centipede
+color:D
+info:110:22:8:10:40
+power:8:2:0:0:16
+blow:BITE:HURT:2d3
+blow:STING:LOSE_INT:2d4
+flags:RAND_25 |
+flags:BASH_DOOR |
+flags:ATTR_FLICKER |
+desc:It is about five feet long and carnivorous.
+
+name:310:Hyena
+base:canine
+color:M
+info:120:27:32:18:15
+power:8:3:0:0:13
+blow:BITE:HURT:1d7
+#flags:EAT_BODY |
+friends:100:2d7:Same
+desc:It is a large doglike creature with an oversize jaw.
+
+### Dungeon level 9 ###
 
 name:125:Black harpy
 plural:Black harpies
@@ -3933,15 +4169,6 @@ spells:BR_FIRE
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale red.
 
-name:132:Giant red ant
-base:ant
-color:r
-info:110:18:12:40:60
-power:9:2:920:2:22
-blow:BITE:HURT:1d4
-blow:STING:LOSE_STR:1d4
-desc:It is large and has venomous mandibles.
-
 name:133:Brodda, the Easterling
 base:person
 color:U
@@ -3981,19 +4208,6 @@ spell-freq:12
 spells:BR_SOUN
 desc:This hatchling dragon is still soft, its eyes unaccustomed to light and its
 desc: scales a pale gold.
-
-name:563:Cave bear
-base:quadruped
-color:u
-info:110:36:10:52:30
-power:9:1:1320:3:25
-blow:CLAW:HURT:1d6
-blow:CLAW:HURT:1d6
-blow:BITE:HURT:1d8
-flags:ANIMAL
-flags:RAND_25
-desc:A large bear appears to have made its home in this cave.  It is hungry, and
-desc: you are trespassing in its territory.
 
 
 
@@ -4223,18 +4437,6 @@ blow:BITE:HURT:2d5
 flags:ANIMAL
 flags:BASH_DOOR
 desc:A strange hybrid of eagle and horse.  It looks weird.
-
-name:2153:Zombified orc
-base:zombie
-color:s
-info:110:50:20:36:90
-power:11:1:1353:2:30
-blow:HIT:HURT:1d4
-blow:HIT:HURT:1d4
-blow:HIT:HURT:1d4
-flags:ORC | EMPTY_MIND
-flags:NO_FEAR
-desc:It is a shambling orcish corpse leaving behind a trail of flesh.
 
 name:154:Gnome mage
 base:humanoid
@@ -4637,15 +4839,6 @@ desc:its path...
 
 ### Dungeon level 14 ###
 
-name:180:Giant flea
-base:insect
-color:s
-info:120:3:8:30:10
-power:14:3:1620:1:4
-blow:BITE:HURT:1d2
-flags:BASH_DOOR
-desc:It makes you itch just to look at it.
-
 name:181:Ufthak of Cirith Ungol
 base:orc
 color:g
@@ -4680,27 +4873,6 @@ spell-freq:8
 spells:BLIND | CONF | SCARE
 desc:It is a strange, slimy, icky creature, with rudimentary intelligence, but
 desc: evil cunning.  It hungers for food, and you look tasty.
-
-name:185:Flesh golem
-base:golem
-color:R
-info:110:54:12:36:10
-power:14:2:1518:1:50
-blow:HIT:HURT:1d6
-blow:HIT:HURT:1d6
-flags:BASH_DOOR
-desc:A shambling humanoid monster with long scars.
-
-name:2186:Warg
-base:canine
-color:s
-info:120:36:20:30:10
-power:14:2:5040:5:40
-blow:BITE:HURT:1d8
-flags:EVIL | GROUP_AI
-flags:RAND_25 | BASH_DOOR
-friends:100:2d7:Same
-desc:It is a large wolf with eyes full of cunning.
 
 name:188:Lurker
 base:lurker
@@ -4910,19 +5082,6 @@ flags:COLD_BLOOD
 flags:BASH_DOOR
 flags:HURT_ROCK | IM_COLD | IM_FIRE | IM_POIS
 desc:It is a massive animated statue made out of hardened clay.
-
-name:550:Giant tan bat
-base:bat
-color:U
-info:130:14:12:30:10
-power:15:2:1680:1:18
-blow:BITE:TERRIFY:1d3
-blow:CLAW:HURT:1d2
-blow:CLAW:HURT:1d2
-flags:RAND_50
-flags:FORCE_SLEEP
-desc:A giant bat, the beating of whose wings produces a strangely unnerving
-desc: noise.
 
 ### Dungeon level 16 ###
 
@@ -5210,27 +5369,6 @@ spells:BR_ELEC
 friends:100:2d7:Same
 desc:Saint Elmo's Fire forms a ghostly halo around this hound, and sparks sting
 desc: your fingers as energy builds up in the air around you.
-
-name:224:Potion mimic
-base:mimic
-glyph:!
-color:w
-info:110:55:25:36:0
-power:18:3:2640:1:60
-blow:HIT:POISON:3d4
-blow:HIT:HURT:2d3
-blow:HIT:HURT:2d3
-flags:HURT_COLD
-spell-freq:6
-spells:BO_COLD
-desc:A strange creature that disguises itself as a discarded potion bottle to
-desc: lure unsuspecting adventurers within reach of its venomous claws.
-mimic:potion:Healing
-mimic:potion:*Healing*
-mimic:potion:Life
-mimic:potion:Experience
-mimic:potion:Augmentation
-mimic:potion:Speed
 
 name:229:Shambling mound
 base:mushroom
@@ -5815,20 +5953,6 @@ friends:50:1d1:Mage
 friends:50:1d1:Paladin
 desc:A thief of great power and shifty speed.
 
-name:264:Red dragon bat
-base:bat
-color:r
-info:130:14:12:42:10
-power:23:1:2376:0:60
-blow:BITE:FIRE:1d3
-flags:HAS_LIGHT
-flags:RAND_50 | BASH_DOOR
-flags:IM_FIRE
-flags:FORCE_SLEEP
-spell-freq:4
-spells:BR_FIRE
-desc:It is a sharp-tailed bat, wreathed in fire.
-
 name:265:Killer white beetle
 base:killer beetle
 color:w
@@ -6158,7 +6282,7 @@ drop:prayer book:[Novice's Handbook]:5:1:1
 drop:prayer book:[Words of Wisdom]:5:1:1
 desc:A troll who is so bright he knows how to read.
 
-name:283:Giant grey ant
+name:2283:Giant grey ant
 base:ant
 color:s
 info:110:86:10:200:10
@@ -6168,7 +6292,7 @@ blow:BITE:HURT:2d12
 flags:RAND_25 | KILL_BODY
 desc:It is an ant encased in an impenetrable exoskeleton.
 
-name:284:Ulwarth, Son of Ulfang
+name:2284:Ulwarth, Son of Ulfang
 base:person
 color:U
 info:110:850:20:48:40
@@ -6183,7 +6307,7 @@ friends:60:2d3:Easterling champion
 friends:100:1d1:Ulfast, Son of Ulfang
 desc:A short and swarthy Easterling.
 
-name:285:Displacer beast
+name:2285:Displacer beast
 base:feline
 color:D
 info:110:138:35:150:10
@@ -6207,7 +6331,7 @@ flags:RAND_25
 flags:IM_FIRE
 desc:It is smoking and burning with great heat.
 
-name:287:Cave ogre
+name:2287:Cave ogre
 base:ogre
 color:u
 info:110:150:20:49:40
@@ -6354,7 +6478,7 @@ desc:It appears to be a pile of coins made of precious adamant, slithering
 desc: toward you on lots of tiny legs.
 mimic:gold:adamantite
 
-name:293:Algroth
+name:2293:Algroth
 base:troll
 color:o
 info:110:137:20:90:50
@@ -6405,7 +6529,7 @@ friends:100:2d7:Same
 desc:A locus of conflicting points coalesce to form the vague shape of a huge
 desc: hound. Or is it just your imagination?
 
-name:296:Ogre mage
+name:2296:Ogre mage
 base:ogre
 color:r
 info:110:163:20:60:40
@@ -6557,7 +6681,7 @@ spells:SCARE
 spells:BA_POIS
 desc:A strange reptilian hybrid with five heads dripping venom.
 
-name:303:Black knight
+name:2303:Black knight
 base:person
 color:s
 info:120:165:20:105:30
@@ -6675,7 +6799,7 @@ spells:BR_POIS
 desc:A vile reptile that preys on unsuspecting travellers.  Its eyes stare
 desc: deeply at you and your soul starts to wilt!
 
-name:309:Ice troll
+name:2309:Ice troll
 base:troll
 color:w
 info:110:132:20:67:50
