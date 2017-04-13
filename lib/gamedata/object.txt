@@ -3988,6 +3988,7 @@ type:magic book
 properties:1:30:25
 alloc:40:1 to 100
 combat:0:1d1:0:0:0
+desc:A book of simple spells for Mages and Rogues.
 
 name:461:[Minor Powers]
 graphics:?:R
@@ -3995,6 +3996,7 @@ type:magic book
 properties:5:30:100
 alloc:40:5 to 100
 combat:0:1d1:0:0:0
+desc:A book of spells for Mages and Rogues.
 
 name:462:[Useful Magic]
 graphics:?:R
@@ -4002,6 +4004,7 @@ type:magic book
 properties:10:30:400
 alloc:40:10 to 100
 combat:0:1d1:0:0:0
+desc:A book of spells for Mages and Rogues.
 
 name:463:[Battle Spells]
 graphics:?:R
@@ -4009,6 +4012,7 @@ type:magic book
 properties:20:30:800
 alloc:40:20 to 100
 combat:0:1d1:0:0:0
+desc:A spellbook for Mages.
 
 name:464:[Novice's Handbook]
 graphics:?:B
@@ -4016,6 +4020,7 @@ type:prayer book
 properties:1:30:25
 alloc:40:1 to 100
 combat:0:1d1:0:0:0
+desc:A simple holy book for Priests and Paladins.
 
 name:465:[Words of Wisdom]
 graphics:?:B
@@ -4023,6 +4028,7 @@ type:prayer book
 properties:5:30:100
 alloc:40:5 to 100
 combat:0:1d1:0:0:0
+desc:A holy book for Priests and Paladins.
 
 name:466:[Chants and Blessings]
 graphics:?:B
@@ -4030,6 +4036,7 @@ type:prayer book
 properties:10:30:400
 alloc:40:10 to 100
 combat:0:1d1:0:0:0
+desc:A prayer book for Priests.
 
 name:467:[Exorcism and Dispelling]
 graphics:?:B
@@ -4037,6 +4044,7 @@ type:prayer book
 properties:40:30:800
 alloc:50:20 to 100
 combat:0:1d1:0:0:0
+desc:A holy book for Priests and Paladins.
 
 name:576:[Call of the Wild]
 graphics:?:G
@@ -4044,6 +4052,7 @@ type:nature book
 properties:1:30:25
 alloc:40:1 to 100
 combat:0:1d1:0:0:0
+desc:A stone carved with simple lore for Druids and Rangers.
 
 name:577:[Communion with Nature]
 graphics:?:G
@@ -4051,6 +4060,7 @@ type:nature book
 properties:5:30:100
 alloc:40:5 to 100
 combat:0:1d1:0:0:0
+desc:A stone carved with lore for Druids and Rangers.
 
 name:578:[Gifts of Nature]
 graphics:?:G
@@ -4058,6 +4068,7 @@ type:nature book
 properties:10:30:400
 alloc:40:10 to 100
 combat:0:1d1:0:0:0
+desc:A stone carved with lore for Druids and Rangers.
 
 name:579:[Book of Combat]
 graphics:?:G
@@ -4065,6 +4076,7 @@ type:nature book
 properties:40:30:800
 alloc:50:20 to 100
 combat:0:1d1:0:0:0
+desc:A stone carved with lore for Druids.
 
 name:580:[Beginner's Curses]
 graphics:?:P
@@ -4072,6 +4084,7 @@ type:necromancy book
 properties:1:30:25
 alloc:40:1 to 100
 combat:0:1d1:0:0:0
+desc:A tome of simple curses for Necromancers and Assassins.
 
 name:581:[Dark Initiation]
 graphics:?:P
@@ -4079,6 +4092,7 @@ type:necromancy book
 properties:5:30:100
 alloc:40:5 to 100
 combat:0:1d1:0:0:0
+desc:A tome of curses for Necromancers.
 
 name:582:[Blood Novitiate]
 graphics:?:P
@@ -4086,6 +4100,7 @@ type:necromancy book
 properties:10:30:400
 alloc:40:10 to 100
 combat:0:1d1:0:0:0
+desc:A tome of curses for Necromancers and Assassins.
 
 name:583:[Frightful Realms]
 graphics:?:P
@@ -4093,6 +4108,7 @@ type:necromancy book
 properties:40:30:800
 alloc:50:20 to 100
 combat:0:1d1:0:0:0
+desc:A tome of fell curses for Necromancers.
 
 
 ##### Special Books (note resistances) #####
@@ -4104,6 +4120,7 @@ properties:40:30:10000
 alloc:15:40 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A book of defensive spells for Mages.
 
 name:469:[Escapes and Trickery]
 graphics:?:r
@@ -4112,6 +4129,7 @@ properties:50:30:20000
 alloc:15:50 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A book of spells for elusive Mages and Rogues.
 
 name:470:[Advanced Sorcery]
 graphics:?:r
@@ -4120,6 +4138,7 @@ properties:60:30:30000
 alloc:15:60 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A spellbook for powerful Mages and Rogues.
 
 name:471:[Power and Destruction]
 graphics:?:r
@@ -4128,6 +4147,7 @@ properties:70:30:50000
 alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A spellbook of destructive power for Mages.
 
 name:472:[Book of Runes]
 graphics:?:r
@@ -4136,6 +4156,7 @@ properties:80:30:90000
 alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A spellbook of magical runes for Mages.
 
 name:473:[Ethereal Openings]
 graphics:?:b
@@ -4144,6 +4165,7 @@ properties:40:30:10000
 alloc:15:40 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A holy book granting Priests divine mobility.
 
 name:474:[Godly Insights]
 graphics:?:b
@@ -4152,6 +4174,7 @@ properties:50:30:20000
 alloc:15:50 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A holy book granting Priests and Paladins great knowledge.
 
 name:475:[Purifications and Healing]
 graphics:?:b
@@ -4160,6 +4183,7 @@ properties:60:30:30000
 alloc:15:60 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A prayer book which strengthens and sustains Priests and Paladins.
 
 name:476:[Holy Infusions]
 graphics:?:b
@@ -4168,6 +4192,7 @@ properties:70:30:50000
 alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A holy book of powerful blessings for Priests.
 
 name:477:[Wrath of God]
 graphics:?:b
@@ -4176,6 +4201,7 @@ properties:80:30:90000
 alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A holy book of fearsome wrath for Priests and Paladins.
 
 name:584:[Radagast's Shapeshifts]
 graphics:?:g
@@ -4184,6 +4210,7 @@ properties:40:30:10000
 alloc:15:40 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A stone carved with transformation lore for Druids.
 
 name:585:[Melian's Lore]
 graphics:?:g
@@ -4192,6 +4219,7 @@ properties:50:30:20000
 alloc:15:50 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A stone carved with runes of knowledge for Druids and Rangers.
 
 name:586:[Primal Forces]
 graphics:?:g
@@ -4200,6 +4228,7 @@ properties:60:30:30000
 alloc:15:60 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A stone covered with powerful elemental runes for Druids.
 
 name:587:[Bombadil's Songs]
 graphics:?:g
@@ -4208,6 +4237,7 @@ properties:70:30:50000
 alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A stone infused with musical enchantments for Druids and Rangers.
 
 name:588:[Spirit of Yavanna]
 graphics:?:g
@@ -4216,6 +4246,7 @@ properties:80:30:90000
 alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A stone of the greatest natural lore for Druids.
 
 name:589:[Mysteries of Angmar]
 graphics:?:p
@@ -4224,6 +4255,7 @@ properties:40:30:10000
 alloc:15:40 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A tome of dark secrets for Necromancers and Assassins.
 
 name:590:[Unholy Protection]
 graphics:?:p
@@ -4232,6 +4264,7 @@ properties:50:30:20000
 alloc:15:50 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A tome of evil gifts for Necromancers.
 
 name:591:[Life Force Mastery]
 graphics:?:p
@@ -4240,6 +4273,7 @@ properties:60:30:30000
 alloc:15:60 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A tome of twisted power for Necromancers.
 
 name:592:[Metamorphoses]
 graphics:?:p
@@ -4248,6 +4282,7 @@ properties:70:30:50000
 alloc:15:70 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A corrupting tome for Necromancers and Assassins.
 
 name:593:[Necronomicon]
 graphics:?:p
@@ -4256,6 +4291,7 @@ properties:80:30:90000
 alloc:10:90 to 100
 combat:0:1d1:0:0:0
 flags:IGNORE_ACID | IGNORE_ELEC | IGNORE_FIRE | IGNORE_COLD | GOOD
+desc:A tome of untold evil for Necromancers.
 
 
 
