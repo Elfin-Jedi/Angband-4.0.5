@@ -69,7 +69,7 @@ int default_layout_win(term_data *data, int maxterms)
 	bottom = sy - r.bottom;
 
 	if ((sx == 1024) && (sy == 768)) {
-		arg_graphics = 3;
+		arg_graphics = 0;
 		arg_graphics_nice = 0;
 		tile_width = 4;
 		tile_height = 2;
@@ -161,7 +161,7 @@ int default_layout_win(term_data *data, int maxterms)
 		return 0;
 	}
 	if ((sx == 1280) && (sy == 1024)) {
-		arg_graphics = 5;
+		arg_graphics = 0;
 		arg_graphics_nice = 0;
 		tile_width = 4;
 		tile_height = 2;
