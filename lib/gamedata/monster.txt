@@ -3611,9 +3611,8 @@ base:nest
 color:U
 info:110:70:20:3:40
 power:7:1:0:0:1
-flags:FORCE_SLEEP | NEVER_BLOW | NEVER_MOVE | ONLY_GOLD | DROP_60 |
-flags:DROP_GOOD |
-flags:STUPID | EMPTY_MIND | BASH_DOOR |
+flags:FORCE_SLEEP | NEVER_BLOW | ONLY_GOLD | DROP_60 |
+flags:DROP_GOOD | BASH_DOOR |
 flags:HURT_ROCK | NO_FEAR | NO_CONF | NO_SLEEP |
 #spells:S_ANT
 friends-base:100:2d4:ant
@@ -3623,6 +3622,50 @@ friends-base:100:1d5:ant
 friends-base:100:1d5:ant
 desc:A mound of earth, crawling with ants of various shapes and sizes.  There
 desc: might be something valuable inside.
+
+name:278:Termite mound
+base:nest
+color:u
+info:110:139:20:4:40
+power:7:1:0:0:3
+flags:FORCE_SLEEP | NEVER_BLOW | DROP_60 | DROP_GOOD |
+flags:BASH_DOOR |
+flags:HURT_ROCK | NO_FEAR | NO_CONF | NO_SLEEP |
+#spells:S_ANT |
+friends-base:100:2d4:ant
+friends-base:100:2d4:ant
+friends-base:100:2d4:ant
+friends-base:100:1d5:ant
+friends-base:100:1d5:ant
+desc:A giant mound of earth, crawling with termites of various shapes and
+desc: sizes.  There might be something valuable inside.
+
+name:279:Shadow fairy
+base:hybrid
+color:z
+info:115:20:18:12:10
+power:7:1:0:0:9
+flags:NEVER_BLOW | DROP_60 |
+flags:HAS_LIGHT | OPEN_DOOR |
+#flags:CAN_FLY | MUST_FLY | EVASIVE 
+flags:ATTR_FLICKER |
+spell-freq:3
+spells:BO_ELEC |
+spells:BLINK | DARKNESS |
+spells:INVIS
+desc:A little winged humanoid surrounded by shadow.
+
+name:280:Leech
+base:worm
+color:I
+info:120:26:10:20:50
+power:7:1:0:0:13
+blow:BITE:HURT:3d1
+blow:BITE:HURT:3d1
+flags:RAND_25 |
+flags:WEIRD_MIND | 
+#flags:CAN_SWIM | MUST_SWIM
+desc:Yech! The disgusting thing only wants your blood!
 
 ### Dungeon level 8 ###
 
