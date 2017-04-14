@@ -212,7 +212,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
 desc:Shoots a radius-2 poison ball.
 
-book:magic book:[Minor Powers]:9:1
+book:magic book:[Conjurings and Tricks]:9:1
 
 spell:Confuse Monster:5:4:30:4
 effect:BOLT_AWARE:OLD_CONF
@@ -269,7 +269,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Useful Magic]:9:1
+book:magic book:[Incantations and Illusions]:9:1
 
 spell:Satisfy Hunger:9:7:45:8
 effect:SET_NOURISH
@@ -335,7 +335,7 @@ dice:20
 desc:Attempts to slow a single monster.
 desc:  Uniques are not affected.
 
-book:magic book:[Battle Spells]:6:1
+book:magic book:[Sorcery and Evocations]:6:1
 
 spell:Frost Ball:19:6:55:8
 effect:BALL:COLD:2
@@ -1143,7 +1143,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
 desc:Shoots a radius-2 poison ball.
 
-book:magic book:[Minor Powers]:7:1
+book:magic book:[Conjurings and Tricks]:7:1
 
 spell:Confuse Monster:15:6:75:1
 effect:BOLT_AWARE:OLD_CONF
@@ -1185,7 +1185,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Useful Magic]:6:1
+book:magic book:[Incantations and Illusions]:6:1
 
 spell:Satisfy Hunger:25:12:95:1
 effect:SET_NOURISH
@@ -1226,7 +1226,7 @@ dice:20
 desc:Attempts to slow a single monster.
 desc:  Uniques are not affected.
 
-book:magic book:[Battle Spells]:3:1
+book:magic book:[Sorcery and Evocations]:3:1
 
 spell:Teleport Other:31:25:70:3
 effect:BOLT_STATUS:AWAY_ALL
