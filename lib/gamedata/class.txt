@@ -221,7 +221,7 @@ spell:Identify:6:8:30:6
 effect:IDENTIFY
 desc:Standard identification.
 
-book:magic book:[Minor Powers]:8:1
+book:magic book:[Conjurings and Tricks]:8:1
 
 spell:Lightning Bolt:7:3:30:6
 effect:BOLT_OR_BEAM:ELEC:-10
@@ -268,7 +268,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
 desc:Throws an item using mental strength. (Actually casts Recharge Item I. For now.)
 
-book:magic book:[Useful Magic]:7:1
+book:magic book:[Incantations and Illusions]:7:1
 
 spell:Detect Invisible:15:4:45:8
 effect:DETECT_INVISIBLE_MONSTERS
@@ -309,7 +309,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
 desc:Minor recharging.
 
-book:magic book:[Battle Spells]:9:1
+book:magic book:[Sorcery and Evocations]:9:1
 
 spell:Sleep Monsters:20:7:50:10
 effect:PROJECT_LOS:OLD_SLEEP
@@ -1102,7 +1102,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:/ 2 + 10
 desc:Shoots a radius-2 poison ball.
 
-book:magic book:[Minor Powers]:7:1
+book:magic book:[Conjurings and Tricks]:7:1
 
 spell:Confuse Monster:15:6:75:1
 effect:BOLT_AWARE:OLD_CONF
@@ -1144,7 +1144,7 @@ dice:$B+1d100
 expr:B:PLAYER_LEVEL:/ 5
 desc:Invokes a random spell effect.
 
-book:magic book:[Useful Magic]:6:1
+book:magic book:[Incantations and Illusions]:6:1
 
 spell:Satisfy Hunger:25:12:95:1
 effect:SET_NOURISH
@@ -1185,7 +1185,7 @@ dice:20
 desc:Attempts to slow a single monster.
 desc:  Uniques are not affected.
 
-book:magic book:[Battle Spells]:3:1
+book:magic book:[Sorcery and Evocations]:3:1
 
 spell:Teleport Other:31:25:70:3
 effect:BOLT_STATUS:AWAY_ALL

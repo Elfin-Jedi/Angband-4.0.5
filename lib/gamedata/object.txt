@@ -3990,7 +3990,7 @@ alloc:40:1 to 100
 combat:0:1d1:0:0:0
 desc:A book of simple spells for Mages and Rogues.
 
-name:461:[Minor Powers]
+name:461:[Conjurings and Tricks]
 graphics:?:R
 type:magic book
 properties:5:30:100
@@ -3998,7 +3998,7 @@ alloc:40:5 to 100
 combat:0:1d1:0:0:0
 desc:A book of spells for Mages and Rogues.
 
-name:462:[Useful Magic]
+name:462:[Incantations and Illusions]
 graphics:?:R
 type:magic book
 properties:10:30:400
@@ -4006,7 +4006,7 @@ alloc:40:10 to 100
 combat:0:1d1:0:0:0
 desc:A book of spells for Mages and Rogues.
 
-name:463:[Battle Spells]
+name:463:[Sorcery and Evocations]
 graphics:?:R
 type:magic book
 properties:20:30:800
