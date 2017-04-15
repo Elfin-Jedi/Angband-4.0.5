@@ -131,7 +131,7 @@ name:ghost
 glyph:G
 pain:1
 flags:UNDEAD | EVIL | INVISIBLE | COLD_BLOOD
-flags:PASS_WALL
+flags:PASS_WALL | NONLIVING
 flags:IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
 desc:Ghost
 
@@ -212,7 +212,7 @@ pain:1
 flags:UNDEAD | EVIL | COLD_BLOOD | SMART
 flags:OPEN_DOOR | BASH_DOOR
 flags:IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
-flags:FORCE_SLEEP
+flags:FORCE_SLEEP | NONLIVING
 spells:BRAIN_SMASH
 desc:Lich
 
@@ -281,6 +281,13 @@ flags:FEMALE | EVIL | HURT_COLD
 flags:BASH_DOOR
 desc:Naga
 
+name:nest
+glyph:<
+pain:2
+flags:EMPTY_MIND | STUPID
+flags:NEVER_MOVE
+desc:Nest
+
 name:ogre
 glyph:O
 pain:1
@@ -338,7 +345,7 @@ desc:Rodent
 name:skeleton
 glyph:s
 pain:9
-flags:UNDEAD | EVIL | COLD_BLOOD
+flags:UNDEAD | EVIL | COLD_BLOOD | NONLIVING
 flags:IM_COLD | IM_POIS | NO_FEAR | NO_CONF | NO_SLEEP | NO_STUN
 desc:Skeleton
 
@@ -379,7 +386,7 @@ name:vampire
 glyph:V
 pain:1
 flags:UNDEAD | EVIL | COLD_BLOOD | REGENERATE
-flags:OPEN_DOOR | BASH_DOOR
+flags:OPEN_DOOR | BASH_DOOR | NONLIVING
 flags:HURT_LIGHT | HURT_FIRE | IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
 flags:FORCE_SLEEP
 spells:HOLD | SCARE
@@ -404,7 +411,7 @@ desc:Worm/Worm Mass
 name:wraith
 glyph:W
 pain:1
-flags:UNDEAD | EVIL | COLD_BLOOD
+flags:UNDEAD | EVIL | COLD_BLOOD | NONLIVING
 flags:HURT_LIGHT | IM_COLD | IM_POIS | NO_CONF | NO_SLEEP | NO_STUN
 desc:Wight/Wraith
 
@@ -441,7 +448,7 @@ name:zombie
 glyph:z
 pain:10
 flags:UNDEAD | EVIL | COLD_BLOOD
-flags:OPEN_DOOR | BASH_DOOR
+flags:OPEN_DOOR | BASH_DOOR | NONLIVING
 flags:IM_COLD | IM_POIS | HURT_FIRE | NO_CONF | NO_SLEEP | NO_STUN
 desc:Zombie/Mummy
 
