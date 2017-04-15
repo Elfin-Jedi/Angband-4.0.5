@@ -234,7 +234,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:+ 10
 desc:Attempts to confuse one monster.
 
-spell:Telekinesis:8:4:30:6
+spell:Telekinesis (Incomplete):8:4:30:6
 effect:TOUCH:KILL_DOOR
 desc:Fetches an item from a distance. (Actually casts Trap/Door Destruction. For now.)
 
@@ -261,11 +261,11 @@ dice:$Dd8
 expr:D:PLAYER_LEVEL:- 5 / 4 + 5
 desc:Fires a beam of cold.
 
-spell:Magical Throw:13:5:40:8
+spell:Magical Throw (Incomplete):13:5:40:8
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:/ 5 + 2
-desc:Throws an item using mental strength. (Actually casts Recharge Item I. For now.)
+desc:Throws an item using mental strength. (Actually casts Minor Recharge. For now.)
 
 book:magic book:[Incantations and Illusions]:7:1
 
@@ -290,7 +290,7 @@ effect:CURE:STUN
 effect:CURE:CUT
 desc:Removes all poison, cuts and stunning.
 
-spell:Detect Enchantment:16:6:50:10
+spell:Detect Enchantment (Incomplete):16:6:50:10
 effect:DETECT_GOLD
 dice:22d40
 effect:SENSE_OBJECTS
@@ -316,7 +316,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:+ 10
 desc:Attempts to put all monsters in line of sight to sleep.
 
-spell:Thrust Away:20:8:55:10
+spell:Thrust Away (Incomplete):20:8:55:10
 effect:RECHARGE
 dice:$B
 expr:B:PLAYER_LEVEL:+ 10
@@ -328,7 +328,7 @@ dice:$B
 expr:B:PLAYER_LEVEL:+ 55
 desc:Fires a ball of fire.
 
-spell:Tap Magical Energy:22:2:50:12
+spell:Tap Magical Energy (Incomplete):22:2:50:12
 effect:TIMED_INC:FAST:5
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
@@ -353,14 +353,14 @@ dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
 desc:Temporarily hasten yourself.
 
-spell:Rune of Magic Influence:30:35:60:30
+spell:Rune of Magic Influence (Incomplete):30:35:60:30
 effect:TIMED_INC:FAST:5
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
 desc:Lays a rune which increases (player) or decreases (monster) the saving throw 
 desc:of one standing on it.  Maximum of four runes. (Actually casts Haste Self.)
 
-spell:Hold Monsters:35:30:80:15
+spell:Hold Monsters (Incomplete):35:30:80:15
 effect:TIMED_INC:FAST:5
 dice:$B+d20
 expr:B:PLAYER_LEVEL:+ 0
