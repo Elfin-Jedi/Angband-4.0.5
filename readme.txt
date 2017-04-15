@@ -9,11 +9,11 @@ Basic changes so far
 
 Races added from Unangband (though without shapeshifts), EyAngband, FAangband, and some from PosChengband (though without special abilities, non-humanoid bodies (Centaur), or flags gained at a later level). 55 Total, I know some of them are very similar to each other or even just renamed.
 
-Classes added from Oangband/FAangband. (No ability framework, don't really want, at least in the same form.)
+Classes added from Oangband/FAangband. Druids/Necromancers are currently using Mage spells. Assassins currently have Rogue spells. (No ability framework, not sure what to do with that yet.)
 
-Monsters added from Unangband up to level 7. (This does mean that non-friended monsters up to level 24, don't currently exist in gameplay because I haven't got there yet and they have duplicate numbers.)
+Monsters added from Unangband up to level 8. (This does mean that non-friended monsters up to level 28, don't currently exist in gameplay because I haven't got there yet and they have duplicate numbers.)
 
-Spellbooks added from FAangband, still with Vanilla Mage, Ranger, Rogue spells. (Exception Mage spellbooks #1-4, some spells incomplete though). Nature and Necromancy books don't display names in inventory or shop lists.
+Spellbooks added from FAangband, still with Vanilla Mage, Ranger, and Rogue spells. Nature and Necromancy books don't display names in inventory or shop lists.
 
 Some other objects added from other variants (mostly weapons).
 
