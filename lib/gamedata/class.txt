@@ -213,9 +213,8 @@ desc:Reduces cuts and poisoning.
 spell:Resist Magic:5:7:26:5
 effect:TIMED_INC:INVULN
 dice:10+d5
-expr:B:PLAYER_LEVEL:+ 0
 desc:Short term increase in saving throw and armour class, and protection from 
-desc:blindness and confusion. (Doesn't have listed effect yet. Needs custom work.)
+desc:blindness and confusion.
 
 spell:Identify:6:8:30:6
 effect:IDENTIFY
