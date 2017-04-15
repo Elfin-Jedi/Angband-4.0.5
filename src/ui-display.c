@@ -665,7 +665,7 @@ static const struct state_info effects[] =
 	{ TMD_PROTEVIL,  S("ProtEvil"),   COLOUR_L_GREEN },
 	{ TMD_SPRINT,    S("Sprint"),     COLOUR_L_GREEN },
 	{ TMD_TELEPATHY, S("ESP"),        COLOUR_L_BLUE },
-	{ TMD_INVULN,    S("Invuln"),     COLOUR_L_GREEN },
+	{ TMD_INVULN,    S("RConf/RBlind"),     COLOUR_ORANGE },
 	{ TMD_HERO,      S("Hero"),       COLOUR_L_GREEN },
 	{ TMD_SHERO,     S("Berserk"),    COLOUR_L_GREEN },
 	{ TMD_BOLD,      S("Bold"),       COLOUR_L_GREEN },

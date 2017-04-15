@@ -1910,7 +1910,11 @@ void calc_bonuses(struct player *p, struct player_state *state, bool known_only,
 
 	/* Invulnerability */
 	if (p->timed[TMD_INVULN])
-		state->to_a += 100;
+		state->to_a += 25;
+                of_on(state->flags, OF_PROT_CONF);
+                of_on(state->flags, OF_PROT_BLIND);
+                state->skills[SKILL_DEVICE] = state->skills[SKILL_DEVICE]
+			* 105 / 100;
 
 	/* Temporary blessing */
 	if (p->timed[TMD_BLESSED]) {

@@ -34,7 +34,7 @@ TMD(POISONED,	"poisoning",				"You are poisoned!",						"You are no longer poiso
 TMD(CUT,		"wounds",					NULL,										NULL,											NULL,										NULL,										0,									0,												0,				0,	0)
 TMD(STUN,		"stunning",					NULL,										NULL,											NULL,										NULL,										0,									0,												0,				TMD_FAIL_FLAG_OBJECT,	OF_PROT_STUN)
 TMD(PROTEVIL,	"protection from evil",		"You feel safe from evil!",					"You no longer feel safe from evil.",			"You feel even safer from evil!",			"You feel less safe from evil.",			0,									0,												MSG_PROT_EVIL,	0,	0)
-TMD(INVULN,		"invulnerability",			"You feel invulnerable!",					"You feel vulnerable once more.",				NULL,										NULL,										0,									PU_BONUS,										MSG_INVULN,		0,	0)
+TMD(INVULN,		"magic resistance",			"You feel your magical vulnerablity diminish.",					"Your magical defences fall to their normal values.",				NULL,										NULL,										0,									PU_BONUS,										MSG_INVULN,		0,	0)
 TMD(HERO,		"heroism",					"You feel like a hero!",					"You no longer feel heroic.",					"You feel more like a hero!",				"You feel less heroic.",					0,									PU_BONUS,										MSG_HERO,		0,	0)
 TMD(SHERO,		"berserk rage",				"You feel like a killing machine!",			"You no longer feel berserk.",					"You feel even more berserk!",				"You feel less berserk.",					0,									PU_BONUS,										MSG_BERSERK,	0,	0)
 TMD(SHIELD,		"mystic shield",			"A mystic shield forms around your body!",	"Your mystic shield crumbles away.",			"The mystic shield strengthens.",			"The mystic shield weakens.",				0,									PU_BONUS,										MSG_SHIELD,		0,	0)
