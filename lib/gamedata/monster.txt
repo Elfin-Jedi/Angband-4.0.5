@@ -1914,7 +1914,7 @@ spells:BLINK | DARKNESS
 spells:BO_COLD
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 friends:100:4d4:Same
 desc:A mage of short stature.
 
@@ -4058,6 +4058,41 @@ blow:BITE:HURT:1d7
 friends:100:2d7:Same
 desc:It is a large doglike creature with an oversize jaw.
 
+name:311:Crawling eye
+base:eye
+color:m
+info:100:14:2:6:10
+power:8:1:0:0:5
+blow:GAZE:PARALYZE
+flags:HURT_LIGHT | NO_FEAR |
+desc:A disembodied eye, that slowly crawls its way around the dungeon.
+
+name:312:Blinking eye
+base:eye
+color:Y
+info:110:17:2:6:10
+power:8:1:0:0:3
+blow:GAZE:PARALYZE
+flags:NEVER_MOVE |
+#flags:CAN_FLY | MUST_FLY |
+flags:HURT_LIGHT | NO_FEAR |
+spell-freq:5
+spells:BLINK |
+desc:A disembodied eye, that blinks occasionally.
+
+name:313:Camouflaged watcher
+base:elemental
+color:y
+info:110:38:12:28:40
+power:8:1:0:0:19
+blow:HIT:HURT:1d6
+blow:HIT:HURT:1d6
+flags:RAND_25 |
+flags:INVISIBLE | COLD_BLOOD | OPEN_DOOR |
+flags:TAKE_ITEM |
+flags:EVIL | IM_ACID | IM_ELEC | 
+desc:It is impossible to define its form but it impedes your progress.
+
 ### Dungeon level 9 ###
 
 name:125:Black harpy
@@ -4083,7 +4118,7 @@ blow:HIT:HURT:1d6
 flags:DROP_60
 flags:HURT_LIGHT
 flags:FORCE_SLEEP
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 drop:prayer book:[Words of Wisdom]:5:1:1
 spell-freq:8
 spells:BLINK | CAUSE_1 | MISSILE
@@ -4245,7 +4280,7 @@ spell-freq:5
 spells:BLIND | CONF | DARKNESS | MISSILE
 spells:BA_POIS
 drop:magic book:[Magic for Beginners]:10:1:1
-drop:magic book:[Minor Powers]:10:1:1
+drop:magic book:[Conjurings and Tricks]:10:1:1
 desc:A dark elven figure, dressed all in black, hurling spells at you.
 
 name:2137:Orfax, Son of Boldor
@@ -4452,7 +4487,7 @@ spells:BLINK | DARKNESS
 spells:BO_COLD
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 friends:100:4d4:Same
 desc:A mage of short stature.
 
@@ -4541,7 +4576,7 @@ spells:BLIND | BLINK | SLOW | TPORT
 spells:BA_POIS
 spells:S_MONSTER
 drop:magic book:[Magic for Beginners]:5:1:1
-drop:magic book:[Minor Powers]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
 desc:A small humanoid that radiates some power.
 
 name:161:Priest
@@ -4765,8 +4800,8 @@ flags:FORCE_SLEEP
 spell-freq:3
 spells:BLIND | BLINK | CONF | DARKNESS | HASTE | HOLD
 spells:SLOW | TPORT
-drop:magic book:[Minor Powers]:8:1:1
-drop:magic book:[Useful Magic]:8:1:1
+drop:magic book:[Conjurings and Tricks]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
 friends:50:1d2:Brigand
 friends:50:1d2:Priest
 friends:50:1d2:Easterling warrior
@@ -5657,8 +5692,8 @@ flags:FORCE_SLEEP
 spell-freq:5
 spells:BLIND | CONF | DARKNESS | HASTE
 spells:BO_COLD | BO_FIRE
-drop:magic book:[Minor Powers]:5:1:1
-drop:magic book:[Useful Magic]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
 friends:80:1d3:Dark elf
 friends:70:1d2:Dark elven warrior
 friends:50:1d1:Dark elven mage
@@ -5679,8 +5714,8 @@ spell-freq:4
 spells:ARROW_2 | BLINK | MISSILE
 spells:BO_COLD | BO_ELEC
 spells:S_ANIMAL
-drop:magic book:[Minor Powers]:5:1:1
-drop:magic book:[Useful Magic]:5:1:1
+drop:magic book:[Conjurings and Tricks]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
 friends:50:1d1:Easterling champion
 friends:50:1d1:Master rogue
 friends:50:1d2:Illusionist
@@ -6544,8 +6579,8 @@ spell-freq:4
 spells:HEAL | HOLD | TRAPS
 spells:BA_COLD
 spells:S_MONSTER
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:5:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:5:1:1
 desc:A hideous ogre wrapped in black sorcerous robes.
 
 name:298:Vampire
@@ -6738,8 +6773,8 @@ spell-freq:3
 spells:BLIND | CONF | HASTE | TELE_TO | TPORT
 spells:BO_COLD | BO_ELEC | BO_FIRE
 spells:S_MONSTER
-drop:magic book:[Useful Magic]:10:1:1
-drop:magic book:[Battle Spells]:7:1:1
+drop:magic book:[Incantations and Illusions]:10:1:1
+drop:magic book:[Sorcery and Evocations]:7:1:1
 friends-base:100:1d1:golem
 desc:A mage of some power - you can tell by the size of his hat.
 
@@ -8221,8 +8256,8 @@ spell-freq:2
 spells:HOLD | TPORT
 spells:BO_FIRE
 spells:S_DEMON
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends-base:50:1d3:minor demon
 friends:100:1d1:Quasit
 desc:A figure twisted by evil standing in robes of deepest crimson.
@@ -8933,8 +8968,8 @@ flags:FORCE_SLEEP
 spell-freq:2
 spells:BLIND
 spells:S_DRAGON
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends-base:30:1d1:dragon
 friends-base:60:1d1:dragon
 desc:This elusive female spellcaster has a special affinity for dragons, whom
@@ -8958,8 +8993,8 @@ spells:BLIND | BLINK | CAUSE_3 | CONF | TELE_TO | TRAPS
 spells:BA_COLD | BA_FIRE
 spells:BO_ACID
 spells:S_DRAGON | S_MONSTER | S_UNDEAD
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:10:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:10:1:1
 friends:30:1d1:Master thief
 friends:30:1d1:Ranger chieftain
 friends:30:1d1:Patriarch
@@ -9199,8 +9234,8 @@ spells:TELE_TO
 spells:BA_COLD | BA_FIRE
 spells:BO_ACID
 spells:S_DEMON | S_MONSTER | S_UNDEAD
-drop:magic book:[Useful Magic]:5:1:1
-drop:magic book:[Battle Spells]:10:1:1
+drop:magic book:[Incantations and Illusions]:5:1:1
+drop:magic book:[Sorcery and Evocations]:10:1:1
 desc:A dark elven figure, dressed in deepest black.  Power seems to crackle from
 desc: his slender frame.
 
@@ -9279,8 +9314,8 @@ spells:ARROW_2 | ARROW_3 | ARROW_4 | BLINK | HASTE | MISSILE
 spells:BA_COLD
 spells:BO_ELEC | BO_FIRE
 spells:S_ANIMAL
-drop:magic book:[Useful Magic]:8:1:1
-drop:magic book:[Battle Spells]:8:1:1
+drop:magic book:[Incantations and Illusions]:8:1:1
+drop:magic book:[Sorcery and Evocations]:8:1:1
 friends:30:1d1:Master thief
 friends:30:1d1:Sorcerer
 friends:30:1d1:Patriarch
