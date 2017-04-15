@@ -21,7 +21,7 @@ Some other objects added from other variants (mostly weapons).
 
 To-do (this branch):
 
-Start adding player spells from FAangband that aren't easily made from existing effects.
+Add player spells from FAangband that aren't easily made from existing effects.
 
 (Mage Book #2) Add Telekinesis.
 
