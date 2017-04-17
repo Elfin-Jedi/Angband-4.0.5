@@ -50,7 +50,7 @@ flags:ONLY_ITEM
 flags:OPEN_DOOR | BASH_DOOR | TAKE_ITEM
 flags:IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
-desc:Ainu/maia
+desc:Ainu/Maia
 
 name:ant
 glyph:a
@@ -139,7 +139,7 @@ name:giant
 glyph:P
 pain:1
 flags:GIANT | EVIL
-flags:BASH_DOOR
+flags:BASH_DOOR | Humanoid
 spells:BOULDER_2
 desc:Giant Humanoid
 
