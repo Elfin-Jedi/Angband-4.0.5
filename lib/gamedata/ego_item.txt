@@ -745,23 +745,7 @@ values:BRAND_POIS[3]
 
 # The "Slay" weapons (11)
 
-name:77:of Slay Insect
-info:0:6:2500:18
-alloc:100:1 to 30
-type:sword
-type:polearm
-type:hafted
-values:SLAY_INSECT[2]
-
-name:78:of Slay Plant
-info:0:6:2500:18
-alloc:100:1 to 30
-type:sword
-type:polearm
-type:hafted
-values:SLAY_PLANT[2]
-
-name:79:of Slay Humanoid
+name:77:of Slay Humanoid
 info:0:6:3000:18
 alloc:100:1 to 40
 type:sword
@@ -769,15 +753,15 @@ type:polearm
 type:hafted
 values:SLAY_HUMANOID[3]
 
-name:80:of Slay Animal
+name:78:of Slay Nature
 info:0:6:3000:18
 alloc:100:1 to 30
 type:sword
 type:polearm
 type:hafted
-values:SLAY_ANIMAL[2]
+values:SLAY_ANIMAL[2] | SLAY_PLANT[2]
 
-name:81:of Slay Evil
+name:79:of Slay Evil
 info:0:6:3000:18
 alloc:60:1 to 40
 type:sword
@@ -785,7 +769,7 @@ type:polearm
 type:hafted
 values:SLAY_EVIL[2]
 
-name:82:of Slay Undead
+name:80:of Slay Undead
 info:0:6:3500:18
 alloc:100:1 to 30
 type:sword
@@ -795,15 +779,22 @@ item:hafted:Ball-and-Chain
 item:hafted:Morning Star
 item:hafted:Flail
 item:hafted:Two-Handed Great Flail
+item:hafted:Three Piece Rod
+item:hafted:Nunchaku
 item:hafted:Mace
 item:hafted:Lead-Filled Mace
 item:hafted:Quarterstaff
 item:hafted:War Hammer
 item:hafted:Maul
 item:hafted:Great Hammer
+item:hafted:Tetsubo
+item:hafted:Bo Staff
+item:hafted:Jo Staff
+item:hafted:Club
+item:hafted:Spiked Club
 values:SLAY_UNDEAD[3]
 
-name:83:of Slay Demon
+name:81:of Slay Demon
 info:0:6:3500:14
 alloc:100:1 to 30
 type:sword
@@ -811,31 +802,7 @@ type:polearm
 type:hafted
 values:SLAY_DEMON[3]
 
-name:84:of Slay Orc
-info:0:6:2500:10
-alloc:150:1 to 20
-type:sword
-type:polearm
-type:hafted
-values:SLAY_ORC[3]
-
-name:85:of Slay Troll
-info:0:6:2500:10
-alloc:150:1 to 25
-type:sword
-type:polearm
-type:hafted
-values:SLAY_TROLL[3]
-
-name:86:of Slay Giant
-info:0:6:2500:14
-alloc:60:1 to 30
-type:sword
-type:polearm
-type:hafted
-values:SLAY_GIANT[3]
-
-name:87:of Slay Dragon
+name:82:of Slay Dragon
 info:0:6:3500:18
 alloc:100:1 to 30
 type:sword
@@ -845,17 +812,17 @@ values:SLAY_DRAGON[3]
 
 # The *Slay* weapons (8)
 
-name:88:of *Slay Animal*
+name:83:of *Slay Nature*
 info:0:20:6000:20
 alloc:40:1 to 45
 type:sword
 type:polearm
 type:hafted
 flags:SLOW_DIGEST
-values:INT[d2] | SLAY_ANIMAL[2]
+values:INT[d2] | SLAY_ANIMAL[2] | SLAY_PLANT[2]
 min-values:INT[0]
 
-name:89:of *Slay Evil*
+name:84:of *Slay Evil*
 info:0:20:5000:20
 alloc:15:10 to 127
 type:sword
@@ -865,7 +832,7 @@ flags:BLESSED | RAND_POWER
 values:WIS[d2] | SLAY_EVIL[2]
 min-values:WIS[0]
 
-name:90:of *Slay Undead*
+name:85:of *Slay Undead*
 info:0:20:8000:24
 alloc:30:10 to 60
 type:sword
@@ -875,17 +842,24 @@ item:hafted:Ball-and-Chain
 item:hafted:Morning Star
 item:hafted:Flail
 item:hafted:Two-Handed Great Flail
+item:hafted:Three Piece Rod
+item:hafted:Nunchaku
 item:hafted:Mace
 item:hafted:Lead-Filled Mace
 item:hafted:Quarterstaff
 item:hafted:War Hammer
 item:hafted:Maul
 item:hafted:Great Hammer
+item:hafted:Tetsubo
+item:hafted:Bo Staff
+item:hafted:Jo Staff
+item:hafted:Club
+item:hafted:Spiked Club
 flags:SEE_INVIS
 values:WIS[d2] | SLAY_UNDEAD[5]
 min-values:WIS[0]
 
-name:91:of *Slay Demon*
+name:86:of *Slay Demon*
 info:0:20:8000:16
 alloc:30:10 to 60
 type:sword
@@ -894,37 +868,7 @@ type:hafted
 values:INT[d2] | SLAY_DEMON[5] | RES_FIRE[1]
 min-values:INT[0]
 
-name:92:of *Slay Orc*
-info:0:20:4000:14
-alloc:60:1 to 40
-type:sword
-type:polearm
-type:hafted
-flags:SUST_DEX
-values:DEX[d2] | SLAY_ORC[3]
-min-values:DEX[0]
-
-name:93:of *Slay Troll*
-info:0:20:4000:14
-alloc:60:1 to 45
-type:sword
-type:polearm
-type:hafted
-flags:REGEN
-values:STR[d2] | SLAY_TROLL[3]
-min-values:STR[0]
-
-name:94:of *Slay Giant*
-info:0:20:4000:16
-alloc:20:1 to 45
-type:sword
-type:polearm
-type:hafted
-flags:SUST_STR
-values:STR[d2] | SLAY_GIANT[3]
-min-values:STR[0]
-
-name:95:of *Slay Dragon*
+name:87:of *Slay Dragon*
 info:0:20:8000:24
 alloc:30:10 to 60
 type:sword
@@ -934,39 +878,20 @@ flags:PROT_FEAR
 values:CON[d2] | SLAY_DRAGON[5]
 min-values:CON[0]
 
-name:96:of *Slay Insect*
+name:88:of *Slay Humanoid*
 info:0:20:6000:20
 alloc:40:1 to 45
 type:sword
 type:polearm
 type:hafted
-values:INT[d2] | SPEED[d3] | SLAY_INSECT[2]
-min-values:INT[0] | SPEED[0]
-
-name:97:of *Slay Plant*
-info:0:20:6000:20
-alloc:40:1 to 45
-type:sword
-type:polearm
-type:hafted
-flags:SLOW_DIGEST | 
-values:DEX[d2] | STEALTH[d3] | SLAY_PLANT[2]
-min-values:DEX[0] | STEALTH[0]
-
-name:98:of *Slay Humanoid*
-info:0:20:6000:20
-alloc:40:1 to 45
-type:sword
-type:polearm
-type:hafted
-flags: 
-values:CON[d2] | STR[d2] | SLAY_HUMANOID[3]
-min-values:CON[0] | STR[0]
+flags:SUST_DEX | SUST_STR
+values:DEX[d2] | STR[d2] | SLAY_HUMANOID[3]
+min-values:DEX[0] | STR[0]
 
 ### Lanterns/torches
 
 # Not for now -- need to figure out how ID applies
-#N:99:of Shadows
+#N:89:of Shadows
 #X:10:0
 #W:5:4:0:1000:10 (imported from NPP)
 #A:8:10 to 100
@@ -976,7 +901,7 @@ min-values:CON[0] | STR[0]
 #V:STEALTH[d2] | RES_LIGHT[1]
 #L:STEALTH[0]
 
-name:100:of Brightness
+name:99:of Brightness
 info:0:2:2000:10
 alloc:50:1 to 30
 item:light:Wooden Torch
@@ -984,7 +909,7 @@ item:light:Lantern
 values:LIGHT[1]
 min-values:LIGHT[1]
 
-name:101:(Everburning)
+name:100:(Everburning)
 info:0:3:2500:10
 alloc:100:1 to 30
 item:light:Lantern
@@ -992,7 +917,7 @@ flags:NO_FUEL
 flags-off:TAKES_FUEL
 
 #imported from S
-name:102:of True Sight
+name:101:of True Sight
 info:20:8:6000:10
 alloc:10:20 to 127
 item:light:Lantern
@@ -1001,14 +926,14 @@ flags:PROT_BLIND | SEE_INVIS
 
 ### Digging Tools
 
-name:103:of Digging
+name:102:of Digging
 info:0:1:500:4
 alloc:100:1 to 40
 type:digger
 values:TUNNEL[d4] | BRAND_ACID[3]
 min-values:TUNNEL[1]
 
-name:104:of Earthquakes
+name:103:of Earthquakes
 info:20:4:3000:8
 alloc:10:10 to 127
 combat:d10:d10:0
@@ -1019,7 +944,7 @@ flags:IMPACT
 
 ### Cursed Weapons
 
-name:105:of Morgul
+name:104:of Morgul
 info:0:5:1:0
 alloc:10:10 to 80
 type:sword
@@ -1029,12 +954,12 @@ flags:SEE_INVIS | AGGRAVATE | HEAVY_CURSE | LIGHT_CURSE
 flags:HOLD_LIFE | DRAIN_EXP
 values:BRAND_POIS[3] | SLAY_UNDEAD[3]
 
-# 106 (unused)
+# 105 (unused)
 
 
 ### Missile Launchers ###
 
-name:107:of Accuracy
+name:106:of Accuracy
 info:0:1:1000:10
 alloc:100:5 to 70
 combat:d15:d5:0
@@ -1043,7 +968,7 @@ type:bow
 desc:It has no special abilities, but its to-hit value may be unusually
 desc: high.
 
-name:108:of Power
+name:107:of Power
 info:0:1:1000:10
 alloc:100:5 to 70
 combat:d5:d15:0
@@ -1052,7 +977,7 @@ type:bow
 desc:It has no special abilities, but its to-dam value may be unusually
 desc: high.
 
-name:109:of Lothlórien
+name:108:of Lothlórien
 info:50:4:20000:30
 alloc:5:20 to 127
 combat:d10:d10:0
@@ -1062,7 +987,7 @@ values:DEX[1+d2M2] | MIGHT[d2]
 min-values:DEX[2] | MIGHT[1]
 flags:FREE_ACT | IGNORE_ACID | IGNORE_FIRE | RAND_POWER
 
-name:110:of the Haradrim
+name:109:of the Haradrim
 info:50:4:20000:30
 alloc:5:20 to 127
 combat:d5:d5:0
@@ -1071,7 +996,7 @@ values:MIGHT[1] | SHOTS[1]
 min-values:MIGHT[1] | SHOTS[1]
 flags:IGNORE_ACID | IGNORE_FIRE | 
 
-name:111:of Extra Might
+name:110:of Extra Might
 info:0:2:10000:20
 alloc:20:15 to 100
 combat:d5:d10:0
@@ -1079,7 +1004,7 @@ type:bow
 values:MIGHT[1]
 min-values:MIGHT[0]
 
-name:112:of Extra Shots
+name:111:of Extra Shots
 info:0:2:10000:20
 alloc:10:15 to 100
 combat:d10:d5:0
@@ -1087,7 +1012,7 @@ type:bow
 values:SHOTS[1]
 min-values:SHOTS[0]
 
-name:113:of Buckland
+name:112:of Buckland
 info:40:4:20000:25
 alloc:5:20 to 127
 combat:d8:d8:0
@@ -1096,7 +1021,7 @@ values:DEX[1+d2M2] | SHOTS[d2] | MIGHT[d2]
 min-values:DEX[2] | SHOTS[1] | MIGHT[1]
 flags:IGNORE_ACID | IGNORE_FIRE | 
 
-name:114:of the Nazgûl
+name:113:of the Nazgûl
 info:0:2:0:0
 alloc:10:10 to 80
 combat:d10:d10:0
@@ -1106,23 +1031,7 @@ flags:LIGHT_CURSE | DRAIN_EXP | SEE_INVIS
 
 ### Ammo ###
 
-name:115:of Slay Insect
-info:0:6:20:10
-alloc:80:1 to 40
-type:shot
-type:arrow
-type:bolt
-values:SLAY_INSECT[2]
-
-name:116:of Slay Plant
-info:0:6:20:10
-alloc:80:1 to 40
-type:shot
-type:arrow
-type:bolt
-values:SLAY_PLANT[2]
-
-name:117:of Slay Humanoid
+name:114:of Slay Humanoid
 info:0:6:20:10
 alloc:80:1 to 40
 type:shot
@@ -1130,15 +1039,15 @@ type:arrow
 type:bolt
 values:SLAY_HUMANOID[3]
 
-name:118:of Slay Animal
+name:115:of Slay Nature
 info:0:6:20:10
 alloc:80:1 to 40
 type:shot
 type:arrow
 type:bolt
-values:SLAY_ANIMAL[2]
+values:SLAY_ANIMAL[2] | SLAY_PLANT[2]
 
-name:119:of Slay Evil
+name:116:of Slay Evil
 info:0:6:20:10
 alloc:10:10 to 100
 type:shot
@@ -1146,7 +1055,7 @@ type:arrow
 type:bolt
 values:SLAY_EVIL[2]
 
-name:120:of Slay Undead
+name:117:of Slay Undead
 info:0:8:25:10
 alloc:15:5 to 100
 type:shot
@@ -1154,7 +1063,7 @@ type:arrow
 type:bolt
 values:SLAY_UNDEAD[3]
 
-name:121:of Slay Demon
+name:118:of Slay Demon
 info:0:8:25:10
 alloc:15:5 to 100
 type:shot
@@ -1162,7 +1071,7 @@ type:arrow
 type:bolt
 values:SLAY_DEMON[3]
 
-name:122:of Acid
+name:119:of Acid
 info:0:10:50:10
 alloc:5:10 to 100
 type:shot
@@ -1171,7 +1080,7 @@ type:bolt
 flags:IGNORE_ACID
 values:BRAND_ACID[3]
 
-name:123:of Lightning
+name:120:of Lightning
 info:0:10:45:10
 alloc:5:10 to 100
 type:shot
@@ -1180,15 +1089,7 @@ type:bolt
 flags:IGNORE_ELEC
 values:BRAND_ELEC[3]
 
-name:124:of Slay Giant
-info:0:8:25:10
-alloc:5:5 to 60
-type:shot
-type:arrow
-type:bolt
-values:SLAY_GIANT[3]
-
-name:125:of Slay Dragon
+name:121:of Slay Dragon
 info:0:8:40:10
 alloc:10:10 to 100
 type:shot
@@ -1196,7 +1097,7 @@ type:arrow
 type:bolt
 values:SLAY_DRAGON[3]
 
-name:126:of Holy Might
+name:122:of Holy Might
 info:40:15:60:20
 alloc:2:30 to 127
 combat:d10:d10:0
@@ -1208,7 +1109,7 @@ item:bolt:Mithril Bolt
 flags:IGNORE_FIRE | IGNORE_ACID
 values:SLAY_EVIL[2] | SLAY_DEMON[3] | SLAY_UNDEAD[3]
 
-name:127:of Venom
+name:123:of Venom
 info:0:6:40:10
 alloc:20:10 to 60
 type:shot
@@ -1216,7 +1117,7 @@ type:arrow
 type:bolt
 values:BRAND_POIS[3]
 
-name:128:of Flame
+name:124:of Flame
 info:0:6:35:10
 alloc:10:10 to 100
 type:shot
@@ -1225,7 +1126,7 @@ type:bolt
 flags:IGNORE_FIRE
 values:BRAND_FIRE[3]
 
-name:129:of Frost
+name:125:of Frost
 info:0:6:30:10
 alloc:10:10 to 100
 type:shot
@@ -1234,7 +1135,7 @@ type:bolt
 flags:IGNORE_COLD
 values:BRAND_COLD[3]
 
-name:130:of Wounding
+name:126:of Wounding
 info:0:4:20:5
 alloc:15:15 to 127
 combat:3+d5:3+d5:0
@@ -1243,7 +1144,7 @@ type:arrow
 type:bolt
 desc:Ammunition of Wounding often has unusually high to-hit and to-dam values.
 
-name:131:of Backbiting
+name:127:of Backbiting
 info:0:0:0:0
 alloc:0:10 to 80
 combat:-26+d25:-26+d25:0
@@ -1257,14 +1158,14 @@ type:bolt
 # they keep their rarity of 0 and nobody adds 'T' lines for them.
 
 # Destroyed Weapon
-name:132:(Shattered)
+name:128:(Shattered)
 info:0:0:0:0
 alloc:0:1 to 80
 combat:d5:d5:0
 
 # Destroyed Body Armor
 
-name:133:(Blasted)
+name:129:(Blasted)
 info:0:0:0:0
 alloc:0:1 to 80
 combat:0:0:d10
@@ -1272,7 +1173,7 @@ combat:0:0:d10
 ### Dragon Scale Mail egos ###
 
 # This is the 'default' DSM ego - roughly half of them
-name:134:of Craftsmanship
+name:130:of Craftsmanship
 info:0:2:500:4
 alloc:60:20 to 95
 combat:0:0:1d6M4
@@ -1280,7 +1181,7 @@ min-combat:0:0:4
 type:dragon armor
 desc:This armour is finely wrought, tough yet unencumbering.
 
-name:135:of Stealth
+name:131:of Stealth
 info:0:10:500:16
 alloc:10:20 to 100
 min-combat:255:0:0
@@ -1288,7 +1189,7 @@ type:dragon armor
 values:STEALTH[d2]
 min-values:STEALTH[0]
 
-name:136:of Resistance
+name:132:of Resistance
 info:0:10:12500:10
 alloc:5:40 to 100
 combat:0:0:d10
@@ -1300,7 +1201,7 @@ item:dragon armor:Chaos Dragon Scale Mail
 item:dragon armor:Balance Dragon Scale Mail
 values:RES_ACID[1] | RES_ELEC[1] | RES_FIRE[1] | RES_COLD[1]
 
-name:137:of Elvenkind
+name:133:of Elvenkind
 info:0:33:15000:25
 alloc:3:50 to 127
 combat:0:0:d10
@@ -1313,7 +1214,7 @@ values:STEALTH[d2] | RES_ACID[1] | RES_ELEC[1] | RES_FIRE[1] | RES_COLD[1]
 min-values:STEALTH[0]
 flags:RAND_HI_RES
 
-name:138:(Dwarven)
+name:134:(Dwarven)
 info:0:20:5000:18
 alloc:5:40 to 127
 combat:0:0:d15
@@ -1323,7 +1224,7 @@ flags:FREE_ACT
 values:STR[d2] | CON[d2] | INFRA[d2M3]
 min-values:STR[1] | CON[1] | INFRA[1]
 
-name:139:of Speed
+name:135:of Speed
 info:0:100:100000:25
 alloc:2:40 to 127
 min-combat:255:0:0
