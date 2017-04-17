@@ -525,7 +525,7 @@ info:105:7:30:1:10
 power:0:1:0:0:0
 blow:BUTT
 flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 desc:A peacefully grazing bovine.
 
 name:32:Goat
@@ -535,7 +535,7 @@ info:110:4:30:1:10
 power:0:2:0:0:0
 blow:BUTT
 flags:FORCE_DEPTH | RAND_50 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 desc:A bleating but harmless animal.
 
 name:33:Agent of the black market
@@ -626,7 +626,7 @@ power:0:1:0:0:0
 blow:BITE:HURT:1d2
 blow:KICK:HURT:1d3
 flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 #flags:RIDING
 desc:This pitiful horse has not been well fed, it walks unsteadily.
 
@@ -2298,7 +2298,7 @@ info:110:44:20:30:30
 power:5:1:0:0:25
 blow:BITE:HURT:1d8
 blow:KICK:HURT:2d4
-flags:ANIMAL | 
+flags:ANIMAL | NATURE
 #flags:RIDING
 desc:As for the horse with the animal of four feet which can run fast, 
 desc:it was utilized for a long time as the vehicle of the human.
@@ -2818,7 +2818,7 @@ flags:HAS_LIGHT | OPEN_DOOR |
 spell-freq:4
 spells:MISSILE |
 spells:HEAL | BLINK | SCARE |
-spells:S_ANIMAL |
+spells:S_ANIMAL | S_NATURE
 friends-base:20:1d3:person
 friends-base:40:1d3:person
 friends-base:80:1d3:person
@@ -3925,7 +3925,7 @@ power:8:1:1320:3:25
 blow:CLAW:HURT:1d6
 blow:CLAW:HURT:1d6
 blow:BITE:HURT:1d8
-flags:ANIMAL
+flags:ANIMAL | NATURE
 flags:RAND_25
 desc:A large bear appears to have made its home in this cave.  It is hungry, and
 desc: you are trespassing in its territory.
@@ -4822,7 +4822,7 @@ flags:FORCE_SLEEP
 spell-freq:3
 spells:BLIND | BLINK | HASTE | HOLD | SLOW
 spells:BO_ELEC | BO_FIRE
-spells:S_ANIMAL
+spells:S_ANIMAL | S_NATURE
 drop:prayer book:[Novice's Handbook]:8:1:1
 drop:prayer book:[Words of Wisdom]:8:1:1
 desc:A priest devoted to Nature.
@@ -5217,7 +5217,7 @@ blow:CLAW:HURT:1d8
 blow:CLAW:HURT:1d8
 blow:BITE:HURT:1d12
 blow:CRUSH:HURT:1d10
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:A huge, beastly bear, more savage than most of its kind.
 
 ### Dungeon level 17 ###
@@ -5713,7 +5713,7 @@ flags:OPEN_DOOR | TAKE_ITEM
 spell-freq:4
 spells:ARROW_2 | BLINK | MISSILE
 spells:BO_COLD | BO_ELEC
-spells:S_ANIMAL
+spells:S_ANIMAL | S_NATURE
 drop:magic book:[Conjurings and Tricks]:5:1:1
 drop:magic book:[Incantations and Illusions]:5:1:1
 friends:50:1d1:Easterling champion
@@ -6173,7 +6173,7 @@ blow:CLAW:HURT:1d10
 blow:CLAW:HURT:1d10
 blow:BITE:HURT:2d8
 blow:CRUSH:HURT:2d6
-flags:EVIL | ANIMAL
+flags:EVIL | ANIMAL | NATURE
 flags:DROP_1
 flags:OPEN_DOOR
 desc:In the eyes of this bear, there glimmers the faintest light of
@@ -6229,7 +6229,7 @@ flags:HURT_LIGHT | IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:6
 spells:CONF | DARKNESS | HEAL
-spells:S_ANIMAL | S_MONSTER | S_SPIDER
+spells:S_ANIMAL | S_MONSTER | S_SPIDER | S_NATURE
 drop:prayer book:[Words of Wisdom]:8:1:1
 drop:prayer book:[Chants and Blessings]:8:1:1
 desc:A powerful dark elf, with mighty nature-controlling enchantments.
@@ -6932,7 +6932,7 @@ blow:GAZE:TERRIFY:2d4
 blow:GAZE:BLIND:2d4
 blow:BUTT:HURT:2d6
 blow:BITE:HURT:2d12
-flags:ANIMAL
+flags:ANIMAL | NATURE
 flags:DROP_2 | ONLY_GOLD
 flags:IM_POIS
 desc:A strange ox-like form with a huge head but a thin, weak neck, it looks
@@ -7396,7 +7396,7 @@ flags:IM_ACID | IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:6
 spells:HEAL
-spells:S_ANIMAL | S_SPIDER
+spells:S_ANIMAL | S_SPIDER | S_NATURE
 drop:prayer book:[Chants and Blessings]:10:1:1
 drop:prayer book:[Exorcism and Dispelling]:5:1:1
 friends-base:50:2d4:spider
@@ -7944,7 +7944,7 @@ power:35:2:299880:13:2100
 blow:BUTT:HURT:4d6
 blow:BUTT:HURT:4d6
 blow:CRUSH:HURT:4d4
-flags:ANIMAL
+flags:ANIMAL | NATURE
 friends:100:4d4:Same
 desc:A massive elephantine form with eyes twisted by madness.
 
@@ -9313,7 +9313,7 @@ spell-freq:4
 spells:ARROW_2 | ARROW_3 | ARROW_4 | BLINK | HASTE | MISSILE
 spells:BA_COLD
 spells:BO_ELEC | BO_FIRE
-spells:S_ANIMAL
+spells:S_ANIMAL | S_NATURE
 drop:magic book:[Incantations and Illusions]:8:1:1
 drop:magic book:[Sorcery and Evocations]:8:1:1
 friends:30:1d1:Master thief
@@ -10090,7 +10090,7 @@ flags:NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:3
 spells:HEAL
-spells:S_ANIMAL
+spells:S_ANIMAL | S_NATURE
 drop:prayer book:[Chants and Blessings]:8:1:1
 drop:prayer book:[Exorcism and Dispelling]:8:1:1
 friends-base:50:2d4:spider
@@ -10510,7 +10510,7 @@ flags:NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:3
 spells:HEAL | MIND_BLAST
-spells:S_ANIMAL | S_HOUND | S_SPIDER
+spells:S_ANIMAL | S_HOUND | S_SPIDER | S_NATURE
 drop:prayer book:[Chants and Blessings]:5:1:1
 drop:prayer book:[Exorcism and Dispelling]:15:1:1
 friends-base:80:3d5:spider
@@ -10653,7 +10653,7 @@ flags:FORCE_SLEEP
 spell-freq:4
 spells:BLIND | BRAIN_SMASH | CAUSE_3 | CAUSE_4 | CONF | HEAL
 spells:SCARE
-spells:S_ANIMAL | S_MONSTERS
+spells:S_ANIMAL | S_MONSTERS | S_NATURE
 desc:He is one of the greatest dwarven priests to walk the earth.  Fundin has
 desc: earned a high position in the church, and his skill with both weapon and
 desc: spell only justify his position further.  His combination of both dwarven
@@ -10705,7 +10705,7 @@ spells:BLIND | CAUSE_4 | FORGET | HASTE | HEAL | MIND_BLAST
 spells:SCARE | TELE_AWAY | TPORT | TRAPS
 spells:BA_ACID | BA_COLD | BA_FIRE | BA_WATE
 spells:BO_ICEE
-spells:S_ANIMAL | S_DEMON | S_HI_DRAGON | S_MONSTERS | S_UNDEAD
+spells:S_ANIMAL | S_DEMON | S_HI_DRAGON | S_MONSTERS | S_UNDEAD | S_NATURE
 friends:100:1d1:Wormtongue, Agent of Saruman
 desc:Originally known as the White, Saruman fell prey to Sauron's wiles.  He
 desc: seeks to emulate him and breeds orcs and trolls to fight for him.  He
@@ -10934,7 +10934,7 @@ flags:IM_ACID | IM_COLD | IM_ELEC | IM_FIRE | HAS_LIGHT
 spell-freq:2
 spells:BLIND | TELE_TO
 spells:BO_MANA | BO_WATE | BO_FIRE | BO_ICEE
-spells:S_AINU | S_ANIMAL | S_SPIDER | S_HOUND
+spells:S_AINU | S_ANIMAL | S_SPIDER | S_HOUND | S_NATURE
 friends:60:1d3:Maia
 friends:60:1d3:Greater Maia
 friends:60:1d3:Blue Wizard
@@ -11623,7 +11623,7 @@ power:76:2:11622688:195:15000
 flags:ATTR_FLICKER
 spell-freq:1
 spells:BLINK | TELE_TO
-spells:S_ANIMAL | S_HI_DEMON | S_HI_DRAGON | S_HI_UNDEAD | S_MONSTERS
+spells:S_ANIMAL | S_HI_DEMON | S_HI_DRAGON | S_HI_UNDEAD | S_MONSTERS | S_NATURE
 desc:A giant seething mass of flesh, overwhelming you with monster after
 desc: monster.
 
@@ -11757,7 +11757,7 @@ flags:DROP_4 | DROP_GOOD | ONLY_ITEM
 flags:ATTR_MULTI
 spell-freq:1
 spells:S_AINU | S_ANIMAL | S_HI_DEMON | S_HI_DRAGON | S_HI_UNDEAD | S_HOUND
-spells:S_HYDRA | S_KIN | S_MONSTERS | S_SPIDER | S_UNIQUE | S_WRAITH
+spells:S_HYDRA | S_KIN | S_MONSTERS | S_SPIDER | S_UNIQUE | S_WRAITH | S_NATURE
 desc:A gigantic seething mass of flesh, Qlzqqlzuup changes colours in front of
 desc: your eyes.  Pulsating first one colour then the next, it knows only it
 desc: must bring help to protect itself.
@@ -11835,7 +11835,7 @@ flags:IM_COLD | IM_FIRE | IM_POIS | NO_CONF | NO_SLEEP
 flags:FORCE_SLEEP
 spell-freq:6
 spells:S_ANIMAL | S_HI_DEMON | S_HI_DRAGON | S_HI_UNDEAD | S_MONSTERS | S_UNIQUE
-spells:S_WRAITH
+spells:S_WRAITH | S_NATURE
 desc:The son of Eöl the Dark Elf, Maeglin is every bit as evil as his father and
 desc: more.  His greed for gold led him to betray the Hidden Kingdom of
 desc: Gondolin to Morgoth's forces.  He is a mighty warrior himself, and some of

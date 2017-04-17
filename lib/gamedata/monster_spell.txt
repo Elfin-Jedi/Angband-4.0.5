@@ -768,6 +768,16 @@ lore:summon animals
 message-vis:{name} summons animals.
 message-invis:You hear some things appear nearby!
 
+name:S_NATURE
+msgt:SUM_NATURE
+hit:100
+effect:SUMMON:NATURE
+dice:12
+power:30
+lore:summon nature
+message-vis:{name} summons nature.
+message-invis:You hear some things appear nearby!
+
 name:S_SPIDER
 msgt:SUM_SPIDER
 hit:100

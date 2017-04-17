@@ -56,31 +56,31 @@ name:ant
 glyph:a
 pain:7
 flags:ANIMAL | WEIRD_MIND
-flags:BASH_DOOR | INSECT
+flags:BASH_DOOR | INSECT | NATURE
 desc:Ant
 
 name:bat
 glyph:b
 pain:4
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:Bat
 
 name:bird
 glyph:B
 pain:8
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:Bird
 
 name:canine
 glyph:C
 pain:3
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:Canine (Dog)
 
 name:centipede
 glyph:c
 pain:5
-flags:ANIMAL | WEIRD_MIND | INSECT
+flags:ANIMAL | WEIRD_MIND | INSECT | NATURE
 desc:Centipede
 
 name:creeping coins
@@ -116,7 +116,7 @@ desc:Elemental
 name:feline
 glyph:f
 pain:6
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:Feline (Cat)
 
 name:fish
@@ -124,7 +124,7 @@ glyph:F
 pain:5
 flags:ANIMAL | WEIRD_MIND
 flags:RAND_50 | BASH_DOOR
-flags:FORCE_SLEEP
+flags:FORCE_SLEEP | NATURE
 desc:Fish/Amphibian
 
 name:ghost
@@ -139,7 +139,7 @@ name:giant
 glyph:P
 pain:1
 flags:GIANT | EVIL
-flags:BASH_DOOR | Humanoid
+flags:BASH_DOOR | HUMANOID
 spells:BOULDER_2
 desc:Giant Humanoid
 
@@ -189,7 +189,7 @@ name:insect
 glyph:I
 pain:7
 flags:ANIMAL | WEIRD_MIND | INSECT
-flags:RAND_25 | RAND_50
+flags:RAND_25 | RAND_50 | NATURE
 desc:Insect
 
 name:jelly
@@ -203,7 +203,7 @@ name:killer beetle
 glyph:K
 pain:7
 flags:ANIMAL | WEIRD_MIND | INSECT
-flags:BASH_DOOR
+flags:BASH_DOOR | NATURE
 desc:Killer Beetle
 
 name:lich
@@ -263,14 +263,14 @@ desc:Misc
 name:mold
 glyph:m
 pain:2
-flags:NEVER_MOVE | PLANT
+flags:NEVER_MOVE | PLANT | NATURE
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Mold
 
 name:mushroom
 glyph:,
 pain:2
-flags:EMPTY_MIND | STUPID | PLANT
+flags:EMPTY_MIND | STUPID | PLANT | NATURE
 flags:HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Mushroom
 
@@ -311,7 +311,7 @@ desc:Person/Human
 name:plant
 glyph:;
 pain:2
-flags:NEVER_MOVE | PLANT
+flags:NEVER_MOVE | PLANT | NATURE
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Plant
 
@@ -333,13 +333,13 @@ desc:Quylthulg
 name:reptile
 glyph:R
 pain:5
-flags:ANIMAL | HURT_COLD
+flags:ANIMAL | HURT_COLD | NATURE
 desc:Reptile
 
 name:rodent
 glyph:r
 pain:4
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:Rodent
 
 name:skeleton
@@ -353,13 +353,13 @@ name:snake
 glyph:J
 pain:5
 flags:ANIMAL | HURT_COLD
-flags:BASH_DOOR
+flags:BASH_DOOR | NATURE
 desc:Snake
 
 name:spider
 glyph:S
 pain:7
-flags:BASH_DOOR | INSECT
+flags:BASH_DOOR | INSECT | NATURE
 desc:Spider/Scorpion/Tick
 
 name:townsfolk
@@ -371,7 +371,7 @@ desc:Townsfolk
 name:tree
 glyph::
 pain:2
-flags:NEVER_MOVE | PLANT
+flags:NEVER_MOVE | PLANT | NATURE
 flags:IM_POIS | HURT_FIRE | NO_FEAR | NO_CONF | NO_SLEEP
 desc:Tree
 
@@ -405,7 +405,7 @@ desc:Vortex
 name:worm
 glyph:w
 pain:1
-flags:ANIMAL | INSECT
+flags:ANIMAL | INSECT | NATURE
 desc:Worm/Worm Mass
 
 name:wraith
