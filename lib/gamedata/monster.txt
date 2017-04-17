@@ -525,7 +525,7 @@ info:105:7:30:1:10
 power:0:1:0:0:0
 blow:BUTT
 flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 desc:A peacefully grazing bovine.
 
 name:32:Goat
@@ -535,7 +535,7 @@ info:110:4:30:1:10
 power:0:2:0:0:0
 blow:BUTT
 flags:FORCE_DEPTH | RAND_50 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 desc:A bleating but harmless animal.
 
 name:33:Agent of the black market
@@ -626,7 +626,7 @@ power:0:1:0:0:0
 blow:BITE:HURT:1d2
 blow:KICK:HURT:1d3
 flags:FORCE_DEPTH | RAND_25 |
-flags:ANIMAL |
+flags:ANIMAL | NATURE
 #flags:RIDING
 desc:This pitiful horse has not been well fed, it walks unsteadily.
 
@@ -2298,7 +2298,7 @@ info:110:44:20:30:30
 power:5:1:0:0:25
 blow:BITE:HURT:1d8
 blow:KICK:HURT:2d4
-flags:ANIMAL | 
+flags:ANIMAL | NATURE
 #flags:RIDING
 desc:As for the horse with the animal of four feet which can run fast, 
 desc:it was utilized for a long time as the vehicle of the human.
@@ -3925,7 +3925,7 @@ power:8:1:1320:3:25
 blow:CLAW:HURT:1d6
 blow:CLAW:HURT:1d6
 blow:BITE:HURT:1d8
-flags:ANIMAL
+flags:ANIMAL | NATURE
 flags:RAND_25
 desc:A large bear appears to have made its home in this cave.  It is hungry, and
 desc: you are trespassing in its territory.
@@ -5217,7 +5217,7 @@ blow:CLAW:HURT:1d8
 blow:CLAW:HURT:1d8
 blow:BITE:HURT:1d12
 blow:CRUSH:HURT:1d10
-flags:ANIMAL
+flags:ANIMAL | NATURE
 desc:A huge, beastly bear, more savage than most of its kind.
 
 ### Dungeon level 17 ###
@@ -6173,7 +6173,7 @@ blow:CLAW:HURT:1d10
 blow:CLAW:HURT:1d10
 blow:BITE:HURT:2d8
 blow:CRUSH:HURT:2d6
-flags:EVIL | ANIMAL
+flags:EVIL | ANIMAL | NATURE
 flags:DROP_1
 flags:OPEN_DOOR
 desc:In the eyes of this bear, there glimmers the faintest light of
@@ -6932,7 +6932,7 @@ blow:GAZE:TERRIFY:2d4
 blow:GAZE:BLIND:2d4
 blow:BUTT:HURT:2d6
 blow:BITE:HURT:2d12
-flags:ANIMAL
+flags:ANIMAL | NATURE
 flags:DROP_2 | ONLY_GOLD
 flags:IM_POIS
 desc:A strange ox-like form with a huge head but a thin, weak neck, it looks
@@ -7944,7 +7944,7 @@ power:35:2:299880:13:2100
 blow:BUTT:HURT:4d6
 blow:BUTT:HURT:4d6
 blow:CRUSH:HURT:4d4
-flags:ANIMAL
+flags:ANIMAL | NATURE
 friends:100:4d4:Same
 desc:A massive elephantine form with eyes twisted by madness.
 
