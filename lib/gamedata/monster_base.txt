@@ -139,7 +139,7 @@ name:giant
 glyph:P
 pain:1
 flags:GIANT | EVIL
-flags:BASH_DOOR | Humanoid
+flags:BASH_DOOR | HUMANOID
 spells:BOULDER_2
 desc:Giant Humanoid
 
