@@ -39,10 +39,6 @@ Add PosChengband races, monster races, and classes.
 
 Set up birth menu system: Choose gender, choose normal or monster race, choose race catagory, choose race, if normal races - choose between FAangband-based and PosChengband-based class/magic system, choose class, if PosChengband-based - choose magic realms.
 
-Add sexes back in to birth choices? Maybe a birth option whether to use?
-
-Possibly (and probably controversially) add a birth option to use either the six gender system from ancient Judaism: Zachar (male), Nekeivah (female), Androgynos (both), Tumtum (indeterminate), Ay'lonit (trans->male), and Saris (trans->female); (http://www.sojourngsd.org/blog/sixgenders) or the old Native American gender system with 3-5 genders (more difficult because of different traditions/languages and is less clearly defined) basically: Female, Male, Masculine Female, Feminine Male, and Two-Spirit; (https://indiancountrymedianetwork.com/news/opinions/two-spirits-one-heart-five-genders/) instead of the semi-modern binary system.
-
 Add framework for special abilities like Zangband-descended variants. Add Shapeshifts for Maiar, Vampires, Werewolves, Beornings, & spells.
 
 Start attempting to add terrain from Unangband.
