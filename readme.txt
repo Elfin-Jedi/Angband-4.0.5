@@ -37,7 +37,7 @@ Create a PosChengband-style race catagory birth menu.
 
 Add PosChengband races, monster races, and classes.
 
-Set up birth menu system: Choose gender, choose normal or monster race, choose race catagory, choose race, if normal races - choose between FAangband-based and PosChengband-based class/magic system, choose class, if PosChengband-based - choose magic realms.
+Set up birth menu system: Choose gender?, choose normal or monster race, choose race catagory, choose race, if normal races - choose between FAangband-based and PosChengband-based class/magic system, choose class, if PosChengband-based - choose magic realms.
 
 Add framework for special abilities like Zangband-descended variants. Add Shapeshifts for Maiar, Vampires, Werewolves, Beornings, & spells.
 
