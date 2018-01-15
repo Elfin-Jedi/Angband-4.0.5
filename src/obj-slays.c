@@ -66,14 +66,9 @@ struct slay_info {
  * (because they're more complicated) - NRM
  */
 const struct slay_info slay_names[] = {
-	{ "evil creatures", RF_EVIL, 2 },
-	{ "animals", RF_ANIMAL, 2 },
-	{ "insects", RF_INSECT, 2 },
-	{ "plants", RF_PLANT, 2 },
+        { "evil creatures", RF_EVIL, 2 },
+	{ "nature", RF_NATURE, 2 },
 	{ "humanoids", RF_HUMANOID, 3 },
-	{ "orcs", RF_ORC, 3 },
-	{ "trolls", RF_TROLL, 3 },
-	{ "giants", RF_GIANT, 3 },
 	{ "demons", RF_DEMON, 3 },
 	{ "dragons", RF_DRAGON, 3 },
 	{ "undead", RF_UNDEAD, 3 },
